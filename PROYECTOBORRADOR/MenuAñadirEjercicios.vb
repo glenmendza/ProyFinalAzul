@@ -1,5 +1,5 @@
 ﻿Public Class MenuAñadirEjercicios
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles ButtonPiernas.Click
         If Lista1.Visible = True Then
             Lista1.Visible = False
         Else
@@ -39,5 +39,24 @@
         End If
     End Sub
 
+    Private Sub Lista1_ItemCheck(ByVal sender As Object, ByVal e As System.Windows.Forms.ItemCheckEventArgs) Handles Lista1.ItemCheck
+        If Lista1.CheckedItems.Count > 1 Then
+            Button6.Enabled = True
+        End If
+
+        If Lista1.CheckedItems.Count = 1 And e.NewValue = CheckState.Unchecked Then
+            Button6.Enabled = False
+        End If
+
+        If Lista1.CheckedItems.Count = 0 And e.NewValue = CheckState.Checked Then
+            Button6.Enabled = True
+        End If
+
+    End Sub
+
+    Private Sub Button7_Click(sender As Object, e As EventArgs) Handles ButtonBack.Click
+        Me.Hide()
+        MenuPrincipal.Show()
+    End Sub
 
 End Class

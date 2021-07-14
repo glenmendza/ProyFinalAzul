@@ -22,17 +22,34 @@ Partial Class MenuAgenda
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.ButtonBack = New System.Windows.Forms.Button()
         Me.SuspendLayout()
+        '
+        'ButtonBack
+        '
+        Me.ButtonBack.BackgroundImage = Global.PROYECTOBORRADOR.My.Resources.Resources.azul
+        Me.ButtonBack.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ButtonBack.ForeColor = System.Drawing.Color.White
+        Me.ButtonBack.Location = New System.Drawing.Point(12, 12)
+        Me.ButtonBack.Name = "ButtonBack"
+        Me.ButtonBack.Size = New System.Drawing.Size(52, 37)
+        Me.ButtonBack.TabIndex = 18
+        Me.ButtonBack.Text = "←"
+        Me.ButtonBack.UseVisualStyleBackColor = True
         '
         'MenuAgenda
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(42, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.ButtonBack)
         Me.Name = "MenuAgenda"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "MenuAgenda"
         Me.ResumeLayout(False)
 
     End Sub
+
+    Private WithEvents ButtonBack As Button
 End Class

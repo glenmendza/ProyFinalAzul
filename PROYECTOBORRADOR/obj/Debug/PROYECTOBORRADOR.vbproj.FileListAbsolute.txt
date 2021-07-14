@@ -16,3 +16,21 @@ C:\Users\glenm\source\repos\PROYECTOBORRADOR\obj\Debug\PROYECTOBORRADOR.MenuAgen
 C:\Users\glenm\source\repos\PROYECTOBORRADOR\obj\Debug\PROYECTOBORRADOR.MenuEstadisticas.resources
 C:\Users\glenm\source\repos\PROYECTOBORRADOR\obj\Debug\PROYECTOBORRADOR.MenuModificarDatos.resources
 C:\Users\glenm\source\repos\PROYECTOBORRADOR\obj\Debug\PROYECTOBORRADOR.MenuPrincipal.resources
+C:\Users\glenm\Documents\Proyectos Visual Studio\Proyecto Software #1\ProyFinalAzul\PROYECTOBORRADOR\bin\Debug\PROYECTOBORRADOR.exe.config
+C:\Users\glenm\Documents\Proyectos Visual Studio\Proyecto Software #1\ProyFinalAzul\PROYECTOBORRADOR\bin\Debug\PROYECTOBORRADOR.exe
+C:\Users\glenm\Documents\Proyectos Visual Studio\Proyecto Software #1\ProyFinalAzul\PROYECTOBORRADOR\bin\Debug\PROYECTOBORRADOR.pdb
+C:\Users\glenm\Documents\Proyectos Visual Studio\Proyecto Software #1\ProyFinalAzul\PROYECTOBORRADOR\bin\Debug\PROYECTOBORRADOR.xml
+C:\Users\glenm\Documents\Proyectos Visual Studio\Proyecto Software #1\ProyFinalAzul\PROYECTOBORRADOR\obj\Debug\PROYECTOBORRADOR.vbprojAssemblyReference.cache
+C:\Users\glenm\Documents\Proyectos Visual Studio\Proyecto Software #1\ProyFinalAzul\PROYECTOBORRADOR\obj\Debug\PROYECTOBORRADOR.Login.resources
+C:\Users\glenm\Documents\Proyectos Visual Studio\Proyecto Software #1\ProyFinalAzul\PROYECTOBORRADOR\obj\Debug\PROYECTOBORRADOR.MenuPrincipal.resources
+C:\Users\glenm\Documents\Proyectos Visual Studio\Proyecto Software #1\ProyFinalAzul\PROYECTOBORRADOR\obj\Debug\PROYECTOBORRADOR.MenuAgenda.resources
+C:\Users\glenm\Documents\Proyectos Visual Studio\Proyecto Software #1\ProyFinalAzul\PROYECTOBORRADOR\obj\Debug\PROYECTOBORRADOR.MenuAñadirEjercicios.resources
+C:\Users\glenm\Documents\Proyectos Visual Studio\Proyecto Software #1\ProyFinalAzul\PROYECTOBORRADOR\obj\Debug\PROYECTOBORRADOR.MenuEstadisticas.resources
+C:\Users\glenm\Documents\Proyectos Visual Studio\Proyecto Software #1\ProyFinalAzul\PROYECTOBORRADOR\obj\Debug\PROYECTOBORRADOR.MenuGestionarUsuarios.resources
+C:\Users\glenm\Documents\Proyectos Visual Studio\Proyecto Software #1\ProyFinalAzul\PROYECTOBORRADOR\obj\Debug\PROYECTOBORRADOR.MenuModificarDatos.resources
+C:\Users\glenm\Documents\Proyectos Visual Studio\Proyecto Software #1\ProyFinalAzul\PROYECTOBORRADOR\obj\Debug\PROYECTOBORRADOR.Resources.resources
+C:\Users\glenm\Documents\Proyectos Visual Studio\Proyecto Software #1\ProyFinalAzul\PROYECTOBORRADOR\obj\Debug\PROYECTOBORRADOR.vbproj.GenerateResource.cache
+C:\Users\glenm\Documents\Proyectos Visual Studio\Proyecto Software #1\ProyFinalAzul\PROYECTOBORRADOR\obj\Debug\PROYECTOBORRADOR.vbproj.CoreCompileInputs.cache
+C:\Users\glenm\Documents\Proyectos Visual Studio\Proyecto Software #1\ProyFinalAzul\PROYECTOBORRADOR\obj\Debug\PROYECTOBORRADOR.exe
+C:\Users\glenm\Documents\Proyectos Visual Studio\Proyecto Software #1\ProyFinalAzul\PROYECTOBORRADOR\obj\Debug\PROYECTOBORRADOR.xml
+C:\Users\glenm\Documents\Proyectos Visual Studio\Proyecto Software #1\ProyFinalAzul\PROYECTOBORRADOR\obj\Debug\PROYECTOBORRADOR.pdb
