@@ -16,3 +16,21 @@ C:\Users\glenm\Documents\Proyectos Visual Studio\Proyecto Software #1\ProyFinalA
 C:\Users\glenm\Documents\Proyectos Visual Studio\Proyecto Software #1\ProyFinalAzul\ProyectoFinal\obj\Debug\PROYECTOBORRADOR.exe
 C:\Users\glenm\Documents\Proyectos Visual Studio\Proyecto Software #1\ProyFinalAzul\ProyectoFinal\obj\Debug\PROYECTOBORRADOR.xml
 C:\Users\glenm\Documents\Proyectos Visual Studio\Proyecto Software #1\ProyFinalAzul\ProyectoFinal\obj\Debug\PROYECTOBORRADOR.pdb
+C:\Users\adria\OneDrive\Documents\GitHub\ProyFinalAzul\ProyectoFinal\bin\Debug\PROYECTOBORRADOR.exe.config
+C:\Users\adria\OneDrive\Documents\GitHub\ProyFinalAzul\ProyectoFinal\bin\Debug\PROYECTOBORRADOR.exe
+C:\Users\adria\OneDrive\Documents\GitHub\ProyFinalAzul\ProyectoFinal\bin\Debug\PROYECTOBORRADOR.pdb
+C:\Users\adria\OneDrive\Documents\GitHub\ProyFinalAzul\ProyectoFinal\bin\Debug\PROYECTOBORRADOR.xml
+C:\Users\adria\OneDrive\Documents\GitHub\ProyFinalAzul\ProyectoFinal\obj\Debug\ProyectoFinal.vbprojAssemblyReference.cache
+C:\Users\adria\OneDrive\Documents\GitHub\ProyFinalAzul\ProyectoFinal\obj\Debug\PROYECTOBORRADOR.Login.resources
+C:\Users\adria\OneDrive\Documents\GitHub\ProyFinalAzul\ProyectoFinal\obj\Debug\PROYECTOBORRADOR.MenuPrincipal.resources
+C:\Users\adria\OneDrive\Documents\GitHub\ProyFinalAzul\ProyectoFinal\obj\Debug\PROYECTOBORRADOR.MenuAgenda.resources
+C:\Users\adria\OneDrive\Documents\GitHub\ProyFinalAzul\ProyectoFinal\obj\Debug\PROYECTOBORRADOR.MenuAñadirEjercicios.resources
+C:\Users\adria\OneDrive\Documents\GitHub\ProyFinalAzul\ProyectoFinal\obj\Debug\PROYECTOBORRADOR.MenuEstadisticas.resources
+C:\Users\adria\OneDrive\Documents\GitHub\ProyFinalAzul\ProyectoFinal\obj\Debug\PROYECTOBORRADOR.MenuGestionarUsuarios.resources
+C:\Users\adria\OneDrive\Documents\GitHub\ProyFinalAzul\ProyectoFinal\obj\Debug\PROYECTOBORRADOR.MenuModificarDatos.resources
+C:\Users\adria\OneDrive\Documents\GitHub\ProyFinalAzul\ProyectoFinal\obj\Debug\PROYECTOBORRADOR.Resources.resources
+C:\Users\adria\OneDrive\Documents\GitHub\ProyFinalAzul\ProyectoFinal\obj\Debug\ProyectoFinal.vbproj.GenerateResource.cache
+C:\Users\adria\OneDrive\Documents\GitHub\ProyFinalAzul\ProyectoFinal\obj\Debug\ProyectoFinal.vbproj.CoreCompileInputs.cache
+C:\Users\adria\OneDrive\Documents\GitHub\ProyFinalAzul\ProyectoFinal\obj\Debug\PROYECTOBORRADOR.exe
+C:\Users\adria\OneDrive\Documents\GitHub\ProyFinalAzul\ProyectoFinal\obj\Debug\PROYECTOBORRADOR.xml
+C:\Users\adria\OneDrive\Documents\GitHub\ProyFinalAzul\ProyectoFinal\obj\Debug\PROYECTOBORRADOR.pdb
