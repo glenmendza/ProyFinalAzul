@@ -24,6 +24,7 @@ Partial Class MenuGestionarUsuarios
     Private Sub InitializeComponent()
         Me.btnAñadirUsuario = New System.Windows.Forms.Button()
         Me.btnEditarUsuario = New System.Windows.Forms.Button()
+        Me.ButtonBack = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'btnAñadirUsuario
@@ -50,12 +51,25 @@ Partial Class MenuGestionarUsuarios
         Me.btnEditarUsuario.Text = "Editar usuario"
         Me.btnEditarUsuario.UseVisualStyleBackColor = True
         '
+        'ButtonBack
+        '
+        Me.ButtonBack.BackColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(42, Byte), Integer))
+        Me.ButtonBack.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ButtonBack.ForeColor = System.Drawing.Color.White
+        Me.ButtonBack.Location = New System.Drawing.Point(12, 12)
+        Me.ButtonBack.Name = "ButtonBack"
+        Me.ButtonBack.Size = New System.Drawing.Size(52, 37)
+        Me.ButtonBack.TabIndex = 18
+        Me.ButtonBack.Text = "←"
+        Me.ButtonBack.UseVisualStyleBackColor = False
+        '
         'MenuGestionarUsuarios
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.PROYECTOBORRADOR.My.Resources.Resources.azul2
-        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.ClientSize = New System.Drawing.Size(856, 489)
+        Me.Controls.Add(Me.ButtonBack)
         Me.Controls.Add(Me.btnEditarUsuario)
         Me.Controls.Add(Me.btnAñadirUsuario)
         Me.Name = "MenuGestionarUsuarios"
@@ -67,4 +81,5 @@ Partial Class MenuGestionarUsuarios
 
     Friend WithEvents btnAñadirUsuario As Button
     Friend WithEvents btnEditarUsuario As Button
+    Private WithEvents ButtonBack As Button
 End Class

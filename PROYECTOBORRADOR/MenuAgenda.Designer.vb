@@ -27,7 +27,7 @@ Partial Class MenuAgenda
         '
         'ButtonBack
         '
-        Me.ButtonBack.BackgroundImage = Global.PROYECTOBORRADOR.My.Resources.Resources.azul
+        Me.ButtonBack.BackColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(42, Byte), Integer))
         Me.ButtonBack.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ButtonBack.ForeColor = System.Drawing.Color.White
         Me.ButtonBack.Location = New System.Drawing.Point(12, 12)
@@ -35,7 +35,7 @@ Partial Class MenuAgenda
         Me.ButtonBack.Size = New System.Drawing.Size(52, 37)
         Me.ButtonBack.TabIndex = 18
         Me.ButtonBack.Text = "←"
-        Me.ButtonBack.UseVisualStyleBackColor = True
+        Me.ButtonBack.UseVisualStyleBackColor = False
         '
         'MenuAgenda
         '
