@@ -22,6 +22,7 @@ Partial Class MenuEstadisticas
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(MenuEstadisticas))
         Me.ButtonBack = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
@@ -44,6 +45,7 @@ Partial Class MenuEstadisticas
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(42, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(861, 490)
         Me.Controls.Add(Me.ButtonBack)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "MenuEstadisticas"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "MenuEstadisticas"

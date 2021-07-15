@@ -22,6 +22,7 @@ Partial Class MenuGestionarUsuarios
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(MenuGestionarUsuarios))
         Me.btnAñadirUsuario = New System.Windows.Forms.Button()
         Me.btnEditarUsuario = New System.Windows.Forms.Button()
         Me.ButtonBack = New System.Windows.Forms.Button()
@@ -72,6 +73,7 @@ Partial Class MenuGestionarUsuarios
         Me.Controls.Add(Me.ButtonBack)
         Me.Controls.Add(Me.btnEditarUsuario)
         Me.Controls.Add(Me.btnAñadirUsuario)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "MenuGestionarUsuarios"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "MenuGestionarUsuarios"
