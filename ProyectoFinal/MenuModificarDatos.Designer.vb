@@ -51,13 +51,13 @@ Partial Class MenuModificarDatos
         '
         'ButtonBack
         '
-        Me.ButtonBack.BackColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(42, Byte), Integer))
+        Me.ButtonBack.BackColor = System.Drawing.Color.Transparent
+        Me.ButtonBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.ButtonBack.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ButtonBack.ForeColor = System.Drawing.Color.White
-        Me.ButtonBack.Location = New System.Drawing.Point(16, 15)
-        Me.ButtonBack.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.ButtonBack.Location = New System.Drawing.Point(12, 12)
         Me.ButtonBack.Name = "ButtonBack"
-        Me.ButtonBack.Size = New System.Drawing.Size(69, 46)
+        Me.ButtonBack.Size = New System.Drawing.Size(52, 37)
         Me.ButtonBack.TabIndex = 18
         Me.ButtonBack.Text = "←"
         Me.ButtonBack.UseVisualStyleBackColor = False
@@ -68,42 +68,45 @@ Partial Class MenuModificarDatos
         Me.Label1.BackColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(42, Byte), Integer))
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.White
-        Me.Label1.Location = New System.Drawing.Point(472, 56)
-        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label1.Location = New System.Drawing.Point(354, 46)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(365, 46)
+        Me.Label1.Size = New System.Drawing.Size(294, 37)
         Me.Label1.TabIndex = 20
         Me.Label1.Text = "Modificar mis datos"
         '
         'ButtonGuardar
         '
+        Me.ButtonGuardar.BackColor = System.Drawing.Color.Transparent
         Me.ButtonGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.ButtonGuardar.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ButtonGuardar.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.ButtonGuardar.Location = New System.Drawing.Point(586, 571)
+        Me.ButtonGuardar.Location = New System.Drawing.Point(453, 465)
+        Me.ButtonGuardar.Margin = New System.Windows.Forms.Padding(2)
         Me.ButtonGuardar.Name = "ButtonGuardar"
-        Me.ButtonGuardar.Size = New System.Drawing.Size(148, 57)
+        Me.ButtonGuardar.Size = New System.Drawing.Size(111, 46)
         Me.ButtonGuardar.TabIndex = 84
         Me.ButtonGuardar.Text = "Guardar"
-        Me.ButtonGuardar.UseVisualStyleBackColor = True
+        Me.ButtonGuardar.UseVisualStyleBackColor = False
         '
         'Label8
         '
         Me.Label8.AutoSize = True
         Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label8.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label8.Location = New System.Drawing.Point(189, 249)
+        Me.Label8.Location = New System.Drawing.Point(142, 202)
+        Me.Label8.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(58, 25)
+        Me.Label8.Size = New System.Drawing.Size(47, 20)
         Me.Label8.TabIndex = 82
         Me.Label8.Text = "Edad"
         '
         'TextBoxGenero
         '
         Me.TextBoxGenero.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBoxGenero.Location = New System.Drawing.Point(933, 288)
+        Me.TextBoxGenero.Location = New System.Drawing.Point(700, 234)
+        Me.TextBoxGenero.Margin = New System.Windows.Forms.Padding(2)
         Me.TextBoxGenero.Name = "TextBoxGenero"
-        Me.TextBoxGenero.Size = New System.Drawing.Size(179, 27)
+        Me.TextBoxGenero.Size = New System.Drawing.Size(135, 23)
         Me.TextBoxGenero.TabIndex = 81
         '
         'Label7
@@ -111,18 +114,20 @@ Partial Class MenuModificarDatos
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label7.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label7.Location = New System.Drawing.Point(192, 321)
+        Me.Label7.Location = New System.Drawing.Point(144, 261)
+        Me.Label7.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(63, 25)
+        Me.Label7.Size = New System.Drawing.Size(51, 20)
         Me.Label7.TabIndex = 80
         Me.Label7.Text = "Altura"
         '
         'TextBoxTelefono
         '
         Me.TextBoxTelefono.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBoxTelefono.Location = New System.Drawing.Point(934, 214)
+        Me.TextBoxTelefono.Location = New System.Drawing.Point(700, 174)
+        Me.TextBoxTelefono.Margin = New System.Windows.Forms.Padding(2)
         Me.TextBoxTelefono.Name = "TextBoxTelefono"
-        Me.TextBoxTelefono.Size = New System.Drawing.Size(179, 27)
+        Me.TextBoxTelefono.Size = New System.Drawing.Size(135, 23)
         Me.TextBoxTelefono.TabIndex = 79
         '
         'Label6
@@ -130,18 +135,20 @@ Partial Class MenuModificarDatos
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label6.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label6.Location = New System.Drawing.Point(1023, 186)
+        Me.Label6.Location = New System.Drawing.Point(767, 151)
+        Me.Label6.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(89, 25)
+        Me.Label6.Size = New System.Drawing.Size(71, 20)
         Me.Label6.TabIndex = 78
         Me.Label6.Text = "Teléfono"
         '
         'TextBoxCorreo
         '
         Me.TextBoxCorreo.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBoxCorreo.Location = New System.Drawing.Point(194, 493)
+        Me.TextBoxCorreo.Location = New System.Drawing.Point(146, 401)
+        Me.TextBoxCorreo.Margin = New System.Windows.Forms.Padding(2)
         Me.TextBoxCorreo.Name = "TextBoxCorreo"
-        Me.TextBoxCorreo.Size = New System.Drawing.Size(213, 27)
+        Me.TextBoxCorreo.Size = New System.Drawing.Size(161, 23)
         Me.TextBoxCorreo.TabIndex = 77
         '
         'Label5
@@ -149,18 +156,20 @@ Partial Class MenuModificarDatos
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label5.Location = New System.Drawing.Point(188, 457)
+        Me.Label5.Location = New System.Drawing.Point(141, 371)
+        Me.Label5.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(219, 25)
+        Me.Label5.Size = New System.Drawing.Size(178, 20)
         Me.Label5.TabIndex = 76
         Me.Label5.Text = "Indice de masa corporal"
         '
         'TextBoxCedula
         '
         Me.TextBoxCedula.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBoxCedula.Location = New System.Drawing.Point(194, 420)
+        Me.TextBoxCedula.Location = New System.Drawing.Point(146, 341)
+        Me.TextBoxCedula.Margin = New System.Windows.Forms.Padding(2)
         Me.TextBoxCedula.Name = "TextBoxCedula"
-        Me.TextBoxCedula.Size = New System.Drawing.Size(213, 27)
+        Me.TextBoxCedula.Size = New System.Drawing.Size(161, 23)
         Me.TextBoxCedula.TabIndex = 75
         '
         'LabelCédula
@@ -168,34 +177,38 @@ Partial Class MenuModificarDatos
         Me.LabelCédula.AutoSize = True
         Me.LabelCédula.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LabelCédula.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.LabelCédula.Location = New System.Drawing.Point(188, 384)
+        Me.LabelCédula.Location = New System.Drawing.Point(141, 312)
+        Me.LabelCédula.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.LabelCédula.Name = "LabelCédula"
-        Me.LabelCédula.Size = New System.Drawing.Size(57, 25)
+        Me.LabelCédula.Size = New System.Drawing.Size(45, 20)
         Me.LabelCédula.TabIndex = 74
         Me.LabelCédula.Text = "Peso"
         '
         'TextBoxApellido2
         '
         Me.TextBoxApellido2.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBoxApellido2.Location = New System.Drawing.Point(194, 349)
+        Me.TextBoxApellido2.Location = New System.Drawing.Point(146, 284)
+        Me.TextBoxApellido2.Margin = New System.Windows.Forms.Padding(2)
         Me.TextBoxApellido2.Name = "TextBoxApellido2"
-        Me.TextBoxApellido2.Size = New System.Drawing.Size(213, 27)
+        Me.TextBoxApellido2.Size = New System.Drawing.Size(161, 23)
         Me.TextBoxApellido2.TabIndex = 73
         '
         'TextBoxApellido1
         '
         Me.TextBoxApellido1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBoxApellido1.Location = New System.Drawing.Point(194, 277)
+        Me.TextBoxApellido1.Location = New System.Drawing.Point(146, 225)
+        Me.TextBoxApellido1.Margin = New System.Windows.Forms.Padding(2)
         Me.TextBoxApellido1.Name = "TextBoxApellido1"
-        Me.TextBoxApellido1.Size = New System.Drawing.Size(213, 27)
+        Me.TextBoxApellido1.Size = New System.Drawing.Size(161, 23)
         Me.TextBoxApellido1.TabIndex = 71
         '
         'TextBoxNombre
         '
         Me.TextBoxNombre.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBoxNombre.Location = New System.Drawing.Point(194, 203)
+        Me.TextBoxNombre.Location = New System.Drawing.Point(146, 165)
+        Me.TextBoxNombre.Margin = New System.Windows.Forms.Padding(2)
         Me.TextBoxNombre.Name = "TextBoxNombre"
-        Me.TextBoxNombre.Size = New System.Drawing.Size(213, 27)
+        Me.TextBoxNombre.Size = New System.Drawing.Size(161, 23)
         Me.TextBoxNombre.TabIndex = 69
         '
         'Label2
@@ -203,9 +216,10 @@ Partial Class MenuModificarDatos
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label2.Location = New System.Drawing.Point(188, 167)
+        Me.Label2.Location = New System.Drawing.Point(141, 136)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(81, 25)
+        Me.Label2.Size = New System.Drawing.Size(65, 20)
         Me.Label2.TabIndex = 68
         Me.Label2.Text = "Nombre"
         '
@@ -215,9 +229,10 @@ Partial Class MenuModificarDatos
         Me.ButtonEditarGenero.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ButtonEditarGenero.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.ButtonEditarGenero.ForeColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(42, Byte), Integer))
-        Me.ButtonEditarGenero.Location = New System.Drawing.Point(1118, 280)
+        Me.ButtonEditarGenero.Location = New System.Drawing.Point(838, 228)
+        Me.ButtonEditarGenero.Margin = New System.Windows.Forms.Padding(2)
         Me.ButtonEditarGenero.Name = "ButtonEditarGenero"
-        Me.ButtonEditarGenero.Size = New System.Drawing.Size(52, 45)
+        Me.ButtonEditarGenero.Size = New System.Drawing.Size(39, 37)
         Me.ButtonEditarGenero.TabIndex = 91
         Me.ButtonEditarGenero.UseVisualStyleBackColor = True
         '
@@ -227,9 +242,10 @@ Partial Class MenuModificarDatos
         Me.ButtonEditarTelefono.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ButtonEditarTelefono.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.ButtonEditarTelefono.ForeColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(42, Byte), Integer))
-        Me.ButtonEditarTelefono.Location = New System.Drawing.Point(1119, 203)
+        Me.ButtonEditarTelefono.Location = New System.Drawing.Point(839, 165)
+        Me.ButtonEditarTelefono.Margin = New System.Windows.Forms.Padding(2)
         Me.ButtonEditarTelefono.Name = "ButtonEditarTelefono"
-        Me.ButtonEditarTelefono.Size = New System.Drawing.Size(52, 45)
+        Me.ButtonEditarTelefono.Size = New System.Drawing.Size(39, 37)
         Me.ButtonEditarTelefono.TabIndex = 90
         Me.ButtonEditarTelefono.UseVisualStyleBackColor = True
         '
@@ -239,9 +255,10 @@ Partial Class MenuModificarDatos
         Me.ButtonEditarCorreo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ButtonEditarCorreo.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.ButtonEditarCorreo.ForeColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(42, Byte), Integer))
-        Me.ButtonEditarCorreo.Location = New System.Drawing.Point(416, 485)
+        Me.ButtonEditarCorreo.Location = New System.Drawing.Point(312, 394)
+        Me.ButtonEditarCorreo.Margin = New System.Windows.Forms.Padding(2)
         Me.ButtonEditarCorreo.Name = "ButtonEditarCorreo"
-        Me.ButtonEditarCorreo.Size = New System.Drawing.Size(52, 45)
+        Me.ButtonEditarCorreo.Size = New System.Drawing.Size(39, 37)
         Me.ButtonEditarCorreo.TabIndex = 89
         Me.ButtonEditarCorreo.UseVisualStyleBackColor = True
         '
@@ -251,9 +268,10 @@ Partial Class MenuModificarDatos
         Me.ButtonEditarCedula.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ButtonEditarCedula.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.ButtonEditarCedula.ForeColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(42, Byte), Integer))
-        Me.ButtonEditarCedula.Location = New System.Drawing.Point(413, 412)
+        Me.ButtonEditarCedula.Location = New System.Drawing.Point(310, 335)
+        Me.ButtonEditarCedula.Margin = New System.Windows.Forms.Padding(2)
         Me.ButtonEditarCedula.Name = "ButtonEditarCedula"
-        Me.ButtonEditarCedula.Size = New System.Drawing.Size(52, 45)
+        Me.ButtonEditarCedula.Size = New System.Drawing.Size(39, 37)
         Me.ButtonEditarCedula.TabIndex = 88
         Me.ButtonEditarCedula.UseVisualStyleBackColor = True
         '
@@ -263,9 +281,10 @@ Partial Class MenuModificarDatos
         Me.ButtonEditarApellido2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ButtonEditarApellido2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.ButtonEditarApellido2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(42, Byte), Integer))
-        Me.ButtonEditarApellido2.Location = New System.Drawing.Point(416, 341)
+        Me.ButtonEditarApellido2.Location = New System.Drawing.Point(312, 277)
+        Me.ButtonEditarApellido2.Margin = New System.Windows.Forms.Padding(2)
         Me.ButtonEditarApellido2.Name = "ButtonEditarApellido2"
-        Me.ButtonEditarApellido2.Size = New System.Drawing.Size(52, 45)
+        Me.ButtonEditarApellido2.Size = New System.Drawing.Size(39, 37)
         Me.ButtonEditarApellido2.TabIndex = 87
         Me.ButtonEditarApellido2.UseVisualStyleBackColor = True
         '
@@ -275,9 +294,10 @@ Partial Class MenuModificarDatos
         Me.ButtonEditarApellido1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ButtonEditarApellido1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.ButtonEditarApellido1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(42, Byte), Integer))
-        Me.ButtonEditarApellido1.Location = New System.Drawing.Point(416, 269)
+        Me.ButtonEditarApellido1.Location = New System.Drawing.Point(312, 219)
+        Me.ButtonEditarApellido1.Margin = New System.Windows.Forms.Padding(2)
         Me.ButtonEditarApellido1.Name = "ButtonEditarApellido1"
-        Me.ButtonEditarApellido1.Size = New System.Drawing.Size(52, 45)
+        Me.ButtonEditarApellido1.Size = New System.Drawing.Size(39, 37)
         Me.ButtonEditarApellido1.TabIndex = 86
         Me.ButtonEditarApellido1.UseVisualStyleBackColor = True
         '
@@ -287,9 +307,10 @@ Partial Class MenuModificarDatos
         Me.ButtonEditarNombre.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ButtonEditarNombre.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.ButtonEditarNombre.ForeColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(42, Byte), Integer))
-        Me.ButtonEditarNombre.Location = New System.Drawing.Point(416, 195)
+        Me.ButtonEditarNombre.Location = New System.Drawing.Point(312, 158)
+        Me.ButtonEditarNombre.Margin = New System.Windows.Forms.Padding(2)
         Me.ButtonEditarNombre.Name = "ButtonEditarNombre"
-        Me.ButtonEditarNombre.Size = New System.Drawing.Size(52, 45)
+        Me.ButtonEditarNombre.Size = New System.Drawing.Size(39, 37)
         Me.ButtonEditarNombre.TabIndex = 85
         Me.ButtonEditarNombre.UseVisualStyleBackColor = True
         '
@@ -298,18 +319,19 @@ Partial Class MenuModificarDatos
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label3.Location = New System.Drawing.Point(940, 260)
+        Me.Label3.Location = New System.Drawing.Point(705, 211)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(173, 25)
+        Me.Label3.Size = New System.Drawing.Size(140, 20)
         Me.Label3.TabIndex = 93
         Me.Label3.Text = "Correo Electrónico"
         '
         'MenuModificarDatos
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(42, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(1359, 794)
+        Me.ClientSize = New System.Drawing.Size(1019, 645)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.ButtonEditarGenero)
         Me.Controls.Add(Me.ButtonEditarTelefono)
@@ -334,7 +356,6 @@ Partial Class MenuModificarDatos
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.ButtonBack)
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Name = "MenuModificarDatos"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "MenuModificarDatos"

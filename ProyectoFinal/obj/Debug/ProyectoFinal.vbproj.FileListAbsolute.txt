@@ -54,3 +54,7 @@ C:\Users\hazie\Documents\GitHub\ProyFinalAzul\ProyectoFinal\obj\Debug\ProyectoFi
 C:\Users\hazie\Documents\GitHub\ProyFinalAzul\ProyectoFinal\obj\Debug\PROYECTOBORRADOR.exe
 C:\Users\hazie\Documents\GitHub\ProyFinalAzul\ProyectoFinal\obj\Debug\PROYECTOBORRADOR.xml
 C:\Users\hazie\Documents\GitHub\ProyFinalAzul\ProyectoFinal\obj\Debug\PROYECTOBORRADOR.pdb
+C:\Users\glenm\Documents\Proyectos Visual Studio\Proyecto Software #1\ProyFinalAzul\ProyectoFinal\obj\Debug\PROYECTOBORRADOR.MenuBuscarUsuario.resources
+C:\Users\glenm\Documents\Proyectos Visual Studio\Proyecto Software #1\ProyFinalAzul\ProyectoFinal\obj\Debug\PROYECTOBORRADOR.MenuGestionarAñadirUsuario.resources
+C:\Users\glenm\Documents\Proyectos Visual Studio\Proyecto Software #1\ProyFinalAzul\ProyectoFinal\obj\Debug\PROYECTOBORRADOR.MenuGestionarEditarUsuario.resources
+C:\Users\glenm\Documents\Proyectos Visual Studio\Proyecto Software #1\ProyFinalAzul\ProyectoFinal\obj\Debug\PROYECTOBORRADOR.MenuPrincipalUsuario.resources

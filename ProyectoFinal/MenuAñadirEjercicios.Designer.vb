@@ -40,65 +40,65 @@ Partial Class MenuAñadirEjercicios
         '
         'Button5
         '
-        Me.Button5.BackColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(42, Byte), Integer))
+        Me.Button5.BackColor = System.Drawing.Color.Transparent
+        Me.Button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button5.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button5.ForeColor = System.Drawing.Color.White
-        Me.Button5.Location = New System.Drawing.Point(956, 229)
-        Me.Button5.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Button5.Location = New System.Drawing.Point(717, 186)
         Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(165, 44)
+        Me.Button5.Size = New System.Drawing.Size(124, 36)
         Me.Button5.TabIndex = 6
         Me.Button5.Text = "Brazos"
         Me.Button5.UseVisualStyleBackColor = False
         '
         'ButtonPiernas
         '
-        Me.ButtonPiernas.BackColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(42, Byte), Integer))
+        Me.ButtonPiernas.BackColor = System.Drawing.Color.Transparent
+        Me.ButtonPiernas.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.ButtonPiernas.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ButtonPiernas.ForeColor = System.Drawing.Color.White
-        Me.ButtonPiernas.Location = New System.Drawing.Point(143, 229)
-        Me.ButtonPiernas.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.ButtonPiernas.Location = New System.Drawing.Point(107, 186)
         Me.ButtonPiernas.Name = "ButtonPiernas"
-        Me.ButtonPiernas.Size = New System.Drawing.Size(165, 44)
+        Me.ButtonPiernas.Size = New System.Drawing.Size(124, 36)
         Me.ButtonPiernas.TabIndex = 7
         Me.ButtonPiernas.Text = "Piernas"
         Me.ButtonPiernas.UseVisualStyleBackColor = False
         '
         'Button2
         '
-        Me.Button2.BackColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(42, Byte), Integer))
+        Me.Button2.BackColor = System.Drawing.Color.Transparent
+        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button2.ForeColor = System.Drawing.Color.White
-        Me.Button2.Location = New System.Drawing.Point(355, 229)
-        Me.Button2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Button2.Location = New System.Drawing.Point(266, 186)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(165, 44)
+        Me.Button2.Size = New System.Drawing.Size(124, 36)
         Me.Button2.TabIndex = 8
         Me.Button2.Text = "Espalda"
         Me.Button2.UseVisualStyleBackColor = False
         '
         'Button3
         '
-        Me.Button3.BackColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(42, Byte), Integer))
+        Me.Button3.BackColor = System.Drawing.Color.Transparent
+        Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button3.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button3.ForeColor = System.Drawing.Color.White
-        Me.Button3.Location = New System.Drawing.Point(557, 229)
-        Me.Button3.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Button3.Location = New System.Drawing.Point(418, 186)
         Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(165, 44)
+        Me.Button3.Size = New System.Drawing.Size(124, 36)
         Me.Button3.TabIndex = 9
         Me.Button3.Text = "Pecho"
         Me.Button3.UseVisualStyleBackColor = False
         '
         'Button4
         '
-        Me.Button4.BackColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(42, Byte), Integer))
+        Me.Button4.BackColor = System.Drawing.Color.Transparent
+        Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button4.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button4.ForeColor = System.Drawing.Color.White
-        Me.Button4.Location = New System.Drawing.Point(759, 229)
-        Me.Button4.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Button4.Location = New System.Drawing.Point(569, 186)
         Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(165, 44)
+        Me.Button4.Size = New System.Drawing.Size(124, 36)
         Me.Button4.TabIndex = 10
         Me.Button4.Text = "Hombros"
         Me.Button4.UseVisualStyleBackColor = False
@@ -112,10 +112,9 @@ Partial Class MenuAñadirEjercicios
         Me.Lista1.ForeColor = System.Drawing.Color.White
         Me.Lista1.FormattingEnabled = True
         Me.Lista1.Items.AddRange(New Object() {"Box Jump", "Deadlift", "Hip Thrust", "Lunge", "Squad"})
-        Me.Lista1.Location = New System.Drawing.Point(143, 281)
-        Me.Lista1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Lista1.Location = New System.Drawing.Point(107, 228)
         Me.Lista1.Name = "Lista1"
-        Me.Lista1.Size = New System.Drawing.Size(165, 250)
+        Me.Lista1.Size = New System.Drawing.Size(124, 189)
         Me.Lista1.Sorted = True
         Me.Lista1.TabIndex = 11
         Me.Lista1.Visible = False
@@ -129,10 +128,9 @@ Partial Class MenuAñadirEjercicios
         Me.Lista2.ForeColor = System.Drawing.Color.White
         Me.Lista2.FormattingEnabled = True
         Me.Lista2.Items.AddRange(New Object() {"Chin Up", "Incline Row", "Pull Up", "Seated Row", "Upright Row"})
-        Me.Lista2.Location = New System.Drawing.Point(355, 281)
-        Me.Lista2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Lista2.Location = New System.Drawing.Point(266, 228)
         Me.Lista2.Name = "Lista2"
-        Me.Lista2.Size = New System.Drawing.Size(165, 250)
+        Me.Lista2.Size = New System.Drawing.Size(124, 189)
         Me.Lista2.Sorted = True
         Me.Lista2.TabIndex = 12
         Me.Lista2.Visible = False
@@ -146,10 +144,9 @@ Partial Class MenuAñadirEjercicios
         Me.Lista3.ForeColor = System.Drawing.Color.White
         Me.Lista3.FormattingEnabled = True
         Me.Lista3.Items.AddRange(New Object() {"Bench Press", "Chest Press", "Incline Dumbbel", "Pullover", "Push Ups"})
-        Me.Lista3.Location = New System.Drawing.Point(557, 281)
-        Me.Lista3.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Lista3.Location = New System.Drawing.Point(418, 228)
         Me.Lista3.Name = "Lista3"
-        Me.Lista3.Size = New System.Drawing.Size(165, 250)
+        Me.Lista3.Size = New System.Drawing.Size(124, 189)
         Me.Lista3.Sorted = True
         Me.Lista3.TabIndex = 13
         Me.Lista3.Visible = False
@@ -163,10 +160,9 @@ Partial Class MenuAñadirEjercicios
         Me.Lista4.ForeColor = System.Drawing.Color.White
         Me.Lista4.FormattingEnabled = True
         Me.Lista4.Items.AddRange(New Object() {"Arnold Press", "Lateral Raise", "Push Press", "Reverse Fly", "Shrug"})
-        Me.Lista4.Location = New System.Drawing.Point(759, 281)
-        Me.Lista4.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Lista4.Location = New System.Drawing.Point(569, 228)
         Me.Lista4.Name = "Lista4"
-        Me.Lista4.Size = New System.Drawing.Size(165, 250)
+        Me.Lista4.Size = New System.Drawing.Size(124, 189)
         Me.Lista4.Sorted = True
         Me.Lista4.TabIndex = 14
         Me.Lista4.Visible = False
@@ -180,36 +176,35 @@ Partial Class MenuAñadirEjercicios
         Me.Lista5.ForeColor = System.Drawing.Color.White
         Me.Lista5.FormattingEnabled = True
         Me.Lista5.Items.AddRange(New Object() {"Bench Press", "Chest Press", "Dumbbell Flye", "Pullover", "Push Ups"})
-        Me.Lista5.Location = New System.Drawing.Point(956, 281)
-        Me.Lista5.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Lista5.Location = New System.Drawing.Point(717, 228)
         Me.Lista5.Name = "Lista5"
-        Me.Lista5.Size = New System.Drawing.Size(165, 250)
+        Me.Lista5.Size = New System.Drawing.Size(124, 189)
         Me.Lista5.Sorted = True
         Me.Lista5.TabIndex = 15
         Me.Lista5.Visible = False
         '
         'Button6
         '
-        Me.Button6.BackColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(42, Byte), Integer))
+        Me.Button6.BackColor = System.Drawing.Color.Transparent
+        Me.Button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button6.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button6.ForeColor = System.Drawing.Color.White
-        Me.Button6.Location = New System.Drawing.Point(1219, 738)
-        Me.Button6.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Button6.Location = New System.Drawing.Point(896, 585)
         Me.Button6.Name = "Button6"
-        Me.Button6.Size = New System.Drawing.Size(127, 43)
+        Me.Button6.Size = New System.Drawing.Size(95, 35)
         Me.Button6.TabIndex = 16
         Me.Button6.Text = "Guardar"
         Me.Button6.UseVisualStyleBackColor = False
         '
         'ButtonBack
         '
-        Me.ButtonBack.BackColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(42, Byte), Integer))
+        Me.ButtonBack.BackColor = System.Drawing.Color.Transparent
+        Me.ButtonBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.ButtonBack.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ButtonBack.ForeColor = System.Drawing.Color.White
-        Me.ButtonBack.Location = New System.Drawing.Point(16, 15)
-        Me.ButtonBack.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.ButtonBack.Location = New System.Drawing.Point(12, 12)
         Me.ButtonBack.Name = "ButtonBack"
-        Me.ButtonBack.Size = New System.Drawing.Size(69, 46)
+        Me.ButtonBack.Size = New System.Drawing.Size(52, 37)
         Me.ButtonBack.TabIndex = 17
         Me.ButtonBack.Text = "←"
         Me.ButtonBack.UseVisualStyleBackColor = False
@@ -220,19 +215,18 @@ Partial Class MenuAñadirEjercicios
         Me.Label1.BackColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(42, Byte), Integer))
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.White
-        Me.Label1.Location = New System.Drawing.Point(431, 52)
-        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label1.Location = New System.Drawing.Point(323, 42)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(389, 46)
+        Me.Label1.Size = New System.Drawing.Size(311, 37)
         Me.Label1.TabIndex = 20
         Me.Label1.Text = "Añadir mis ejercicios"
         '
         'MenuAñadirEjercicios
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(42, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(1359, 794)
+        Me.ClientSize = New System.Drawing.Size(1019, 645)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.ButtonBack)
         Me.Controls.Add(Me.Button6)
@@ -247,7 +241,6 @@ Partial Class MenuAñadirEjercicios
         Me.Controls.Add(Me.ButtonPiernas)
         Me.Controls.Add(Me.Button5)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Name = "MenuAñadirEjercicios"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "MenuAñadirEjercicios"

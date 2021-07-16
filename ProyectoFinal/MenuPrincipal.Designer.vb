@@ -34,7 +34,8 @@ Partial Class MenuPrincipal
         '
         'ButtonAñadirEjercicios
         '
-        Me.ButtonAñadirEjercicios.BackColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(42, Byte), Integer))
+        Me.ButtonAñadirEjercicios.BackColor = System.Drawing.Color.Transparent
+        Me.ButtonAñadirEjercicios.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.ButtonAñadirEjercicios.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ButtonAñadirEjercicios.ForeColor = System.Drawing.Color.White
         Me.ButtonAñadirEjercicios.Location = New System.Drawing.Point(182, 233)
@@ -46,7 +47,8 @@ Partial Class MenuPrincipal
         '
         'ButtonModificarDatos
         '
-        Me.ButtonModificarDatos.BackColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(42, Byte), Integer))
+        Me.ButtonModificarDatos.BackColor = System.Drawing.Color.Transparent
+        Me.ButtonModificarDatos.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.ButtonModificarDatos.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ButtonModificarDatos.ForeColor = System.Drawing.Color.White
         Me.ButtonModificarDatos.Location = New System.Drawing.Point(182, 314)
@@ -58,7 +60,8 @@ Partial Class MenuPrincipal
         '
         'ButtonGestionarUsuarios
         '
-        Me.ButtonGestionarUsuarios.BackColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(42, Byte), Integer))
+        Me.ButtonGestionarUsuarios.BackColor = System.Drawing.Color.Transparent
+        Me.ButtonGestionarUsuarios.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.ButtonGestionarUsuarios.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ButtonGestionarUsuarios.ForeColor = System.Drawing.Color.White
         Me.ButtonGestionarUsuarios.Location = New System.Drawing.Point(182, 396)
@@ -70,7 +73,8 @@ Partial Class MenuPrincipal
         '
         'ButtonAgenda
         '
-        Me.ButtonAgenda.BackColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(42, Byte), Integer))
+        Me.ButtonAgenda.BackColor = System.Drawing.Color.Transparent
+        Me.ButtonAgenda.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.ButtonAgenda.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ButtonAgenda.ForeColor = System.Drawing.Color.White
         Me.ButtonAgenda.Location = New System.Drawing.Point(630, 233)
@@ -82,7 +86,8 @@ Partial Class MenuPrincipal
         '
         'ButtonEstadisticas
         '
-        Me.ButtonEstadisticas.BackColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(42, Byte), Integer))
+        Me.ButtonEstadisticas.BackColor = System.Drawing.Color.Transparent
+        Me.ButtonEstadisticas.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.ButtonEstadisticas.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ButtonEstadisticas.ForeColor = System.Drawing.Color.White
         Me.ButtonEstadisticas.Location = New System.Drawing.Point(630, 314)
@@ -94,7 +99,8 @@ Partial Class MenuPrincipal
         '
         'Button1
         '
-        Me.Button1.BackColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(42, Byte), Integer))
+        Me.Button1.BackColor = System.Drawing.Color.Transparent
+        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button1.ForeColor = System.Drawing.Color.White
         Me.Button1.Location = New System.Drawing.Point(881, 592)
