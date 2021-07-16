@@ -58,7 +58,6 @@ artifacts/
 StyleCopReport.xml
 
 # Files built by Visual Studio
-*.suo
 *.cache
 *_i.c
 *_p.c
@@ -334,3 +333,4 @@ ASALocalRun/
 
 # Local History for Visual Studio
 .localhistory/
+ProyectoFinal/.vs/ProyectoFinal/v16/.suo
