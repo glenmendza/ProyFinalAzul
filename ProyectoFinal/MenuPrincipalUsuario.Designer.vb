@@ -37,9 +37,10 @@ Partial Class MenuPrincipalUsuario
         Me.Label1.BackColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(42, Byte), Integer))
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.White
-        Me.Label1.Location = New System.Drawing.Point(469, 67)
+        Me.Label1.Location = New System.Drawing.Point(625, 82)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(96, 37)
+        Me.Label1.Size = New System.Drawing.Size(119, 46)
         Me.Label1.TabIndex = 27
         Me.Label1.Text = "Menu"
         '
@@ -49,9 +50,10 @@ Partial Class MenuPrincipalUsuario
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button1.ForeColor = System.Drawing.Color.White
-        Me.Button1.Location = New System.Drawing.Point(881, 592)
+        Me.Button1.Location = New System.Drawing.Point(1175, 729)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(4)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(126, 41)
+        Me.Button1.Size = New System.Drawing.Size(168, 50)
         Me.Button1.TabIndex = 33
         Me.Button1.Text = "Cerrar sesión"
         Me.Button1.UseVisualStyleBackColor = False
@@ -62,9 +64,10 @@ Partial Class MenuPrincipalUsuario
         Me.ButtonEstadisticas.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.ButtonEstadisticas.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ButtonEstadisticas.ForeColor = System.Drawing.Color.White
-        Me.ButtonEstadisticas.Location = New System.Drawing.Point(630, 314)
+        Me.ButtonEstadisticas.Location = New System.Drawing.Point(840, 386)
+        Me.ButtonEstadisticas.Margin = New System.Windows.Forms.Padding(4)
         Me.ButtonEstadisticas.Name = "ButtonEstadisticas"
-        Me.ButtonEstadisticas.Size = New System.Drawing.Size(224, 57)
+        Me.ButtonEstadisticas.Size = New System.Drawing.Size(299, 70)
         Me.ButtonEstadisticas.TabIndex = 32
         Me.ButtonEstadisticas.Text = "Estadísticas"
         Me.ButtonEstadisticas.UseVisualStyleBackColor = False
@@ -75,9 +78,10 @@ Partial Class MenuPrincipalUsuario
         Me.ButtonAgenda.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.ButtonAgenda.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ButtonAgenda.ForeColor = System.Drawing.Color.White
-        Me.ButtonAgenda.Location = New System.Drawing.Point(630, 233)
+        Me.ButtonAgenda.Location = New System.Drawing.Point(840, 287)
+        Me.ButtonAgenda.Margin = New System.Windows.Forms.Padding(4)
         Me.ButtonAgenda.Name = "ButtonAgenda"
-        Me.ButtonAgenda.Size = New System.Drawing.Size(224, 57)
+        Me.ButtonAgenda.Size = New System.Drawing.Size(299, 70)
         Me.ButtonAgenda.TabIndex = 31
         Me.ButtonAgenda.Text = "Agenda"
         Me.ButtonAgenda.UseVisualStyleBackColor = False
@@ -88,9 +92,10 @@ Partial Class MenuPrincipalUsuario
         Me.ButtonModificarDatos.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.ButtonModificarDatos.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ButtonModificarDatos.ForeColor = System.Drawing.Color.White
-        Me.ButtonModificarDatos.Location = New System.Drawing.Point(182, 314)
+        Me.ButtonModificarDatos.Location = New System.Drawing.Point(243, 386)
+        Me.ButtonModificarDatos.Margin = New System.Windows.Forms.Padding(4)
         Me.ButtonModificarDatos.Name = "ButtonModificarDatos"
-        Me.ButtonModificarDatos.Size = New System.Drawing.Size(224, 57)
+        Me.ButtonModificarDatos.Size = New System.Drawing.Size(299, 70)
         Me.ButtonModificarDatos.TabIndex = 29
         Me.ButtonModificarDatos.Text = "Modificar datos"
         Me.ButtonModificarDatos.UseVisualStyleBackColor = False
@@ -101,19 +106,20 @@ Partial Class MenuPrincipalUsuario
         Me.ButtonAñadirEjercicios.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.ButtonAñadirEjercicios.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ButtonAñadirEjercicios.ForeColor = System.Drawing.Color.White
-        Me.ButtonAñadirEjercicios.Location = New System.Drawing.Point(182, 233)
+        Me.ButtonAñadirEjercicios.Location = New System.Drawing.Point(243, 287)
+        Me.ButtonAñadirEjercicios.Margin = New System.Windows.Forms.Padding(4)
         Me.ButtonAñadirEjercicios.Name = "ButtonAñadirEjercicios"
-        Me.ButtonAñadirEjercicios.Size = New System.Drawing.Size(224, 57)
+        Me.ButtonAñadirEjercicios.Size = New System.Drawing.Size(299, 70)
         Me.ButtonAñadirEjercicios.TabIndex = 28
         Me.ButtonAñadirEjercicios.Text = "Añadir ejercicios"
         Me.ButtonAñadirEjercicios.UseVisualStyleBackColor = False
         '
         'MenuPrincipalUsuario
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(42, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(1019, 645)
+        Me.ClientSize = New System.Drawing.Size(1359, 794)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.ButtonEstadisticas)
         Me.Controls.Add(Me.ButtonAgenda)
@@ -121,7 +127,7 @@ Partial Class MenuPrincipalUsuario
         Me.Controls.Add(Me.ButtonAñadirEjercicios)
         Me.Controls.Add(Me.Label1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
-        Me.Margin = New System.Windows.Forms.Padding(2)
+        Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Name = "MenuPrincipalUsuario"
         Me.Text = "MenuPrincipalUsuario"
         Me.ResumeLayout(False)

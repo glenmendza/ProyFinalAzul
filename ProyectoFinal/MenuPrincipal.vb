@@ -1,6 +1,6 @@
 ﻿Public Class MenuPrincipal
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles ButtonAñadirEjercicios.Click
+    Private Sub Button1_Click(sender As Object, e As EventArgs)
         Me.Hide()
         MenuAñadirEjercicios.Show()
     End Sub
@@ -32,5 +32,10 @@
 
     Private Sub LinkLabel1_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs)
 
+    End Sub
+
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        Me.Hide()
+        MenuAñadirEjercicios.Show()
     End Sub
 End Class

@@ -59,4 +59,15 @@
         MenuPrincipal.Show()
     End Sub
 
+    Private Sub Button1_Click_1(sender As Object, e As EventArgs) Handles ButtonFecha.Click
+        If Calendario.Visible = True Then
+            Calendario.Visible = False
+        Else
+            Calendario.Visible = True
+        End If
+    End Sub
+
+    Private Sub Calendario_DateChanged(sender As Object, e As DateRangeEventArgs) Handles Calendario.DateChanged
+
+    End Sub
 End Class

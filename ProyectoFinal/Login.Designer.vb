@@ -31,6 +31,7 @@ Partial Class Login
         Me.ButtonLogin = New System.Windows.Forms.Button()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.LinkLabel1 = New System.Windows.Forms.LinkLabel()
+        Me.Button1 = New System.Windows.Forms.Button()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -40,10 +41,11 @@ Partial Class Login
         Me.Label1.BackColor = System.Drawing.Color.Transparent
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 48.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.White
-        Me.Label1.Location = New System.Drawing.Point(69, 72)
+        Me.Label1.Location = New System.Drawing.Point(92, 89)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
         Me.Label1.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.Label1.Size = New System.Drawing.Size(362, 73)
+        Me.Label1.Size = New System.Drawing.Size(451, 91)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "FIT Tracker"
         '
@@ -53,9 +55,10 @@ Partial Class Login
         Me.Label2.BackColor = System.Drawing.Color.Transparent
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.White
-        Me.Label2.Location = New System.Drawing.Point(568, 284)
+        Me.Label2.Location = New System.Drawing.Point(757, 350)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(86, 25)
+        Me.Label2.Size = New System.Drawing.Size(108, 31)
         Me.Label2.TabIndex = 1
         Me.Label2.Text = "Cédula:"
         '
@@ -65,28 +68,31 @@ Partial Class Login
         Me.Label3.BackColor = System.Drawing.Color.Transparent
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.White
-        Me.Label3.Location = New System.Drawing.Point(525, 404)
+        Me.Label3.Location = New System.Drawing.Point(700, 497)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(129, 25)
+        Me.Label3.Size = New System.Drawing.Size(163, 31)
         Me.Label3.TabIndex = 2
         Me.Label3.Text = "Contraseña:"
         '
         'TextBox1
         '
         Me.TextBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox1.Location = New System.Drawing.Point(709, 278)
+        Me.TextBox1.Location = New System.Drawing.Point(945, 342)
+        Me.TextBox1.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox1.MaxLength = 50
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(254, 35)
+        Me.TextBox1.Size = New System.Drawing.Size(337, 41)
         Me.TextBox1.TabIndex = 3
         '
         'TextBox2
         '
         Me.TextBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox2.Location = New System.Drawing.Point(709, 398)
+        Me.TextBox2.Location = New System.Drawing.Point(945, 490)
+        Me.TextBox2.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox2.MaxLength = 50
         Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(254, 35)
+        Me.TextBox2.Size = New System.Drawing.Size(337, 41)
         Me.TextBox2.TabIndex = 4
         Me.TextBox2.UseSystemPasswordChar = True
         '
@@ -96,11 +102,12 @@ Partial Class Login
         Me.ButtonLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.ButtonLogin.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ButtonLogin.ForeColor = System.Drawing.Color.White
-        Me.ButtonLogin.Location = New System.Drawing.Point(737, 508)
+        Me.ButtonLogin.Location = New System.Drawing.Point(1106, 639)
+        Me.ButtonLogin.Margin = New System.Windows.Forms.Padding(4)
         Me.ButtonLogin.Name = "ButtonLogin"
-        Me.ButtonLogin.Size = New System.Drawing.Size(198, 54)
+        Me.ButtonLogin.Size = New System.Drawing.Size(218, 89)
         Me.ButtonLogin.TabIndex = 5
-        Me.ButtonLogin.Text = "Ingresar"
+        Me.ButtonLogin.Text = "Ingresar como Admin"
         Me.ButtonLogin.UseVisualStyleBackColor = False
         '
         'PictureBox1
@@ -108,9 +115,10 @@ Partial Class Login
         Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox1.BackgroundImage = CType(resources.GetObject("PictureBox1.BackgroundImage"), System.Drawing.Image)
         Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.PictureBox1.Location = New System.Drawing.Point(757, 72)
+        Me.PictureBox1.Location = New System.Drawing.Point(1009, 89)
+        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(4)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(157, 164)
+        Me.PictureBox1.Size = New System.Drawing.Size(209, 202)
         Me.PictureBox1.TabIndex = 6
         Me.PictureBox1.TabStop = False
         '
@@ -120,20 +128,36 @@ Partial Class Login
         Me.LinkLabel1.BackColor = System.Drawing.Color.Transparent
         Me.LinkLabel1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LinkLabel1.LinkColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.LinkLabel1.Location = New System.Drawing.Point(741, 445)
+        Me.LinkLabel1.Location = New System.Drawing.Point(988, 548)
+        Me.LinkLabel1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.LinkLabel1.Name = "LinkLabel1"
-        Me.LinkLabel1.Size = New System.Drawing.Size(194, 20)
+        Me.LinkLabel1.Size = New System.Drawing.Size(240, 25)
         Me.LinkLabel1.TabIndex = 7
         Me.LinkLabel1.TabStop = True
         Me.LinkLabel1.Text = "¿Olvidaste tu contraseña?"
         '
+        'Button1
+        '
+        Me.Button1.BackColor = System.Drawing.Color.Transparent
+        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.ForeColor = System.Drawing.Color.White
+        Me.Button1.Location = New System.Drawing.Point(866, 639)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(4)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(199, 89)
+        Me.Button1.TabIndex = 8
+        Me.Button1.Text = "Ingresar "
+        Me.Button1.UseVisualStyleBackColor = False
+        '
         'Login
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ClientSize = New System.Drawing.Size(1015, 641)
+        Me.ClientSize = New System.Drawing.Size(1353, 789)
+        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.LinkLabel1)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.ButtonLogin)
@@ -144,6 +168,7 @@ Partial Class Login
         Me.Controls.Add(Me.Label1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "Login"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Login"
@@ -161,4 +186,5 @@ Partial Class Login
     Friend WithEvents ButtonLogin As Button
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents LinkLabel1 As LinkLabel
+    Friend WithEvents Button1 As Button
 End Class
