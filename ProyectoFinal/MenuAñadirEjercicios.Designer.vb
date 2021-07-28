@@ -186,11 +186,11 @@ Partial Class MenuAñadirEjercicios
         Me.Lista5.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Lista5.ForeColor = System.Drawing.Color.White
         Me.Lista5.FormattingEnabled = True
-        Me.Lista5.Items.AddRange(New Object() {"Bench Press", "Chest Press", "Dumbbell Flye", "Pullover", "Push Ups"})
+        Me.Lista5.Items.AddRange(New Object() {"Concentration Curl", "Dips", "Hammer Curl", "Incline Curl", "Tricep Extension"})
         Me.Lista5.Location = New System.Drawing.Point(951, 354)
         Me.Lista5.Margin = New System.Windows.Forms.Padding(4)
         Me.Lista5.Name = "Lista5"
-        Me.Lista5.Size = New System.Drawing.Size(165, 225)
+        Me.Lista5.Size = New System.Drawing.Size(199, 225)
         Me.Lista5.Sorted = True
         Me.Lista5.TabIndex = 15
         Me.Lista5.Visible = False
