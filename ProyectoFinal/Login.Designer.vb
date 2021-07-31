@@ -26,12 +26,12 @@ Partial Class Login
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.ButtonLogin = New System.Windows.Forms.Button()
+        Me.TextBoxCedula = New System.Windows.Forms.TextBox()
+        Me.TextBoxContraseña = New System.Windows.Forms.TextBox()
+        Me.BotonIngresarAdmin = New System.Windows.Forms.Button()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.LinkLabel1 = New System.Windows.Forms.LinkLabel()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.BotonIngresar = New System.Windows.Forms.Button()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -75,40 +75,40 @@ Partial Class Login
         Me.Label3.TabIndex = 2
         Me.Label3.Text = "Contraseña:"
         '
-        'TextBox1
+        'TextBoxCedula
         '
-        Me.TextBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox1.Location = New System.Drawing.Point(945, 342)
-        Me.TextBox1.Margin = New System.Windows.Forms.Padding(4)
-        Me.TextBox1.MaxLength = 50
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(337, 41)
-        Me.TextBox1.TabIndex = 3
+        Me.TextBoxCedula.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBoxCedula.Location = New System.Drawing.Point(945, 342)
+        Me.TextBoxCedula.Margin = New System.Windows.Forms.Padding(4)
+        Me.TextBoxCedula.MaxLength = 50
+        Me.TextBoxCedula.Name = "TextBoxCedula"
+        Me.TextBoxCedula.Size = New System.Drawing.Size(337, 41)
+        Me.TextBoxCedula.TabIndex = 3
         '
-        'TextBox2
+        'TextBoxContraseña
         '
-        Me.TextBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox2.Location = New System.Drawing.Point(945, 490)
-        Me.TextBox2.Margin = New System.Windows.Forms.Padding(4)
-        Me.TextBox2.MaxLength = 50
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(337, 41)
-        Me.TextBox2.TabIndex = 4
-        Me.TextBox2.UseSystemPasswordChar = True
+        Me.TextBoxContraseña.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBoxContraseña.Location = New System.Drawing.Point(945, 490)
+        Me.TextBoxContraseña.Margin = New System.Windows.Forms.Padding(4)
+        Me.TextBoxContraseña.MaxLength = 50
+        Me.TextBoxContraseña.Name = "TextBoxContraseña"
+        Me.TextBoxContraseña.Size = New System.Drawing.Size(337, 41)
+        Me.TextBoxContraseña.TabIndex = 4
+        Me.TextBoxContraseña.UseSystemPasswordChar = True
         '
-        'ButtonLogin
+        'BotonIngresarAdmin
         '
-        Me.ButtonLogin.BackColor = System.Drawing.Color.Transparent
-        Me.ButtonLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.ButtonLogin.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ButtonLogin.ForeColor = System.Drawing.Color.White
-        Me.ButtonLogin.Location = New System.Drawing.Point(1106, 639)
-        Me.ButtonLogin.Margin = New System.Windows.Forms.Padding(4)
-        Me.ButtonLogin.Name = "ButtonLogin"
-        Me.ButtonLogin.Size = New System.Drawing.Size(218, 89)
-        Me.ButtonLogin.TabIndex = 5
-        Me.ButtonLogin.Text = "Ingresar como Admin"
-        Me.ButtonLogin.UseVisualStyleBackColor = False
+        Me.BotonIngresarAdmin.BackColor = System.Drawing.Color.Transparent
+        Me.BotonIngresarAdmin.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BotonIngresarAdmin.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BotonIngresarAdmin.ForeColor = System.Drawing.Color.White
+        Me.BotonIngresarAdmin.Location = New System.Drawing.Point(1106, 639)
+        Me.BotonIngresarAdmin.Margin = New System.Windows.Forms.Padding(4)
+        Me.BotonIngresarAdmin.Name = "BotonIngresarAdmin"
+        Me.BotonIngresarAdmin.Size = New System.Drawing.Size(218, 89)
+        Me.BotonIngresarAdmin.TabIndex = 5
+        Me.BotonIngresarAdmin.Text = "Ingresar como Admin"
+        Me.BotonIngresarAdmin.UseVisualStyleBackColor = False
         '
         'PictureBox1
         '
@@ -136,19 +136,19 @@ Partial Class Login
         Me.LinkLabel1.TabStop = True
         Me.LinkLabel1.Text = "¿Olvidaste tu contraseña?"
         '
-        'Button1
+        'BotonIngresar
         '
-        Me.Button1.BackColor = System.Drawing.Color.Transparent
-        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.ForeColor = System.Drawing.Color.White
-        Me.Button1.Location = New System.Drawing.Point(866, 639)
-        Me.Button1.Margin = New System.Windows.Forms.Padding(4)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(199, 89)
-        Me.Button1.TabIndex = 8
-        Me.Button1.Text = "Ingresar "
-        Me.Button1.UseVisualStyleBackColor = False
+        Me.BotonIngresar.BackColor = System.Drawing.Color.Transparent
+        Me.BotonIngresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BotonIngresar.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BotonIngresar.ForeColor = System.Drawing.Color.White
+        Me.BotonIngresar.Location = New System.Drawing.Point(866, 639)
+        Me.BotonIngresar.Margin = New System.Windows.Forms.Padding(4)
+        Me.BotonIngresar.Name = "BotonIngresar"
+        Me.BotonIngresar.Size = New System.Drawing.Size(199, 89)
+        Me.BotonIngresar.TabIndex = 8
+        Me.BotonIngresar.Text = "Ingresar "
+        Me.BotonIngresar.UseVisualStyleBackColor = False
         '
         'Login
         '
@@ -157,12 +157,12 @@ Partial Class Login
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(1353, 789)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.BotonIngresar)
         Me.Controls.Add(Me.LinkLabel1)
         Me.Controls.Add(Me.PictureBox1)
-        Me.Controls.Add(Me.ButtonLogin)
-        Me.Controls.Add(Me.TextBox2)
-        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.BotonIngresarAdmin)
+        Me.Controls.Add(Me.TextBoxContraseña)
+        Me.Controls.Add(Me.TextBoxCedula)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
@@ -181,10 +181,10 @@ Partial Class Login
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents TextBox2 As TextBox
-    Friend WithEvents ButtonLogin As Button
+    Friend WithEvents TextBoxCedula As TextBox
+    Friend WithEvents TextBoxContraseña As TextBox
+    Friend WithEvents BotonIngresarAdmin As Button
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents LinkLabel1 As LinkLabel
-    Friend WithEvents Button1 As Button
+    Friend WithEvents BotonIngresar As Button
 End Class
