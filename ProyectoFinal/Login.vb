@@ -16,54 +16,49 @@ Public Class Login
         Catch ex As Exception
         End Try
     End Sub
-    Public Function Insertar(ByVal Cedula As Integer,
-                         ByVal Nombre As String, PrimerApellido As String, SegundoApellido As String, FechaNacimiento As Date,
-                             Correo As String, Genero As Char, Acceso As String, Contraseña As String, Telefono As Integer)
 
-        Dim sCon As String = "data source=MSI; initial catalog = Gym; Integrated Security = True"
-        Dim sel As String
-        Dim NombreTabla As String = "Usuarios"
-
-        sel = "INSERT INTO " & NombreTabla &
-            " (Cedula, Nombre, PrimerApellido, SegundoApellido, FechaNacimiento, Correo, Genero, Acceso, Contraseña, Telefono) " &
-            "VALUES " &
-            "(@Cedula, @Nombre, @PrimerApellido, @SegundoApellido, @FechaNacimiento, @Correo, @Genero, @Acceso, @Contraseña, @Telefono )"
-
-        Using con As New SqlConnection(sCon)
-
-            Dim cmd As New SqlCommand(sel, con)
-            cmd.Parameters.AddWithValue("@Cedula", Cedula)
-            cmd.Parameters.AddWithValue("@Nombre", Nombre)
-            cmd.Parameters.AddWithValue("@PrimerApellido", PrimerApellido)
-            cmd.Parameters.AddWithValue("@SegundoApellido", SegundoApellido)
-            cmd.Parameters.AddWithValue("@FechaNacimiento", FechaNacimiento)
-            cmd.Parameters.AddWithValue("@Correo", Correo)
-            cmd.Parameters.AddWithValue("@Genero", Genero)
-            cmd.Parameters.AddWithValue("@Acceso", Acceso)
-            cmd.Parameters.AddWithValue("@Contraseña", Contraseña)
-            cmd.Parameters.AddWithValue("@Telefono", Telefono)
-
-
-
-            con.Open()
-            Dim t As Integer = CInt(cmd.ExecuteScalar())
-            con.Close()
-            Return t
-        End Using
-    End Function
-    'fin conexion a base de datos
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles BotonIngresarAdmin.Click 'verificacion de datos boton Ingresar como admin
-
 
         If TextBoxCedula.Text = "" Or TextBoxContraseña.Text = "" Then
             MsgBox("Debe ingresar ambos datos", MessageBoxIcon.Information, "FitTracker")
 
-        ElseIf Len(TextBoxCedula.Text) > 9 Then
-            MsgBox("La cédula no puede tener más de 9 dígitos", MessageBoxIcon.Error, "FitTracker")
+        ElseIf Len(TextBoxCedula.Text) > 9 Or Len(TextBoxCedula.Text) < 9 Then
+            MsgBox("La cédula debe tener 9 dígitos", MessageBoxIcon.Error, "FitTracker")
 
-            Me.Hide()
-            MenuPrincipalUsuario.Show()
-        End If
+        Else
+            Dim conn As New SqlConnection
+            conn.ConnectionString = ("data source=MSI; initial catalog = Gym; Integrated Security = True")
+
+            conn.Open()
+            Dim strsql As String
+
+
+
+            strsql = " SELECT * FROM Usuarios where Cedula=" + TextBoxCedula.Text + ""
+
+
+            Dim cmd As New SqlCommand(strsql, conn)
+                Dim lector As SqlDataReader
+                lector = cmd.ExecuteReader
+                lector.Read()
+
+
+            TextBoxCedula.Text = lector("Cedula")
+
+                If lector("Acceso") = "Admin" Then
+                    If TextBoxContraseña.Text = lector("Contraseña") Then
+
+                        Me.Hide()
+                        MenuPrincipal.Show()
+                        conn.Close()
+                    Else
+                        MsgBox("La contraseña es incorrecta", MessageBoxIcon.Error, "FitTracker")
+
+                    End If
+                Else MsgBox("No tiene acceso a las funciones administrativas", MessageBoxIcon.Information, "FitTracker")
+                End If
+            End If
+
 
 
     End Sub
@@ -73,13 +68,43 @@ Public Class Login
         If TextBoxCedula.Text = "" Or TextBoxContraseña.Text = "" Then
             MsgBox("Debe ingresar ambos datos", MessageBoxIcon.Information, "FitTracker")
 
-        ElseIf Len(TextBoxCedula.Text) > 9 Then
-            MsgBox("La cédula no puede tener más de 9 dígitos", MessageBoxIcon.Error, "FitTracker")
+        ElseIf Len(TextBoxCedula.Text) > 9 Or Len(TextBoxCedula.Text) < 9 Then
+            MsgBox("La cédula debe tener 9 dígitos", MessageBoxIcon.Error, "FitTracker")
 
         Else
-            Me.Hide()
-            MenuPrincipalUsuario.Show()
+            Dim conn As New SqlConnection
+            conn.ConnectionString = ("data source=MSI; initial catalog = Gym; Integrated Security = True")
+
+            conn.Open()
+            Dim strsql As String
+
+
+
+            strsql = " SELECT * FROM Usuarios where Cedula=" + TextBoxCedula.Text + ""
+
+
+            Dim cmd As New SqlCommand(strsql, conn)
+            Dim lector As SqlDataReader
+            lector = cmd.ExecuteReader
+            lector.Read()
+
+
+            TextBoxCedula.Text = lector("Cedula")
+
+            If lector("Acceso") = "Cliente" Then
+                If TextBoxContraseña.Text = lector("Contraseña") Then
+
+                    Me.Hide()
+                    MenuPrincipal.Show()
+                    conn.Close()
+                Else
+                    MsgBox("La contraseña es incorrecta", MessageBoxIcon.Error, "FitTracker")
+
+                End If
+            Else MsgBox("El usuario solo tiene acceso a las funciones administrativas", MessageBoxIcon.Information, "FitTracker")
+            End If
         End If
+
     End Sub
 
 
