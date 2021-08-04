@@ -84,7 +84,7 @@ Partial Class MenuGestionarUsuarios
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackgroundImage = Global.PROYECTOBORRADOR.My.Resources.Resources.azul2
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(42, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(1019, 645)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.ButtonBack)

@@ -140,6 +140,12 @@
     <Compile Include="MenuPrincipalUsuario.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="MenuRestablecerContraseña.Designer.vb">
+      <DependentUpon>MenuRestablecerContraseña.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MenuRestablecerContraseña.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -190,6 +196,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MenuPrincipalUsuario.resx">
       <DependentUpon>MenuPrincipalUsuario.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuRestablecerContraseña.resx">
+      <DependentUpon>MenuRestablecerContraseña.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>

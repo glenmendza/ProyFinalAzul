@@ -27,16 +27,16 @@ Partial Class MenuModificarDatos
         Me.Label1 = New System.Windows.Forms.Label()
         Me.ButtonGuardar = New System.Windows.Forms.Button()
         Me.Label8 = New System.Windows.Forms.Label()
-        Me.TextBoxGenero = New System.Windows.Forms.TextBox()
+        Me.TextBoxCorreo = New System.Windows.Forms.TextBox()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.TextBoxTelefono = New System.Windows.Forms.TextBox()
         Me.Label6 = New System.Windows.Forms.Label()
-        Me.TextBoxCorreo = New System.Windows.Forms.TextBox()
+        Me.TextBoxIMC = New System.Windows.Forms.TextBox()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.TextBoxCedula = New System.Windows.Forms.TextBox()
+        Me.TextBoxPeso = New System.Windows.Forms.TextBox()
         Me.LabelCédula = New System.Windows.Forms.Label()
-        Me.TextBoxApellido2 = New System.Windows.Forms.TextBox()
-        Me.TextBoxApellido1 = New System.Windows.Forms.TextBox()
+        Me.TextBoxApellido = New System.Windows.Forms.TextBox()
+        Me.TextBoxEdad = New System.Windows.Forms.TextBox()
         Me.TextBoxNombre = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.ButtonEditarGenero = New System.Windows.Forms.Button()
@@ -47,6 +47,10 @@ Partial Class MenuModificarDatos
         Me.ButtonEditarApellido1 = New System.Windows.Forms.Button()
         Me.ButtonEditarNombre = New System.Windows.Forms.Button()
         Me.Label3 = New System.Windows.Forms.Label()
+        Me.TextBoxContraseña = New System.Windows.Forms.TextBox()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.ButtonMostrarEsconder = New System.Windows.Forms.Button()
+        Me.Label4 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'ButtonBack
@@ -100,14 +104,14 @@ Partial Class MenuModificarDatos
         Me.Label8.TabIndex = 82
         Me.Label8.Text = "Edad"
         '
-        'TextBoxGenero
+        'TextBoxCorreo
         '
-        Me.TextBoxGenero.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBoxGenero.Location = New System.Drawing.Point(700, 234)
-        Me.TextBoxGenero.Margin = New System.Windows.Forms.Padding(2)
-        Me.TextBoxGenero.Name = "TextBoxGenero"
-        Me.TextBoxGenero.Size = New System.Drawing.Size(135, 23)
-        Me.TextBoxGenero.TabIndex = 81
+        Me.TextBoxCorreo.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBoxCorreo.Location = New System.Drawing.Point(700, 234)
+        Me.TextBoxCorreo.Margin = New System.Windows.Forms.Padding(2)
+        Me.TextBoxCorreo.Name = "TextBoxCorreo"
+        Me.TextBoxCorreo.Size = New System.Drawing.Size(135, 23)
+        Me.TextBoxCorreo.TabIndex = 81
         '
         'Label7
         '
@@ -142,14 +146,14 @@ Partial Class MenuModificarDatos
         Me.Label6.TabIndex = 78
         Me.Label6.Text = "Teléfono"
         '
-        'TextBoxCorreo
+        'TextBoxIMC
         '
-        Me.TextBoxCorreo.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBoxCorreo.Location = New System.Drawing.Point(146, 401)
-        Me.TextBoxCorreo.Margin = New System.Windows.Forms.Padding(2)
-        Me.TextBoxCorreo.Name = "TextBoxCorreo"
-        Me.TextBoxCorreo.Size = New System.Drawing.Size(161, 23)
-        Me.TextBoxCorreo.TabIndex = 77
+        Me.TextBoxIMC.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBoxIMC.Location = New System.Drawing.Point(146, 401)
+        Me.TextBoxIMC.Margin = New System.Windows.Forms.Padding(2)
+        Me.TextBoxIMC.Name = "TextBoxIMC"
+        Me.TextBoxIMC.Size = New System.Drawing.Size(161, 23)
+        Me.TextBoxIMC.TabIndex = 77
         '
         'Label5
         '
@@ -163,14 +167,14 @@ Partial Class MenuModificarDatos
         Me.Label5.TabIndex = 76
         Me.Label5.Text = "Indice de masa corporal"
         '
-        'TextBoxCedula
+        'TextBoxPeso
         '
-        Me.TextBoxCedula.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBoxCedula.Location = New System.Drawing.Point(146, 341)
-        Me.TextBoxCedula.Margin = New System.Windows.Forms.Padding(2)
-        Me.TextBoxCedula.Name = "TextBoxCedula"
-        Me.TextBoxCedula.Size = New System.Drawing.Size(161, 23)
-        Me.TextBoxCedula.TabIndex = 75
+        Me.TextBoxPeso.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBoxPeso.Location = New System.Drawing.Point(146, 341)
+        Me.TextBoxPeso.Margin = New System.Windows.Forms.Padding(2)
+        Me.TextBoxPeso.Name = "TextBoxPeso"
+        Me.TextBoxPeso.Size = New System.Drawing.Size(161, 23)
+        Me.TextBoxPeso.TabIndex = 75
         '
         'LabelCédula
         '
@@ -184,23 +188,23 @@ Partial Class MenuModificarDatos
         Me.LabelCédula.TabIndex = 74
         Me.LabelCédula.Text = "Peso"
         '
-        'TextBoxApellido2
+        'TextBoxApellido
         '
-        Me.TextBoxApellido2.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBoxApellido2.Location = New System.Drawing.Point(146, 284)
-        Me.TextBoxApellido2.Margin = New System.Windows.Forms.Padding(2)
-        Me.TextBoxApellido2.Name = "TextBoxApellido2"
-        Me.TextBoxApellido2.Size = New System.Drawing.Size(161, 23)
-        Me.TextBoxApellido2.TabIndex = 73
+        Me.TextBoxApellido.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBoxApellido.Location = New System.Drawing.Point(146, 284)
+        Me.TextBoxApellido.Margin = New System.Windows.Forms.Padding(2)
+        Me.TextBoxApellido.Name = "TextBoxApellido"
+        Me.TextBoxApellido.Size = New System.Drawing.Size(161, 23)
+        Me.TextBoxApellido.TabIndex = 73
         '
-        'TextBoxApellido1
+        'TextBoxEdad
         '
-        Me.TextBoxApellido1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBoxApellido1.Location = New System.Drawing.Point(146, 225)
-        Me.TextBoxApellido1.Margin = New System.Windows.Forms.Padding(2)
-        Me.TextBoxApellido1.Name = "TextBoxApellido1"
-        Me.TextBoxApellido1.Size = New System.Drawing.Size(161, 23)
-        Me.TextBoxApellido1.TabIndex = 71
+        Me.TextBoxEdad.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBoxEdad.Location = New System.Drawing.Point(146, 225)
+        Me.TextBoxEdad.Margin = New System.Windows.Forms.Padding(2)
+        Me.TextBoxEdad.Name = "TextBoxEdad"
+        Me.TextBoxEdad.Size = New System.Drawing.Size(161, 23)
+        Me.TextBoxEdad.TabIndex = 71
         '
         'TextBoxNombre
         '
@@ -326,12 +330,64 @@ Partial Class MenuModificarDatos
         Me.Label3.TabIndex = 93
         Me.Label3.Text = "Correo Electrónico"
         '
+        'TextBoxContraseña
+        '
+        Me.TextBoxContraseña.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBoxContraseña.Location = New System.Drawing.Point(700, 291)
+        Me.TextBoxContraseña.Margin = New System.Windows.Forms.Padding(2)
+        Me.TextBoxContraseña.Name = "TextBoxContraseña"
+        Me.TextBoxContraseña.Size = New System.Drawing.Size(135, 23)
+        Me.TextBoxContraseña.TabIndex = 94
+        '
+        'Button1
+        '
+        Me.Button1.BackgroundImage = CType(resources.GetObject("Button1.BackgroundImage"), System.Drawing.Image)
+        Me.Button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(42, Byte), Integer))
+        Me.Button1.Location = New System.Drawing.Point(839, 284)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(2)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(39, 37)
+        Me.Button1.TabIndex = 95
+        Me.Button1.UseVisualStyleBackColor = True
+        '
+        'ButtonMostrarEsconder
+        '
+        Me.ButtonMostrarEsconder.BackColor = System.Drawing.Color.Transparent
+        Me.ButtonMostrarEsconder.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.ButtonMostrarEsconder.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ButtonMostrarEsconder.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.ButtonMostrarEsconder.Location = New System.Drawing.Point(722, 341)
+        Me.ButtonMostrarEsconder.Margin = New System.Windows.Forms.Padding(2)
+        Me.ButtonMostrarEsconder.Name = "ButtonMostrarEsconder"
+        Me.ButtonMostrarEsconder.Size = New System.Drawing.Size(101, 50)
+        Me.ButtonMostrarEsconder.TabIndex = 96
+        Me.ButtonMostrarEsconder.Text = "Mostrar  Esconder"
+        Me.ButtonMostrarEsconder.UseVisualStyleBackColor = False
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.Label4.Location = New System.Drawing.Point(743, 269)
+        Me.Label4.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(92, 20)
+        Me.Label4.TabIndex = 97
+        Me.Label4.Text = "Contraseña"
+        '
         'MenuModificarDatos
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(42, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(1019, 645)
+        Me.Controls.Add(Me.Label4)
+        Me.Controls.Add(Me.ButtonMostrarEsconder)
+        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.TextBoxContraseña)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.ButtonEditarGenero)
         Me.Controls.Add(Me.ButtonEditarTelefono)
@@ -342,16 +398,16 @@ Partial Class MenuModificarDatos
         Me.Controls.Add(Me.ButtonEditarNombre)
         Me.Controls.Add(Me.ButtonGuardar)
         Me.Controls.Add(Me.Label8)
-        Me.Controls.Add(Me.TextBoxGenero)
+        Me.Controls.Add(Me.TextBoxCorreo)
         Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.TextBoxTelefono)
         Me.Controls.Add(Me.Label6)
-        Me.Controls.Add(Me.TextBoxCorreo)
+        Me.Controls.Add(Me.TextBoxIMC)
         Me.Controls.Add(Me.Label5)
-        Me.Controls.Add(Me.TextBoxCedula)
+        Me.Controls.Add(Me.TextBoxPeso)
         Me.Controls.Add(Me.LabelCédula)
-        Me.Controls.Add(Me.TextBoxApellido2)
-        Me.Controls.Add(Me.TextBoxApellido1)
+        Me.Controls.Add(Me.TextBoxApellido)
+        Me.Controls.Add(Me.TextBoxEdad)
         Me.Controls.Add(Me.TextBoxNombre)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
@@ -375,17 +431,21 @@ Partial Class MenuModificarDatos
     Friend WithEvents ButtonEditarNombre As Button
     Friend WithEvents ButtonGuardar As Button
     Friend WithEvents Label8 As Label
-    Friend WithEvents TextBoxGenero As TextBox
+    Friend WithEvents TextBoxCorreo As TextBox
     Friend WithEvents Label7 As Label
     Friend WithEvents TextBoxTelefono As TextBox
     Friend WithEvents Label6 As Label
-    Friend WithEvents TextBoxCorreo As TextBox
+    Friend WithEvents TextBoxIMC As TextBox
     Friend WithEvents Label5 As Label
-    Friend WithEvents TextBoxCedula As TextBox
+    Friend WithEvents TextBoxPeso As TextBox
     Friend WithEvents LabelCédula As Label
-    Friend WithEvents TextBoxApellido2 As TextBox
-    Friend WithEvents TextBoxApellido1 As TextBox
+    Friend WithEvents TextBoxApellido As TextBox
+    Friend WithEvents TextBoxEdad As TextBox
     Friend WithEvents TextBoxNombre As TextBox
     Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label
+    Friend WithEvents TextBoxContraseña As TextBox
+    Friend WithEvents Button1 As Button
+    Friend WithEvents ButtonMostrarEsconder As Button
+    Friend WithEvents Label4 As Label
 End Class
