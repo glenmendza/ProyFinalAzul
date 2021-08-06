@@ -51,6 +51,7 @@ Partial Class MenuModificarDatos
         Me.Button1 = New System.Windows.Forms.Button()
         Me.ButtonMostrarEsconder = New System.Windows.Forms.Button()
         Me.Label4 = New System.Windows.Forms.Label()
+        Me.TextBoxCedula = New System.Windows.Forms.TextBox()
         Me.SuspendLayout()
         '
         'ButtonBack
@@ -378,12 +379,22 @@ Partial Class MenuModificarDatos
         Me.Label4.TabIndex = 97
         Me.Label4.Text = "Contraseña"
         '
+        'TextBoxCedula
+        '
+        Me.TextBoxCedula.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBoxCedula.Location = New System.Drawing.Point(839, 20)
+        Me.TextBoxCedula.Margin = New System.Windows.Forms.Padding(2)
+        Me.TextBoxCedula.Name = "TextBoxCedula"
+        Me.TextBoxCedula.Size = New System.Drawing.Size(161, 23)
+        Me.TextBoxCedula.TabIndex = 98
+        '
         'MenuModificarDatos
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(42, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(1019, 645)
+        Me.Controls.Add(Me.TextBoxCedula)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.ButtonMostrarEsconder)
         Me.Controls.Add(Me.Button1)
@@ -448,4 +459,5 @@ Partial Class MenuModificarDatos
     Friend WithEvents Button1 As Button
     Friend WithEvents ButtonMostrarEsconder As Button
     Friend WithEvents Label4 As Label
+    Friend WithEvents TextBoxCedula As TextBox
 End Class
