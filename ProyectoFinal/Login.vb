@@ -35,7 +35,7 @@ Public Class Login
         End If
 
 
-        If dt.Rows(0).Item(7).ToString = "Administrador" And (dt.Rows(0).Item(8).ToString() = TextBoxContraseña.Text) Then
+        If dt.Rows(0).Item(7).ToString = "Admin" And (dt.Rows(0).Item(8).ToString() = TextBoxContraseña.Text) Then
             Me.Hide()
             MenuPrincipal.Show()
         Else

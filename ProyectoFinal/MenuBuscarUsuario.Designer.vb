@@ -26,7 +26,7 @@ Partial Class MenuBuscarUsuario
         Me.Label1 = New System.Windows.Forms.Label()
         Me.ButtonBack = New System.Windows.Forms.Button()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.TextBoxCedula = New System.Windows.Forms.TextBox()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
@@ -67,13 +67,13 @@ Partial Class MenuBuscarUsuario
         Me.Label2.TabIndex = 23
         Me.Label2.Text = "Ingresar cedula"
         '
-        'TextBox1
+        'TextBoxCedula
         '
-        Me.TextBox1.Location = New System.Drawing.Point(374, 214)
-        Me.TextBox1.Margin = New System.Windows.Forms.Padding(2)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(260, 20)
-        Me.TextBox1.TabIndex = 24
+        Me.TextBoxCedula.Location = New System.Drawing.Point(374, 214)
+        Me.TextBoxCedula.Margin = New System.Windows.Forms.Padding(2)
+        Me.TextBoxCedula.Name = "TextBoxCedula"
+        Me.TextBoxCedula.Size = New System.Drawing.Size(260, 20)
+        Me.TextBoxCedula.TabIndex = 24
         '
         'Button1
         '
@@ -96,7 +96,7 @@ Partial Class MenuBuscarUsuario
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(42, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(1019, 645)
         Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.TextBoxCedula)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.ButtonBack)
         Me.Controls.Add(Me.Label1)
@@ -113,6 +113,6 @@ Partial Class MenuBuscarUsuario
     Friend WithEvents Label1 As Label
     Private WithEvents ButtonBack As Button
     Friend WithEvents Label2 As Label
-    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents TextBoxCedula As TextBox
     Friend WithEvents Button1 As Button
 End Class
