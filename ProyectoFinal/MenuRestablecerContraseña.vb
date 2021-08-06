@@ -14,7 +14,7 @@ Public Class MenuRestablecerContraseña
         End If
 
         Dim conn As New SqlConnection
-        conn.ConnectionString = ("data source=GLENN; initial catalog = Gym; Integrated Security = True")
+        conn.ConnectionString = ("data source=PROYAZUL; initial catalog = Gym; Integrated Security = True")
 
         conn.Open()
         Dim strsql As String

@@ -15,7 +15,7 @@ Public Class Login
         End If
 
         Dim stringConection As String
-        stringConection = "data source=GLENN; initial catalog = Gym; Integrated Security = True”
+        stringConection = "data source=PROYAZUL; initial catalog = Gym; Integrated Security = True”
         Dim stringSelect As String = "SELECT dbo.Usuarios.* FROM dbo.Usuarios WHERE (Cedula = " & TextBoxCedula.Text & ") AND (Contraseña LIKE '" & TextBoxContraseña.Text & "')"
 
         Dim da As SqlDataAdapter
