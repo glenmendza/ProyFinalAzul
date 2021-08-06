@@ -9,6 +9,8 @@ Public Class MenuGestionarAñadirUsuario
     Public Sub Insert()
     End Sub
 
+    'esto es un ejemplo de glen
+
     'Private Sub MenuGestionarAñadirUsuario_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
     '    Dim stringConexion As String
