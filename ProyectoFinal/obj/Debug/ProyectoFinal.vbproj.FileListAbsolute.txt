@@ -19,28 +19,9 @@ C:\Users\adria\OneDrive\Documents\GitHub\ProyFinalAzul\ProyectoFinal\obj\Debug\P
 C:\Users\adria\OneDrive\Documents\GitHub\ProyFinalAzul\ProyectoFinal\obj\Debug\PROYECTOBORRADOR.exe
 C:\Users\adria\OneDrive\Documents\GitHub\ProyFinalAzul\ProyectoFinal\obj\Debug\PROYECTOBORRADOR.xml
 C:\Users\adria\OneDrive\Documents\GitHub\ProyFinalAzul\ProyectoFinal\obj\Debug\PROYECTOBORRADOR.pdb
-C:\Users\hazie\Documents\GitHub\ProyFinalAzul\ProyectoFinal\bin\Debug\PROYECTOBORRADOR.exe.config
-C:\Users\hazie\Documents\GitHub\ProyFinalAzul\ProyectoFinal\bin\Debug\PROYECTOBORRADOR.exe
-C:\Users\hazie\Documents\GitHub\ProyFinalAzul\ProyectoFinal\bin\Debug\PROYECTOBORRADOR.pdb
-C:\Users\hazie\Documents\GitHub\ProyFinalAzul\ProyectoFinal\bin\Debug\PROYECTOBORRADOR.xml
 C:\Users\hazie\Documents\GitHub\ProyFinalAzul\ProyectoFinal\obj\Debug\ProyectoFinal.vbprojAssemblyReference.cache
-C:\Users\hazie\Documents\GitHub\ProyFinalAzul\ProyectoFinal\obj\Debug\PROYECTOBORRADOR.Login.resources
-C:\Users\hazie\Documents\GitHub\ProyFinalAzul\ProyectoFinal\obj\Debug\PROYECTOBORRADOR.MenuGestionarAñadirUsuario.resources
-C:\Users\hazie\Documents\GitHub\ProyFinalAzul\ProyectoFinal\obj\Debug\PROYECTOBORRADOR.MenuGestionarEditarUsuario.resources
-C:\Users\hazie\Documents\GitHub\ProyFinalAzul\ProyectoFinal\obj\Debug\PROYECTOBORRADOR.MenuPrincipal.resources
-C:\Users\hazie\Documents\GitHub\ProyFinalAzul\ProyectoFinal\obj\Debug\PROYECTOBORRADOR.MenuAgenda.resources
-C:\Users\hazie\Documents\GitHub\ProyFinalAzul\ProyectoFinal\obj\Debug\PROYECTOBORRADOR.MenuAñadirEjercicios.resources
-C:\Users\hazie\Documents\GitHub\ProyFinalAzul\ProyectoFinal\obj\Debug\PROYECTOBORRADOR.MenuEstadisticas.resources
-C:\Users\hazie\Documents\GitHub\ProyFinalAzul\ProyectoFinal\obj\Debug\PROYECTOBORRADOR.MenuGestionarUsuarios.resources
-C:\Users\hazie\Documents\GitHub\ProyFinalAzul\ProyectoFinal\obj\Debug\PROYECTOBORRADOR.MenuModificarDatos.resources
-C:\Users\hazie\Documents\GitHub\ProyFinalAzul\ProyectoFinal\obj\Debug\PROYECTOBORRADOR.Resources.resources
 C:\Users\hazie\Documents\GitHub\ProyFinalAzul\ProyectoFinal\obj\Debug\ProyectoFinal.vbproj.GenerateResource.cache
 C:\Users\hazie\Documents\GitHub\ProyFinalAzul\ProyectoFinal\obj\Debug\ProyectoFinal.vbproj.CoreCompileInputs.cache
-C:\Users\hazie\Documents\GitHub\ProyFinalAzul\ProyectoFinal\obj\Debug\PROYECTOBORRADOR.exe
-C:\Users\hazie\Documents\GitHub\ProyFinalAzul\ProyectoFinal\obj\Debug\PROYECTOBORRADOR.xml
-C:\Users\hazie\Documents\GitHub\ProyFinalAzul\ProyectoFinal\obj\Debug\PROYECTOBORRADOR.pdb
-C:\Users\hazie\Documents\GitHub\ProyFinalAzul\ProyectoFinal\obj\Debug\PROYECTOBORRADOR.MenuBuscarUsuario.resources
-C:\Users\hazie\Documents\GitHub\ProyFinalAzul\ProyectoFinal\obj\Debug\PROYECTOBORRADOR.MenuPrincipalUsuario.resources
 C:\Users\glenm\Documents\Proyectos Visual Studio\Proyecto Software #1\ProyFinalAzul\ProyectoFinal\bin\Debug\ProyectoFinal.exe.config
 C:\Users\glenm\Documents\Proyectos Visual Studio\Proyecto Software #1\ProyFinalAzul\ProyectoFinal\bin\Debug\ProyectoFinal.exe
 C:\Users\glenm\Documents\Proyectos Visual Studio\Proyecto Software #1\ProyFinalAzul\ProyectoFinal\bin\Debug\ProyectoFinal.pdb
@@ -61,3 +42,23 @@ C:\Users\glenm\Documents\Proyectos Visual Studio\Proyecto Software #1\ProyFinalA
 C:\Users\glenm\Documents\Proyectos Visual Studio\Proyecto Software #1\ProyFinalAzul\ProyectoFinal\obj\Debug\ProyectoFinal.exe
 C:\Users\glenm\Documents\Proyectos Visual Studio\Proyecto Software #1\ProyFinalAzul\ProyectoFinal\obj\Debug\ProyectoFinal.xml
 C:\Users\glenm\Documents\Proyectos Visual Studio\Proyecto Software #1\ProyFinalAzul\ProyectoFinal\obj\Debug\ProyectoFinal.pdb
+C:\Users\hazie\Documents\GitHub\ProyFinalAzul\ProyectoFinal\bin\Debug\ProyectoFinal.exe.config
+C:\Users\hazie\Documents\GitHub\ProyFinalAzul\ProyectoFinal\bin\Debug\ProyectoFinal.exe
+C:\Users\hazie\Documents\GitHub\ProyFinalAzul\ProyectoFinal\bin\Debug\ProyectoFinal.pdb
+C:\Users\hazie\Documents\GitHub\ProyFinalAzul\ProyectoFinal\bin\Debug\ProyectoFinal.xml
+C:\Users\hazie\Documents\GitHub\ProyFinalAzul\ProyectoFinal\obj\Debug\ProyectoFinal.Login.resources
+C:\Users\hazie\Documents\GitHub\ProyFinalAzul\ProyectoFinal\obj\Debug\ProyectoFinal.MenuBuscarUsuario.resources
+C:\Users\hazie\Documents\GitHub\ProyFinalAzul\ProyectoFinal\obj\Debug\ProyectoFinal.MenuGestionarAñadirUsuario.resources
+C:\Users\hazie\Documents\GitHub\ProyFinalAzul\ProyectoFinal\obj\Debug\ProyectoFinal.MenuGestionarEditarUsuario.resources
+C:\Users\hazie\Documents\GitHub\ProyFinalAzul\ProyectoFinal\obj\Debug\ProyectoFinal.MenuPrincipal.resources
+C:\Users\hazie\Documents\GitHub\ProyFinalAzul\ProyectoFinal\obj\Debug\ProyectoFinal.MenuAgenda.resources
+C:\Users\hazie\Documents\GitHub\ProyFinalAzul\ProyectoFinal\obj\Debug\ProyectoFinal.MenuAñadirEjercicios.resources
+C:\Users\hazie\Documents\GitHub\ProyFinalAzul\ProyectoFinal\obj\Debug\ProyectoFinal.MenuEstadisticas.resources
+C:\Users\hazie\Documents\GitHub\ProyFinalAzul\ProyectoFinal\obj\Debug\ProyectoFinal.MenuGestionarUsuarios.resources
+C:\Users\hazie\Documents\GitHub\ProyFinalAzul\ProyectoFinal\obj\Debug\ProyectoFinal.MenuModificarDatos.resources
+C:\Users\hazie\Documents\GitHub\ProyFinalAzul\ProyectoFinal\obj\Debug\ProyectoFinal.MenuPrincipalUsuario.resources
+C:\Users\hazie\Documents\GitHub\ProyFinalAzul\ProyectoFinal\obj\Debug\ProyectoFinal.MenuRestablecerContraseña.resources
+C:\Users\hazie\Documents\GitHub\ProyFinalAzul\ProyectoFinal\obj\Debug\ProyectoFinal.Resources.resources
+C:\Users\hazie\Documents\GitHub\ProyFinalAzul\ProyectoFinal\obj\Debug\ProyectoFinal.exe
+C:\Users\hazie\Documents\GitHub\ProyFinalAzul\ProyectoFinal\obj\Debug\ProyectoFinal.xml
+C:\Users\hazie\Documents\GitHub\ProyFinalAzul\ProyectoFinal\obj\Debug\ProyectoFinal.pdb

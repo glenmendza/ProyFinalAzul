@@ -9,6 +9,23 @@ Public Class MenuModificarDatos
 
     Private Sub MenuModificarDatos_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         TextBoxCedula.Text = ModuloLogin.cedula
+        Dim constr As String = ("data source=PROYAZUL; initial catalog = Gym; Integrated Security = True”)
+        Using con As SqlConnection = New SqlConnection(constr)
+            Using cmd As SqlCommand = New SqlCommand("SELECT * FROM dbo.Usuarios WHERE (Cedula = " & TextBoxCedula.Text & ")")
+                cmd.CommandType = CommandType.Text
+                cmd.Connection = con
+                con.Open()
+                Using sdr As SqlDataReader = cmd.ExecuteReader()
+                    sdr.Read()
+                    TextBoxNombre.Text = sdr("Nombre")
+                    TextBoxTelefono.Text = sdr("Telefono")
+                    TextBoxCorreo.Text = sdr("Correo")
+                    TextBoxNacimiento.Text = sdr("FechaNacimiento")
+                    TextBoxContraseña.Text = sdr("Contraseña")
+                End Using
+                con.Close()
+            End Using
+        End Using
     End Sub
 
     Public Sub Datos()
@@ -44,21 +61,7 @@ Public Class MenuModificarDatos
         ''lector = cmd.ExecuteReader
         ''lector.Read()
 
-        Dim constr As String = ("data source=PROYAZUL; initial catalog = Gym; Integrated Security = True”)
-        Using con As SqlConnection = New SqlConnection(constr)
-            Using cmd As SqlCommand = New SqlCommand("SELECT * FROM dbo.Usuarios WHERE (Cedula = " & TextBoxCedula.Text & ")")
-                cmd.CommandType = CommandType.Text
-                cmd.Connection = con
-                con.Open()
-                Using sdr As SqlDataReader = cmd.ExecuteReader()
-                    sdr.Read()
-                    TextBoxNombre.Text = sdr("Nombre").ToString()
-                    TextBoxTelefono.Text = sdr("Telefono").ToString()
-                    TextBoxCorreo.Text = sdr("Correo").ToString()
-                End Using
-                con.Close()
-            End Using
-        End Using
+
 
         'If ModuloLogin.cedula = lector(cedula) Then
         '    TextBoxNombre.Text = lector("Nombre")
@@ -69,5 +72,7 @@ Public Class MenuModificarDatos
 
     End Sub
 
+    Private Sub TextBoxCedula_TextChanged(sender As Object, e As EventArgs) Handles TextBoxCedula.TextChanged
 
+    End Sub
 End Class
