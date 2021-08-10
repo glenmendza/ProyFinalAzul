@@ -1,5 +1,5 @@
 ﻿Module ModuloLogin
 
-    Public cedula As Integer
+    Public cedula As String
 
 End Module
