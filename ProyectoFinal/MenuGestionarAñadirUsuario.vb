@@ -9,64 +9,72 @@ Public Class MenuGestionarAñadirUsuario
     Public Sub Insert()
     End Sub
 
-    'Private Sub MenuGestionarAñadirUsuario_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+    Private Sub MenuGestionarAñadirUsuario_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
-    '    Dim stringConexion As String
-    '    stringConexion = "data source=MSI; initial catalog = Gym; Integrated Security = True”
-    '    Dim stringSelect As String = "SELECT * FROM Usuarios"
-    '    Dim da As SqlDataAdapter
-    '    Dim dt As New DataTable
-    '    Try
-    '        da = New SqlDataAdapter(stringSelect, stringConexion)
-    '        da.Fill(dt)
+        Dim stringConexion As String
+        stringConexion = "data source=PROYAZUL; initial catalog = Gym; Integrated Security = True”
+        Dim stringSelect As String = "SELECT * FROM Usuarios"
+        Dim da As SqlDataAdapter
+        Dim dt As New DataTable
+        Try
+            da = New SqlDataAdapter(stringSelect, stringConexion)
+            da.Fill(dt)
 
-    '    Catch ex As Exception
-
-
-
-    '    End Try
-    'End Sub
-
-    'Public Function Insertar(ByVal Cedula As Integer,
-    '                     ByVal Nombre As String, PrimerApellido As String, SegundoApellido As String, FechaNacimiento As Date,
-    '                         Correo As String, Genero As Char, Acceso As String, Contraseña As String, Telefono As Integer)
-
-    '    Dim sCon As String = "data source=MSI; initial catalog = Gym; Integrated Security = True"
-    '    Dim sel As String
-    '    Dim NombreTabla As String = "Usuarios"
-
-    '    sel = "INSERT INTO " & NombreTabla &
-    '        " (Cedula, Nombre, PrimerApellido, SegundoApellido, FechaNacimiento, Correo, Genero, Acceso, Contraseña, Telefono) " &
-    '        "VALUES " &
-    '        "(@Cedula, @Nombre, @PrimerApellido, @SegundoApellido, @FechaNacimiento, @Correo, @Genero, @Acceso, @Contraseña, @Telefono )"
-
-    '    Using con As New SqlConnection(sCon)
-
-    '        Dim cmd As New SqlCommand(sel, con)
-    '        cmd.Parameters.AddWithValue("@Cedula", Cedula)
-    '        cmd.Parameters.AddWithValue("@Nombre", Nombre)
-    '        cmd.Parameters.AddWithValue("@PrimerApellido", PrimerApellido)
-    '        cmd.Parameters.AddWithValue("@SegundoApellido", SegundoApellido)
-    '        cmd.Parameters.AddWithValue("@FechaNacimiento", FechaNacimiento)
-    '        cmd.Parameters.AddWithValue("@Correo", Correo)
-    '        cmd.Parameters.AddWithValue("@Genero", Genero)
-    '        cmd.Parameters.AddWithValue("@Acceso", Acceso)
-    '        cmd.Parameters.AddWithValue("@Contraseña", Contraseña)
-    '        cmd.Parameters.AddWithValue("@Telefono", Telefono)
+        Catch ex As Exception
 
 
 
-    '        con.Open()
-    '        Dim t As Integer = CInt(cmd.ExecuteScalar())
-    '        con.Close()
-    '        Return t
-    '    End Using
-    'End Function
+        End Try
+    End Sub
+
+    Public Function Insertar()
+
+
+        Dim sCon As String = "data source=PROYAZUL; initial catalog = Gym; Integrated Security = True"
+        Dim sel As String
+        Dim NombreTabla As String = "Usuarios"
+
+        sel = "INSERT INTO " & NombreTabla &
+            " (Cedula, Nombre, PrimerApellido, SegundoApellido, FechaNacimiento, Correo, Genero, Acceso, Contraseña, Telefono, Peso, Altura, IMC) " &
+            " VALUES " &
+            " (@Cedula, @Nombre, @PrimerApellido, @SegundoApellido, @FechaNacimiento, @Correo, @Genero, @Acceso, @Contraseña, @Telefono, @Peso, @Altura, @IMC )"
+
+        Using con As New SqlConnection(sCon)
+
+            Dim cmd As New SqlCommand(sel, con)
+            cmd.Parameters.AddWithValue("@Cedula", TextBoxCedula.Text)
+            cmd.Parameters.AddWithValue("@Nombre", TextBoxNombre.Text)
+            cmd.Parameters.AddWithValue("@PrimerApellido", TextBoxApellido1.Text)
+            cmd.Parameters.AddWithValue("@SegundoApellido", TextBoxApellido2.Text)
+            cmd.Parameters.AddWithValue("@FechaNacimiento", TextBoxEdad.Text)
+            cmd.Parameters.AddWithValue("@Correo", TextBoxCorreo.Text)
+            cmd.Parameters.AddWithValue("@Genero", TextBoxGenero.Text)
+            cmd.Parameters.AddWithValue("@Acceso", ComboBox1.Text)
+            cmd.Parameters.AddWithValue("@Contraseña", TextBoxContraseña.Text)
+            cmd.Parameters.AddWithValue("@Telefono", TextBoxTelefono.Text)
+            cmd.Parameters.AddWithValue("@Peso", TextBoxPeso.Text)
+            cmd.Parameters.AddWithValue("@Altura", TextBoxAltura.Text)
+            cmd.Parameters.AddWithValue("@IMC", TextBoxIMC.Text)
+
+
+            con.Open()
+            Dim t As Integer = CInt(cmd.ExecuteScalar())
+            con.Close()
+            Return t
+        End Using
+    End Function
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        'Dim Insertado As Integer
-        'Insertado = Insertar(7123513, "Haziel", "Lopez", "Rodriguez", "01/01/2000", "haziel@", "M", "Cliente", "723thf3iu8", "6763826")
+        Call Insertar()
+
 
     End Sub
 
+    Private Sub Label9_Click(sender As Object, e As EventArgs) Handles Label9.Click
+
+    End Sub
+
+    Private Sub ButtonGenerarContra_Click(sender As Object, e As EventArgs) Handles ButtonGenerarContra.Click
+
+    End Sub
 End Class

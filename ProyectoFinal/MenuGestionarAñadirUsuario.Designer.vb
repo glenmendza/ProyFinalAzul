@@ -40,11 +40,17 @@ Partial Class MenuGestionarAñadirUsuario
         Me.TextBoxEdad = New System.Windows.Forms.TextBox()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.ButtonGenerarContra = New System.Windows.Forms.Button()
-        Me.ButtonMostrar = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.ButtonBack = New System.Windows.Forms.Button()
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         Me.Label10 = New System.Windows.Forms.Label()
+        Me.TextBoxIMC = New System.Windows.Forms.TextBox()
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.TextBoxAltura = New System.Windows.Forms.TextBox()
+        Me.Label11 = New System.Windows.Forms.Label()
+        Me.TextBoxPeso = New System.Windows.Forms.TextBox()
+        Me.Label12 = New System.Windows.Forms.Label()
+        Me.TextBoxContraseña = New System.Windows.Forms.TextBox()
         Me.SuspendLayout()
         '
         'Label1
@@ -163,7 +169,7 @@ Partial Class MenuGestionarAñadirUsuario
         'TextBoxTelefono
         '
         Me.TextBoxTelefono.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBoxTelefono.Location = New System.Drawing.Point(965, 199)
+        Me.TextBoxTelefono.Location = New System.Drawing.Point(225, 558)
         Me.TextBoxTelefono.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.TextBoxTelefono.Name = "TextBoxTelefono"
         Me.TextBoxTelefono.Size = New System.Drawing.Size(179, 27)
@@ -174,7 +180,7 @@ Partial Class MenuGestionarAñadirUsuario
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label6.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label6.Location = New System.Drawing.Point(1053, 172)
+        Me.Label6.Location = New System.Drawing.Point(220, 522)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(89, 25)
         Me.Label6.TabIndex = 32
@@ -183,7 +189,7 @@ Partial Class MenuGestionarAñadirUsuario
         'TextBoxGenero
         '
         Me.TextBoxGenero.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBoxGenero.Location = New System.Drawing.Point(964, 274)
+        Me.TextBoxGenero.Location = New System.Drawing.Point(964, 406)
         Me.TextBoxGenero.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.TextBoxGenero.Name = "TextBoxGenero"
         Me.TextBoxGenero.Size = New System.Drawing.Size(179, 27)
@@ -194,7 +200,7 @@ Partial Class MenuGestionarAñadirUsuario
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label7.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label7.Location = New System.Drawing.Point(1067, 246)
+        Me.Label7.Location = New System.Drawing.Point(1066, 370)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(77, 25)
         Me.Label7.TabIndex = 34
@@ -203,7 +209,7 @@ Partial Class MenuGestionarAñadirUsuario
         'TextBoxEdad
         '
         Me.TextBoxEdad.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBoxEdad.Location = New System.Drawing.Point(965, 346)
+        Me.TextBoxEdad.Location = New System.Drawing.Point(964, 479)
         Me.TextBoxEdad.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.TextBoxEdad.Name = "TextBoxEdad"
         Me.TextBoxEdad.Size = New System.Drawing.Size(179, 27)
@@ -214,7 +220,7 @@ Partial Class MenuGestionarAñadirUsuario
         Me.Label8.AutoSize = True
         Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label8.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label8.Location = New System.Drawing.Point(1085, 318)
+        Me.Label8.Location = New System.Drawing.Point(1085, 443)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(58, 25)
         Me.Label8.TabIndex = 36
@@ -226,7 +232,7 @@ Partial Class MenuGestionarAñadirUsuario
         Me.ButtonGenerarContra.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.ButtonGenerarContra.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ButtonGenerarContra.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.ButtonGenerarContra.Location = New System.Drawing.Point(963, 496)
+        Me.ButtonGenerarContra.Location = New System.Drawing.Point(964, 612)
         Me.ButtonGenerarContra.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.ButtonGenerarContra.Name = "ButtonGenerarContra"
         Me.ButtonGenerarContra.Size = New System.Drawing.Size(179, 66)
@@ -234,27 +240,13 @@ Partial Class MenuGestionarAñadirUsuario
         Me.ButtonGenerarContra.Text = "Generar Contraseña"
         Me.ButtonGenerarContra.UseVisualStyleBackColor = False
         '
-        'ButtonMostrar
-        '
-        Me.ButtonMostrar.BackColor = System.Drawing.Color.Transparent
-        Me.ButtonMostrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.ButtonMostrar.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ButtonMostrar.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.ButtonMostrar.Location = New System.Drawing.Point(1002, 578)
-        Me.ButtonMostrar.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.ButtonMostrar.Name = "ButtonMostrar"
-        Me.ButtonMostrar.Size = New System.Drawing.Size(107, 37)
-        Me.ButtonMostrar.TabIndex = 39
-        Me.ButtonMostrar.Text = "Mostrar"
-        Me.ButtonMostrar.UseVisualStyleBackColor = False
-        '
         'Button1
         '
         Me.Button1.BackColor = System.Drawing.Color.Transparent
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button1.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Button1.Location = New System.Drawing.Point(617, 558)
+        Me.Button1.Location = New System.Drawing.Point(618, 677)
         Me.Button1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(148, 57)
@@ -281,7 +273,7 @@ Partial Class MenuGestionarAñadirUsuario
         Me.ComboBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ComboBox1.FormattingEnabled = True
         Me.ComboBox1.Items.AddRange(New Object() {"Cliente", "Administrador"})
-        Me.ComboBox1.Location = New System.Drawing.Point(888, 433)
+        Me.ComboBox1.Location = New System.Drawing.Point(894, 557)
         Me.ComboBox1.Name = "ComboBox1"
         Me.ComboBox1.Size = New System.Drawing.Size(254, 28)
         Me.ComboBox1.TabIndex = 43
@@ -291,11 +283,80 @@ Partial Class MenuGestionarAñadirUsuario
         Me.Label10.AutoSize = True
         Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label10.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label10.Location = New System.Drawing.Point(883, 405)
+        Me.Label10.Location = New System.Drawing.Point(882, 522)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(261, 25)
         Me.Label10.TabIndex = 44
         Me.Label10.Text = "Seleccione el tipo de usuario"
+        '
+        'TextBoxIMC
+        '
+        Me.TextBoxIMC.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBoxIMC.Location = New System.Drawing.Point(964, 335)
+        Me.TextBoxIMC.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.TextBoxIMC.Name = "TextBoxIMC"
+        Me.TextBoxIMC.Size = New System.Drawing.Size(179, 27)
+        Me.TextBoxIMC.TabIndex = 45
+        '
+        'Label9
+        '
+        Me.Label9.AutoSize = True
+        Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label9.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.Label9.Location = New System.Drawing.Point(1094, 299)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(49, 25)
+        Me.Label9.TabIndex = 46
+        Me.Label9.Text = "IMC"
+        '
+        'TextBoxAltura
+        '
+        Me.TextBoxAltura.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBoxAltura.Location = New System.Drawing.Point(964, 263)
+        Me.TextBoxAltura.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.TextBoxAltura.Name = "TextBoxAltura"
+        Me.TextBoxAltura.Size = New System.Drawing.Size(179, 27)
+        Me.TextBoxAltura.TabIndex = 47
+        '
+        'Label11
+        '
+        Me.Label11.AutoSize = True
+        Me.Label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label11.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.Label11.Location = New System.Drawing.Point(1080, 226)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Size = New System.Drawing.Size(63, 25)
+        Me.Label11.TabIndex = 48
+        Me.Label11.Text = "Altura"
+        '
+        'TextBoxPeso
+        '
+        Me.TextBoxPeso.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBoxPeso.Location = New System.Drawing.Point(964, 190)
+        Me.TextBoxPeso.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.TextBoxPeso.Name = "TextBoxPeso"
+        Me.TextBoxPeso.Size = New System.Drawing.Size(179, 27)
+        Me.TextBoxPeso.TabIndex = 49
+        '
+        'Label12
+        '
+        Me.Label12.AutoSize = True
+        Me.Label12.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label12.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.Label12.Location = New System.Drawing.Point(1080, 153)
+        Me.Label12.Name = "Label12"
+        Me.Label12.Size = New System.Drawing.Size(57, 25)
+        Me.Label12.TabIndex = 50
+        Me.Label12.Text = "Peso"
+        '
+        'TextBoxContraseña
+        '
+        Me.TextBoxContraseña.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBoxContraseña.Location = New System.Drawing.Point(964, 694)
+        Me.TextBoxContraseña.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.TextBoxContraseña.Name = "TextBoxContraseña"
+        Me.TextBoxContraseña.Size = New System.Drawing.Size(179, 27)
+        Me.TextBoxContraseña.TabIndex = 51
         '
         'MenuGestionarAñadirUsuario
         '
@@ -303,11 +364,17 @@ Partial Class MenuGestionarAñadirUsuario
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(42, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(1359, 794)
+        Me.Controls.Add(Me.TextBoxContraseña)
+        Me.Controls.Add(Me.Label12)
+        Me.Controls.Add(Me.TextBoxPeso)
+        Me.Controls.Add(Me.Label11)
+        Me.Controls.Add(Me.TextBoxAltura)
+        Me.Controls.Add(Me.Label9)
+        Me.Controls.Add(Me.TextBoxIMC)
         Me.Controls.Add(Me.Label10)
         Me.Controls.Add(Me.ComboBox1)
         Me.Controls.Add(Me.ButtonBack)
         Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.ButtonMostrar)
         Me.Controls.Add(Me.ButtonGenerarContra)
         Me.Controls.Add(Me.TextBoxEdad)
         Me.Controls.Add(Me.Label8)
@@ -353,9 +420,15 @@ Partial Class MenuGestionarAñadirUsuario
     Friend WithEvents TextBoxEdad As TextBox
     Friend WithEvents Label8 As Label
     Friend WithEvents ButtonGenerarContra As Button
-    Friend WithEvents ButtonMostrar As Button
     Friend WithEvents Button1 As Button
     Private WithEvents ButtonBack As Button
     Friend WithEvents ComboBox1 As ComboBox
     Friend WithEvents Label10 As Label
+    Friend WithEvents TextBoxIMC As TextBox
+    Friend WithEvents Label9 As Label
+    Friend WithEvents TextBoxAltura As TextBox
+    Friend WithEvents Label11 As Label
+    Friend WithEvents TextBoxPeso As TextBox
+    Friend WithEvents Label12 As Label
+    Friend WithEvents TextBoxContraseña As TextBox
 End Class
