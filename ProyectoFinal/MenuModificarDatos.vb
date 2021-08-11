@@ -8,15 +8,21 @@ Public Class MenuModificarDatos
     End Sub
 
     Private Sub MenuModificarDatos_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
         TextBoxCedula.Text = ModuloLogin.cedula
+
         Dim constr As String = ("data source=PROYAZUL; initial catalog = Gym; Integrated Security = True”)
         Using con As SqlConnection = New SqlConnection(constr)
             Using cmd As SqlCommand = New SqlCommand("SELECT * FROM dbo.Usuarios WHERE (Cedula = " & TextBoxCedula.Text & ")")
+
                 cmd.CommandType = CommandType.Text
                 cmd.Connection = con
                 con.Open()
+
                 Using sdr As SqlDataReader = cmd.ExecuteReader()
+
                     sdr.Read()
+
                     TextBoxNombre.Text = sdr("Nombre")
                     TextBoxPrimerApellido.Text = sdr("PrimerApellido")
                     TextBoxSegundoApellido.Text = sdr("SegundoApellido")
@@ -27,59 +33,15 @@ Public Class MenuModificarDatos
                     TextBoxAltura.Text = sdr("Altura")
                     TextBoxIMC.Text = sdr("IMC")
                     TextBoxPeso.Text = sdr("Peso")
+
                 End Using
+
                 con.Close()
+
             End Using
         End Using
     End Sub
 
-    Public Sub Datos()
-
-
-        'Dim stringConection As String
-        'stringConection = "data source=PROYAZUL; initial catalog = Gym; Integrated Security = True”
-        'Dim stringSelect As String = "SELECT * FROM dbo.Usuarios WHERE (Cedula = " & ModuloLogin.cedula & ")"
-
-        'Dim da As SqlDataAdapter
-        'Dim dt As New DataTable
-        'Try
-        '    da = New SqlDataAdapter(stringSelect, stringConection)
-        '    da.Fill(dt)
-        'Catch ex As Exception
-        'End Try
-
-        ''If ModuloLogin.cedula = TextBoxCedula.Text Then
-        ''    TextBoxNombre.Text = dt.Rows(0).Item(1).ToString
-        ''    TextBoxTelefono.Text = dt.Rows(0).Item(9).ToString
-        ''    TextBoxCorreo.Text = dt.Rows(0).Item(5).ToString
-        ''    TextBoxContraseña.Text = dt.Rows(0).Item(8).ToString
-        ''End If
-        ''Dim conn As New SqlConnection
-        ''conn.ConnectionString = ("data source=PROYAZUL; initial catalog = Gym; Integrated Security = True”)
-
-
-        ''conn.Open()
-        ''Dim strsql As String
-        ''strsql = "select * from usuarios where id=" + ModuloLogin.cedula + ""
-        ''Dim cmd As New SqlCommand(strsql, conn)
-        ''Dim lector As SqlDataReader
-        ''lector = cmd.ExecuteReader
-        ''lector.Read()
-
-
-
-        'If ModuloLogin.cedula = lector(cedula) Then
-        '    TextBoxNombre.Text = lector("Nombre")
-        '    TextBoxTelefono.Text = lector("Telefono")
-        '    TextBoxCorreo.Text = lector("Correo")
-        '    TextBoxContraseña.Text = lector("Contraseña")
-        'End If
-
-    End Sub
-
-
-    Private Sub ButtonMostrarEsconder_Click(sender As Object, e As EventArgs) Handles ButtonMostrarEsconder.Click
-    End Sub
 
     Private Sub ButtonEditarNombre_Click(sender As Object, e As EventArgs) Handles ButtonEditarNombre.Click
         If TextBoxNombre.ReadOnly = True Then
@@ -135,41 +97,51 @@ Public Class MenuModificarDatos
         End If
     End Sub
 
+    Private Sub ButtonEditarContraseña_Click(sender As Object, e As EventArgs) Handles ButtonEditarContraseña.Click
+        If TextBoxContraseña.ReadOnly = True Then
+            TextBoxContraseña.ReadOnly = False
+        End If
+    End Sub
+
     Private Sub ButtonGuardar_Click(sender As Object, e As EventArgs) Handles ButtonGuardar.Click
         Call Insert()
     End Sub
-    Public Function Insert()
-        Dim sCon As String = "data source=PROYAZUL; initial catalog = Gym; Integrated Security = True"
-        Dim sel As String
-        Dim NombreTabla As String = "dbo.Usuarios"
+    Public Sub Insert()
 
+        Dim myConnectionString As String = "data source=PROYAZUL; initial catalog = Gym; Integrated Security = True"
 
+        Dim myConnection As New SqlConnection(myConnectionString)
 
-        sel = "UPDATE " & NombreTabla &
-            " (Nombre, PrimerApellido, SegundoApellido, FechaNacimiento, Altura, Peso, IMC, Telefono, Correo, Contraseña) " &
-            "VALUES " &
-            "(@Nombre, @PrimerApellido, @SegundoApellido, @FechaNacimiento, @Altura, @Peso, @IMC, @Telefono, @Correo, @Contraseña )"
+        Dim rows As Integer
 
-        Using con As New SqlConnection(sCon)
+        Dim myCommand As SqlCommand = myConnection.CreateCommand()
 
-            Dim cmd As New SqlCommand(sel, con)
-            cmd.Parameters.AddWithValue("@Nombre", TextBoxNombre.Text)
-            cmd.Parameters.AddWithValue("@PrimerApellido", TextBoxPrimerApellido.Text)
-            cmd.Parameters.AddWithValue("@SegundoApellido", TextBoxSegundoApellido.Text)
-            cmd.Parameters.AddWithValue("@FechaNacimiento", TextBoxNacimiento.Text)
-            cmd.Parameters.AddWithValue("@Altura", TextBoxAltura.Text)
-            cmd.Parameters.AddWithValue("@Peso", TextBoxPeso.Text)
-            cmd.Parameters.AddWithValue("@IMC", TextBoxIMC.Text)
-            cmd.Parameters.AddWithValue("@Telefono", TextBoxTelefono.Text)
-            cmd.Parameters.AddWithValue("@Correo", TextBoxCorreo.Text)
-            cmd.Parameters.AddWithValue("@Contraseña", TextBoxContraseña.Text)
+        Try
+            myConnection.Open()
 
-            con.Open()
-                Dim t As Integer = (cmd.ExecuteScalar())
-                con.Close()
+            myCommand.CommandText = "UPDATE Usuarios SET "
+            myCommand.CommandText += "Nombre = '" & TextBoxNombre.Text & "', "
+            myCommand.CommandText += "PrimerApellido = '" & TextBoxPrimerApellido.Text & "', "
+            myCommand.CommandText += "SegundoApellido = '" & TextBoxSegundoApellido.Text & "', "
+            myCommand.CommandText += "FechaNacimiento = '" & TextBoxNacimiento.Text & "', "
+            myCommand.CommandText += "Altura = '" & TextBoxAltura.Text & "', "
+            myCommand.CommandText += "Peso = '" & TextBoxPeso.Text & "', "
+            myCommand.CommandText += "IMC = '" & TextBoxIMC.Text & "', "
+            myCommand.CommandText += "Telefono = '" & TextBoxTelefono.Text & "', "
+            myCommand.CommandText += "Correo = '" & TextBoxCorreo.Text & "', "
+            myCommand.CommandText += "Contraseña = '" & TextBoxContraseña.Text & "' "
+            myCommand.CommandText += "WHERE Cedula = " & ModuloLogin.cedula & ""
 
-                Return t
+            rows = myCommand.ExecuteNonQuery()
 
-        End Using
-    End Function
+        Catch ex As SqlException
+
+        Finally
+            myConnection.Close()
+        End Try
+
+        MessageBox.Show("Datos actualizados con exito!", "FIT Tracker")
+        Exit Sub
+
+    End Sub
 End Class

@@ -117,8 +117,10 @@ Partial Class MenuModificarDatos
         Me.TextBoxCorreo.Location = New System.Drawing.Point(667, 341)
         Me.TextBoxCorreo.Margin = New System.Windows.Forms.Padding(2)
         Me.TextBoxCorreo.Name = "TextBoxCorreo"
+        Me.TextBoxCorreo.ReadOnly = True
         Me.TextBoxCorreo.Size = New System.Drawing.Size(206, 23)
         Me.TextBoxCorreo.TabIndex = 81
+        Me.TextBoxCorreo.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'LabelAltura
         '
@@ -138,8 +140,10 @@ Partial Class MenuModificarDatos
         Me.TextBoxTelefono.Location = New System.Drawing.Point(667, 283)
         Me.TextBoxTelefono.Margin = New System.Windows.Forms.Padding(2)
         Me.TextBoxTelefono.Name = "TextBoxTelefono"
+        Me.TextBoxTelefono.ReadOnly = True
         Me.TextBoxTelefono.Size = New System.Drawing.Size(206, 23)
         Me.TextBoxTelefono.TabIndex = 79
+        Me.TextBoxTelefono.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'LabelTelefono
         '
@@ -159,8 +163,10 @@ Partial Class MenuModificarDatos
         Me.TextBoxIMC.Location = New System.Drawing.Point(666, 225)
         Me.TextBoxIMC.Margin = New System.Windows.Forms.Padding(2)
         Me.TextBoxIMC.Name = "TextBoxIMC"
+        Me.TextBoxIMC.ReadOnly = True
         Me.TextBoxIMC.Size = New System.Drawing.Size(206, 23)
         Me.TextBoxIMC.TabIndex = 77
+        Me.TextBoxIMC.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'LabelIMC
         '
@@ -180,8 +186,10 @@ Partial Class MenuModificarDatos
         Me.TextBoxPeso.Location = New System.Drawing.Point(667, 165)
         Me.TextBoxPeso.Margin = New System.Windows.Forms.Padding(2)
         Me.TextBoxPeso.Name = "TextBoxPeso"
+        Me.TextBoxPeso.ReadOnly = True
         Me.TextBoxPeso.Size = New System.Drawing.Size(206, 23)
         Me.TextBoxPeso.TabIndex = 75
+        Me.TextBoxPeso.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'LabelPeso
         '
@@ -201,8 +209,10 @@ Partial Class MenuModificarDatos
         Me.TextBoxAltura.Location = New System.Drawing.Point(101, 400)
         Me.TextBoxAltura.Margin = New System.Windows.Forms.Padding(2)
         Me.TextBoxAltura.Name = "TextBoxAltura"
+        Me.TextBoxAltura.ReadOnly = True
         Me.TextBoxAltura.Size = New System.Drawing.Size(206, 23)
         Me.TextBoxAltura.TabIndex = 73
+        Me.TextBoxAltura.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'TextBoxNacimiento
         '
@@ -210,8 +220,10 @@ Partial Class MenuModificarDatos
         Me.TextBoxNacimiento.Location = New System.Drawing.Point(101, 341)
         Me.TextBoxNacimiento.Margin = New System.Windows.Forms.Padding(2)
         Me.TextBoxNacimiento.Name = "TextBoxNacimiento"
+        Me.TextBoxNacimiento.ReadOnly = True
         Me.TextBoxNacimiento.Size = New System.Drawing.Size(206, 23)
         Me.TextBoxNacimiento.TabIndex = 71
+        Me.TextBoxNacimiento.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'TextBoxNombre
         '
@@ -222,6 +234,7 @@ Partial Class MenuModificarDatos
         Me.TextBoxNombre.ReadOnly = True
         Me.TextBoxNombre.Size = New System.Drawing.Size(206, 23)
         Me.TextBoxNombre.TabIndex = 69
+        Me.TextBoxNombre.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'LabelNombre
         '
@@ -351,8 +364,10 @@ Partial Class MenuModificarDatos
         Me.TextBoxContraseña.Location = New System.Drawing.Point(667, 400)
         Me.TextBoxContraseña.Margin = New System.Windows.Forms.Padding(2)
         Me.TextBoxContraseña.Name = "TextBoxContraseña"
+        Me.TextBoxContraseña.ReadOnly = True
         Me.TextBoxContraseña.Size = New System.Drawing.Size(206, 23)
         Me.TextBoxContraseña.TabIndex = 94
+        Me.TextBoxContraseña.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'ButtonEditarContraseña
         '
@@ -413,6 +428,7 @@ Partial Class MenuModificarDatos
         Me.TextBoxPrimerApellido.ReadOnly = True
         Me.TextBoxPrimerApellido.Size = New System.Drawing.Size(206, 23)
         Me.TextBoxPrimerApellido.TabIndex = 99
+        Me.TextBoxPrimerApellido.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'TextBoxSegundoApellido
         '
@@ -423,6 +439,7 @@ Partial Class MenuModificarDatos
         Me.TextBoxSegundoApellido.ReadOnly = True
         Me.TextBoxSegundoApellido.Size = New System.Drawing.Size(206, 23)
         Me.TextBoxSegundoApellido.TabIndex = 100
+        Me.TextBoxSegundoApellido.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'ButtonEditarPrimerApellido
         '

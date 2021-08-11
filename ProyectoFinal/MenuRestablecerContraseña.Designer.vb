@@ -36,6 +36,7 @@ Partial Class MenuRestablecerContraseña
         Me.TextBoxConsultar.Name = "TextBoxConsultar"
         Me.TextBoxConsultar.Size = New System.Drawing.Size(177, 29)
         Me.TextBoxConsultar.TabIndex = 0
+        Me.TextBoxConsultar.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Label1
         '
