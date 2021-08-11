@@ -25,9 +25,13 @@ Partial Class MenuAgenda
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(MenuAgenda))
         Me.ButtonBack = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
+        Me.ButtonConsultar = New System.Windows.Forms.Button()
+        Me.ButtonNota = New System.Windows.Forms.Button()
         Me.CalendarioAgenda = New System.Windows.Forms.MonthCalendar()
+        Me.LabelCedula = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.TextBoxNota = New System.Windows.Forms.RichTextBox()
+        Me.ButtonGuardarNota = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'ButtonBack
@@ -58,37 +62,83 @@ Partial Class MenuAgenda
         Me.Label1.Text = "Mi agenda"
         Me.Label1.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
-        'Button1
+        'ButtonConsultar
         '
-        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.ForeColor = System.Drawing.Color.Transparent
-        Me.Button1.Location = New System.Drawing.Point(409, 417)
-        Me.Button1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(165, 65)
-        Me.Button1.TabIndex = 23
-        Me.Button1.Text = "Consultar"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.ButtonConsultar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.ButtonConsultar.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ButtonConsultar.ForeColor = System.Drawing.Color.Transparent
+        Me.ButtonConsultar.Location = New System.Drawing.Point(409, 417)
+        Me.ButtonConsultar.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.ButtonConsultar.Name = "ButtonConsultar"
+        Me.ButtonConsultar.Size = New System.Drawing.Size(165, 65)
+        Me.ButtonConsultar.TabIndex = 23
+        Me.ButtonConsultar.Text = "Consultar"
+        Me.ButtonConsultar.UseVisualStyleBackColor = True
         '
-        'Button2
+        'ButtonNota
         '
-        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.ForeColor = System.Drawing.Color.Transparent
-        Me.Button2.Location = New System.Drawing.Point(795, 417)
-        Me.Button2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(165, 65)
-        Me.Button2.TabIndex = 24
-        Me.Button2.Text = "Agregar nota"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.ButtonNota.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.ButtonNota.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ButtonNota.ForeColor = System.Drawing.Color.Transparent
+        Me.ButtonNota.Location = New System.Drawing.Point(795, 417)
+        Me.ButtonNota.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.ButtonNota.Name = "ButtonNota"
+        Me.ButtonNota.Size = New System.Drawing.Size(204, 65)
+        Me.ButtonNota.TabIndex = 24
+        Me.ButtonNota.Text = "Agregar nota"
+        Me.ButtonNota.UseVisualStyleBackColor = True
         '
         'CalendarioAgenda
         '
+        Me.CalendarioAgenda.AllowDrop = True
         Me.CalendarioAgenda.Location = New System.Drawing.Point(555, 161)
         Me.CalendarioAgenda.Name = "CalendarioAgenda"
         Me.CalendarioAgenda.TabIndex = 25
+        '
+        'LabelCedula
+        '
+        Me.LabelCedula.AutoSize = True
+        Me.LabelCedula.ForeColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(42, Byte), Integer))
+        Me.LabelCedula.Location = New System.Drawing.Point(1260, 391)
+        Me.LabelCedula.Name = "LabelCedula"
+        Me.LabelCedula.Size = New System.Drawing.Size(87, 17)
+        Me.LabelCedula.TabIndex = 26
+        Me.LabelCedula.Text = "LabelCedula"
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Label2.Location = New System.Drawing.Point(354, 134)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(51, 17)
+        Me.Label2.TabIndex = 27
+        Me.Label2.Text = "Label2"
+        '
+        'TextBoxNota
+        '
+        Me.TextBoxNota.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBoxNota.Location = New System.Drawing.Point(464, 499)
+        Me.TextBoxNota.MaxLength = 150
+        Me.TextBoxNota.Name = "TextBoxNota"
+        Me.TextBoxNota.Size = New System.Drawing.Size(453, 157)
+        Me.TextBoxNota.TabIndex = 28
+        Me.TextBoxNota.Text = ""
+        Me.TextBoxNota.Visible = False
+        '
+        'ButtonGuardarNota
+        '
+        Me.ButtonGuardarNota.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.ButtonGuardarNota.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ButtonGuardarNota.ForeColor = System.Drawing.Color.Transparent
+        Me.ButtonGuardarNota.Location = New System.Drawing.Point(621, 683)
+        Me.ButtonGuardarNota.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.ButtonGuardarNota.Name = "ButtonGuardarNota"
+        Me.ButtonGuardarNota.Size = New System.Drawing.Size(139, 47)
+        Me.ButtonGuardarNota.TabIndex = 29
+        Me.ButtonGuardarNota.Text = "Guardar"
+        Me.ButtonGuardarNota.UseVisualStyleBackColor = True
+        Me.ButtonGuardarNota.Visible = False
         '
         'MenuAgenda
         '
@@ -96,9 +146,13 @@ Partial Class MenuAgenda
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(42, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(1359, 794)
+        Me.Controls.Add(Me.ButtonGuardarNota)
+        Me.Controls.Add(Me.TextBoxNota)
+        Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.LabelCedula)
         Me.Controls.Add(Me.CalendarioAgenda)
-        Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.ButtonNota)
+        Me.Controls.Add(Me.ButtonConsultar)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.ButtonBack)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
@@ -113,7 +167,11 @@ Partial Class MenuAgenda
 
     Private WithEvents ButtonBack As Button
     Friend WithEvents Label1 As Label
-    Friend WithEvents Button1 As Button
-    Friend WithEvents Button2 As Button
+    Friend WithEvents ButtonConsultar As Button
+    Friend WithEvents ButtonNota As Button
     Friend WithEvents CalendarioAgenda As MonthCalendar
+    Friend WithEvents LabelCedula As Label
+    Friend WithEvents Label2 As Label
+    Friend WithEvents TextBoxNota As RichTextBox
+    Friend WithEvents ButtonGuardarNota As Button
 End Class
