@@ -1,24 +1,7 @@
 ﻿Imports System.Data
 Imports System.Data.SqlClient
 Public Class MenuAgenda
-    Public Function Conexion()
-        Dim stringConexion As String
-        stringConexion = "data source=PROYAZUL; initial catalog = Gym; Integrated Security = True”
-        Dim stringSelect As String = "SELECT * FROM Agenda"
-        Dim da As SqlDataAdapter
-        Dim dt As New DataTable
-        Try
-            da = New SqlDataAdapter(stringSelect, stringConexion)
-            da.Fill(dt)
 
-        Catch ex As Exception
-        End Try
-    End Function
-
-    Public Function Leer()
-
-
-    End Function
     Public Function Insertar()
 
         Dim sCon As String = "data source=PROYAZUL; initial catalog = Gym; Integrated Security = True"
@@ -26,19 +9,20 @@ Public Class MenuAgenda
         Dim NombreTabla As String = "Agenda"
 
         sel = "INSERT INTO " & NombreTabla &
-            " (Fecha, Notas) " &
+            " (Cedula,Fecha, Notas) " &
             "VALUES " &
-            "(@Fecha, @Notas)"
+            "(@Cedula,@Fecha, @Notas)"
 
         Using con As New SqlConnection(sCon)
 
             Dim cmd As New SqlCommand(sel, con)
+            cmd.Parameters.AddWithValue("@Cedula", cedula)
             cmd.Parameters.AddWithValue("@Fecha", CalendarioAgenda.SelectionStart)
             cmd.Parameters.AddWithValue("@Notas", TextBoxNota.Text)
 
+            'añadir la opcion de agregar una nueva nota en el mismo dia 
 
-
-
+            'Si se almacena una nota con la misma cedula, manda error 
             con.Open()
             Dim t As Integer = CInt(cmd.ExecuteScalar())
             con.Close()
@@ -50,9 +34,7 @@ Public Class MenuAgenda
         MenuPrincipal.Show()
     End Sub
 
-    Private Sub ComboBox1_SelectedIndexChanged(sender As Object, e As EventArgs)
 
-    End Sub
 
     Private Sub CalendarioAgenda_DateChanged(sender As Object, e As DateRangeEventArgs) Handles CalendarioAgenda.DateChanged
 
@@ -63,6 +45,7 @@ Public Class MenuAgenda
     End Sub
 
     Private Sub CalendarioAgenda_DateSelected(sender As Object, e As DateRangeEventArgs) Handles CalendarioAgenda.DateSelected
+
         Label2.Text = CalendarioAgenda.SelectionStart
     End Sub
 
@@ -80,8 +63,30 @@ Public Class MenuAgenda
         MsgBox("Su nota fue almacenada correctamente", MessageBoxIcon.Information, "FitTracker")
     End Sub
 
+
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles ButtonConsultar.Click
-        Conexion()
+        Dim constr As String = ("data source=PROYAZUL; initial catalog = Gym; Integrated Security = True”)
+
+        Using con As SqlConnection = New SqlConnection(constr)
+            Using cmd As SqlCommand = New SqlCommand("SELECT Cedula, Notas, CONVERT(varchar, Fecha, 101) FROM Agenda WHERE (Cedula = " + cedula + ") and (Fecha = " + CalendarioAgenda.SelectionStart)
+
+                cmd.CommandType = CommandType.Text
+                cmd.Connection = con
+                con.Open()
+
+                Using lector As SqlDataReader = cmd.ExecuteReader()
+
+                    lector.Read()
+
+                    MsgBox("Sus notas del dia son: " + lector("Notas"), MessageBoxIcon.Information, "Fit Tracker")
+
+
+                End Using
+
+                con.Close()
+
+            End Using
+        End Using
 
     End Sub
 End Class
