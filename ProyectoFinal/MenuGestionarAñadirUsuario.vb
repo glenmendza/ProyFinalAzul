@@ -1,70 +1,14 @@
 ﻿Imports System.Data
 Imports System.Data.SqlClient
+Imports System.Text
+
 Public Class MenuGestionarAñadirUsuario
     Private Sub ButtonBack_Click(sender As Object, e As EventArgs) Handles ButtonBack.Click
         Me.Hide()
         MenuGestionarUsuarios.Show()
     End Sub
 
-
-    Private Sub MenuGestionarAñadirUsuario_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
-    End Sub
-
     Public Function Insertar()
-
-        If TextBoxNombre.Text = "" Then
-            MsgBox("Debe ingresar datos de Nombre", MessageBoxIcon.Information, "FIT Tracker")
-            Exit Function
-        End If
-        If TextBoxApellido1.Text = "" Then
-            MsgBox("Debe ingresar datos del Primer Apellido", MessageBoxIcon.Information, "FIT Tracker")
-            Exit Function
-        End If
-        If TextBoxApellido2.Text = "" Then
-            MsgBox("Debe ingresar datos del Segundo Apellido", MessageBoxIcon.Information, "FIT Tracker")
-            Exit Function
-        End If
-        If TextBoxCedula.Text = "" Then
-            MsgBox("Debe ingresar datos de Cedula", MessageBoxIcon.Information, "FIT Tracker")
-            Exit Function
-        End If
-        If TextBoxCorreo.Text = "" Then
-            MsgBox("Debe ingresar datos de Correo Electrónico", MessageBoxIcon.Information, "FIT Tracker")
-            Exit Function
-        End If
-        If TextBoxTelefono.Text = "" Then
-            MsgBox("Debe ingresar datos de Telefono", MessageBoxIcon.Information, "FIT Tracker")
-            Exit Function
-        End If
-        If ComboBoxAcceso.Text = "" Then
-            MsgBox("Debe ingresar datos de Tipo de usuario", MessageBoxIcon.Information, "FIT Tracker")
-            Exit Function
-        End If
-        If TextBoxPeso.Text = "" Then
-            MsgBox("Debe ingresar datos de Peso", MessageBoxIcon.Information, "FIT Tracker")
-            Exit Function
-        End If
-        If TextBoxAltura.Text = "" Then
-            MsgBox("Debe ingresar datos de Altura", MessageBoxIcon.Information, "FIT Tracker")
-            Exit Function
-        End If
-        If TextBoxIMC.Text = "" Then
-            MsgBox("Debe ingresar datos de IMC", MessageBoxIcon.Information, "FIT Tracker")
-            Exit Function
-        End If
-        If ComboBoxGenero.Text = "" Then
-            MsgBox("Debe ingresar datos de Genero", MessageBoxIcon.Information, "FIT Tracker")
-            Exit Function
-        End If
-        If TextBoxNacimiento.Text = "" Then
-            MsgBox("Debe ingresar datos de Fecha de Nacimiento", MessageBoxIcon.Information, "FIT Tracker")
-            Exit Function
-        End If
-        If TextBoxContraseña.Text = "" Then
-            MsgBox("Debe ingresar datos de Contraseña", MessageBoxIcon.Information, "FIT Tracker")
-            Exit Function
-        End If
 
         Dim stringConection As String
         stringConection = "data source=PROYAZUL; initial catalog = Gym; Integrated Security = True”
@@ -110,8 +54,6 @@ Public Class MenuGestionarAñadirUsuario
             cmd.Parameters.AddWithValue("@FechaNacimiento", TextBoxNacimiento.Text)
             cmd.Parameters.AddWithValue("@Contraseña", TextBoxContraseña.Text)
 
-
-
             con.Open()
             Dim t As Integer = CInt(cmd.ExecuteScalar())
             MessageBox.Show("Usuario registrado con exito!", "FIT Tracker")
@@ -120,7 +62,9 @@ Public Class MenuGestionarAñadirUsuario
 
         End Using
 
+#Disable Warning BC42105 ' La función no devuelve un valor en todas las rutas de código
     End Function
+#Enable Warning BC42105 ' La función no devuelve un valor en todas las rutas de código
 
     Public Sub LimpiarCampos()
 
@@ -141,7 +85,76 @@ Public Class MenuGestionarAñadirUsuario
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+
+        If TextBoxNombre.Text = "" Then
+            MsgBox("Debe ingresar datos de Nombre", MessageBoxIcon.Information, "FIT Tracker")
+            Exit Sub
+        ElseIf TextBoxApellido1.Text = "" Then
+            MsgBox("Debe ingresar datos del Primer Apellido", MessageBoxIcon.Information, "FIT Tracker")
+            Exit Sub
+        ElseIf TextBoxApellido2.Text = "" Then
+            MsgBox("Debe ingresar datos del Segundo Apellido", MessageBoxIcon.Information, "FIT Tracker")
+            Exit Sub
+        ElseIf TextBoxCedula.Text = "" Then
+            MsgBox("Debe ingresar datos de Cedula", MessageBoxIcon.Information, "FIT Tracker")
+            Exit Sub
+        ElseIf TextBoxCorreo.Text = "" Then
+            MsgBox("Debe ingresar datos de Correo Electrónico", MessageBoxIcon.Information, "FIT Tracker")
+            Exit Sub
+        ElseIf TextBoxTelefono.Text = "" Then
+            MsgBox("Debe ingresar datos de Telefono", MessageBoxIcon.Information, "FIT Tracker")
+            Exit Sub
+        ElseIf ComboBoxAcceso.Text = "" Then
+            MsgBox("Debe ingresar datos de Tipo de usuario", MessageBoxIcon.Information, "FIT Tracker")
+            Exit Sub
+        ElseIf TextBoxPeso.Text = "" Then
+            MsgBox("Debe ingresar datos de Peso", MessageBoxIcon.Information, "FIT Tracker")
+            Exit Sub
+        ElseIf TextBoxAltura.Text = "" Then
+            MsgBox("Debe ingresar datos de Altura", MessageBoxIcon.Information, "FIT Tracker")
+            Exit Sub
+        ElseIf TextBoxIMC.Text = "" Then
+            MsgBox("Debe ingresar datos de IMC", MessageBoxIcon.Information, "FIT Tracker")
+            Exit Sub
+        ElseIf ComboBoxGenero.Text = "" Then
+            MsgBox("Debe ingresar datos de Genero", MessageBoxIcon.Information, "FIT Tracker")
+            Exit Sub
+        ElseIf TextBoxNacimiento.Text = "" Then
+            MsgBox("Debe ingresar datos de Fecha de Nacimiento", MessageBoxIcon.Information, "FIT Tracker")
+            Exit Sub
+        ElseIf TextBoxContraseña.Text = "" Then
+            MsgBox("Debe ingresar datos de Contraseña", MessageBoxIcon.Information, "FIT Tracker")
+            Exit Sub
+        End If
+
         Call Insertar()
         Call LimpiarCampos()
+    End Sub
+
+    Private Sub ButtonGenerarContra_Click(sender As Object, e As EventArgs) Handles ButtonGenerarContra.Click
+        TextBoxContraseña.Text = CrearPassword(8)
+    End Sub
+
+
+    Private Function CrearPassword(longitud As Integer) As String
+        Dim caracteres As String = "aAbBcCdDeEfFgGhHiIjJkKlLmMnNoOpPqQrRsStTuUvVwWxXyYzZ1234567890"
+        Dim res As New StringBuilder(0)
+        Dim rnd As New Random()
+        While 0 < System.Math.Max(System.Threading.Interlocked.Decrement(longitud), longitud + 1)
+            res.Append(caracteres(rnd.[Next](caracteres.Length)))
+        End While
+        Return res.ToString()
+
+    End Function
+
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        If TextBoxContraseña.Text = "" Then
+            MsgBox("Rellena el campo de contraseña para poder copiar!", MessageBoxIcon.Information, "FIT Tracker")
+            Exit Sub
+        Else
+            Clipboard.SetText(TextBoxContraseña.Text)
+            MsgBox("Contraseña copiada con éxito!", MessageBoxIcon.Information, "FIT Tracker")
+            Exit Sub
+        End If
     End Sub
 End Class

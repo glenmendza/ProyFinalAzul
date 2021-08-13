@@ -53,6 +53,9 @@ Partial Class MenuGestionarAñadirUsuario
         Me.TextBoxContraseña = New System.Windows.Forms.TextBox()
         Me.Label13 = New System.Windows.Forms.Label()
         Me.ComboBoxGenero = New System.Windows.Forms.ComboBox()
+        Me.Label14 = New System.Windows.Forms.Label()
+        Me.Label15 = New System.Windows.Forms.Label()
+        Me.Button2 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Label1
@@ -237,12 +240,12 @@ Partial Class MenuGestionarAñadirUsuario
         '
         Me.ButtonGenerarContra.BackColor = System.Drawing.Color.Transparent
         Me.ButtonGenerarContra.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.ButtonGenerarContra.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ButtonGenerarContra.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ButtonGenerarContra.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.ButtonGenerarContra.Location = New System.Drawing.Point(694, 491)
+        Me.ButtonGenerarContra.Location = New System.Drawing.Point(696, 488)
         Me.ButtonGenerarContra.Margin = New System.Windows.Forms.Padding(2)
         Me.ButtonGenerarContra.Name = "ButtonGenerarContra"
-        Me.ButtonGenerarContra.Size = New System.Drawing.Size(134, 54)
+        Me.ButtonGenerarContra.Size = New System.Drawing.Size(130, 26)
         Me.ButtonGenerarContra.TabIndex = 38
         Me.ButtonGenerarContra.Text = "Generar Contraseña"
         Me.ButtonGenerarContra.UseVisualStyleBackColor = False
@@ -396,12 +399,53 @@ Partial Class MenuGestionarAñadirUsuario
         Me.ComboBoxGenero.Size = New System.Drawing.Size(207, 25)
         Me.ComboBoxGenero.TabIndex = 53
         '
+        'Label14
+        '
+        Me.Label14.AutoSize = True
+        Me.Label14.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label14.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.Label14.Location = New System.Drawing.Point(862, 158)
+        Me.Label14.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label14.Name = "Label14"
+        Me.Label14.Size = New System.Drawing.Size(24, 16)
+        Me.Label14.TabIndex = 54
+        Me.Label14.Text = "Kg"
+        '
+        'Label15
+        '
+        Me.Label15.AutoSize = True
+        Me.Label15.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label15.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.Label15.Location = New System.Drawing.Point(863, 216)
+        Me.Label15.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label15.Name = "Label15"
+        Me.Label15.Size = New System.Drawing.Size(26, 16)
+        Me.Label15.TabIndex = 55
+        Me.Label15.Text = "cm"
+        '
+        'Button2
+        '
+        Me.Button2.BackColor = System.Drawing.Color.Transparent
+        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Button2.Location = New System.Drawing.Point(866, 456)
+        Me.Button2.Margin = New System.Windows.Forms.Padding(2)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(59, 23)
+        Me.Button2.TabIndex = 56
+        Me.Button2.Text = "Copiar"
+        Me.Button2.UseVisualStyleBackColor = False
+        '
         'MenuGestionarAñadirUsuario
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(42, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(1019, 645)
+        Me.Controls.Add(Me.Button2)
+        Me.Controls.Add(Me.Label15)
+        Me.Controls.Add(Me.Label14)
         Me.Controls.Add(Me.ComboBoxGenero)
         Me.Controls.Add(Me.Label13)
         Me.Controls.Add(Me.TextBoxContraseña)
@@ -472,4 +516,7 @@ Partial Class MenuGestionarAñadirUsuario
     Friend WithEvents TextBoxContraseña As TextBox
     Friend WithEvents Label13 As Label
     Protected WithEvents ComboBoxGenero As ComboBox
+    Friend WithEvents Label14 As Label
+    Friend WithEvents Label15 As Label
+    Friend WithEvents Button2 As Button
 End Class
