@@ -24,7 +24,7 @@ Public Class MenuAgenda
 
             'Si se almacena una nota con la misma cedula, manda error 
             con.Open()
-            Dim t As Integer = CInt(cmd.ExecuteScalar())
+            Dim t As Date = CDate(cmd.ExecuteScalar())
             con.Close()
             Return t
         End Using
