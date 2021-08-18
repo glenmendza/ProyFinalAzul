@@ -38,7 +38,7 @@ Public Class Login
         If dt.Rows(0).Item(7).ToString = "Admin" And (dt.Rows(0).Item(8).ToString() = TextBoxContraseña.Text) Then
             Me.Hide()
             MenuPrincipal.Show()
-        Else
+        ElseIf dt.Rows(0).Item(7).ToString = "Cliente" And (dt.Rows(0).Item(8).ToString() = TextBoxContraseña.Text) Then
             Me.Hide()
             MenuPrincipalUsuario.Show()
         End If
@@ -57,6 +57,7 @@ Public Class Login
         Call ValidarUser()
 
         ModuloLogin.cedula = TextBoxCedula.Text
+        ModuloLogin.pass = TextBoxContraseña.Text
 
     End Sub
 
