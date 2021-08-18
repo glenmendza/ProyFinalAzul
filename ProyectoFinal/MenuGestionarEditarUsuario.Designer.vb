@@ -25,32 +25,32 @@ Partial Class MenuGestionarEditarUsuario
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(MenuGestionarEditarUsuario))
         Me.Label1 = New System.Windows.Forms.Label()
         Me.ButtonGuardar = New System.Windows.Forms.Button()
-        Me.TextBoxEdad = New System.Windows.Forms.TextBox()
-        Me.Label8 = New System.Windows.Forms.Label()
         Me.TextBoxGenero = New System.Windows.Forms.TextBox()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.TextBoxTelefono = New System.Windows.Forms.TextBox()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.TextBoxCorreo = New System.Windows.Forms.TextBox()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.TextBoxCedula = New System.Windows.Forms.TextBox()
-        Me.LabelCédula = New System.Windows.Forms.Label()
-        Me.TextBoxApellido2 = New System.Windows.Forms.TextBox()
+        Me.TextBoxSegundoApellido = New System.Windows.Forms.TextBox()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.TextBoxApellido1 = New System.Windows.Forms.TextBox()
+        Me.TextBoxPrimerApellido = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.TextBoxNombre = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.ButtonEditarApellido1 = New System.Windows.Forms.Button()
         Me.ButtonEditarNombre = New System.Windows.Forms.Button()
         Me.ButtonEditarApellido2 = New System.Windows.Forms.Button()
-        Me.ButtonEditarCedula = New System.Windows.Forms.Button()
         Me.ButtonEditarCorreo = New System.Windows.Forms.Button()
         Me.ButtonEditarTelefono = New System.Windows.Forms.Button()
         Me.ButtonEditarGenero = New System.Windows.Forms.Button()
-        Me.ButtonEditarEdad = New System.Windows.Forms.Button()
         Me.ButtonBack = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
+        Me.Button2 = New System.Windows.Forms.Button()
+        Me.TextBoxAltura = New System.Windows.Forms.TextBox()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.Button3 = New System.Windows.Forms.Button()
+        Me.TextBoxPeso = New System.Windows.Forms.TextBox()
+        Me.Label9 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'Label1
@@ -79,26 +79,6 @@ Partial Class MenuGestionarEditarUsuario
         Me.ButtonGuardar.TabIndex = 59
         Me.ButtonGuardar.Text = "Guardar"
         Me.ButtonGuardar.UseVisualStyleBackColor = False
-        '
-        'TextBoxEdad
-        '
-        Me.TextBoxEdad.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBoxEdad.Location = New System.Drawing.Point(963, 359)
-        Me.TextBoxEdad.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.TextBoxEdad.Name = "TextBoxEdad"
-        Me.TextBoxEdad.Size = New System.Drawing.Size(179, 27)
-        Me.TextBoxEdad.TabIndex = 56
-        '
-        'Label8
-        '
-        Me.Label8.AutoSize = True
-        Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label8.Location = New System.Drawing.Point(1083, 332)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(58, 25)
-        Me.Label8.TabIndex = 55
-        Me.Label8.Text = "Edad"
         '
         'TextBoxGenero
         '
@@ -143,7 +123,7 @@ Partial Class MenuGestionarEditarUsuario
         'TextBoxCorreo
         '
         Me.TextBoxCorreo.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBoxCorreo.Location = New System.Drawing.Point(223, 494)
+        Me.TextBoxCorreo.Location = New System.Drawing.Point(222, 429)
         Me.TextBoxCorreo.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.TextBoxCorreo.Name = "TextBoxCorreo"
         Me.TextBoxCorreo.Size = New System.Drawing.Size(179, 27)
@@ -154,40 +134,20 @@ Partial Class MenuGestionarEditarUsuario
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label5.Location = New System.Drawing.Point(217, 457)
+        Me.Label5.Location = New System.Drawing.Point(216, 392)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(173, 25)
         Me.Label5.TabIndex = 49
         Me.Label5.Text = "Correo Electronico"
         '
-        'TextBoxCedula
+        'TextBoxSegundoApellido
         '
-        Me.TextBoxCedula.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBoxCedula.Location = New System.Drawing.Point(223, 420)
-        Me.TextBoxCedula.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.TextBoxCedula.Name = "TextBoxCedula"
-        Me.TextBoxCedula.Size = New System.Drawing.Size(179, 27)
-        Me.TextBoxCedula.TabIndex = 48
-        '
-        'LabelCédula
-        '
-        Me.LabelCédula.AutoSize = True
-        Me.LabelCédula.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LabelCédula.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.LabelCédula.Location = New System.Drawing.Point(217, 384)
-        Me.LabelCédula.Name = "LabelCédula"
-        Me.LabelCédula.Size = New System.Drawing.Size(75, 25)
-        Me.LabelCédula.TabIndex = 47
-        Me.LabelCédula.Text = "Cédula"
-        '
-        'TextBoxApellido2
-        '
-        Me.TextBoxApellido2.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBoxApellido2.Location = New System.Drawing.Point(223, 350)
-        Me.TextBoxApellido2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.TextBoxApellido2.Name = "TextBoxApellido2"
-        Me.TextBoxApellido2.Size = New System.Drawing.Size(179, 27)
-        Me.TextBoxApellido2.TabIndex = 46
+        Me.TextBoxSegundoApellido.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBoxSegundoApellido.Location = New System.Drawing.Point(223, 350)
+        Me.TextBoxSegundoApellido.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.TextBoxSegundoApellido.Name = "TextBoxSegundoApellido"
+        Me.TextBoxSegundoApellido.Size = New System.Drawing.Size(179, 27)
+        Me.TextBoxSegundoApellido.TabIndex = 46
         '
         'Label4
         '
@@ -200,14 +160,14 @@ Partial Class MenuGestionarEditarUsuario
         Me.Label4.TabIndex = 45
         Me.Label4.Text = "Segundo Apellido"
         '
-        'TextBoxApellido1
+        'TextBoxPrimerApellido
         '
-        Me.TextBoxApellido1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBoxApellido1.Location = New System.Drawing.Point(223, 277)
-        Me.TextBoxApellido1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.TextBoxApellido1.Name = "TextBoxApellido1"
-        Me.TextBoxApellido1.Size = New System.Drawing.Size(179, 27)
-        Me.TextBoxApellido1.TabIndex = 44
+        Me.TextBoxPrimerApellido.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBoxPrimerApellido.Location = New System.Drawing.Point(223, 277)
+        Me.TextBoxPrimerApellido.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.TextBoxPrimerApellido.Name = "TextBoxPrimerApellido"
+        Me.TextBoxPrimerApellido.Size = New System.Drawing.Size(179, 27)
+        Me.TextBoxPrimerApellido.TabIndex = 44
         '
         'Label3
         '
@@ -276,24 +236,12 @@ Partial Class MenuGestionarEditarUsuario
         Me.ButtonEditarApellido2.TabIndex = 62
         Me.ButtonEditarApellido2.UseVisualStyleBackColor = True
         '
-        'ButtonEditarCedula
-        '
-        Me.ButtonEditarCedula.BackgroundImage = CType(resources.GetObject("ButtonEditarCedula.BackgroundImage"), System.Drawing.Image)
-        Me.ButtonEditarCedula.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ButtonEditarCedula.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.ButtonEditarCedula.Location = New System.Drawing.Point(408, 412)
-        Me.ButtonEditarCedula.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.ButtonEditarCedula.Name = "ButtonEditarCedula"
-        Me.ButtonEditarCedula.Size = New System.Drawing.Size(52, 46)
-        Me.ButtonEditarCedula.TabIndex = 63
-        Me.ButtonEditarCedula.UseVisualStyleBackColor = True
-        '
         'ButtonEditarCorreo
         '
         Me.ButtonEditarCorreo.BackgroundImage = CType(resources.GetObject("ButtonEditarCorreo.BackgroundImage"), System.Drawing.Image)
         Me.ButtonEditarCorreo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ButtonEditarCorreo.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.ButtonEditarCorreo.Location = New System.Drawing.Point(408, 485)
+        Me.ButtonEditarCorreo.Location = New System.Drawing.Point(407, 420)
         Me.ButtonEditarCorreo.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.ButtonEditarCorreo.Name = "ButtonEditarCorreo"
         Me.ButtonEditarCorreo.Size = New System.Drawing.Size(52, 46)
@@ -324,18 +272,6 @@ Partial Class MenuGestionarEditarUsuario
         Me.ButtonEditarGenero.TabIndex = 66
         Me.ButtonEditarGenero.UseVisualStyleBackColor = True
         '
-        'ButtonEditarEdad
-        '
-        Me.ButtonEditarEdad.BackgroundImage = CType(resources.GetObject("ButtonEditarEdad.BackgroundImage"), System.Drawing.Image)
-        Me.ButtonEditarEdad.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ButtonEditarEdad.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.ButtonEditarEdad.Location = New System.Drawing.Point(1148, 352)
-        Me.ButtonEditarEdad.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.ButtonEditarEdad.Name = "ButtonEditarEdad"
-        Me.ButtonEditarEdad.Size = New System.Drawing.Size(52, 46)
-        Me.ButtonEditarEdad.TabIndex = 67
-        Me.ButtonEditarEdad.UseVisualStyleBackColor = True
-        '
         'ButtonBack
         '
         Me.ButtonBack.BackColor = System.Drawing.Color.Transparent
@@ -364,36 +300,100 @@ Partial Class MenuGestionarEditarUsuario
         Me.Button1.Text = "Eliminar Usuario"
         Me.Button1.UseVisualStyleBackColor = False
         '
+        'Button2
+        '
+        Me.Button2.BackgroundImage = CType(resources.GetObject("Button2.BackgroundImage"), System.Drawing.Image)
+        Me.Button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button2.Location = New System.Drawing.Point(1147, 349)
+        Me.Button2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(52, 46)
+        Me.Button2.TabIndex = 72
+        Me.Button2.UseVisualStyleBackColor = True
+        '
+        'TextBoxAltura
+        '
+        Me.TextBoxAltura.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBoxAltura.Location = New System.Drawing.Point(962, 360)
+        Me.TextBoxAltura.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.TextBoxAltura.Name = "TextBoxAltura"
+        Me.TextBoxAltura.Size = New System.Drawing.Size(179, 27)
+        Me.TextBoxAltura.TabIndex = 71
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label8.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.Label8.Location = New System.Drawing.Point(1076, 333)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(63, 25)
+        Me.Label8.TabIndex = 70
+        Me.Label8.Text = "Altura"
+        '
+        'Button3
+        '
+        Me.Button3.BackgroundImage = CType(resources.GetObject("Button3.BackgroundImage"), System.Drawing.Image)
+        Me.Button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button3.Location = New System.Drawing.Point(1145, 418)
+        Me.Button3.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(52, 46)
+        Me.Button3.TabIndex = 75
+        Me.Button3.UseVisualStyleBackColor = True
+        '
+        'TextBoxPeso
+        '
+        Me.TextBoxPeso.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBoxPeso.Location = New System.Drawing.Point(960, 429)
+        Me.TextBoxPeso.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.TextBoxPeso.Name = "TextBoxPeso"
+        Me.TextBoxPeso.Size = New System.Drawing.Size(179, 27)
+        Me.TextBoxPeso.TabIndex = 74
+        '
+        'Label9
+        '
+        Me.Label9.AutoSize = True
+        Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label9.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.Label9.Location = New System.Drawing.Point(1081, 402)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(57, 25)
+        Me.Label9.TabIndex = 73
+        Me.Label9.Text = "Peso"
+        '
         'MenuGestionarEditarUsuario
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(42, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(1359, 794)
+        Me.Controls.Add(Me.Button3)
+        Me.Controls.Add(Me.TextBoxPeso)
+        Me.Controls.Add(Me.Label9)
+        Me.Controls.Add(Me.Button2)
+        Me.Controls.Add(Me.TextBoxAltura)
+        Me.Controls.Add(Me.Label8)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.ButtonBack)
-        Me.Controls.Add(Me.ButtonEditarEdad)
         Me.Controls.Add(Me.ButtonEditarGenero)
         Me.Controls.Add(Me.ButtonEditarTelefono)
         Me.Controls.Add(Me.ButtonEditarCorreo)
-        Me.Controls.Add(Me.ButtonEditarCedula)
         Me.Controls.Add(Me.ButtonEditarApellido2)
         Me.Controls.Add(Me.ButtonEditarApellido1)
         Me.Controls.Add(Me.ButtonEditarNombre)
         Me.Controls.Add(Me.ButtonGuardar)
-        Me.Controls.Add(Me.TextBoxEdad)
-        Me.Controls.Add(Me.Label8)
         Me.Controls.Add(Me.TextBoxGenero)
         Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.TextBoxTelefono)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.TextBoxCorreo)
         Me.Controls.Add(Me.Label5)
-        Me.Controls.Add(Me.TextBoxCedula)
-        Me.Controls.Add(Me.LabelCédula)
-        Me.Controls.Add(Me.TextBoxApellido2)
+        Me.Controls.Add(Me.TextBoxSegundoApellido)
         Me.Controls.Add(Me.Label4)
-        Me.Controls.Add(Me.TextBoxApellido1)
+        Me.Controls.Add(Me.TextBoxPrimerApellido)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.TextBoxNombre)
         Me.Controls.Add(Me.Label2)
@@ -411,30 +411,30 @@ Partial Class MenuGestionarEditarUsuario
 
     Friend WithEvents Label1 As Label
     Friend WithEvents ButtonGuardar As Button
-    Friend WithEvents TextBoxEdad As TextBox
-    Friend WithEvents Label8 As Label
     Friend WithEvents TextBoxGenero As TextBox
     Friend WithEvents Label7 As Label
     Friend WithEvents TextBoxTelefono As TextBox
     Friend WithEvents Label6 As Label
     Friend WithEvents TextBoxCorreo As TextBox
     Friend WithEvents Label5 As Label
-    Friend WithEvents TextBoxCedula As TextBox
-    Friend WithEvents LabelCédula As Label
-    Friend WithEvents TextBoxApellido2 As TextBox
+    Friend WithEvents TextBoxSegundoApellido As TextBox
     Friend WithEvents Label4 As Label
-    Friend WithEvents TextBoxApellido1 As TextBox
+    Friend WithEvents TextBoxPrimerApellido As TextBox
     Friend WithEvents Label3 As Label
     Friend WithEvents TextBoxNombre As TextBox
     Friend WithEvents Label2 As Label
     Friend WithEvents ButtonEditarNombre As Button
     Friend WithEvents ButtonEditarApellido1 As Button
     Friend WithEvents ButtonEditarApellido2 As Button
-    Friend WithEvents ButtonEditarCedula As Button
     Friend WithEvents ButtonEditarCorreo As Button
     Friend WithEvents ButtonEditarTelefono As Button
     Friend WithEvents ButtonEditarGenero As Button
-    Friend WithEvents ButtonEditarEdad As Button
     Private WithEvents ButtonBack As Button
     Friend WithEvents Button1 As Button
+    Friend WithEvents Button2 As Button
+    Friend WithEvents TextBoxAltura As TextBox
+    Friend WithEvents Label8 As Label
+    Friend WithEvents Button3 As Button
+    Friend WithEvents TextBoxPeso As TextBox
+    Friend WithEvents Label9 As Label
 End Class

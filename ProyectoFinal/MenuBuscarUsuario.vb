@@ -44,10 +44,14 @@ Public Class MenuBuscarUsuario
         End If
 
         If dt.Rows(0).Item(0).ToString = (TextBoxCedula.Text) Then
-            MsgBox("Vamos bien, solo falta conectar los datos en el siguiente form!")
+            ModuloLogin.cedula2 = TextBoxCedula.Text
             Me.Hide()
             MenuGestionarEditarUsuario.Show()
         End If
+
+    End Sub
+
+    Private Sub MenuBuscarUsuario_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
     End Sub
 End Class
