@@ -65,10 +65,11 @@ Public Class MenuAgenda
 
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles ButtonConsultar.Click
+        Dim contador As Integer
         Dim constr As String = ("data source=PROYAZUL; initial catalog = Gym; Integrated Security = True”)
 
         Using con As SqlConnection = New SqlConnection(constr)
-            Using cmd As SqlCommand = New SqlCommand("SELECT Cedula, Notas, CONVERT(varchar, Fecha, 101) FROM Agenda WHERE (Cedula = " + cedula + ") and (Fecha = " + CalendarioAgenda.SelectionStart)
+            Using cmd As SqlCommand = New SqlCommand("SELECT Cedula, Notas, CONVERT(varchar, Fecha, 101) FROM Agenda WHERE (Cedula = " & cedula & ") and (Fecha = '" & CalendarioAgenda.SelectionStart & "' )")
 
                 cmd.CommandType = CommandType.Text
                 cmd.Connection = con
@@ -78,6 +79,10 @@ Public Class MenuAgenda
 
                     lector.Read()
 
+                    While lector.Read()
+                        contador = contador + 1
+                    End While
+                    MsgBox(contador)
                     MsgBox("Sus notas del dia son: " + lector("Notas"), MessageBoxIcon.Information, "Fit Tracker")
 
 

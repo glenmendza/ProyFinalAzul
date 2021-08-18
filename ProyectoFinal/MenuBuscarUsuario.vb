@@ -54,4 +54,8 @@ Public Class MenuBuscarUsuario
     Private Sub MenuBuscarUsuario_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
     End Sub
+
+    Private Sub TextBoxCedula_TextChanged(sender As Object, e As EventArgs) Handles TextBoxCedula.TextChanged
+
+    End Sub
 End Class
