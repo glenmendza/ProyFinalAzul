@@ -16,7 +16,7 @@ Public Class MenuPrincipal
         Catch ex As Exception
         End Try
 
-        MsgBox(dt.Rows(0).Item(7).ToString())
+        'MsgBox(dt.Rows(0).Item(7).ToString())
 
         If dt.Rows(0).Item(7).ToString = "Admin" Then
             ButtonGestionarUsuarios.Visible = True
