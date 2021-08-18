@@ -138,7 +138,7 @@ Partial Class MenuPrincipal
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "MenuPrincipal"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Menu"
+        Me.Text = "Menu1"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

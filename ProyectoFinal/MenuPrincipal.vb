@@ -7,7 +7,7 @@ Public Class MenuPrincipal
     Public Sub ValidarRango()
         Dim stringConection As String
         stringConection = "data source=PROYAZUL; initial catalog = Gym; Integrated Security = True”
-        Dim stringSelect As String = "SELECT * FROM dbo.Usuarios WHERE (Cedula = " & ModuloLogin.cedula & ")"
+        Dim stringSelect As String = "SELECT * FROM dbo.Usuarios WHERE (Cedula = " & cedula & ") "
         Dim da As SqlDataAdapter
         Dim dt As New DataTable
         Try
@@ -16,38 +16,13 @@ Public Class MenuPrincipal
         Catch ex As Exception
         End Try
 
+        MsgBox(dt.Rows(0).Item(7).ToString())
 
-        'If dt.Rows(1).Item(7).ToString = "Admin" Then
-        '    ButtonGestionarUsuarios.Visible = True
-        'Else
-        '    ButtonGestionarUsuarios.Visible = False
-        'End If
-
-        'Dim constr As String = ("data source=PROYAZUL; initial catalog = Gym; Integrated Security = True”)
-
-        'Using con As SqlConnection = New SqlConnection(constr)
-        '    Using cmd As SqlCommand = New SqlCommand("SELECT * FROM dbo.Usuarios WHERE (Acceso = " + dt. + ")")
-
-        '        cmd.CommandType = CommandType.Text
-        '        cmd.Connection = con
-        '        con.Open()
-
-        '        Using lector As SqlDataReader = cmd.ExecuteReader()
-
-        '            lector.Read()
-
-        '            If lector("Acceso").ToString = "Admin" Then
-        '                ButtonGestionarUsuarios.Visible = True
-        '            Else
-        '                ButtonGestionarUsuarios.Visible = False
-        '            End If
-
-        '        End Using
-
-        '        con.Close()
-
-        '    End Using
-        'End Using
+        If dt.Rows(0).Item(7).ToString = "Admin" Then
+            ButtonGestionarUsuarios.Visible = True
+        ElseIf dt.Rows(0).Item(7).ToString = "Cliente" Then
+            ButtonGestionarUsuarios.Visible = False
+        End If
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs)
@@ -60,7 +35,7 @@ Public Class MenuPrincipal
         MenuModificarDatos.Show()
     End Sub
 
-    Private Sub ButtonGestionarUsuarios_Click(sender As Object, e As EventArgs) Handles ButtonGestionarUsuarios.Click
+    Public Sub ButtonGestionarUsuarios_Click(sender As Object, e As EventArgs) Handles ButtonGestionarUsuarios.Click
         Me.Hide()
         MenuGestionarUsuarios.Show()
     End Sub
@@ -84,6 +59,4 @@ Public Class MenuPrincipal
         Me.Hide()
         MenuAñadirEjercicios.Show()
     End Sub
-
-
 End Class

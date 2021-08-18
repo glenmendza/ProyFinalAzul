@@ -34,13 +34,14 @@ Public Class Login
             Exit Sub
         End If
 
+        'MsgBox(dt.Rows(0).Item(7).ToString())
 
         If dt.Rows(0).Item(7).ToString = "Admin" And (dt.Rows(0).Item(8).ToString() = TextBoxContraseña.Text) Then
             Me.Hide()
             MenuPrincipal.Show()
         ElseIf dt.Rows(0).Item(7).ToString = "Cliente" And (dt.Rows(0).Item(8).ToString() = TextBoxContraseña.Text) Then
             Me.Hide()
-            MenuPrincipalUsuario.Show()
+            MenuPrincipal.Show()
         End If
 
 
@@ -53,12 +54,9 @@ Public Class Login
     End Sub
 
     Private Sub Button1_Click_1(sender As Object, e As EventArgs) Handles BotonIngresar.Click 'verificacion de datos boton Ingresar
-
+        cedula = TextBoxCedula.Text
+        pass = TextBoxContraseña.Text
         Call ValidarUser()
-
-        ModuloLogin.cedula = TextBoxCedula.Text
-        ModuloLogin.pass = TextBoxContraseña.Text
-
     End Sub
 
     Private Sub LinkLabel1_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel1.LinkClicked
