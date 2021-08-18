@@ -36,7 +36,7 @@ Public Class MenuGestionarEditarUsuario
         End Using
     End Sub
     Private Sub MenuGestionarEditarUsuario_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Call cargarDatos()
+        Call CargarDatos()
 
 
 
