@@ -85,6 +85,7 @@ Public Class MenuGestionarAñadirUsuario
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        Call CalculoIMC()
 
         If TextBoxNombre.Text = "" Then
             MsgBox("Debe ingresar datos de Nombre", MessageBoxIcon.Information, "FIT Tracker")
@@ -156,5 +157,22 @@ Public Class MenuGestionarAñadirUsuario
             MsgBox("Contraseña copiada con éxito!", MessageBoxIcon.Information, "FIT Tracker")
             Exit Sub
         End If
+    End Sub
+
+    Public Sub CalculoIMC()
+        Dim resultado As Double
+        Dim peso As Double = TextBoxPeso.Text
+        Dim altura As Double = TextBoxAltura.Text
+        resultado = (peso / ((altura / 100) ^ 2))
+        resultado = Format(resultado, "0.00")
+        TextBoxIMC.Text = CStr(resultado)
+    End Sub
+
+    Private Sub MenuGestionarAñadirUsuario_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
+
+    Private Sub ButtonIMC_Click(sender As Object, e As EventArgs) 
+
     End Sub
 End Class
