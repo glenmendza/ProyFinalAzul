@@ -50,7 +50,7 @@ Partial Class MenuBuscarUsuario
         Me.ButtonBack.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ButtonBack.ForeColor = System.Drawing.Color.White
         Me.ButtonBack.Location = New System.Drawing.Point(16, 15)
-        Me.ButtonBack.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.ButtonBack.Margin = New System.Windows.Forms.Padding(4)
         Me.ButtonBack.Name = "ButtonBack"
         Me.ButtonBack.Size = New System.Drawing.Size(69, 46)
         Me.ButtonBack.TabIndex = 22
