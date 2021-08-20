@@ -108,12 +108,15 @@ Partial Class MenuAgenda
         'Label2
         '
         Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label2.Location = New System.Drawing.Point(354, 134)
+        Me.Label2.ImageAlign = System.Drawing.ContentAlignment.BottomLeft
+        Me.Label2.Location = New System.Drawing.Point(586, 377)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(51, 17)
+        Me.Label2.Size = New System.Drawing.Size(251, 29)
         Me.Label2.TabIndex = 27
-        Me.Label2.Text = "Label2"
+        Me.Label2.Text = "Fecha Seleccionada"
+        Me.Label2.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
         'TextBoxNota
         '

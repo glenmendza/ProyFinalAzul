@@ -28,7 +28,7 @@ Public Class MenuBuscarUsuario
 
         Dim stringConection As String
         stringConection = "data source=PROYAZUL; initial catalog = Gym; Integrated Security = True”
-        Dim stringSelect As String = "SELECT dbo.Usuarios.* FROM dbo.Usuarios WHERE (Cedula = " & TextBoxCedula.Text & ")"
+        Dim stringSelect As String = "SELECT * FROM dbo.Usuarios WHERE (Cedula = " & TextBoxCedula.Text & ")"
 
         Dim da As SqlDataAdapter
         Dim dt As New DataTable
@@ -51,11 +51,5 @@ Public Class MenuBuscarUsuario
 
     End Sub
 
-    Private Sub MenuBuscarUsuario_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
-    End Sub
-
-    Private Sub TextBoxCedula_TextChanged(sender As Object, e As EventArgs) Handles TextBoxCedula.TextChanged
-
-    End Sub
 End Class
