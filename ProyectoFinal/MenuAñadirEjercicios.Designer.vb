@@ -23,36 +23,37 @@ Partial Class MenuAñadirEjercicios
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(MenuAñadirEjercicios))
-        Me.Button5 = New System.Windows.Forms.Button()
+        Me.ButtonBrazos = New System.Windows.Forms.Button()
         Me.ButtonPiernas = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.Button3 = New System.Windows.Forms.Button()
-        Me.Button4 = New System.Windows.Forms.Button()
-        Me.Lista1 = New System.Windows.Forms.CheckedListBox()
-        Me.Lista2 = New System.Windows.Forms.CheckedListBox()
-        Me.Lista3 = New System.Windows.Forms.CheckedListBox()
-        Me.Lista4 = New System.Windows.Forms.CheckedListBox()
-        Me.Lista5 = New System.Windows.Forms.CheckedListBox()
-        Me.Button6 = New System.Windows.Forms.Button()
+        Me.ButtonEspalda = New System.Windows.Forms.Button()
+        Me.ButtonPecho = New System.Windows.Forms.Button()
+        Me.ButtonHombros = New System.Windows.Forms.Button()
+        Me.ListaPiernas = New System.Windows.Forms.CheckedListBox()
+        Me.ListaEspalda = New System.Windows.Forms.CheckedListBox()
+        Me.ListaPecho = New System.Windows.Forms.CheckedListBox()
+        Me.ListaHombros = New System.Windows.Forms.CheckedListBox()
+        Me.ListaBrazos = New System.Windows.Forms.CheckedListBox()
+        Me.ButtonGuardar = New System.Windows.Forms.Button()
         Me.ButtonBack = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Calendario = New System.Windows.Forms.MonthCalendar()
         Me.ButtonFecha = New System.Windows.Forms.Button()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         Me.SuspendLayout()
         '
-        'Button5
+        'ButtonBrazos
         '
-        Me.Button5.BackColor = System.Drawing.Color.Transparent
-        Me.Button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button5.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button5.ForeColor = System.Drawing.Color.White
-        Me.Button5.Location = New System.Drawing.Point(951, 302)
-        Me.Button5.Margin = New System.Windows.Forms.Padding(4)
-        Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(165, 44)
-        Me.Button5.TabIndex = 6
-        Me.Button5.Text = "Brazos"
-        Me.Button5.UseVisualStyleBackColor = False
+        Me.ButtonBrazos.BackColor = System.Drawing.Color.Transparent
+        Me.ButtonBrazos.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.ButtonBrazos.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ButtonBrazos.ForeColor = System.Drawing.Color.White
+        Me.ButtonBrazos.Location = New System.Drawing.Point(713, 245)
+        Me.ButtonBrazos.Name = "ButtonBrazos"
+        Me.ButtonBrazos.Size = New System.Drawing.Size(124, 36)
+        Me.ButtonBrazos.TabIndex = 6
+        Me.ButtonBrazos.Text = "Brazos"
+        Me.ButtonBrazos.UseVisualStyleBackColor = False
         '
         'ButtonPiernas
         '
@@ -60,154 +61,144 @@ Partial Class MenuAñadirEjercicios
         Me.ButtonPiernas.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.ButtonPiernas.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ButtonPiernas.ForeColor = System.Drawing.Color.White
-        Me.ButtonPiernas.Location = New System.Drawing.Point(138, 302)
-        Me.ButtonPiernas.Margin = New System.Windows.Forms.Padding(4)
+        Me.ButtonPiernas.Location = New System.Drawing.Point(104, 245)
         Me.ButtonPiernas.Name = "ButtonPiernas"
-        Me.ButtonPiernas.Size = New System.Drawing.Size(165, 44)
+        Me.ButtonPiernas.Size = New System.Drawing.Size(124, 36)
         Me.ButtonPiernas.TabIndex = 7
         Me.ButtonPiernas.Text = "Piernas"
         Me.ButtonPiernas.UseVisualStyleBackColor = False
         '
-        'Button2
+        'ButtonEspalda
         '
-        Me.Button2.BackColor = System.Drawing.Color.Transparent
-        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.ForeColor = System.Drawing.Color.White
-        Me.Button2.Location = New System.Drawing.Point(350, 302)
-        Me.Button2.Margin = New System.Windows.Forms.Padding(4)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(165, 44)
-        Me.Button2.TabIndex = 8
-        Me.Button2.Text = "Espalda"
-        Me.Button2.UseVisualStyleBackColor = False
+        Me.ButtonEspalda.BackColor = System.Drawing.Color.Transparent
+        Me.ButtonEspalda.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.ButtonEspalda.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ButtonEspalda.ForeColor = System.Drawing.Color.White
+        Me.ButtonEspalda.Location = New System.Drawing.Point(262, 245)
+        Me.ButtonEspalda.Name = "ButtonEspalda"
+        Me.ButtonEspalda.Size = New System.Drawing.Size(124, 36)
+        Me.ButtonEspalda.TabIndex = 8
+        Me.ButtonEspalda.Text = "Espalda"
+        Me.ButtonEspalda.UseVisualStyleBackColor = False
         '
-        'Button3
+        'ButtonPecho
         '
-        Me.Button3.BackColor = System.Drawing.Color.Transparent
-        Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button3.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button3.ForeColor = System.Drawing.Color.White
-        Me.Button3.Location = New System.Drawing.Point(552, 302)
-        Me.Button3.Margin = New System.Windows.Forms.Padding(4)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(165, 44)
-        Me.Button3.TabIndex = 9
-        Me.Button3.Text = "Pecho"
-        Me.Button3.UseVisualStyleBackColor = False
+        Me.ButtonPecho.BackColor = System.Drawing.Color.Transparent
+        Me.ButtonPecho.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.ButtonPecho.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ButtonPecho.ForeColor = System.Drawing.Color.White
+        Me.ButtonPecho.Location = New System.Drawing.Point(414, 245)
+        Me.ButtonPecho.Name = "ButtonPecho"
+        Me.ButtonPecho.Size = New System.Drawing.Size(124, 36)
+        Me.ButtonPecho.TabIndex = 9
+        Me.ButtonPecho.Text = "Pecho"
+        Me.ButtonPecho.UseVisualStyleBackColor = False
         '
-        'Button4
+        'ButtonHombros
         '
-        Me.Button4.BackColor = System.Drawing.Color.Transparent
-        Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button4.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button4.ForeColor = System.Drawing.Color.White
-        Me.Button4.Location = New System.Drawing.Point(754, 302)
-        Me.Button4.Margin = New System.Windows.Forms.Padding(4)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(165, 44)
-        Me.Button4.TabIndex = 10
-        Me.Button4.Text = "Hombros"
-        Me.Button4.UseVisualStyleBackColor = False
+        Me.ButtonHombros.BackColor = System.Drawing.Color.Transparent
+        Me.ButtonHombros.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.ButtonHombros.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ButtonHombros.ForeColor = System.Drawing.Color.White
+        Me.ButtonHombros.Location = New System.Drawing.Point(566, 245)
+        Me.ButtonHombros.Name = "ButtonHombros"
+        Me.ButtonHombros.Size = New System.Drawing.Size(124, 36)
+        Me.ButtonHombros.TabIndex = 10
+        Me.ButtonHombros.Text = "Hombros"
+        Me.ButtonHombros.UseVisualStyleBackColor = False
         '
-        'Lista1
+        'ListaPiernas
         '
-        Me.Lista1.BackColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(42, Byte), Integer))
-        Me.Lista1.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.Lista1.CheckOnClick = True
-        Me.Lista1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Lista1.ForeColor = System.Drawing.Color.White
-        Me.Lista1.FormattingEnabled = True
-        Me.Lista1.Items.AddRange(New Object() {"Box Jump", "Deadlift", "Hip Thrust", "Lunge", "Squad"})
-        Me.Lista1.Location = New System.Drawing.Point(138, 354)
-        Me.Lista1.Margin = New System.Windows.Forms.Padding(4)
-        Me.Lista1.Name = "Lista1"
-        Me.Lista1.Size = New System.Drawing.Size(165, 225)
-        Me.Lista1.Sorted = True
-        Me.Lista1.TabIndex = 11
-        Me.Lista1.Visible = False
+        Me.ListaPiernas.BackColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(42, Byte), Integer))
+        Me.ListaPiernas.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.ListaPiernas.CheckOnClick = True
+        Me.ListaPiernas.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ListaPiernas.ForeColor = System.Drawing.Color.White
+        Me.ListaPiernas.FormattingEnabled = True
+        Me.ListaPiernas.Items.AddRange(New Object() {"Box Jump", "Deadlift", "Hip Thrust", "Lunge", "Squad"})
+        Me.ListaPiernas.Location = New System.Drawing.Point(104, 288)
+        Me.ListaPiernas.Name = "ListaPiernas"
+        Me.ListaPiernas.Size = New System.Drawing.Size(124, 168)
+        Me.ListaPiernas.Sorted = True
+        Me.ListaPiernas.TabIndex = 11
+        Me.ListaPiernas.Visible = False
         '
-        'Lista2
+        'ListaEspalda
         '
-        Me.Lista2.BackColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(42, Byte), Integer))
-        Me.Lista2.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.Lista2.CheckOnClick = True
-        Me.Lista2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Lista2.ForeColor = System.Drawing.Color.White
-        Me.Lista2.FormattingEnabled = True
-        Me.Lista2.Items.AddRange(New Object() {"Chin Up", "Incline Row", "Pull Up", "Seated Row", "Upright Row"})
-        Me.Lista2.Location = New System.Drawing.Point(350, 354)
-        Me.Lista2.Margin = New System.Windows.Forms.Padding(4)
-        Me.Lista2.Name = "Lista2"
-        Me.Lista2.Size = New System.Drawing.Size(165, 225)
-        Me.Lista2.Sorted = True
-        Me.Lista2.TabIndex = 12
-        Me.Lista2.Visible = False
+        Me.ListaEspalda.BackColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(42, Byte), Integer))
+        Me.ListaEspalda.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.ListaEspalda.CheckOnClick = True
+        Me.ListaEspalda.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ListaEspalda.ForeColor = System.Drawing.Color.White
+        Me.ListaEspalda.FormattingEnabled = True
+        Me.ListaEspalda.Items.AddRange(New Object() {"Chin Up", "Incline Row", "Pull Up", "Seated Row", "Upright Row"})
+        Me.ListaEspalda.Location = New System.Drawing.Point(262, 288)
+        Me.ListaEspalda.Name = "ListaEspalda"
+        Me.ListaEspalda.Size = New System.Drawing.Size(124, 168)
+        Me.ListaEspalda.Sorted = True
+        Me.ListaEspalda.TabIndex = 12
+        Me.ListaEspalda.Visible = False
         '
-        'Lista3
+        'ListaPecho
         '
-        Me.Lista3.BackColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(42, Byte), Integer))
-        Me.Lista3.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.Lista3.CheckOnClick = True
-        Me.Lista3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Lista3.ForeColor = System.Drawing.Color.White
-        Me.Lista3.FormattingEnabled = True
-        Me.Lista3.Items.AddRange(New Object() {"Bench Press", "Chest Press", "Incline Dumbbel", "Pullover", "Push Ups"})
-        Me.Lista3.Location = New System.Drawing.Point(552, 354)
-        Me.Lista3.Margin = New System.Windows.Forms.Padding(4)
-        Me.Lista3.Name = "Lista3"
-        Me.Lista3.Size = New System.Drawing.Size(165, 225)
-        Me.Lista3.Sorted = True
-        Me.Lista3.TabIndex = 13
-        Me.Lista3.Visible = False
+        Me.ListaPecho.BackColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(42, Byte), Integer))
+        Me.ListaPecho.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.ListaPecho.CheckOnClick = True
+        Me.ListaPecho.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ListaPecho.ForeColor = System.Drawing.Color.White
+        Me.ListaPecho.FormattingEnabled = True
+        Me.ListaPecho.Items.AddRange(New Object() {"Bench Press", "Chest Press", "Incline Dumbbel", "Pullover", "Push Ups"})
+        Me.ListaPecho.Location = New System.Drawing.Point(414, 288)
+        Me.ListaPecho.Name = "ListaPecho"
+        Me.ListaPecho.Size = New System.Drawing.Size(124, 168)
+        Me.ListaPecho.Sorted = True
+        Me.ListaPecho.TabIndex = 13
+        Me.ListaPecho.Visible = False
         '
-        'Lista4
+        'ListaHombros
         '
-        Me.Lista4.BackColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(42, Byte), Integer))
-        Me.Lista4.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.Lista4.CheckOnClick = True
-        Me.Lista4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Lista4.ForeColor = System.Drawing.Color.White
-        Me.Lista4.FormattingEnabled = True
-        Me.Lista4.Items.AddRange(New Object() {"Arnold Press", "Lateral Raise", "Push Press", "Reverse Fly", "Shrug"})
-        Me.Lista4.Location = New System.Drawing.Point(754, 354)
-        Me.Lista4.Margin = New System.Windows.Forms.Padding(4)
-        Me.Lista4.Name = "Lista4"
-        Me.Lista4.Size = New System.Drawing.Size(165, 225)
-        Me.Lista4.Sorted = True
-        Me.Lista4.TabIndex = 14
-        Me.Lista4.Visible = False
+        Me.ListaHombros.BackColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(42, Byte), Integer))
+        Me.ListaHombros.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.ListaHombros.CheckOnClick = True
+        Me.ListaHombros.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ListaHombros.ForeColor = System.Drawing.Color.White
+        Me.ListaHombros.FormattingEnabled = True
+        Me.ListaHombros.Items.AddRange(New Object() {"Arnold Press", "Lateral Raise", "Push Press", "Reverse Fly", "Shrug"})
+        Me.ListaHombros.Location = New System.Drawing.Point(566, 288)
+        Me.ListaHombros.Name = "ListaHombros"
+        Me.ListaHombros.Size = New System.Drawing.Size(124, 168)
+        Me.ListaHombros.Sorted = True
+        Me.ListaHombros.TabIndex = 14
+        Me.ListaHombros.Visible = False
         '
-        'Lista5
+        'ListaBrazos
         '
-        Me.Lista5.BackColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(42, Byte), Integer))
-        Me.Lista5.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.Lista5.CheckOnClick = True
-        Me.Lista5.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Lista5.ForeColor = System.Drawing.Color.White
-        Me.Lista5.FormattingEnabled = True
-        Me.Lista5.Items.AddRange(New Object() {"Concentration Curl", "Dips", "Hammer Curl", "Incline Curl", "Tricep Extension"})
-        Me.Lista5.Location = New System.Drawing.Point(951, 354)
-        Me.Lista5.Margin = New System.Windows.Forms.Padding(4)
-        Me.Lista5.Name = "Lista5"
-        Me.Lista5.Size = New System.Drawing.Size(199, 225)
-        Me.Lista5.Sorted = True
-        Me.Lista5.TabIndex = 15
-        Me.Lista5.Visible = False
+        Me.ListaBrazos.BackColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(42, Byte), Integer))
+        Me.ListaBrazos.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.ListaBrazos.CheckOnClick = True
+        Me.ListaBrazos.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ListaBrazos.ForeColor = System.Drawing.Color.White
+        Me.ListaBrazos.FormattingEnabled = True
+        Me.ListaBrazos.Items.AddRange(New Object() {"Concentration Curl", "Dips", "Hammer Curl", "Incline Curl", "Tricep Extension"})
+        Me.ListaBrazos.Location = New System.Drawing.Point(713, 288)
+        Me.ListaBrazos.Name = "ListaBrazos"
+        Me.ListaBrazos.Size = New System.Drawing.Size(158, 168)
+        Me.ListaBrazos.Sorted = True
+        Me.ListaBrazos.TabIndex = 15
+        Me.ListaBrazos.Visible = False
         '
-        'Button6
+        'ButtonGuardar
         '
-        Me.Button6.BackColor = System.Drawing.Color.Transparent
-        Me.Button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button6.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button6.ForeColor = System.Drawing.Color.White
-        Me.Button6.Location = New System.Drawing.Point(1195, 720)
-        Me.Button6.Margin = New System.Windows.Forms.Padding(4)
-        Me.Button6.Name = "Button6"
-        Me.Button6.Size = New System.Drawing.Size(127, 43)
-        Me.Button6.TabIndex = 16
-        Me.Button6.Text = "Guardar"
-        Me.Button6.UseVisualStyleBackColor = False
+        Me.ButtonGuardar.BackColor = System.Drawing.Color.Transparent
+        Me.ButtonGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.ButtonGuardar.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ButtonGuardar.ForeColor = System.Drawing.Color.White
+        Me.ButtonGuardar.Location = New System.Drawing.Point(896, 585)
+        Me.ButtonGuardar.Name = "ButtonGuardar"
+        Me.ButtonGuardar.Size = New System.Drawing.Size(95, 35)
+        Me.ButtonGuardar.TabIndex = 16
+        Me.ButtonGuardar.Text = "Guardar"
+        Me.ButtonGuardar.UseVisualStyleBackColor = False
         '
         'ButtonBack
         '
@@ -215,10 +206,9 @@ Partial Class MenuAñadirEjercicios
         Me.ButtonBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.ButtonBack.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ButtonBack.ForeColor = System.Drawing.Color.White
-        Me.ButtonBack.Location = New System.Drawing.Point(16, 15)
-        Me.ButtonBack.Margin = New System.Windows.Forms.Padding(4)
+        Me.ButtonBack.Location = New System.Drawing.Point(12, 12)
         Me.ButtonBack.Name = "ButtonBack"
-        Me.ButtonBack.Size = New System.Drawing.Size(69, 46)
+        Me.ButtonBack.Size = New System.Drawing.Size(52, 37)
         Me.ButtonBack.TabIndex = 17
         Me.ButtonBack.Text = "←"
         Me.ButtonBack.UseVisualStyleBackColor = False
@@ -229,17 +219,17 @@ Partial Class MenuAñadirEjercicios
         Me.Label1.BackColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(42, Byte), Integer))
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.White
-        Me.Label1.Location = New System.Drawing.Point(431, 52)
-        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label1.Location = New System.Drawing.Point(323, 42)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(389, 46)
+        Me.Label1.Size = New System.Drawing.Size(311, 37)
         Me.Label1.TabIndex = 20
         Me.Label1.Text = "Añadir mis ejercicios"
         '
         'Calendario
         '
         Me.Calendario.BackColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(42, Byte), Integer))
-        Me.Calendario.Location = New System.Drawing.Point(518, 569)
+        Me.Calendario.Location = New System.Drawing.Point(358, 466)
+        Me.Calendario.Margin = New System.Windows.Forms.Padding(7)
         Me.Calendario.Name = "Calendario"
         Me.Calendario.TabIndex = 23
         Me.Calendario.Visible = False
@@ -250,37 +240,55 @@ Partial Class MenuAñadirEjercicios
         Me.ButtonFecha.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.ButtonFecha.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ButtonFecha.ForeColor = System.Drawing.Color.White
-        Me.ButtonFecha.Location = New System.Drawing.Point(570, 512)
-        Me.ButtonFecha.Margin = New System.Windows.Forms.Padding(4)
+        Me.ButtonFecha.Location = New System.Drawing.Point(428, 416)
         Me.ButtonFecha.Name = "ButtonFecha"
-        Me.ButtonFecha.Size = New System.Drawing.Size(165, 44)
+        Me.ButtonFecha.Size = New System.Drawing.Size(124, 36)
         Me.ButtonFecha.TabIndex = 24
         Me.ButtonFecha.Text = "Fecha"
         Me.ButtonFecha.UseVisualStyleBackColor = False
         '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(869, 159)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(75, 23)
+        Me.Button1.TabIndex = 25
+        Me.Button1.Text = "Button1"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
+        'ComboBox1
+        '
+        Me.ComboBox1.FormattingEnabled = True
+        Me.ComboBox1.Items.AddRange(New Object() {"asd", "asd", "asd", "asda", "sd", "asd"})
+        Me.ComboBox1.Location = New System.Drawing.Point(635, 135)
+        Me.ComboBox1.Name = "ComboBox1"
+        Me.ComboBox1.Size = New System.Drawing.Size(121, 21)
+        Me.ComboBox1.TabIndex = 26
+        '
         'MenuAñadirEjercicios
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(42, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(1359, 794)
+        Me.ClientSize = New System.Drawing.Size(1019, 645)
+        Me.Controls.Add(Me.ComboBox1)
+        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.ButtonFecha)
         Me.Controls.Add(Me.Calendario)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.ButtonBack)
-        Me.Controls.Add(Me.Button6)
-        Me.Controls.Add(Me.Lista5)
-        Me.Controls.Add(Me.Lista4)
-        Me.Controls.Add(Me.Lista3)
-        Me.Controls.Add(Me.Lista2)
-        Me.Controls.Add(Me.Lista1)
-        Me.Controls.Add(Me.Button4)
-        Me.Controls.Add(Me.Button3)
-        Me.Controls.Add(Me.Button2)
+        Me.Controls.Add(Me.ButtonGuardar)
+        Me.Controls.Add(Me.ListaBrazos)
+        Me.Controls.Add(Me.ListaHombros)
+        Me.Controls.Add(Me.ListaPecho)
+        Me.Controls.Add(Me.ListaEspalda)
+        Me.Controls.Add(Me.ListaPiernas)
+        Me.Controls.Add(Me.ButtonHombros)
+        Me.Controls.Add(Me.ButtonPecho)
+        Me.Controls.Add(Me.ButtonEspalda)
         Me.Controls.Add(Me.ButtonPiernas)
-        Me.Controls.Add(Me.Button5)
+        Me.Controls.Add(Me.ButtonBrazos)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
-        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "MenuAñadirEjercicios"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "MenuAñadirEjercicios"
@@ -289,19 +297,21 @@ Partial Class MenuAñadirEjercicios
 
     End Sub
 
-    Friend WithEvents Button5 As Button
+    Friend WithEvents ButtonBrazos As Button
     Friend WithEvents ButtonPiernas As Button
-    Friend WithEvents Button2 As Button
-    Friend WithEvents Button3 As Button
-    Friend WithEvents Button4 As Button
-    Friend WithEvents Lista2 As CheckedListBox
-    Friend WithEvents Lista3 As CheckedListBox
-    Friend WithEvents Lista4 As CheckedListBox
-    Friend WithEvents Lista5 As CheckedListBox
-    Private WithEvents Lista1 As CheckedListBox
-    Private WithEvents Button6 As Button
+    Friend WithEvents ButtonEspalda As Button
+    Friend WithEvents ButtonPecho As Button
+    Friend WithEvents ButtonHombros As Button
+    Friend WithEvents ListaEspalda As CheckedListBox
+    Friend WithEvents ListaPecho As CheckedListBox
+    Friend WithEvents ListaHombros As CheckedListBox
+    Friend WithEvents ListaBrazos As CheckedListBox
+    Private WithEvents ListaPiernas As CheckedListBox
+    Private WithEvents ButtonGuardar As Button
     Private WithEvents ButtonBack As Button
     Friend WithEvents Label1 As Label
     Friend WithEvents Calendario As MonthCalendar
     Friend WithEvents ButtonFecha As Button
+    Friend WithEvents Button1 As Button
+    Friend WithEvents ComboBox1 As ComboBox
 End Class
