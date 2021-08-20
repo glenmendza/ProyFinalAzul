@@ -45,13 +45,13 @@ Partial Class MenuGestionarEditarUsuario
         Me.ButtonEditarGenero = New System.Windows.Forms.Button()
         Me.ButtonBack = New System.Windows.Forms.Button()
         Me.ButtonEliminar = New System.Windows.Forms.Button()
-        Me.ButtonEditarAltura = New System.Windows.Forms.Button()
         Me.TextBoxAltura = New System.Windows.Forms.TextBox()
         Me.Label8 = New System.Windows.Forms.Label()
-        Me.ButtonEditarPeso = New System.Windows.Forms.Button()
         Me.TextBoxPeso = New System.Windows.Forms.TextBox()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.TextBoxCedula = New System.Windows.Forms.TextBox()
+        Me.ButtonEditarAltura = New System.Windows.Forms.Button()
+        Me.ButtonEditarPeso = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Label1
@@ -307,18 +307,6 @@ Partial Class MenuGestionarEditarUsuario
         Me.ButtonEliminar.Text = "Eliminar Usuario"
         Me.ButtonEliminar.UseVisualStyleBackColor = False
         '
-        'ButtonEditarAltura
-        '
-        Me.ButtonEditarAltura.BackgroundImage = CType(resources.GetObject("ButtonEditarAltura.BackgroundImage"), System.Drawing.Image)
-        Me.ButtonEditarAltura.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ButtonEditarAltura.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.ButtonEditarAltura.Location = New System.Drawing.Point(1147, 349)
-        Me.ButtonEditarAltura.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.ButtonEditarAltura.Name = "ButtonEditarAltura"
-        Me.ButtonEditarAltura.Size = New System.Drawing.Size(52, 46)
-        Me.ButtonEditarAltura.TabIndex = 72
-        Me.ButtonEditarAltura.UseVisualStyleBackColor = True
-        '
         'TextBoxAltura
         '
         Me.TextBoxAltura.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -339,18 +327,6 @@ Partial Class MenuGestionarEditarUsuario
         Me.Label8.Size = New System.Drawing.Size(63, 25)
         Me.Label8.TabIndex = 70
         Me.Label8.Text = "Altura"
-        '
-        'ButtonEditarPeso
-        '
-        Me.ButtonEditarPeso.BackgroundImage = CType(resources.GetObject("ButtonEditarPeso.BackgroundImage"), System.Drawing.Image)
-        Me.ButtonEditarPeso.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ButtonEditarPeso.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.ButtonEditarPeso.Location = New System.Drawing.Point(1145, 418)
-        Me.ButtonEditarPeso.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.ButtonEditarPeso.Name = "ButtonEditarPeso"
-        Me.ButtonEditarPeso.Size = New System.Drawing.Size(52, 46)
-        Me.ButtonEditarPeso.TabIndex = 75
-        Me.ButtonEditarPeso.UseVisualStyleBackColor = True
         '
         'TextBoxPeso
         '
@@ -381,17 +357,41 @@ Partial Class MenuGestionarEditarUsuario
         Me.TextBoxCedula.Size = New System.Drawing.Size(157, 34)
         Me.TextBoxCedula.TabIndex = 76
         '
+        'ButtonEditarAltura
+        '
+        Me.ButtonEditarAltura.BackgroundImage = CType(resources.GetObject("ButtonEditarAltura.BackgroundImage"), System.Drawing.Image)
+        Me.ButtonEditarAltura.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.ButtonEditarAltura.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.ButtonEditarAltura.Location = New System.Drawing.Point(1148, 351)
+        Me.ButtonEditarAltura.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.ButtonEditarAltura.Name = "ButtonEditarAltura"
+        Me.ButtonEditarAltura.Size = New System.Drawing.Size(52, 46)
+        Me.ButtonEditarAltura.TabIndex = 77
+        Me.ButtonEditarAltura.UseVisualStyleBackColor = True
+        '
+        'ButtonEditarPeso
+        '
+        Me.ButtonEditarPeso.BackgroundImage = CType(resources.GetObject("ButtonEditarPeso.BackgroundImage"), System.Drawing.Image)
+        Me.ButtonEditarPeso.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.ButtonEditarPeso.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.ButtonEditarPeso.Location = New System.Drawing.Point(1148, 420)
+        Me.ButtonEditarPeso.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.ButtonEditarPeso.Name = "ButtonEditarPeso"
+        Me.ButtonEditarPeso.Size = New System.Drawing.Size(52, 46)
+        Me.ButtonEditarPeso.TabIndex = 78
+        Me.ButtonEditarPeso.UseVisualStyleBackColor = True
+        '
         'MenuGestionarEditarUsuario
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(42, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(1359, 794)
-        Me.Controls.Add(Me.TextBoxCedula)
         Me.Controls.Add(Me.ButtonEditarPeso)
+        Me.Controls.Add(Me.ButtonEditarAltura)
+        Me.Controls.Add(Me.TextBoxCedula)
         Me.Controls.Add(Me.TextBoxPeso)
         Me.Controls.Add(Me.Label9)
-        Me.Controls.Add(Me.ButtonEditarAltura)
         Me.Controls.Add(Me.TextBoxAltura)
         Me.Controls.Add(Me.Label8)
         Me.Controls.Add(Me.ButtonEliminar)
@@ -449,11 +449,11 @@ Partial Class MenuGestionarEditarUsuario
     Friend WithEvents ButtonEditarGenero As Button
     Private WithEvents ButtonBack As Button
     Friend WithEvents ButtonEliminar As Button
-    Friend WithEvents ButtonEditarAltura As Button
     Friend WithEvents TextBoxAltura As TextBox
     Friend WithEvents Label8 As Label
-    Friend WithEvents ButtonEditarPeso As Button
     Friend WithEvents TextBoxPeso As TextBox
     Friend WithEvents Label9 As Label
     Friend WithEvents TextBoxCedula As TextBox
+    Friend WithEvents ButtonEditarAltura As Button
+    Friend WithEvents ButtonEditarPeso As Button
 End Class

@@ -1,18 +1,19 @@
 ﻿Imports System.Data
 Imports System.Data.SqlClient
 Public Class MenuGestionarEditarUsuario
+    Private Sub MenuGestionarEditarUsuario_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Call Cargar()
 
+    End Sub
     Private Sub ButtonBack_Click(sender As Object, e As EventArgs) Handles ButtonBack.Click
         Me.Hide()
         MenuBuscarUsuario.Show()
 
     End Sub
-
-    Private Sub MenuGestionarEditarUsuario_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        TextBoxCedula.Text = cedula2
+    Public Sub Cargar()
         Dim constr As String = ("data source=PROYAZUL; initial catalog = Gym; Integrated Security = True”)
         Using con As SqlConnection = New SqlConnection(constr)
-            Using cmd As SqlCommand = New SqlCommand("SELECT * FROM Usuarios WHERE (Cedula = " & TextBoxCedula.Text & ")")
+            Using cmd As SqlCommand = New SqlCommand("SELECT * FROM Usuarios WHERE (Cedula = " & cedula2 & ")")
 
                 cmd.CommandType = CommandType.Text
                 cmd.Connection = con
@@ -38,6 +39,7 @@ Public Class MenuGestionarEditarUsuario
             End Using
         End Using
     End Sub
+
     Private Sub ButtonEditarNombre_Click(sender As Object, e As EventArgs) Handles ButtonEditarNombre.Click
         If TextBoxNombre.ReadOnly = True Then
             TextBoxNombre.ReadOnly = False
@@ -56,13 +58,13 @@ Public Class MenuGestionarEditarUsuario
         End If
     End Sub
 
-    Private Sub ButtonEditarAltura_Click(sender As Object, e As EventArgs) Handles ButtonEditarAltura.Click
+    Private Sub ButtonEditarAltura_Click(sender As Object, e As EventArgs)
         If TextBoxAltura.ReadOnly = True Then
             TextBoxAltura.ReadOnly = False
         End If
     End Sub
 
-    Private Sub ButtonEditarPeso_Click(sender As Object, e As EventArgs) Handles ButtonEditarPeso.Click
+    Private Sub ButtonEditarPeso_Click(sender As Object, e As EventArgs)
         If TextBoxPeso.ReadOnly = True Then
             TextBoxPeso.ReadOnly = False
         End If
@@ -87,27 +89,43 @@ Public Class MenuGestionarEditarUsuario
 
 
     Public Sub ButtonGuardar_Click(sender As Object, e As EventArgs) Handles ButtonGuardar.Click
-        Dim constr As New SqlConnection("data source=PROYAZUL; initial catalog = Gym; Integrated Security = True”)
-
-        Dim cmd As New SqlCommand("UPADTE Usuarios SET Nombre = @Nombre, PrimerApellido = @PrimerApellido, SegundoApellido = @SegundoApellido, Correo = @Correo, Telefono = @Telefono, Genero = @Genero, Altura = @Altura, Peso = @Peso", constr)
-        cmd.Parameters.Add("@Nombre", SqlDbType.VarChar).Value = TextBoxNombre.Text
-        cmd.Parameters.Add("@PrimerApellido", SqlDbType.VarChar).Value = TextBoxPrimerApellido.Text
-        cmd.Parameters.Add("@SegundoApellido", SqlDbType.VarChar).Value = TextBoxSegundoApellido.Text
-        cmd.Parameters.Add("@Correo", SqlDbType.VarChar).Value = TextBoxCorreo.Text
-        cmd.Parameters.Add("@Telefono", SqlDbType.VarChar).Value = TextBoxTelefono.Text
-        cmd.Parameters.Add("@Genero", SqlDbType.VarChar).Value = TextBoxGenero.Text
-        cmd.Parameters.Add("@Altura", SqlDbType.VarChar).Value = TextBoxAltura.Text
-        cmd.Parameters.Add("@Peso", SqlDbType.VarChar).Value = TextBoxPeso.Text
-
-        constr.Open()
-        If cmd.ExecuteNonQuery() = 1 Then
-            MsgBox("Datos actualizados con exito")
-        Else
-            MsgBox("Los datos no fueron actualizados")
-        End If
-        constr.Close()
+        Call Insertar()
     End Sub
 
+    Public Sub Insertar()
+        Dim myConnectionString As String = "data source=PROYAZUL; initial catalog = Gym; Integrated Security = True"
+
+        Dim myConnection As New SqlConnection(myConnectionString)
+
+        Dim rows As Integer
+
+        Dim myCommand As SqlCommand = myConnection.CreateCommand()
+
+
+        myConnection.Open()
+
+        myCommand.CommandText = "UPDATE Usuarios SET "
+        myCommand.CommandText += "Nombre = '" & TextBoxNombre.Text & "', "
+            myCommand.CommandText += "PrimerApellido = '" & TextBoxPrimerApellido.Text & "', "
+            myCommand.CommandText += "SegundoApellido = '" & TextBoxSegundoApellido.Text & "', "
+            myCommand.CommandText += "Altura = '" & TextBoxAltura.Text & "', "
+            myCommand.CommandText += "Peso = '" & TextBoxPeso.Text & "', "
+            myCommand.CommandText += "Telefono = '" & TextBoxTelefono.Text & "', "
+            myCommand.CommandText += "Genero = '" & TextBoxGenero.Text & "', "
+        myCommand.CommandText += "Correo = '" & TextBoxCorreo.Text & "' "
+        myCommand.CommandText += "WHERE Cedula = " & cedula2 & ""
+
+        rows = myCommand.ExecuteNonQuery()
+
+
+
+
+        myConnection.Close()
+
+
+        MessageBox.Show("Datos actualizados con exito!", "FIT Tracker")
+        Exit Sub
+    End Sub
 
 
     'funcion para eliminar al usuario
