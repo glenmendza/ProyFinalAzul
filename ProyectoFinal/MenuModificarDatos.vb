@@ -8,7 +8,7 @@ Public Class MenuModificarDatos
     End Sub
 
     Private Sub MenuModificarDatos_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
+        PictureBox2.Visible = False
         TextBoxCedula.Text = ModuloLogin.cedula
 
         Dim constr As String = ("data source=PROYAZUL; initial catalog = Gym; Integrated Security = True”)
@@ -143,5 +143,13 @@ Public Class MenuModificarDatos
         MessageBox.Show("Datos actualizados con exito!", "FIT Tracker")
         Exit Sub
 
+    End Sub
+
+    Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
+        If PictureBox2.Visible = False Then
+            PictureBox2.Visible = True
+        ElseIf PictureBox2.Visible = True Then
+            PictureBox2.Visible = False
+        End If
     End Sub
 End Class

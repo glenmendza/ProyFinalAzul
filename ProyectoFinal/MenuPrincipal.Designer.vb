@@ -30,6 +30,8 @@ Partial Class MenuPrincipal
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Button2 = New System.Windows.Forms.Button()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'ButtonModificarDatos
@@ -122,6 +124,15 @@ Partial Class MenuPrincipal
         Me.Button2.Text = "Añadir ejercicios"
         Me.Button2.UseVisualStyleBackColor = False
         '
+        'PictureBox1
+        '
+        Me.PictureBox1.BackgroundImage = CType(resources.GetObject("PictureBox1.BackgroundImage"), System.Drawing.Image)
+        Me.PictureBox1.Location = New System.Drawing.Point(-3, 1)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(1022, 641)
+        Me.PictureBox1.TabIndex = 22
+        Me.PictureBox1.TabStop = False
+        '
         'MenuPrincipal
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -135,10 +146,12 @@ Partial Class MenuPrincipal
         Me.Controls.Add(Me.ButtonAgenda)
         Me.Controls.Add(Me.ButtonGestionarUsuarios)
         Me.Controls.Add(Me.ButtonModificarDatos)
+        Me.Controls.Add(Me.PictureBox1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "MenuPrincipal"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Menu1"
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -150,4 +163,5 @@ Partial Class MenuPrincipal
     Friend WithEvents Button1 As Button
     Friend WithEvents Label1 As Label
     Friend WithEvents Button2 As Button
+    Friend WithEvents PictureBox1 As PictureBox
 End Class

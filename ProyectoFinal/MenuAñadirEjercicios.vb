@@ -169,14 +169,12 @@ Public Class MenuAñadirEjercicios
                 MsgBox("Error, ya están registrados estos ejercicios en " + Calendario.SelectionStart)
             End Try
         End Using
+#Disable Warning BC42105 ' La función no devuelve un valor en todas las rutas de código
     End Function
+#Enable Warning BC42105 ' La función no devuelve un valor en todas las rutas de código
 
     Private Sub Button1_Click_1(sender As Object, e As EventArgs) Handles Button1.Click
         'MsgBox(ListaPiernas.SelectedItem(1) = CheckState.Checked)
     End Sub
-
-
-    'Hola grupo
-
 
 End Class

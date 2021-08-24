@@ -58,6 +58,10 @@ Partial Class MenuModificarDatos
         Me.ButtonEditarSegundoApellido = New System.Windows.Forms.Button()
         Me.LabelApellido1 = New System.Windows.Forms.Label()
         Me.LabelApellido2 = New System.Windows.Forms.Label()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'ButtonBack
@@ -493,12 +497,32 @@ Partial Class MenuModificarDatos
         Me.LabelApellido2.TabIndex = 104
         Me.LabelApellido2.Text = "Segundo Apellido"
         '
+        'PictureBox1
+        '
+        Me.PictureBox1.BackgroundImage = CType(resources.GetObject("PictureBox1.BackgroundImage"), System.Drawing.Image)
+        Me.PictureBox1.Location = New System.Drawing.Point(935, 204)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(52, 50)
+        Me.PictureBox1.TabIndex = 105
+        Me.PictureBox1.TabStop = False
+        '
+        'PictureBox2
+        '
+        Me.PictureBox2.BackgroundImage = CType(resources.GetObject("PictureBox2.BackgroundImage"), System.Drawing.Image)
+        Me.PictureBox2.Location = New System.Drawing.Point(356, 225)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(299, 126)
+        Me.PictureBox2.TabIndex = 106
+        Me.PictureBox2.TabStop = False
+        '
         'MenuModificarDatos
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(42, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(1019, 645)
+        Me.Controls.Add(Me.PictureBox2)
+        Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.LabelApellido2)
         Me.Controls.Add(Me.LabelApellido1)
         Me.Controls.Add(Me.ButtonEditarSegundoApellido)
@@ -538,6 +562,8 @@ Partial Class MenuModificarDatos
         Me.Name = "MenuModificarDatos"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "MenuModificarDatos"
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -578,4 +604,6 @@ Partial Class MenuModificarDatos
     Friend WithEvents ButtonEditarSegundoApellido As Button
     Friend WithEvents LabelApellido1 As Label
     Friend WithEvents LabelApellido2 As Label
+    Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents PictureBox2 As PictureBox
 End Class
