@@ -152,4 +152,12 @@ Public Class MenuModificarDatos
             PictureBox2.Visible = False
         End If
     End Sub
+
+    Private Sub ButtonMostrarEsconder_Click(sender As Object, e As EventArgs) Handles ButtonMostrarEsconder.Click
+        If TextBoxContraseña.Visible = True Then
+            TextBoxContraseña.Visible = False
+        ElseIf TextBoxContraseña.Visible = False Then
+            TextBoxContraseña.Visible = True
+        End If
+    End Sub
 End Class
