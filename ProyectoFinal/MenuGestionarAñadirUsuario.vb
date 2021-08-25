@@ -169,7 +169,8 @@ Public Class MenuGestionarAñadirUsuario
     End Sub
 
     Private Sub MenuGestionarAñadirUsuario_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
+        ComboBoxGenero.DropDownStyle = ComboBoxStyle.DropDownList
+        ComboBoxAcceso.DropDownStyle = ComboBoxStyle.DropDownList
     End Sub
 
     Private Sub ButtonIMC_Click(sender As Object, e As EventArgs) 
