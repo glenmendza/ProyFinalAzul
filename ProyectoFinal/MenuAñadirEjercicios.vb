@@ -4,6 +4,9 @@ Imports System.Data.SqlClient
 Public Class MenuAñadirEjercicios
     Private Sub MenuAñadirEjercicios_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         'ButtonGuardar.Visible = False
+
+        Label3.Text = Calendario.SelectionStart
+
         ComboBox1.DropDownStyle = ComboBoxStyle.DropDownList
         ComboBox2.DropDownStyle = ComboBoxStyle.DropDownList
         ComboBox3.DropDownStyle = ComboBoxStyle.DropDownList
@@ -71,64 +74,87 @@ Public Class MenuAñadirEjercicios
     End Sub
 
     Private Sub Button8_Click(sender As Object, e As EventArgs) Handles ButtonGuardar.Click
+
         Call ValidarDatos()
 
         If ComboBox1.SelectedItem = ComboBox1.Items.Item(0) Then
             Call BoxJump()
+            ComboBox1.FormattingEnabled = True
         ElseIf ComboBox1.SelectedItem = ComboBox1.Items.Item(1) Then
             Call Deadlift()
+            ComboBox1.FormattingEnabled = True
         ElseIf ComboBox1.SelectedItem = ComboBox1.Items.Item(2) Then
             Call HipThrust()
+            ComboBox1.FormattingEnabled = True
         ElseIf ComboBox1.SelectedItem = ComboBox1.Items.Item(3) Then
             Call Lunge()
+            ComboBox1.FormattingEnabled = True
         ElseIf ComboBox1.SelectedItem = ComboBox1.Items.Item(4) Then
             Call Squad()
+            ComboBox1.FormattingEnabled = True
         ElseIf ComboBox2.SelectedItem = ComboBox2.Items.Item(0) Then
             Call ChinUp()
+            ComboBox2.FormattingEnabled = True
         ElseIf ComboBox2.SelectedItem = ComboBox2.Items.Item(1) Then
             Call InclineRow()
+            ComboBox2.FormattingEnabled = True
         ElseIf ComboBox2.SelectedItem = ComboBox2.Items.Item(2) Then
             Call PullUp()
+            ComboBox2.FormattingEnabled = True
         ElseIf ComboBox2.SelectedItem = ComboBox2.Items.Item(3) Then
             Call Seatedrow()
+            ComboBox2.FormattingEnabled = True
         ElseIf ComboBox2.SelectedItem = ComboBox2.Items.Item(4) Then
             Call Uprightrow()
+            ComboBox2.FormattingEnabled = True
         ElseIf ComboBox3.SelectedItem = ComboBox3.Items.Item(0) Then
             Call BenchPress()
+            ComboBox3.FormattingEnabled = True
         ElseIf ComboBox3.SelectedItem = ComboBox3.Items.Item(1) Then
             Call ChestPress()
+            ComboBox3.FormattingEnabled = True
         ElseIf ComboBox3.SelectedItem = ComboBox3.Items.Item(2) Then
             Call InclineDumbbel()
+            ComboBox3.FormattingEnabled = True
         ElseIf ComboBox3.SelectedItem = ComboBox3.Items.Item(3) Then
             Call Pullover()
+            ComboBox3.FormattingEnabled = True
         ElseIf ComboBox3.SelectedItem = ComboBox3.Items.Item(4) Then
             Call PushUps()
+            ComboBox3.FormattingEnabled = True
         ElseIf ComboBox4.SelectedItem = ComboBox4.Items.Item(0) Then
             Call ArnoldPress()
+            ComboBox4.FormattingEnabled = True
         ElseIf ComboBox4.SelectedItem = ComboBox4.Items.Item(1) Then
             Call LateralRaise()
+            ComboBox4.FormattingEnabled = True
         ElseIf ComboBox4.SelectedItem = ComboBox4.Items.Item(2) Then
             Call PushPress()
+            ComboBox4.FormattingEnabled = True
         ElseIf ComboBox4.SelectedItem = ComboBox4.Items.Item(3) Then
             Call ReverseFly()
+            ComboBox4.FormattingEnabled = True
         ElseIf ComboBox4.SelectedItem = ComboBox4.Items.Item(4) Then
             Call Shrug()
+            ComboBox4.FormattingEnabled = True
         ElseIf ComboBox5.SelectedItem = ComboBox5.Items.Item(0) Then
             Call ConcentrationCurl()
+            ComboBox5.FormattingEnabled = True
         ElseIf ComboBox5.SelectedItem = ComboBox5.Items.Item(1) Then
             Call Dips()
+            ComboBox5.FormattingEnabled = True
         ElseIf ComboBox5.SelectedItem = ComboBox5.Items.Item(2) Then
             Call HammerCurl()
+            ComboBox5.FormattingEnabled = True
         ElseIf ComboBox5.SelectedItem = ComboBox5.Items.Item(3) Then
             Call InclineCurl()
+            ComboBox5.FormattingEnabled = True
         ElseIf ComboBox5.SelectedItem = ComboBox5.Items.Item(4) Then
             Call TricepExtension()
+            ComboBox5.FormattingEnabled = True
         End If
-        ComboBox1.Text = ""
-        ComboBox2.Text = ""
-        ComboBox3.Text = ""
-        ComboBox4.Text = ""
-        ComboBox5.Text = ""
+
+
 
     End Sub
 

@@ -38,6 +38,8 @@ Partial Class MenuAñadirEjercicios
         Me.ComboBox3 = New System.Windows.Forms.ComboBox()
         Me.ComboBox4 = New System.Windows.Forms.ComboBox()
         Me.ComboBox5 = New System.Windows.Forms.ComboBox()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'ButtonBrazos
@@ -215,12 +217,35 @@ Partial Class MenuAñadirEjercicios
         Me.ComboBox5.Size = New System.Drawing.Size(124, 32)
         Me.ComboBox5.TabIndex = 31
         '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.ForeColor = System.Drawing.Color.White
+        Me.Label2.Location = New System.Drawing.Point(379, 346)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(155, 20)
+        Me.Label2.TabIndex = 32
+        Me.Label2.Text = "Fecha seleccionada:"
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.ForeColor = System.Drawing.Color.White
+        Me.Label3.Location = New System.Drawing.Point(547, 346)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(0, 20)
+        Me.Label3.TabIndex = 33
+        '
         'MenuAñadirEjercicios
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(42, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(1019, 645)
+        Me.Controls.Add(Me.Label3)
+        Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.ComboBox5)
         Me.Controls.Add(Me.ComboBox4)
         Me.Controls.Add(Me.ComboBox3)
@@ -260,4 +285,6 @@ Partial Class MenuAñadirEjercicios
     Friend WithEvents ComboBox3 As ComboBox
     Friend WithEvents ComboBox4 As ComboBox
     Friend WithEvents ComboBox5 As ComboBox
+    Friend WithEvents Label2 As Label
+    Friend WithEvents Label3 As Label
 End Class
