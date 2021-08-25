@@ -14,12 +14,12 @@ Public Class MenuEstadisticas
         Try
             conn.Open()
             Dim Query As String
-            Query = "SELECT Nombre, Peso FROM dbo.Usuarios Where Cedula =" & cedula
+            Query = "SELECT Fecha, Peso FROM dbo.Estadisticas1 Where Cedula =" & cedula
             COMMAND = New SqlCommand(Query, conn)
             READER = COMMAND.ExecuteReader
             While READER.Read
 
-                Chart1.Series("Peso").Points.AddXY(READER("Nombre"), READER("Peso"))
+                Chart1.Series("Peso").Points.AddXY(READER("Fecha"), READER("Peso"))
 
             End While
             conn.Close()
