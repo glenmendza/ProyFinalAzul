@@ -31,6 +31,7 @@ Partial Class Login
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.LinkLabel1 = New System.Windows.Forms.LinkLabel()
         Me.BotonIngresar = New System.Windows.Forms.Button()
+        Me.CR = New System.Windows.Forms.Label()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -127,6 +128,18 @@ Partial Class Login
         Me.BotonIngresar.Text = "Ingresar "
         Me.BotonIngresar.UseVisualStyleBackColor = False
         '
+        'CR
+        '
+        Me.CR.AutoSize = True
+        Me.CR.BackColor = System.Drawing.Color.Transparent
+        Me.CR.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CR.ForeColor = System.Drawing.Color.Transparent
+        Me.CR.Location = New System.Drawing.Point(25, 592)
+        Me.CR.Name = "CR"
+        Me.CR.Size = New System.Drawing.Size(445, 24)
+        Me.CR.TabIndex = 9
+        Me.CR.Text = "Copyright © 2021-2021 ProyAzul. All rights reserved."
+        '
         'Login
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -134,6 +147,7 @@ Partial Class Login
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(1015, 641)
+        Me.Controls.Add(Me.CR)
         Me.Controls.Add(Me.BotonIngresar)
         Me.Controls.Add(Me.LinkLabel1)
         Me.Controls.Add(Me.PictureBox1)
@@ -146,7 +160,7 @@ Partial Class Login
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Login"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Login"
+        Me.Text = "FIT Tracker"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
@@ -161,4 +175,5 @@ Partial Class Login
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents LinkLabel1 As LinkLabel
     Friend WithEvents BotonIngresar As Button
+    Friend WithEvents CR As Label
 End Class
