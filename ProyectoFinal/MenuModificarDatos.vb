@@ -113,6 +113,13 @@ Public Class MenuModificarDatos
 
         Dim myCommand As SqlCommand = myConnection.CreateCommand()
 
+        Dim resultado As Double
+        Dim resultado2 As String
+        Dim peso As Double = TextBoxPeso.Text
+        Dim altura As Double = TextBoxAltura.Text
+        resultado = (peso / ((altura / 100) ^ 2))
+        resultado2 = Format(resultado, "0.00")
+
         Try
             myConnection.Open()
 
@@ -123,7 +130,7 @@ Public Class MenuModificarDatos
             myCommand.CommandText += "FechaNacimiento = '" & TextBoxNacimiento.Text & "', "
             myCommand.CommandText += "Altura = '" & TextBoxAltura.Text & "', "
             myCommand.CommandText += "Peso = '" & TextBoxPeso.Text & "', "
-            myCommand.CommandText += "IMC = '" & TextBoxIMC.Text & "', "
+            myCommand.CommandText += "IMC = '" & resultado2 & "', "
             myCommand.CommandText += "Telefono = '" & TextBoxTelefono.Text & "', "
             myCommand.CommandText += "Correo = '" & TextBoxCorreo.Text & "', "
             myCommand.CommandText += "Contraseña = '" & TextBoxContraseña.Text & "' "
@@ -131,7 +138,7 @@ Public Class MenuModificarDatos
 
             rows = myCommand.ExecuteNonQuery()
 
-        Catch ex As SqlException
+        Catch ex As Exception
 
         Finally
             myConnection.Close()
@@ -160,5 +167,11 @@ Public Class MenuModificarDatos
         ElseIf TextBoxContraseña.Visible = False Then
             TextBoxContraseña.Visible = True
         End If
+    End Sub
+
+    Public Sub formula()
+
+
+
     End Sub
 End Class
