@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class MenuAñadirEjercicios
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class MenuAñadirEjercicios
     'NOTA: el Diseñador de Windows Forms necesita el siguiente procedimiento
     'Se puede modificar usando el Diseñador de Windows Forms.  
     'No lo modifique con el editor de código.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(MenuAñadirEjercicios))
         Me.ButtonBrazos = New System.Windows.Forms.Button()
@@ -32,14 +32,17 @@ Partial Class MenuAñadirEjercicios
         Me.ButtonBack = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Calendario = New System.Windows.Forms.MonthCalendar()
-        Me.ButtonFecha = New System.Windows.Forms.Button()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
-        Me.ComboBox2 = New System.Windows.Forms.ComboBox()
-        Me.ComboBox3 = New System.Windows.Forms.ComboBox()
-        Me.ComboBox4 = New System.Windows.Forms.ComboBox()
-        Me.ComboBox5 = New System.Windows.Forms.ComboBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
+        Me.RichTextBoxPiernas = New System.Windows.Forms.RichTextBox()
+        Me.RichTextBoxEspalda = New System.Windows.Forms.RichTextBox()
+        Me.RichTextBoxPecho = New System.Windows.Forms.RichTextBox()
+        Me.RichTextBoxHombros = New System.Windows.Forms.RichTextBox()
+        Me.RichTextBoxBrazos = New System.Windows.Forms.RichTextBox()
+        Me.TextBoxNombre = New System.Windows.Forms.TextBox()
+        Me.TextBoxRepeticiones = New System.Windows.Forms.TextBox()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Label5 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'ButtonBrazos
@@ -148,81 +151,18 @@ Partial Class MenuAñadirEjercicios
         'Calendario
         '
         Me.Calendario.BackColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(42, Byte), Integer))
-        Me.Calendario.Location = New System.Drawing.Point(383, 444)
+        Me.Calendario.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Calendario.Location = New System.Drawing.Point(612, 327)
         Me.Calendario.Margin = New System.Windows.Forms.Padding(7)
         Me.Calendario.Name = "Calendario"
         Me.Calendario.TabIndex = 23
-        Me.Calendario.Visible = False
-        '
-        'ButtonFecha
-        '
-        Me.ButtonFecha.BackColor = System.Drawing.Color.Transparent
-        Me.ButtonFecha.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.ButtonFecha.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ButtonFecha.ForeColor = System.Drawing.Color.White
-        Me.ButtonFecha.Location = New System.Drawing.Point(448, 385)
-        Me.ButtonFecha.Name = "ButtonFecha"
-        Me.ButtonFecha.Size = New System.Drawing.Size(124, 36)
-        Me.ButtonFecha.TabIndex = 24
-        Me.ButtonFecha.Text = "Fecha"
-        Me.ButtonFecha.UseVisualStyleBackColor = False
-        '
-        'ComboBox1
-        '
-        Me.ComboBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Items.AddRange(New Object() {"Box Jump", "Deadlift", "Hip Thrust", "Lunge", "Squad"})
-        Me.ComboBox1.Location = New System.Drawing.Point(127, 179)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(124, 32)
-        Me.ComboBox1.TabIndex = 26
-        '
-        'ComboBox2
-        '
-        Me.ComboBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!)
-        Me.ComboBox2.FormattingEnabled = True
-        Me.ComboBox2.Items.AddRange(New Object() {"Chin Up", "Incline Row", "Pull Up", "Seated Row", "Upright Row"})
-        Me.ComboBox2.Location = New System.Drawing.Point(285, 179)
-        Me.ComboBox2.Name = "ComboBox2"
-        Me.ComboBox2.Size = New System.Drawing.Size(124, 32)
-        Me.ComboBox2.TabIndex = 28
-        '
-        'ComboBox3
-        '
-        Me.ComboBox3.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!)
-        Me.ComboBox3.FormattingEnabled = True
-        Me.ComboBox3.Items.AddRange(New Object() {"Bench Press", "Chest Press", "Incline Dumbbel", "Pullover", "Push Ups"})
-        Me.ComboBox3.Location = New System.Drawing.Point(437, 179)
-        Me.ComboBox3.Name = "ComboBox3"
-        Me.ComboBox3.Size = New System.Drawing.Size(124, 32)
-        Me.ComboBox3.TabIndex = 29
-        '
-        'ComboBox4
-        '
-        Me.ComboBox4.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!)
-        Me.ComboBox4.FormattingEnabled = True
-        Me.ComboBox4.Items.AddRange(New Object() {"Arnold Press", "Lateral Raise", "Push Press", "Reverse Fly", "Shrug"})
-        Me.ComboBox4.Location = New System.Drawing.Point(589, 179)
-        Me.ComboBox4.Name = "ComboBox4"
-        Me.ComboBox4.Size = New System.Drawing.Size(124, 32)
-        Me.ComboBox4.TabIndex = 30
-        '
-        'ComboBox5
-        '
-        Me.ComboBox5.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!)
-        Me.ComboBox5.FormattingEnabled = True
-        Me.ComboBox5.Items.AddRange(New Object() {"Concentration Curl", "Dips", "Hammer Curl", "Incline Curl", "Tricep Extension"})
-        Me.ComboBox5.Location = New System.Drawing.Point(736, 179)
-        Me.ComboBox5.Name = "ComboBox5"
-        Me.ComboBox5.Size = New System.Drawing.Size(124, 32)
-        Me.ComboBox5.TabIndex = 31
         '
         'Label2
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.White
-        Me.Label2.Location = New System.Drawing.Point(379, 346)
+        Me.Label2.Location = New System.Drawing.Point(123, 418)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(155, 20)
         Me.Label2.TabIndex = 32
@@ -233,10 +173,108 @@ Partial Class MenuAñadirEjercicios
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.White
-        Me.Label3.Location = New System.Drawing.Point(547, 346)
+        Me.Label3.Location = New System.Drawing.Point(305, 418)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(0, 20)
         Me.Label3.TabIndex = 33
+        '
+        'RichTextBoxPiernas
+        '
+        Me.RichTextBoxPiernas.BackColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(42, Byte), Integer))
+        Me.RichTextBoxPiernas.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.RichTextBoxPiernas.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.RichTextBoxPiernas.ForeColor = System.Drawing.Color.White
+        Me.RichTextBoxPiernas.Location = New System.Drawing.Point(127, 181)
+        Me.RichTextBoxPiernas.Name = "RichTextBoxPiernas"
+        Me.RichTextBoxPiernas.Size = New System.Drawing.Size(124, 136)
+        Me.RichTextBoxPiernas.TabIndex = 34
+        Me.RichTextBoxPiernas.Text = "♦ Box Jump" & Global.Microsoft.VisualBasic.ChrW(10) & "♦ Deadlift" & Global.Microsoft.VisualBasic.ChrW(10) & "♦ Hip Thrust" & Global.Microsoft.VisualBasic.ChrW(10) & "♦ Lunge" & Global.Microsoft.VisualBasic.ChrW(10) & "♦ Squad"
+        '
+        'RichTextBoxEspalda
+        '
+        Me.RichTextBoxEspalda.BackColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(42, Byte), Integer))
+        Me.RichTextBoxEspalda.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.RichTextBoxEspalda.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.RichTextBoxEspalda.ForeColor = System.Drawing.Color.White
+        Me.RichTextBoxEspalda.Location = New System.Drawing.Point(285, 181)
+        Me.RichTextBoxEspalda.Name = "RichTextBoxEspalda"
+        Me.RichTextBoxEspalda.Size = New System.Drawing.Size(124, 136)
+        Me.RichTextBoxEspalda.TabIndex = 35
+        Me.RichTextBoxEspalda.Text = "♦ Chin Up" & Global.Microsoft.VisualBasic.ChrW(10) & "♦ Incline Row" & Global.Microsoft.VisualBasic.ChrW(10) & "♦ Pull Up" & Global.Microsoft.VisualBasic.ChrW(10) & "♦ Seated Row" & Global.Microsoft.VisualBasic.ChrW(10) & "♦ Upright Row"
+        '
+        'RichTextBoxPecho
+        '
+        Me.RichTextBoxPecho.BackColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(42, Byte), Integer))
+        Me.RichTextBoxPecho.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.RichTextBoxPecho.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.RichTextBoxPecho.ForeColor = System.Drawing.Color.White
+        Me.RichTextBoxPecho.Location = New System.Drawing.Point(437, 181)
+        Me.RichTextBoxPecho.Name = "RichTextBoxPecho"
+        Me.RichTextBoxPecho.Size = New System.Drawing.Size(124, 136)
+        Me.RichTextBoxPecho.TabIndex = 36
+        Me.RichTextBoxPecho.Text = "♦ Bench Press" & Global.Microsoft.VisualBasic.ChrW(10) & "♦ Chest Press" & Global.Microsoft.VisualBasic.ChrW(10) & "♦ Incline Dumbbel" & Global.Microsoft.VisualBasic.ChrW(10) & "♦ Pullover" & Global.Microsoft.VisualBasic.ChrW(10) & "♦ Push Ups"
+        '
+        'RichTextBoxHombros
+        '
+        Me.RichTextBoxHombros.BackColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(42, Byte), Integer))
+        Me.RichTextBoxHombros.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.RichTextBoxHombros.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.RichTextBoxHombros.ForeColor = System.Drawing.Color.White
+        Me.RichTextBoxHombros.Location = New System.Drawing.Point(589, 181)
+        Me.RichTextBoxHombros.Name = "RichTextBoxHombros"
+        Me.RichTextBoxHombros.Size = New System.Drawing.Size(124, 136)
+        Me.RichTextBoxHombros.TabIndex = 37
+        Me.RichTextBoxHombros.Text = "♦ Arnold Press" & Global.Microsoft.VisualBasic.ChrW(10) & "♦ Lateral Raise" & Global.Microsoft.VisualBasic.ChrW(10) & "♦ Push Press" & Global.Microsoft.VisualBasic.ChrW(10) & "♦ Reverse Fly" & Global.Microsoft.VisualBasic.ChrW(10) & "♦ Shrug"
+        '
+        'RichTextBoxBrazos
+        '
+        Me.RichTextBoxBrazos.BackColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(42, Byte), Integer))
+        Me.RichTextBoxBrazos.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.RichTextBoxBrazos.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.RichTextBoxBrazos.ForeColor = System.Drawing.Color.White
+        Me.RichTextBoxBrazos.Location = New System.Drawing.Point(736, 181)
+        Me.RichTextBoxBrazos.Name = "RichTextBoxBrazos"
+        Me.RichTextBoxBrazos.Size = New System.Drawing.Size(124, 136)
+        Me.RichTextBoxBrazos.TabIndex = 38
+        Me.RichTextBoxBrazos.Text = "♦ Concentration Curl" & Global.Microsoft.VisualBasic.ChrW(10) & "♦ Dips" & Global.Microsoft.VisualBasic.ChrW(10) & "♦ Hammer Curl" & Global.Microsoft.VisualBasic.ChrW(10) & "♦ Incline Curl" & Global.Microsoft.VisualBasic.ChrW(10) & "♦ Tricep Extension"
+        '
+        'TextBoxNombre
+        '
+        Me.TextBoxNombre.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBoxNombre.Location = New System.Drawing.Point(309, 330)
+        Me.TextBoxNombre.Name = "TextBoxNombre"
+        Me.TextBoxNombre.Size = New System.Drawing.Size(199, 26)
+        Me.TextBoxNombre.TabIndex = 39
+        '
+        'TextBoxRepeticiones
+        '
+        Me.TextBoxRepeticiones.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBoxRepeticiones.Location = New System.Drawing.Point(309, 377)
+        Me.TextBoxRepeticiones.Name = "TextBoxRepeticiones"
+        Me.TextBoxRepeticiones.Size = New System.Drawing.Size(199, 26)
+        Me.TextBoxRepeticiones.TabIndex = 40
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.ForeColor = System.Drawing.Color.White
+        Me.Label4.Location = New System.Drawing.Point(133, 336)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(152, 20)
+        Me.Label4.TabIndex = 41
+        Me.Label4.Text = "Nombre de ejercicio:"
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.ForeColor = System.Drawing.Color.White
+        Me.Label5.Location = New System.Drawing.Point(179, 380)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(106, 20)
+        Me.Label5.TabIndex = 42
+        Me.Label5.Text = "Repeticiones:"
         '
         'MenuAñadirEjercicios
         '
@@ -244,14 +282,17 @@ Partial Class MenuAñadirEjercicios
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(42, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(1019, 645)
+        Me.Controls.Add(Me.Label5)
+        Me.Controls.Add(Me.Label4)
+        Me.Controls.Add(Me.TextBoxRepeticiones)
+        Me.Controls.Add(Me.TextBoxNombre)
+        Me.Controls.Add(Me.RichTextBoxBrazos)
+        Me.Controls.Add(Me.RichTextBoxHombros)
+        Me.Controls.Add(Me.RichTextBoxPecho)
+        Me.Controls.Add(Me.RichTextBoxEspalda)
+        Me.Controls.Add(Me.RichTextBoxPiernas)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.ComboBox5)
-        Me.Controls.Add(Me.ComboBox4)
-        Me.Controls.Add(Me.ComboBox3)
-        Me.Controls.Add(Me.ComboBox2)
-        Me.Controls.Add(Me.ComboBox1)
-        Me.Controls.Add(Me.ButtonFecha)
         Me.Controls.Add(Me.Calendario)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.ButtonBack)
@@ -279,12 +320,15 @@ Partial Class MenuAñadirEjercicios
     Private WithEvents ButtonBack As Button
     Friend WithEvents Label1 As Label
     Friend WithEvents Calendario As MonthCalendar
-    Friend WithEvents ButtonFecha As Button
-    Friend WithEvents ComboBox1 As ComboBox
-    Friend WithEvents ComboBox2 As ComboBox
-    Friend WithEvents ComboBox3 As ComboBox
-    Friend WithEvents ComboBox4 As ComboBox
-    Friend WithEvents ComboBox5 As ComboBox
     Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label
+    Friend WithEvents RichTextBoxPiernas As RichTextBox
+    Friend WithEvents RichTextBoxEspalda As RichTextBox
+    Friend WithEvents RichTextBoxPecho As RichTextBox
+    Friend WithEvents RichTextBoxHombros As RichTextBox
+    Friend WithEvents RichTextBoxBrazos As RichTextBox
+    Friend WithEvents TextBoxNombre As TextBox
+    Friend WithEvents TextBoxRepeticiones As TextBox
+    Friend WithEvents Label4 As Label
+    Friend WithEvents Label5 As Label
 End Class

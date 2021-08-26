@@ -3,61 +3,54 @@ Imports System.Data.SqlClient
 
 Public Class MenuAñadirEjercicios
     Private Sub MenuAñadirEjercicios_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
         'ButtonGuardar.Visible = False
-
-        Label3.Text = Calendario.SelectionStart
-
-        ComboBox1.DropDownStyle = ComboBoxStyle.DropDownList
-        ComboBox2.DropDownStyle = ComboBoxStyle.DropDownList
-        ComboBox3.DropDownStyle = ComboBoxStyle.DropDownList
-        ComboBox4.DropDownStyle = ComboBoxStyle.DropDownList
-        ComboBox5.DropDownStyle = ComboBoxStyle.DropDownList
-
-        ComboBox1.Visible = False
-        ComboBox2.Visible = False
-        ComboBox3.Visible = False
-        ComboBox4.Visible = False
-        ComboBox5.Visible = False
+        RichTextBoxPiernas.Visible = False
+        RichTextBoxEspalda.Visible = False
+        RichTextBoxPecho.Visible = False
+        RichTextBoxHombros.Visible = False
+        RichTextBoxBrazos.Visible = False
 
     End Sub
 
+
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles ButtonPiernas.Click
-        If ComboBox1.Visible = True Then
-            ComboBox1.Visible = False
+        If RichTextBoxPiernas.Visible = True Then
+            RichTextBoxPiernas.Visible = False
         Else
-            ComboBox1.Visible = True
+            RichTextBoxPiernas.Visible = True
         End If
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles ButtonEspalda.Click
-        If ComboBox2.Visible = True Then
-            ComboBox2.Visible = False
+        If RichTextBoxEspalda.Visible = True Then
+            RichTextBoxEspalda.Visible = False
         Else
-            ComboBox2.Visible = True
+            RichTextBoxEspalda.Visible = True
         End If
     End Sub
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles ButtonPecho.Click
-        If ComboBox3.Visible = True Then
-            ComboBox3.Visible = False
+        If RichTextBoxPecho.Visible = True Then
+            RichTextBoxPecho.Visible = False
         Else
-            ComboBox3.Visible = True
+            RichTextBoxPecho.Visible = True
         End If
     End Sub
 
     Private Sub Button4_Click(sender As Object, e As EventArgs) Handles ButtonHombros.Click
-        If ComboBox4.Visible = True Then
-            ComboBox4.Visible = False
+        If RichTextBoxHombros.Visible = True Then
+            RichTextBoxHombros.Visible = False
         Else
-            ComboBox4.Visible = True
+            RichTextBoxHombros.Visible = True
         End If
     End Sub
 
     Private Sub Button5_Click(sender As Object, e As EventArgs) Handles ButtonBrazos.Click
-        If ComboBox5.Visible = True Then
-            ComboBox5.Visible = False
+        If RichTextBoxBrazos.Visible = True Then
+            RichTextBoxBrazos.Visible = False
         Else
-            ComboBox5.Visible = True
+            RichTextBoxBrazos.Visible = True
         End If
     End Sub
     Private Sub Button6_Click(sender As Object, e As EventArgs) Handles ButtonBack.Click
@@ -65,7 +58,7 @@ Public Class MenuAñadirEjercicios
         MenuPrincipal.Show()
     End Sub
 
-    Private Sub Button7_Click(sender As Object, e As EventArgs) Handles ButtonFecha.Click
+    Private Sub Button7_Click(sender As Object, e As EventArgs)
         If Calendario.Visible = True Then
             Calendario.Visible = False
         Else
@@ -73,90 +66,64 @@ Public Class MenuAñadirEjercicios
         End If
     End Sub
 
-    Private Sub Button8_Click(sender As Object, e As EventArgs) Handles ButtonGuardar.Click
-
+    Private Function Button8_Click(sender As Object, e As EventArgs) Handles ButtonGuardar.Click
         Call ValidarDatos()
 
-        If ComboBox1.SelectedItem = ComboBox1.Items.Item(0) Then
-            Call BoxJump()
-            ComboBox1.FormattingEnabled = True
-        ElseIf ComboBox1.SelectedItem = ComboBox1.Items.Item(1) Then
-            Call Deadlift()
-            ComboBox1.FormattingEnabled = True
-        ElseIf ComboBox1.SelectedItem = ComboBox1.Items.Item(2) Then
-            Call HipThrust()
-            ComboBox1.FormattingEnabled = True
-        ElseIf ComboBox1.SelectedItem = ComboBox1.Items.Item(3) Then
-            Call Lunge()
-            ComboBox1.FormattingEnabled = True
-        ElseIf ComboBox1.SelectedItem = ComboBox1.Items.Item(4) Then
-            Call Squad()
-            ComboBox1.FormattingEnabled = True
-        ElseIf ComboBox2.SelectedItem = ComboBox2.Items.Item(0) Then
-            Call ChinUp()
-            ComboBox2.FormattingEnabled = True
-        ElseIf ComboBox2.SelectedItem = ComboBox2.Items.Item(1) Then
-            Call InclineRow()
-            ComboBox2.FormattingEnabled = True
-        ElseIf ComboBox2.SelectedItem = ComboBox2.Items.Item(2) Then
-            Call PullUp()
-            ComboBox2.FormattingEnabled = True
-        ElseIf ComboBox2.SelectedItem = ComboBox2.Items.Item(3) Then
-            Call Seatedrow()
-            ComboBox2.FormattingEnabled = True
-        ElseIf ComboBox2.SelectedItem = ComboBox2.Items.Item(4) Then
-            Call Uprightrow()
-            ComboBox2.FormattingEnabled = True
-        ElseIf ComboBox3.SelectedItem = ComboBox3.Items.Item(0) Then
-            Call BenchPress()
-            ComboBox3.FormattingEnabled = True
-        ElseIf ComboBox3.SelectedItem = ComboBox3.Items.Item(1) Then
-            Call ChestPress()
-            ComboBox3.FormattingEnabled = True
-        ElseIf ComboBox3.SelectedItem = ComboBox3.Items.Item(2) Then
-            Call InclineDumbbel()
-            ComboBox3.FormattingEnabled = True
-        ElseIf ComboBox3.SelectedItem = ComboBox3.Items.Item(3) Then
-            Call Pullover()
-            ComboBox3.FormattingEnabled = True
-        ElseIf ComboBox3.SelectedItem = ComboBox3.Items.Item(4) Then
-            Call PushUps()
-            ComboBox3.FormattingEnabled = True
-        ElseIf ComboBox4.SelectedItem = ComboBox4.Items.Item(0) Then
-            Call ArnoldPress()
-            ComboBox4.FormattingEnabled = True
-        ElseIf ComboBox4.SelectedItem = ComboBox4.Items.Item(1) Then
-            Call LateralRaise()
-            ComboBox4.FormattingEnabled = True
-        ElseIf ComboBox4.SelectedItem = ComboBox4.Items.Item(2) Then
-            Call PushPress()
-            ComboBox4.FormattingEnabled = True
-        ElseIf ComboBox4.SelectedItem = ComboBox4.Items.Item(3) Then
-            Call ReverseFly()
-            ComboBox4.FormattingEnabled = True
-        ElseIf ComboBox4.SelectedItem = ComboBox4.Items.Item(4) Then
-            Call Shrug()
-            ComboBox4.FormattingEnabled = True
-        ElseIf ComboBox5.SelectedItem = ComboBox5.Items.Item(0) Then
-            Call ConcentrationCurl()
-            ComboBox5.FormattingEnabled = True
-        ElseIf ComboBox5.SelectedItem = ComboBox5.Items.Item(1) Then
-            Call Dips()
-            ComboBox5.FormattingEnabled = True
-        ElseIf ComboBox5.SelectedItem = ComboBox5.Items.Item(2) Then
-            Call HammerCurl()
-            ComboBox5.FormattingEnabled = True
-        ElseIf ComboBox5.SelectedItem = ComboBox5.Items.Item(3) Then
-            Call InclineCurl()
-            ComboBox5.FormattingEnabled = True
-        ElseIf ComboBox5.SelectedItem = ComboBox5.Items.Item(4) Then
-            Call TricepExtension()
-            ComboBox5.FormattingEnabled = True
-        End If
+        Dim sCon As String = "data source=PROYAZUL; initial catalog = Gym; Integrated Security = True"
+        Dim sel As String
+        Dim NombreTabla As String = "EjerciciosUsuario"
+
+        sel = "INSERT INTO " & NombreTabla &
+            " (Cedula, Fecha, NombreEjercicio, Repeticiones) " &
+            " VALUES " &
+            " (@Cedula, @Fecha, @NombreEjercicio, @Repeticiones)"
+
+        Using con As New SqlConnection(sCon)
+
+            Dim cmd As New SqlCommand(sel, con)
+
+            'Try
+            '    If TextBoxNombre.Text <> "Box Jump" Then
+            '        MsgBox("Error")
+            '        Exit Function
+            '    ElseIf TextBoxNombre.Text <> "Chin up" Then
+            '        MsgBox("Error")
+            '        Exit Function
+            '    End If
+            'Catch ex As Exception
+            '    MsgBox(ex.Message)
+            '    Exit Function
+            'End Try
+
+            Select Case TextBoxNombre.Text
+                Case TextBoxNombre.Text <> "Box Jump"
+                    MsgBox("El ejercicio no esta disponible")
+                    Exit Function
+                Case TextBoxNombre.Text <> "Deadlift"
+                    MsgBox("El ejercicio no esta disponible ")
+                    Exit Function
+                Case Else
+                    'se agrega el ejercicio a la bd
+            End Select
+
+            cmd.Parameters.AddWithValue("@Cedula", cedula)
+            cmd.Parameters.AddWithValue("@Fecha", Calendario.SelectionStart)
+            cmd.Parameters.AddWithValue("@NombreEjercicio", TextBoxNombre.Text)
+            cmd.Parameters.AddWithValue("@Repeticiones", TextBoxRepeticiones.Text)
+
+            con.Open()
+            Try
+                Dim t As Integer = (cmd.ExecuteScalar())
+                MsgBox("Has guardado tus ejercicios el día " + Calendario.SelectionStart + "! (DD/MM/YY)")
+                con.Close()
+                Return t
+            Catch ex As Exception
+                MsgBox(ex.Message)
+            End Try
+        End Using
 
 
-
-    End Sub
+    End Function
 
     Private Sub ValidarDatos()
 
@@ -178,804 +145,44 @@ Public Class MenuAñadirEjercicios
         End If
     End Sub
 
-    Private Function BoxJump()
-        Dim sCon As String = "data source=PROYAZUL; initial catalog = Gym; Integrated Security = True"
-        Dim sel As String
-        Dim NombreTabla As String = "EjerciciosUsuario"
+    '    Private Function BoxJump()
+    '        Dim sCon As String = "data source=PROYAZUL; initial catalog = Gym; Integrated Security = True"
+    '        Dim sel As String
+    '        Dim NombreTabla As String = "EjerciciosUsuario"
+
+    '        sel = "INSERT INTO " & NombreTabla &
+    '            " (Cedula, Fecha, CodigoEjercicio, NombreEjercicio) " &
+    '            " VALUES " &
+    '            " (@Cedula, @Fecha, @CodigoEjercicio, @NombreEjercicio)"
+
+    '        Using con As New SqlConnection(sCon)
+
+    '            Dim cmd As New SqlCommand(sel, con)
+
+    '            cmd.Parameters.AddWithValue("@Cedula", cedula)
+    '            cmd.Parameters.AddWithValue("@Fecha", Calendario.SelectionStart)
+    '            cmd.Parameters.AddWithValue("@CodigoEjercicio", "PI-1")
+    '            cmd.Parameters.AddWithValue("@NombreEjercicio", "Box Jump")
+
+    '            con.Open()
+    '            Try
+    '                Dim t As Integer = (cmd.ExecuteScalar())
+    '                MsgBox("Has guardado tus ejercicios del día " + Calendario.SelectionStart + "! (YY/MM/DD)")
+    '                con.Close()
+    '                Return t
+    '            Catch ex As Exception
+    '                MsgBox(ex.Message)
+    '            End Try
+    '        End Using
+    '#Disable Warning BC42105 ' La función no devuelve un valor en todas las rutas de código
+    '    End Function
+    '#Enable Warning BC42105 ' La función no devuelve un valor en todas las rutas de código
+
+
+    Private Sub Calendario_DateChanged(sender As Object, e As DateRangeEventArgs) Handles Calendario.DateChanged
+        Label3.Text = Calendario.SelectionStart
+    End Sub
 
-        sel = "INSERT INTO " & NombreTabla &
-            " (Cedula, Fecha, CodigoEjercicio, NombreEjercicio) " &
-            " VALUES " &
-            " (@Cedula, @Fecha, @CodigoEjercicio, @NombreEjercicio)"
 
-        Using con As New SqlConnection(sCon)
-
-            Dim cmd As New SqlCommand(sel, con)
-
-            cmd.Parameters.AddWithValue("@Cedula", cedula)
-            cmd.Parameters.AddWithValue("@Fecha", Calendario.SelectionStart)
-            cmd.Parameters.AddWithValue("@CodigoEjercicio", "PI-1")
-            cmd.Parameters.AddWithValue("@NombreEjercicio", "Box Jump")
-
-            con.Open()
-            Try
-                Dim t As Integer = CInt(cmd.ExecuteScalar())
-                MsgBox("Has guardado tus ejercicios del día " + Calendario.SelectionStart + "! (YY/MM/DD)")
-                con.Close()
-                Return t
-            Catch ex As Exception
-                MsgBox(ex.Message)
-            End Try
-        End Using
-#Disable Warning BC42105 ' La función no devuelve un valor en todas las rutas de código
-    End Function
-#Enable Warning BC42105 ' La función no devuelve un valor en todas las rutas de código
-    Private Function Deadlift()
-        Dim sCon As String = "data source=PROYAZUL; initial catalog = Gym; Integrated Security = True"
-        Dim sel As String
-        Dim NombreTabla As String = "EjerciciosUsuario"
-
-        sel = "INSERT INTO " & NombreTabla &
-            " (Cedula, Fecha, CodigoEjercicio, NombreEjercicio) " &
-            " VALUES " &
-            " (@Cedula, @Fecha, @CodigoEjercicio, @NombreEjercicio)"
-
-        Using con As New SqlConnection(sCon)
-
-            Dim cmd As New SqlCommand(sel, con)
-
-            cmd.Parameters.AddWithValue("@Cedula", cedula)
-            cmd.Parameters.AddWithValue("@Fecha", Calendario.SelectionStart)
-            cmd.Parameters.AddWithValue("@CodigoEjercicio", "PI-2")
-            cmd.Parameters.AddWithValue("@NombreEjercicio", "Deadlift")
-
-            con.Open()
-            Try
-                Dim t As Integer = CInt(cmd.ExecuteScalar())
-                MsgBox("Has guardado tus ejercicios del día " + Calendario.SelectionStart + "! (YY/MM/DD)")
-                con.Close()
-                Return t
-            Catch ex As Exception
-                MsgBox(ex.Message)
-            End Try
-        End Using
-#Disable Warning BC42105 ' La función no devuelve un valor en todas las rutas de código
-    End Function
-#Enable Warning BC42105 ' La función no devuelve un valor en todas las rutas de código\
-    Private Function HipThrust()
-        Dim sCon As String = "data source=PROYAZUL; initial catalog = Gym; Integrated Security = True"
-        Dim sel As String
-        Dim NombreTabla As String = "EjerciciosUsuario"
-
-        sel = "INSERT INTO " & NombreTabla &
-            " (Cedula, Fecha, CodigoEjercicio, NombreEjercicio) " &
-            " VALUES " &
-            " (@Cedula, @Fecha, @CodigoEjercicio, @NombreEjercicio)"
-
-        Using con As New SqlConnection(sCon)
-
-            Dim cmd As New SqlCommand(sel, con)
-
-            cmd.Parameters.AddWithValue("@Cedula", cedula)
-            cmd.Parameters.AddWithValue("@Fecha", Calendario.SelectionStart)
-            cmd.Parameters.AddWithValue("@CodigoEjercicio", "PI-3")
-            cmd.Parameters.AddWithValue("@NombreEjercicio", "Hip Thrust")
-
-            con.Open()
-            Try
-                Dim t As Integer = CInt(cmd.ExecuteScalar())
-                MsgBox("Has guardado tus ejercicios del día " + Calendario.SelectionStart + "! (YY/MM/DD)")
-                con.Close()
-                Return t
-            Catch ex As Exception
-                MsgBox(ex.Message)
-            End Try
-        End Using
-#Disable Warning BC42105 ' La función no devuelve un valor en todas las rutas de código
-    End Function
-#Enable Warning BC42105 ' La función no devuelve un valor en todas las rutas de código
-    Private Function Lunge()
-        Dim sCon As String = "data source=PROYAZUL; initial catalog = Gym; Integrated Security = True"
-        Dim sel As String
-        Dim NombreTabla As String = "EjerciciosUsuario"
-
-        sel = "INSERT INTO " & NombreTabla &
-            " (Cedula, Fecha, CodigoEjercicio, NombreEjercicio) " &
-            " VALUES " &
-            " (@Cedula, @Fecha, @CodigoEjercicio, @NombreEjercicio)"
-
-        Using con As New SqlConnection(sCon)
-
-            Dim cmd As New SqlCommand(sel, con)
-
-            cmd.Parameters.AddWithValue("@Cedula", cedula)
-            cmd.Parameters.AddWithValue("@Fecha", Calendario.SelectionStart)
-            cmd.Parameters.AddWithValue("@CodigoEjercicio", "PI-4")
-            cmd.Parameters.AddWithValue("@NombreEjercicio", "Lunge")
-
-            con.Open()
-            Try
-                Dim t As Integer = CInt(cmd.ExecuteScalar())
-                MsgBox("Has guardado tus ejercicios del día " + Calendario.SelectionStart + "! (YY/MM/DD)")
-                con.Close()
-                Return t
-            Catch ex As Exception
-                MsgBox(ex.Message)
-            End Try
-        End Using
-#Disable Warning BC42105 ' La función no devuelve un valor en todas las rutas de código
-    End Function
-#Enable Warning BC42105 ' La función no devuelve un valor en todas las rutas de código
-    Private Function Squad()
-        Dim sCon As String = "data source=PROYAZUL; initial catalog = Gym; Integrated Security = True"
-        Dim sel As String
-        Dim NombreTabla As String = "EjerciciosUsuario"
-
-        sel = "INSERT INTO " & NombreTabla &
-            " (Cedula, Fecha, CodigoEjercicio, NombreEjercicio) " &
-            " VALUES " &
-            " (@Cedula, @Fecha, @CodigoEjercicio, @NombreEjercicio)"
-
-        Using con As New SqlConnection(sCon)
-
-            Dim cmd As New SqlCommand(sel, con)
-
-            cmd.Parameters.AddWithValue("@Cedula", cedula)
-            cmd.Parameters.AddWithValue("@Fecha", Calendario.SelectionStart)
-            cmd.Parameters.AddWithValue("@CodigoEjercicio", "PI-5")
-            cmd.Parameters.AddWithValue("@NombreEjercicio", "Squad")
-
-            con.Open()
-            Try
-                Dim t As Integer = CInt(cmd.ExecuteScalar())
-                MsgBox("Has guardado tus ejercicios del día " + Calendario.SelectionStart + "! (YY/MM/DD)")
-                con.Close()
-                Return t
-            Catch ex As Exception
-                MsgBox(ex.Message)
-            End Try
-        End Using
-#Disable Warning BC42105 ' La función no devuelve un valor en todas las rutas de código
-    End Function
-#Enable Warning BC42105 ' La función no devuelve un valor en todas las rutas de código
-    Private Function ChinUp()
-        Dim sCon As String = "data source=PROYAZUL; initial catalog = Gym; Integrated Security = True"
-        Dim sel As String
-        Dim NombreTabla As String = "EjerciciosUsuario"
-
-        sel = "INSERT INTO " & NombreTabla &
-            " (Cedula, Fecha, CodigoEjercicio, NombreEjercicio) " &
-            " VALUES " &
-            " (@Cedula, @Fecha, @CodigoEjercicio, @NombreEjercicio)"
-
-        Using con As New SqlConnection(sCon)
-
-            Dim cmd As New SqlCommand(sel, con)
-
-            cmd.Parameters.AddWithValue("@Cedula", cedula)
-            cmd.Parameters.AddWithValue("@Fecha", Calendario.SelectionStart)
-            cmd.Parameters.AddWithValue("@CodigoEjercicio", "E-1")
-            cmd.Parameters.AddWithValue("@NombreEjercicio", "Chin Up")
-
-            con.Open()
-            Try
-                Dim t As Integer = CInt(cmd.ExecuteScalar())
-                MsgBox("Has guardado tus ejercicios del día " + Calendario.SelectionStart + "! (YY/MM/DD)")
-                con.Close()
-                Return t
-            Catch ex As Exception
-                MsgBox(ex.Message)
-            End Try
-        End Using
-#Disable Warning BC42105 ' La función no devuelve un valor en todas las rutas de código
-    End Function
-#Enable Warning BC42105 ' La función no devuelve un valor en todas las rutas de código
-    Private Function InclineRow()
-        Dim sCon As String = "data source=PROYAZUL; initial catalog = Gym; Integrated Security = True"
-        Dim sel As String
-        Dim NombreTabla As String = "EjerciciosUsuario"
-
-        sel = "INSERT INTO " & NombreTabla &
-            " (Cedula, Fecha, CodigoEjercicio, NombreEjercicio) " &
-            " VALUES " &
-            " (@Cedula, @Fecha, @CodigoEjercicio, @NombreEjercicio)"
-
-        Using con As New SqlConnection(sCon)
-
-            Dim cmd As New SqlCommand(sel, con)
-
-            cmd.Parameters.AddWithValue("@Cedula", cedula)
-            cmd.Parameters.AddWithValue("@Fecha", Calendario.SelectionStart)
-            cmd.Parameters.AddWithValue("@CodigoEjercicio", "E-2")
-            cmd.Parameters.AddWithValue("@NombreEjercicio", "Incline Row")
-
-            con.Open()
-            Try
-                Dim t As Integer = CInt(cmd.ExecuteScalar())
-                MsgBox("Has guardado tus ejercicios del día " + Calendario.SelectionStart + "! (YY/MM/DD)")
-                con.Close()
-                Return t
-            Catch ex As Exception
-                MsgBox(ex.Message)
-            End Try
-        End Using
-#Disable Warning BC42105 ' La función no devuelve un valor en todas las rutas de código
-    End Function
-#Enable Warning BC42105 ' La función no devuelve un valor en todas las rutas de código
-    Private Function PullUp()
-        Dim sCon As String = "data source=PROYAZUL; initial catalog = Gym; Integrated Security = True"
-        Dim sel As String
-        Dim NombreTabla As String = "EjerciciosUsuario"
-
-        sel = "INSERT INTO " & NombreTabla &
-            " (Cedula, Fecha, CodigoEjercicio, NombreEjercicio) " &
-            " VALUES " &
-            " (@Cedula, @Fecha, @CodigoEjercicio, @NombreEjercicio)"
-
-        Using con As New SqlConnection(sCon)
-
-            Dim cmd As New SqlCommand(sel, con)
-
-            cmd.Parameters.AddWithValue("@Cedula", cedula)
-            cmd.Parameters.AddWithValue("@Fecha", Calendario.SelectionStart)
-            cmd.Parameters.AddWithValue("@CodigoEjercicio", "E-3")
-            cmd.Parameters.AddWithValue("@NombreEjercicio", "Pull Up")
-
-            con.Open()
-            Try
-                Dim t As Integer = CInt(cmd.ExecuteScalar())
-                MsgBox("Has guardado tus ejercicios del día " + Calendario.SelectionStart + "! (YY/MM/DD)")
-                con.Close()
-                Return t
-            Catch ex As Exception
-                MsgBox(ex.Message)
-            End Try
-        End Using
-#Disable Warning BC42105 ' La función no devuelve un valor en todas las rutas de código
-    End Function
-#Enable Warning BC42105 ' La función no devuelve un valor en todas las rutas de código
-    Private Function Seatedrow()
-        Dim sCon As String = "data source=PROYAZUL; initial catalog = Gym; Integrated Security = True"
-        Dim sel As String
-        Dim NombreTabla As String = "EjerciciosUsuario"
-
-        sel = "INSERT INTO " & NombreTabla &
-            " (Cedula, Fecha, CodigoEjercicio, NombreEjercicio) " &
-            " VALUES " &
-            " (@Cedula, @Fecha, @CodigoEjercicio, @NombreEjercicio)"
-
-        Using con As New SqlConnection(sCon)
-
-            Dim cmd As New SqlCommand(sel, con)
-
-            cmd.Parameters.AddWithValue("@Cedula", cedula)
-            cmd.Parameters.AddWithValue("@Fecha", Calendario.SelectionStart)
-            cmd.Parameters.AddWithValue("@CodigoEjercicio", "E-4")
-            cmd.Parameters.AddWithValue("@NombreEjercicio", "Seated Row")
-
-            con.Open()
-            Try
-                Dim t As Integer = CInt(cmd.ExecuteScalar())
-                MsgBox("Has guardado tus ejercicios del día " + Calendario.SelectionStart + "! (YY/MM/DD)")
-                con.Close()
-                Return t
-            Catch ex As Exception
-                MsgBox(ex.Message)
-            End Try
-        End Using
-#Disable Warning BC42105 ' La función no devuelve un valor en todas las rutas de código
-    End Function
-#Enable Warning BC42105 ' La función no devuelve un valor en todas las rutas de código
-    Private Function Uprightrow()
-        Dim sCon As String = "data source=PROYAZUL; initial catalog = Gym; Integrated Security = True"
-        Dim sel As String
-        Dim NombreTabla As String = "EjerciciosUsuario"
-
-        sel = "INSERT INTO " & NombreTabla &
-            " (Cedula, Fecha, CodigoEjercicio, NombreEjercicio) " &
-            " VALUES " &
-            " (@Cedula, @Fecha, @CodigoEjercicio, @NombreEjercicio)"
-
-        Using con As New SqlConnection(sCon)
-
-            Dim cmd As New SqlCommand(sel, con)
-
-            cmd.Parameters.AddWithValue("@Cedula", cedula)
-            cmd.Parameters.AddWithValue("@Fecha", Calendario.SelectionStart)
-            cmd.Parameters.AddWithValue("@CodigoEjercicio", "E-5")
-            cmd.Parameters.AddWithValue("@NombreEjercicio", "Upright Row")
-
-            con.Open()
-            Try
-                Dim t As Integer = CInt(cmd.ExecuteScalar())
-                MsgBox("Has guardado tus ejercicios del día " + Calendario.SelectionStart + "! (YY/MM/DD)")
-                con.Close()
-                Return t
-            Catch ex As Exception
-                MsgBox(ex.Message)
-            End Try
-        End Using
-#Disable Warning BC42105 ' La función no devuelve un valor en todas las rutas de código
-    End Function
-#Enable Warning BC42105 ' La función no devuelve un valor en todas las rutas de código
-    Private Function BenchPress()
-        Dim sCon As String = "data source=PROYAZUL; initial catalog = Gym; Integrated Security = True"
-        Dim sel As String
-        Dim NombreTabla As String = "EjerciciosUsuario"
-
-        sel = "INSERT INTO " & NombreTabla &
-            " (Cedula, Fecha, CodigoEjercicio, NombreEjercicio) " &
-            " VALUES " &
-            " (@Cedula, @Fecha, @CodigoEjercicio, @NombreEjercicio)"
-
-        Using con As New SqlConnection(sCon)
-
-            Dim cmd As New SqlCommand(sel, con)
-
-            cmd.Parameters.AddWithValue("@Cedula", cedula)
-            cmd.Parameters.AddWithValue("@Fecha", Calendario.SelectionStart)
-            cmd.Parameters.AddWithValue("@CodigoEjercicio", "PE-1")
-            cmd.Parameters.AddWithValue("@NombreEjercicio", "Bench Press")
-
-            con.Open()
-            Try
-                Dim t As Integer = CInt(cmd.ExecuteScalar())
-                MsgBox("Has guardado tus ejercicios del día " + Calendario.SelectionStart + "! (YY/MM/DD)")
-                con.Close()
-                Return t
-            Catch ex As Exception
-                MsgBox(ex.Message)
-            End Try
-        End Using
-#Disable Warning BC42105 ' La función no devuelve un valor en todas las rutas de código
-    End Function
-#Enable Warning BC42105 ' La función no devuelve un valor en todas las rutas de código
-    Private Function ChestPress()
-        Dim sCon As String = "data source=PROYAZUL; initial catalog = Gym; Integrated Security = True"
-        Dim sel As String
-        Dim NombreTabla As String = "EjerciciosUsuario"
-
-        sel = "INSERT INTO " & NombreTabla &
-            " (Cedula, Fecha, CodigoEjercicio, NombreEjercicio) " &
-            " VALUES " &
-            " (@Cedula, @Fecha, @CodigoEjercicio, @NombreEjercicio)"
-
-        Using con As New SqlConnection(sCon)
-
-            Dim cmd As New SqlCommand(sel, con)
-
-            cmd.Parameters.AddWithValue("@Cedula", cedula)
-            cmd.Parameters.AddWithValue("@Fecha", Calendario.SelectionStart)
-            cmd.Parameters.AddWithValue("@CodigoEjercicio", "PE-2")
-            cmd.Parameters.AddWithValue("@NombreEjercicio", "Chest Press")
-
-            con.Open()
-            Try
-                Dim t As Integer = CInt(cmd.ExecuteScalar())
-                MsgBox("Has guardado tus ejercicios del día " + Calendario.SelectionStart + "! (YY/MM/DD)")
-                con.Close()
-                Return t
-            Catch ex As Exception
-                MsgBox(ex.Message)
-            End Try
-        End Using
-#Disable Warning BC42105 ' La función no devuelve un valor en todas las rutas de código
-    End Function
-
-    Private Function InclineDumbbel()
-        Dim sCon As String = "data source=PROYAZUL; initial catalog = Gym; Integrated Security = True"
-        Dim sel As String
-        Dim NombreTabla As String = "EjerciciosUsuario"
-
-        sel = "INSERT INTO " & NombreTabla &
-            " (Cedula, Fecha, CodigoEjercicio, NombreEjercicio) " &
-            " VALUES " &
-            " (@Cedula, @Fecha, @CodigoEjercicio, @NombreEjercicio)"
-
-        Using con As New SqlConnection(sCon)
-
-            Dim cmd As New SqlCommand(sel, con)
-
-            cmd.Parameters.AddWithValue("@Cedula", cedula)
-            cmd.Parameters.AddWithValue("@Fecha", Calendario.SelectionStart)
-            cmd.Parameters.AddWithValue("@CodigoEjercicio", "PE-3")
-            cmd.Parameters.AddWithValue("@NombreEjercicio", "Incline Dumbbel")
-
-            con.Open()
-            Try
-                Dim t As Integer = CInt(cmd.ExecuteScalar())
-                MsgBox("Has guardado tus ejercicios del día " + Calendario.SelectionStart + "! (YY/MM/DD)")
-                con.Close()
-                Return t
-            Catch ex As Exception
-                MsgBox(ex.Message)
-            End Try
-        End Using
-#Disable Warning BC42105 ' La función no devuelve un valor en todas las rutas de código
-    End Function
-    Private Function Pullover()
-        Dim sCon As String = "data source=PROYAZUL; initial catalog = Gym; Integrated Security = True"
-        Dim sel As String
-        Dim NombreTabla As String = "EjerciciosUsuario"
-
-        sel = "INSERT INTO " & NombreTabla &
-            " (Cedula, Fecha, CodigoEjercicio, NombreEjercicio) " &
-            " VALUES " &
-            " (@Cedula, @Fecha, @CodigoEjercicio, @NombreEjercicio)"
-
-        Using con As New SqlConnection(sCon)
-
-            Dim cmd As New SqlCommand(sel, con)
-
-            cmd.Parameters.AddWithValue("@Cedula", cedula)
-            cmd.Parameters.AddWithValue("@Fecha", Calendario.SelectionStart)
-            cmd.Parameters.AddWithValue("@CodigoEjercicio", "PE-4")
-            cmd.Parameters.AddWithValue("@NombreEjercicio", "Pull over")
-
-            con.Open()
-            Try
-                Dim t As Integer = CInt(cmd.ExecuteScalar())
-                MsgBox("Has guardado tus ejercicios del día " + Calendario.SelectionStart + "! (YY/MM/DD)")
-                con.Close()
-                Return t
-            Catch ex As Exception
-                MsgBox(ex.Message)
-            End Try
-        End Using
-#Disable Warning BC42105 ' La función no devuelve un valor en todas las rutas de código
-    End Function
-    Private Function PushUps()
-        Dim sCon As String = "data source=PROYAZUL; initial catalog = Gym; Integrated Security = True"
-        Dim sel As String
-        Dim NombreTabla As String = "EjerciciosUsuario"
-
-        sel = "INSERT INTO " & NombreTabla &
-            " (Cedula, Fecha, CodigoEjercicio, NombreEjercicio) " &
-            " VALUES " &
-            " (@Cedula, @Fecha, @CodigoEjercicio, @NombreEjercicio)"
-
-        Using con As New SqlConnection(sCon)
-
-            Dim cmd As New SqlCommand(sel, con)
-
-            cmd.Parameters.AddWithValue("@Cedula", cedula)
-            cmd.Parameters.AddWithValue("@Fecha", Calendario.SelectionStart)
-            cmd.Parameters.AddWithValue("@CodigoEjercicio", "PE-5")
-            cmd.Parameters.AddWithValue("@NombreEjercicio", "Push Ups")
-
-            con.Open()
-            Try
-                Dim t As Integer = CInt(cmd.ExecuteScalar())
-                MsgBox("Has guardado tus ejercicios del día " + Calendario.SelectionStart + "! (YY/MM/DD)")
-                con.Close()
-                Return t
-            Catch ex As Exception
-                MsgBox(ex.Message)
-            End Try
-        End Using
-#Disable Warning BC42105 ' La función no devuelve un valor en todas las rutas de código
-    End Function
-#Enable Warning BC42105 ' La función no devuelve un valor en todas las rutas de código
-
-    Private Function ArnoldPress()
-        Dim sCon As String = "data source=PROYAZUL; initial catalog = Gym; Integrated Security = True"
-        Dim sel As String
-        Dim NombreTabla As String = "EjerciciosUsuario"
-
-        sel = "INSERT INTO " & NombreTabla &
-            " (Cedula, Fecha, CodigoEjercicio, NombreEjercicio) " &
-            " VALUES " &
-            " (@Cedula, @Fecha, @CodigoEjercicio, @NombreEjercicio)"
-
-        Using con As New SqlConnection(sCon)
-
-            Dim cmd As New SqlCommand(sel, con)
-
-            cmd.Parameters.AddWithValue("@Cedula", cedula)
-            cmd.Parameters.AddWithValue("@Fecha", Calendario.SelectionStart)
-            cmd.Parameters.AddWithValue("@CodigoEjercicio", "H-1")
-            cmd.Parameters.AddWithValue("@NombreEjercicio", "Arnold Press")
-
-            con.Open()
-            Try
-                Dim t As Integer = CInt(cmd.ExecuteScalar())
-                MsgBox("Has guardado tus ejercicios del día " + Calendario.SelectionStart + "! (YY/MM/DD)")
-                con.Close()
-                Return t
-            Catch ex As Exception
-                MsgBox(ex.Message)
-            End Try
-        End Using
-#Disable Warning BC42105 ' La función no devuelve un valor en todas las rutas de código
-    End Function
-#Enable Warning BC42105 ' La función no devuelve un valor en todas las rutas de código
-    Private Function LateralRaise()
-        Dim sCon As String = "data source=PROYAZUL; initial catalog = Gym; Integrated Security = True"
-        Dim sel As String
-        Dim NombreTabla As String = "EjerciciosUsuario"
-
-        sel = "INSERT INTO " & NombreTabla &
-            " (Cedula, Fecha, CodigoEjercicio, NombreEjercicio) " &
-            " VALUES " &
-            " (@Cedula, @Fecha, @CodigoEjercicio, @NombreEjercicio)"
-
-        Using con As New SqlConnection(sCon)
-
-            Dim cmd As New SqlCommand(sel, con)
-
-            cmd.Parameters.AddWithValue("@Cedula", cedula)
-            cmd.Parameters.AddWithValue("@Fecha", Calendario.SelectionStart)
-            cmd.Parameters.AddWithValue("@CodigoEjercicio", "H-2")
-            cmd.Parameters.AddWithValue("@NombreEjercicio", "Lateral Raise")
-
-            con.Open()
-            Try
-                Dim t As Integer = CInt(cmd.ExecuteScalar())
-                MsgBox("Has guardado tus ejercicios del día " + Calendario.SelectionStart + "! (YY/MM/DD)")
-                con.Close()
-                Return t
-            Catch ex As Exception
-                MsgBox(ex.Message)
-            End Try
-        End Using
-#Disable Warning BC42105 ' La función no devuelve un valor en todas las rutas de código
-    End Function
-#Enable Warning BC42105 ' La función no devuelve un valor en todas las rutas de código
-    Private Function PushPress()
-        Dim sCon As String = "data source=PROYAZUL; initial catalog = Gym; Integrated Security = True"
-        Dim sel As String
-        Dim NombreTabla As String = "EjerciciosUsuario"
-
-        sel = "INSERT INTO " & NombreTabla &
-            " (Cedula, Fecha, CodigoEjercicio, NombreEjercicio) " &
-            " VALUES " &
-            " (@Cedula, @Fecha, @CodigoEjercicio, @NombreEjercicio)"
-
-        Using con As New SqlConnection(sCon)
-
-            Dim cmd As New SqlCommand(sel, con)
-
-            cmd.Parameters.AddWithValue("@Cedula", cedula)
-            cmd.Parameters.AddWithValue("@Fecha", Calendario.SelectionStart)
-            cmd.Parameters.AddWithValue("@CodigoEjercicio", "H-3")
-            cmd.Parameters.AddWithValue("@NombreEjercicio", "Push Press")
-
-
-            con.Open()
-            Try
-                Dim t As Integer = CInt(cmd.ExecuteScalar())
-                MsgBox("Has guardado tus ejercicios del día " + Calendario.SelectionStart + "! (YY/MM/DD)")
-                con.Close()
-                Return t
-            Catch ex As Exception
-                MsgBox(ex.Message)
-            End Try
-        End Using
-#Disable Warning BC42105 ' La función no devuelve un valor en todas las rutas de código
-    End Function
-#Enable Warning BC42105 ' La función no devuelve un valor en todas las rutas de código
-    Private Function ReverseFly()
-        Dim sCon As String = "data source=PROYAZUL; initial catalog = Gym; Integrated Security = True"
-        Dim sel As String
-        Dim NombreTabla As String = "EjerciciosUsuario"
-
-        sel = "INSERT INTO " & NombreTabla &
-            " (Cedula, Fecha, CodigoEjercicio, NombreEjercicio) " &
-            " VALUES " &
-            " (@Cedula, @Fecha, @CodigoEjercicio, @NombreEjercicio)"
-
-        Using con As New SqlConnection(sCon)
-
-            Dim cmd As New SqlCommand(sel, con)
-
-            cmd.Parameters.AddWithValue("@Cedula", cedula)
-            cmd.Parameters.AddWithValue("@Fecha", Calendario.SelectionStart)
-            cmd.Parameters.AddWithValue("@CodigoEjercicio", "H-4")
-            cmd.Parameters.AddWithValue("@NombreEjercicio", "Reverse Fly")
-
-            con.Open()
-            Try
-                Dim t As Integer = CInt(cmd.ExecuteScalar())
-                MsgBox("Has guardado tus ejercicios del día " + Calendario.SelectionStart + "! (YY/MM/DD)")
-                con.Close()
-                Return t
-            Catch ex As Exception
-                MsgBox(ex.Message)
-            End Try
-        End Using
-#Disable Warning BC42105 ' La función no devuelve un valor en todas las rutas de código
-    End Function
-#Enable Warning BC42105 ' La función no devuelve un valor en todas las rutas de código
-    Private Function Shrug()
-        Dim sCon As String = "data source=PROYAZUL; initial catalog = Gym; Integrated Security = True"
-        Dim sel As String
-        Dim NombreTabla As String = "EjerciciosUsuario"
-
-        sel = "INSERT INTO " & NombreTabla &
-            " (Cedula, Fecha, CodigoEjercicio, NombreEjercicio) " &
-            " VALUES " &
-            " (@Cedula, @Fecha, @CodigoEjercicio, @NombreEjercicio)"
-
-        Using con As New SqlConnection(sCon)
-
-            Dim cmd As New SqlCommand(sel, con)
-
-            cmd.Parameters.AddWithValue("@Cedula", cedula)
-            cmd.Parameters.AddWithValue("@Fecha", Calendario.SelectionStart)
-            cmd.Parameters.AddWithValue("@CodigoEjercicio", "H-5")
-            cmd.Parameters.AddWithValue("@NombreEjercicio", "Shrug")
-
-            con.Open()
-            Try
-                Dim t As Integer = CInt(cmd.ExecuteScalar())
-                MsgBox("Has guardado tus ejercicios del día " + Calendario.SelectionStart + "! (YY/MM/DD)")
-                con.Close()
-                Return t
-            Catch ex As Exception
-                MsgBox(ex.Message)
-            End Try
-        End Using
-#Disable Warning BC42105 ' La función no devuelve un valor en todas las rutas de código
-    End Function
-#Enable Warning BC42105 ' La función no devuelve un valor en todas las rutas de código
-    Private Function ConcentrationCurl()
-        Dim sCon As String = "data source=PROYAZUL; initial catalog = Gym; Integrated Security = True"
-        Dim sel As String
-        Dim NombreTabla As String = "EjerciciosUsuario"
-
-        sel = "INSERT INTO " & NombreTabla &
-            " (Cedula, Fecha, CodigoEjercicio, NombreEjercicio) " &
-            " VALUES " &
-            " (@Cedula, @Fecha, @CodigoEjercicio, @NombreEjercicio)"
-
-        Using con As New SqlConnection(sCon)
-
-            Dim cmd As New SqlCommand(sel, con)
-
-            cmd.Parameters.AddWithValue("@Cedula", cedula)
-            cmd.Parameters.AddWithValue("@Fecha", Calendario.SelectionStart)
-            cmd.Parameters.AddWithValue("@CodigoEjercicio", "B-1")
-            cmd.Parameters.AddWithValue("@NombreEjercicio", "Concentration Curl")
-
-            con.Open()
-            Try
-                Dim t As Integer = CInt(cmd.ExecuteScalar())
-                MsgBox("Has guardado tus ejercicios del día " + Calendario.SelectionStart + "! (YY/MM/DD)")
-                con.Close()
-                Return t
-            Catch ex As Exception
-                MsgBox(ex.Message)
-            End Try
-        End Using
-#Disable Warning BC42105 ' La función no devuelve un valor en todas las rutas de código
-    End Function
-#Enable Warning BC42105 ' La función no devuelve un valor en todas las rutas de código
-    Private Function Dips()
-        Dim sCon As String = "data source=PROYAZUL; initial catalog = Gym; Integrated Security = True"
-        Dim sel As String
-        Dim NombreTabla As String = "EjerciciosUsuario"
-
-        sel = "INSERT INTO " & NombreTabla &
-            " (Cedula, Fecha, CodigoEjercicio, NombreEjercicio) " &
-            " VALUES " &
-            " (@Cedula, @Fecha, @CodigoEjercicio, @NombreEjercicio)"
-
-        Using con As New SqlConnection(sCon)
-
-            Dim cmd As New SqlCommand(sel, con)
-
-            cmd.Parameters.AddWithValue("@Cedula", cedula)
-            cmd.Parameters.AddWithValue("@Fecha", Calendario.SelectionStart)
-            cmd.Parameters.AddWithValue("@CodigoEjercicio", "B-2")
-            cmd.Parameters.AddWithValue("@NombreEjercicio", "Dips")
-
-            con.Open()
-            Try
-                Dim t As Integer = CInt(cmd.ExecuteScalar())
-                MsgBox("Has guardado tus ejercicios del día " + Calendario.SelectionStart + "! (YY/MM/DD)")
-                con.Close()
-                Return t
-            Catch ex As Exception
-                MsgBox(ex.Message)
-            End Try
-        End Using
-#Disable Warning BC42105 ' La función no devuelve un valor en todas las rutas de código
-    End Function
-#Enable Warning BC42105 ' La función no devuelve un valor en todas las rutas de código
-    Private Function HammerCurl()
-        Dim sCon As String = "data source=PROYAZUL; initial catalog = Gym; Integrated Security = True"
-        Dim sel As String
-        Dim NombreTabla As String = "EjerciciosUsuario"
-
-        sel = "INSERT INTO " & NombreTabla &
-            " (Cedula, Fecha, CodigoEjercicio, NombreEjercicio) " &
-            " VALUES " &
-            " (@Cedula, @Fecha, @CodigoEjercicio, @NombreEjercicio)"
-
-        Using con As New SqlConnection(sCon)
-
-            Dim cmd As New SqlCommand(sel, con)
-
-            cmd.Parameters.AddWithValue("@Cedula", cedula)
-            cmd.Parameters.AddWithValue("@Fecha", Calendario.SelectionStart)
-            cmd.Parameters.AddWithValue("@CodigoEjercicio", "B-3")
-            cmd.Parameters.AddWithValue("@NombreEjercicio", "Hammer Curl")
-
-            con.Open()
-            Try
-                Dim t As Integer = CInt(cmd.ExecuteScalar())
-                MsgBox("Has guardado tus ejercicios del día " + Calendario.SelectionStart + "! (YY/MM/DD)")
-                con.Close()
-                Return t
-            Catch ex As Exception
-                MsgBox(ex.Message)
-            End Try
-        End Using
-#Disable Warning BC42105 ' La función no devuelve un valor en todas las rutas de código
-    End Function
-#Enable Warning BC42105 ' La función no devuelve un valor en todas las rutas de código
-    Private Function InclineCurl()
-        Dim sCon As String = "data source=PROYAZUL; initial catalog = Gym; Integrated Security = True"
-        Dim sel As String
-        Dim NombreTabla As String = "EjerciciosUsuario"
-
-        sel = "INSERT INTO " & NombreTabla &
-            " (Cedula, Fecha, CodigoEjercicio, NombreEjercicio) " &
-            " VALUES " &
-            " (@Cedula, @Fecha, @CodigoEjercicio, @NombreEjercicio)"
-
-        Using con As New SqlConnection(sCon)
-
-            Dim cmd As New SqlCommand(sel, con)
-
-            cmd.Parameters.AddWithValue("@Cedula", cedula)
-            cmd.Parameters.AddWithValue("@Fecha", Calendario.SelectionStart)
-            cmd.Parameters.AddWithValue("@CodigoEjercicio", "B-4")
-            cmd.Parameters.AddWithValue("@NombreEjercicio", "Incline Curl")
-
-            con.Open()
-            Try
-                Dim t As Integer = CInt(cmd.ExecuteScalar())
-                MsgBox("Has guardado tus ejercicios del día " + Calendario.SelectionStart + "! (YY/MM/DD)")
-                con.Close()
-                Return t
-            Catch ex As Exception
-                MsgBox(ex.Message)
-            End Try
-        End Using
-#Disable Warning BC42105 ' La función no devuelve un valor en todas las rutas de código
-    End Function
-#Enable Warning BC42105 ' La función no devuelve un valor en todas las rutas de código
-    Private Function TricepExtension()
-        Dim sCon As String = "data source=PROYAZUL; initial catalog = Gym; Integrated Security = True"
-        Dim sel As String
-        Dim NombreTabla As String = "EjerciciosUsuario"
-
-        sel = "INSERT INTO " & NombreTabla &
-            " (Cedula, Fecha, CodigoEjercicio, NombreEjercicio) " &
-            " VALUES " &
-            " (@Cedula, @Fecha, @CodigoEjercicio, @NombreEjercicio)"
-
-        Using con As New SqlConnection(sCon)
-
-            Dim cmd As New SqlCommand(sel, con)
-
-            cmd.Parameters.AddWithValue("@Cedula", cedula)
-            cmd.Parameters.AddWithValue("@Fecha", Calendario.SelectionStart)
-            cmd.Parameters.AddWithValue("@CodigoEjercicio", "B-5")
-            cmd.Parameters.AddWithValue("@NombreEjercicio", "TricepExtension")
-
-            con.Open()
-            Try
-                Dim t As Integer = CInt(cmd.ExecuteScalar())
-                MsgBox("Has guardado tus ejercicios del día " + Calendario.SelectionStart + "! (YY/MM/DD)")
-                con.Close()
-                Return t
-            Catch ex As Exception
-                MsgBox(ex.Message)
-            End Try
-        End Using
-#Disable Warning BC42105 ' La función no devuelve un valor en todas las rutas de código
-    End Function
 #Enable Warning BC42105 ' La función no devuelve un valor en todas las rutas de código
 End Class
