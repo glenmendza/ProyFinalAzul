@@ -67,3 +67,4 @@ C:\Users\adria\OneDrive\Documents\GitHub\ProyFinalAzul\ProyectoFinal\obj\Debug\P
 C:\Users\adria\OneDrive\Documents\GitHub\ProyFinalAzul\ProyectoFinal\obj\Debug\ProyectoFinal.exe
 C:\Users\adria\OneDrive\Documents\GitHub\ProyFinalAzul\ProyectoFinal\obj\Debug\ProyectoFinal.xml
 C:\Users\adria\OneDrive\Documents\GitHub\ProyFinalAzul\ProyectoFinal\obj\Debug\ProyectoFinal.pdb
+C:\Users\glenm\Documents\Proyectos Visual Studio\Proyecto Software #1\ProyFinalAzul\ProyectoFinal\obj\Debug\ProyectoFinal.MenuGestionarVerUsuarios.resources

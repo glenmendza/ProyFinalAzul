@@ -27,6 +27,7 @@ Partial Class MenuGestionarUsuarios
         Me.btnEditarUsuario = New System.Windows.Forms.Button()
         Me.ButtonBack = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.Button1 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'btnAñadirUsuario
@@ -80,12 +81,26 @@ Partial Class MenuGestionarUsuarios
         Me.Label1.TabIndex = 19
         Me.Label1.Text = "Gestionar usuarios"
         '
+        'Button1
+        '
+        Me.Button1.BackColor = System.Drawing.Color.Transparent
+        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.ForeColor = System.Drawing.Color.White
+        Me.Button1.Location = New System.Drawing.Point(389, 415)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(224, 57)
+        Me.Button1.TabIndex = 20
+        Me.Button1.Text = "Ver usuarios"
+        Me.Button1.UseVisualStyleBackColor = False
+        '
         'MenuGestionarUsuarios
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(42, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(1019, 645)
+        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.ButtonBack)
         Me.Controls.Add(Me.btnEditarUsuario)
@@ -103,4 +118,5 @@ Partial Class MenuGestionarUsuarios
     Friend WithEvents btnEditarUsuario As Button
     Private WithEvents ButtonBack As Button
     Friend WithEvents Label1 As Label
+    Friend WithEvents Button1 As Button
 End Class
