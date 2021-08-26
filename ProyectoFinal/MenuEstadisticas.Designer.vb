@@ -25,6 +25,7 @@ Partial Class MenuEstadisticas
         Dim ChartArea1 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
         Dim Legend1 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
         Dim Series1 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
+        Dim Series2 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(MenuEstadisticas))
         Me.ButtonBack = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
@@ -39,7 +40,7 @@ Partial Class MenuEstadisticas
         Me.ButtonBack.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ButtonBack.ForeColor = System.Drawing.Color.White
         Me.ButtonBack.Location = New System.Drawing.Point(16, 15)
-        Me.ButtonBack.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.ButtonBack.Margin = New System.Windows.Forms.Padding(4)
         Me.ButtonBack.Name = "ButtonBack"
         Me.ButtonBack.Size = New System.Drawing.Size(69, 46)
         Me.ButtonBack.TabIndex = 18
@@ -61,20 +62,39 @@ Partial Class MenuEstadisticas
         '
         'Chart1
         '
+        Me.Chart1.BorderSkin.SkinStyle = System.Windows.Forms.DataVisualization.Charting.BorderSkinStyle.Raised
+        ChartArea1.AxisX.IntervalType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.Months
+        ChartArea1.AxisX2.LineWidth = 5
+        ChartArea1.AxisY.IntervalAutoMode = System.Windows.Forms.DataVisualization.Charting.IntervalAutoMode.VariableCount
+        ChartArea1.AxisY.LabelAutoFitMaxFontSize = 12
+        ChartArea1.BackSecondaryColor = System.Drawing.Color.Transparent
+        ChartArea1.BorderWidth = 7
         ChartArea1.Name = "ChartArea1"
         Me.Chart1.ChartAreas.Add(ChartArea1)
+        Legend1.BackColor = System.Drawing.Color.White
         Legend1.Name = "Legend1"
         Me.Chart1.Legends.Add(Legend1)
-        Me.Chart1.Location = New System.Drawing.Point(471, 194)
-        Me.Chart1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Chart1.Location = New System.Drawing.Point(352, 158)
+        Me.Chart1.Margin = New System.Windows.Forms.Padding(4)
         Me.Chart1.Name = "Chart1"
+        Series1.BackGradientStyle = System.Windows.Forms.DataVisualization.Charting.GradientStyle.LeftRight
+        Series1.BackImageAlignment = System.Windows.Forms.DataVisualization.Charting.ChartImageAlignmentStyle.Top
+        Series1.BackImageWrapMode = System.Windows.Forms.DataVisualization.Charting.ChartImageWrapMode.TileFlipX
         Series1.ChartArea = "ChartArea1"
         Series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.FastLine
         Series1.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Series1.Legend = "Legend1"
+        Series1.MarkerBorderWidth = 5
         Series1.Name = "Peso"
+        Series1.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.DateTime
+        Series2.ChartArea = "ChartArea1"
+        Series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.FastLine
+        Series2.Legend = "Legend1"
+        Series2.Name = "IMC"
+        Series2.YValuesPerPoint = 2
         Me.Chart1.Series.Add(Series1)
-        Me.Chart1.Size = New System.Drawing.Size(400, 364)
+        Me.Chart1.Series.Add(Series2)
+        Me.Chart1.Size = New System.Drawing.Size(646, 497)
         Me.Chart1.TabIndex = 23
         Me.Chart1.Text = "Chart1"
         '
@@ -88,7 +108,7 @@ Partial Class MenuEstadisticas
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.ButtonBack)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "MenuEstadisticas"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         CType(Me.Chart1, System.ComponentModel.ISupportInitialize).EndInit()
