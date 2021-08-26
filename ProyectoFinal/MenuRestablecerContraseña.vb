@@ -22,11 +22,19 @@ Public Class MenuRestablecerContraseña
         strsql = " SELECT * FROM Usuarios WHERE Cedula =" + TextBoxConsultar.Text + ""
 
         Dim cmd As New SqlCommand(strsql, conn)
-        Dim lector As SqlDataReader
-        lector = cmd.ExecuteReader
-        lector.Read()
 
-        MsgBox("Tu contraseña es: " + lector("Contraseña"), MessageBoxIcon.Information, "FIT Tracker")
-        Exit Sub
+        Dim lector As SqlDataReader
+
+        Try
+
+            lector = cmd.ExecuteReader
+            lector.Read()
+            MsgBox("Tu contraseña es: " + lector("Contraseña"), MessageBoxIcon.Information, "FIT Tracker")
+            Exit Sub
+        Catch ex As Exception
+            MsgBox("Cedula incorrecta", MessageBoxIcon.Error, "FIT Tracker")
+        End Try
+
+
     End Sub
 End Class

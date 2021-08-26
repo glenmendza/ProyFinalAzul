@@ -51,5 +51,4 @@ Public Class MenuBuscarUsuario
 
     End Sub
 
-
 End Class

@@ -103,9 +103,6 @@ Public Class MenuModificarDatos
         End If
     End Sub
 
-    Private Sub ButtonGuardar_Click(sender As Object, e As EventArgs) Handles ButtonGuardar.Click
-        Call Insert()
-    End Sub
     Public Sub Insert()
 
         Dim myConnectionString As String = "data source=PROYAZUL; initial catalog = Gym; Integrated Security = True"
@@ -153,7 +150,11 @@ Public Class MenuModificarDatos
         End If
     End Sub
 
-    Private Sub ButtonMostrarEsconder_Click(sender As Object, e As EventArgs) Handles ButtonMostrarEsconder.Click
+    Private Sub PictureBox3_Click(sender As Object, e As EventArgs) Handles PictureBox3.Click
+        Call Insert()
+    End Sub
+
+    Private Sub PictureBox4_Click(sender As Object, e As EventArgs) Handles PictureBox4.Click
         If TextBoxContraseña.Visible = True Then
             TextBoxContraseña.Visible = False
         ElseIf TextBoxContraseña.Visible = False Then

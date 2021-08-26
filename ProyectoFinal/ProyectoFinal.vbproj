@@ -140,12 +140,6 @@
     <Compile Include="MenuModificarDatos.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MenuPrincipalUsuario.Designer.vb">
-      <DependentUpon>MenuPrincipalUsuario.vb</DependentUpon>
-    </Compile>
-    <Compile Include="MenuPrincipalUsuario.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="MenuRestablecerContraseña.Designer.vb">
       <DependentUpon>MenuRestablecerContraseña.vb</DependentUpon>
     </Compile>
@@ -204,9 +198,6 @@
     <EmbeddedResource Include="MenuModificarDatos.resx">
       <DependentUpon>MenuModificarDatos.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MenuPrincipalUsuario.resx">
-      <DependentUpon>MenuPrincipalUsuario.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="MenuRestablecerContraseña.resx">
       <DependentUpon>MenuRestablecerContraseña.vb</DependentUpon>
     </EmbeddedResource>
@@ -235,6 +226,42 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\azul2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AA.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aaaaa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\300.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clipboard %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\info %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\info.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit %281%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\diskette.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blind.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fitness %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MicrosoftTeams-image %281%29.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

@@ -84,7 +84,54 @@ Public Class MenuGestionarAñadirUsuario
 
     End Sub
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+    Private Sub ButtonGenerarContra_Click(sender As Object, e As EventArgs) Handles ButtonGenerarContra.Click
+        TextBoxContraseña.Text = CrearPassword(8)
+    End Sub
+
+
+    Private Function CrearPassword(longitud As Integer) As String
+        Dim caracteres As String = "aAbBcCdDeEfFgGhHiIjJkKlLmMnNoOpPqQrRsStTuUvVwWxXyYzZ1234567890"
+        Dim res As New StringBuilder(0)
+        Dim rnd As New Random()
+        While 0 < System.Math.Max(System.Threading.Interlocked.Decrement(longitud), longitud + 1)
+            res.Append(caracteres(rnd.[Next](caracteres.Length)))
+        End While
+        Return res.ToString()
+
+    End Function
+
+
+    Public Sub CalculoIMC()
+        Dim resultado As Double
+        Dim peso As Double = TextBoxPeso.Text
+        Dim altura As Double = TextBoxAltura.Text
+        resultado = (peso / ((altura / 100) ^ 2))
+        resultado = Format(resultado, "0.00")
+        TextBoxIMC.Text = CStr(resultado)
+    End Sub
+
+    Private Sub MenuGestionarAñadirUsuario_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        ComboBoxGenero.DropDownStyle = ComboBoxStyle.DropDownList
+        ComboBoxAcceso.DropDownStyle = ComboBoxStyle.DropDownList
+    End Sub
+
+    Private Sub ButtonIMC_Click(sender As Object, e As EventArgs) 
+
+    End Sub
+
+    Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
+        If TextBoxContraseña.Text = "" Then
+            MsgBox("Rellena el campo de contraseña para poder copiar!", MessageBoxIcon.Information, "FIT Tracker")
+            Exit Sub
+        Else
+            Clipboard.SetText(TextBoxContraseña.Text)
+            MsgBox("Contraseña copiada con éxito!", MessageBoxIcon.Information, "FIT Tracker")
+            Exit Sub
+        End If
+    End Sub
+
+    Private Sub PictureBox3_Click(sender As Object, e As EventArgs) Handles PictureBox3.Click
+
         Call CalculoIMC()
 
         If TextBoxNombre.Text = "" Then
@@ -130,50 +177,5 @@ Public Class MenuGestionarAñadirUsuario
 
         Call Insertar()
         Call LimpiarCampos()
-    End Sub
-
-    Private Sub ButtonGenerarContra_Click(sender As Object, e As EventArgs) Handles ButtonGenerarContra.Click
-        TextBoxContraseña.Text = CrearPassword(8)
-    End Sub
-
-
-    Private Function CrearPassword(longitud As Integer) As String
-        Dim caracteres As String = "aAbBcCdDeEfFgGhHiIjJkKlLmMnNoOpPqQrRsStTuUvVwWxXyYzZ1234567890"
-        Dim res As New StringBuilder(0)
-        Dim rnd As New Random()
-        While 0 < System.Math.Max(System.Threading.Interlocked.Decrement(longitud), longitud + 1)
-            res.Append(caracteres(rnd.[Next](caracteres.Length)))
-        End While
-        Return res.ToString()
-
-    End Function
-
-    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-        If TextBoxContraseña.Text = "" Then
-            MsgBox("Rellena el campo de contraseña para poder copiar!", MessageBoxIcon.Information, "FIT Tracker")
-            Exit Sub
-        Else
-            Clipboard.SetText(TextBoxContraseña.Text)
-            MsgBox("Contraseña copiada con éxito!", MessageBoxIcon.Information, "FIT Tracker")
-            Exit Sub
-        End If
-    End Sub
-
-    Public Sub CalculoIMC()
-        Dim resultado As Double
-        Dim peso As Double = TextBoxPeso.Text
-        Dim altura As Double = TextBoxAltura.Text
-        resultado = (peso / ((altura / 100) ^ 2))
-        resultado = Format(resultado, "0.00")
-        TextBoxIMC.Text = CStr(resultado)
-    End Sub
-
-    Private Sub MenuGestionarAñadirUsuario_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        ComboBoxGenero.DropDownStyle = ComboBoxStyle.DropDownList
-        ComboBoxAcceso.DropDownStyle = ComboBoxStyle.DropDownList
-    End Sub
-
-    Private Sub ButtonIMC_Click(sender As Object, e As EventArgs) 
-
     End Sub
 End Class

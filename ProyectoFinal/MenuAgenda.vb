@@ -12,25 +12,28 @@ Public Class MenuAgenda
         connection = New SqlConnection(connectionString)
         command = connection.CreateCommand()
         command.CommandType = System.Data.CommandType.Text
+#Disable Warning BC42105 ' La función no devuelve un valor en todas las rutas de código
     End Function
+#Enable Warning BC42105 ' La función no devuelve un valor en todas las rutas de código
 
 
     Public Function Verificar()
         command.CommandText = "SELECT MAX(NumNota) AS NumeroMayor FROM Agenda WHERE Cedula = " & cedula & " AND (Fecha = '" & CalendarioAgenda.SelectionStart & "')"
         Using (connection)
             connection.Open()
-            lector2 = command.ExecuteReader()
-            lector2.Read()
-            If IsDBNull(lector2.Item("NumeroMayor")) Then
-                contador = 0
+            Try
+                lector2 = command.ExecuteReader()
+                lector2.Read()
+                If IsDBNull(lector2.Item("NumeroMayor")) Then
+                    contador = 0
 
-            ElseIf lector2.HasRows Then
+                ElseIf lector2.HasRows Then
 
-                contador = lector2.GetInt32(0)
-
-
-
-            End If
+                    contador = lector2.GetInt32(0)
+                End If
+            Catch ex As Exception
+                MsgBox(ex.Message)
+            End Try
 
         End Using
 
@@ -72,14 +75,16 @@ Public Class MenuAgenda
 
             End If
         End Using
+#Disable Warning BC42105 ' La función no devuelve un valor en todas las rutas de código
     End Function
+#Enable Warning BC42105 ' La función no devuelve un valor en todas las rutas de código
     Private Sub Button7_Click(sender As Object, e As EventArgs) Handles ButtonBack.Click
         Me.Hide()
         MenuPrincipal.Show()
     End Sub
 
     Private Sub CalendarioAgenda_DateSelected(sender As Object, e As DateRangeEventArgs) Handles CalendarioAgenda.DateSelected
-        Label2.Text = CalendarioAgenda.SelectionStart
+        LabelFecha2.Text = CalendarioAgenda.SelectionStart
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles ButtonNota.Click

@@ -28,6 +28,8 @@ Partial Class MenuGestionarUsuarios
         Me.ButtonBack = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'btnAñadirUsuario
@@ -36,7 +38,7 @@ Partial Class MenuGestionarUsuarios
         Me.btnAñadirUsuario.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnAñadirUsuario.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnAñadirUsuario.ForeColor = System.Drawing.Color.White
-        Me.btnAñadirUsuario.Location = New System.Drawing.Point(181, 256)
+        Me.btnAñadirUsuario.Location = New System.Drawing.Point(180, 279)
         Me.btnAñadirUsuario.Name = "btnAñadirUsuario"
         Me.btnAñadirUsuario.Size = New System.Drawing.Size(224, 57)
         Me.btnAñadirUsuario.TabIndex = 6
@@ -49,7 +51,7 @@ Partial Class MenuGestionarUsuarios
         Me.btnEditarUsuario.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnEditarUsuario.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnEditarUsuario.ForeColor = System.Drawing.Color.White
-        Me.btnEditarUsuario.Location = New System.Drawing.Point(594, 256)
+        Me.btnEditarUsuario.Location = New System.Drawing.Point(604, 279)
         Me.btnEditarUsuario.Name = "btnEditarUsuario"
         Me.btnEditarUsuario.Size = New System.Drawing.Size(224, 57)
         Me.btnEditarUsuario.TabIndex = 7
@@ -87,12 +89,21 @@ Partial Class MenuGestionarUsuarios
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button1.ForeColor = System.Drawing.Color.White
-        Me.Button1.Location = New System.Drawing.Point(389, 415)
+        Me.Button1.Location = New System.Drawing.Point(395, 401)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(224, 57)
         Me.Button1.TabIndex = 20
         Me.Button1.Text = "Ver usuarios"
         Me.Button1.UseVisualStyleBackColor = False
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.Image = Global.ProyectoFinal.My.Resources.Resources.aaaaa
+        Me.PictureBox1.Location = New System.Drawing.Point(354, 109)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(307, 286)
+        Me.PictureBox1.TabIndex = 21
+        Me.PictureBox1.TabStop = False
         '
         'MenuGestionarUsuarios
         '
@@ -105,10 +116,12 @@ Partial Class MenuGestionarUsuarios
         Me.Controls.Add(Me.ButtonBack)
         Me.Controls.Add(Me.btnEditarUsuario)
         Me.Controls.Add(Me.btnAñadirUsuario)
+        Me.Controls.Add(Me.PictureBox1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "MenuGestionarUsuarios"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "MenuGestionarUsuarios"
+        Me.Text = "FIT Tracker"
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -119,4 +132,5 @@ Partial Class MenuGestionarUsuarios
     Private WithEvents ButtonBack As Button
     Friend WithEvents Label1 As Label
     Friend WithEvents Button1 As Button
+    Friend WithEvents PictureBox1 As PictureBox
 End Class

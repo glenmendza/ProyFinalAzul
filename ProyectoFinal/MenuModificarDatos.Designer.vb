@@ -25,7 +25,6 @@ Partial Class MenuModificarDatos
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(MenuModificarDatos))
         Me.ButtonBack = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.ButtonGuardar = New System.Windows.Forms.Button()
         Me.LabelNacimiento = New System.Windows.Forms.Label()
         Me.TextBoxCorreo = New System.Windows.Forms.TextBox()
         Me.LabelAltura = New System.Windows.Forms.Label()
@@ -39,6 +38,21 @@ Partial Class MenuModificarDatos
         Me.TextBoxNacimiento = New System.Windows.Forms.TextBox()
         Me.TextBoxNombre = New System.Windows.Forms.TextBox()
         Me.LabelNombre = New System.Windows.Forms.Label()
+        Me.LabelCorreo = New System.Windows.Forms.Label()
+        Me.TextBoxContraseña = New System.Windows.Forms.TextBox()
+        Me.LabelContraseña = New System.Windows.Forms.Label()
+        Me.TextBoxCedula = New System.Windows.Forms.TextBox()
+        Me.TextBoxPrimerApellido = New System.Windows.Forms.TextBox()
+        Me.TextBoxSegundoApellido = New System.Windows.Forms.TextBox()
+        Me.LabelApellido1 = New System.Windows.Forms.Label()
+        Me.LabelApellido2 = New System.Windows.Forms.Label()
+        Me.PictureBox4 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.ButtonEditarSegundoApellido = New System.Windows.Forms.Button()
+        Me.ButtonEditarPrimerApellido = New System.Windows.Forms.Button()
+        Me.ButtonEditarContraseña = New System.Windows.Forms.Button()
         Me.ButtonEditarCorreo = New System.Windows.Forms.Button()
         Me.ButtonEditarTelefono = New System.Windows.Forms.Button()
         Me.ButtonEditarIMC = New System.Windows.Forms.Button()
@@ -46,22 +60,10 @@ Partial Class MenuModificarDatos
         Me.ButtonEditarFechaNacimiento = New System.Windows.Forms.Button()
         Me.ButtonEditarAltura = New System.Windows.Forms.Button()
         Me.ButtonEditarNombre = New System.Windows.Forms.Button()
-        Me.LabelCorreo = New System.Windows.Forms.Label()
-        Me.TextBoxContraseña = New System.Windows.Forms.TextBox()
-        Me.ButtonEditarContraseña = New System.Windows.Forms.Button()
-        Me.ButtonMostrarEsconder = New System.Windows.Forms.Button()
-        Me.LabelContraseña = New System.Windows.Forms.Label()
-        Me.TextBoxCedula = New System.Windows.Forms.TextBox()
-        Me.TextBoxPrimerApellido = New System.Windows.Forms.TextBox()
-        Me.TextBoxSegundoApellido = New System.Windows.Forms.TextBox()
-        Me.ButtonEditarPrimerApellido = New System.Windows.Forms.Button()
-        Me.ButtonEditarSegundoApellido = New System.Windows.Forms.Button()
-        Me.LabelApellido1 = New System.Windows.Forms.Label()
-        Me.LabelApellido2 = New System.Windows.Forms.Label()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'ButtonBack
@@ -88,20 +90,6 @@ Partial Class MenuModificarDatos
         Me.Label1.Size = New System.Drawing.Size(294, 37)
         Me.Label1.TabIndex = 20
         Me.Label1.Text = "Modificar mis datos"
-        '
-        'ButtonGuardar
-        '
-        Me.ButtonGuardar.BackColor = System.Drawing.Color.Transparent
-        Me.ButtonGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.ButtonGuardar.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ButtonGuardar.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.ButtonGuardar.Location = New System.Drawing.Point(453, 465)
-        Me.ButtonGuardar.Margin = New System.Windows.Forms.Padding(2)
-        Me.ButtonGuardar.Name = "ButtonGuardar"
-        Me.ButtonGuardar.Size = New System.Drawing.Size(111, 46)
-        Me.ButtonGuardar.TabIndex = 84
-        Me.ButtonGuardar.Text = "Guardar"
-        Me.ButtonGuardar.UseVisualStyleBackColor = False
         '
         'LabelNacimiento
         '
@@ -252,104 +240,6 @@ Partial Class MenuModificarDatos
         Me.LabelNombre.TabIndex = 68
         Me.LabelNombre.Text = "Nombre"
         '
-        'ButtonEditarCorreo
-        '
-        Me.ButtonEditarCorreo.BackgroundImage = CType(resources.GetObject("ButtonEditarCorreo.BackgroundImage"), System.Drawing.Image)
-        Me.ButtonEditarCorreo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ButtonEditarCorreo.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.ButtonEditarCorreo.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.ButtonEditarCorreo.ForeColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(42, Byte), Integer))
-        Me.ButtonEditarCorreo.Location = New System.Drawing.Point(877, 335)
-        Me.ButtonEditarCorreo.Margin = New System.Windows.Forms.Padding(2)
-        Me.ButtonEditarCorreo.Name = "ButtonEditarCorreo"
-        Me.ButtonEditarCorreo.Size = New System.Drawing.Size(39, 37)
-        Me.ButtonEditarCorreo.TabIndex = 91
-        Me.ButtonEditarCorreo.UseVisualStyleBackColor = True
-        '
-        'ButtonEditarTelefono
-        '
-        Me.ButtonEditarTelefono.BackgroundImage = CType(resources.GetObject("ButtonEditarTelefono.BackgroundImage"), System.Drawing.Image)
-        Me.ButtonEditarTelefono.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ButtonEditarTelefono.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.ButtonEditarTelefono.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.ButtonEditarTelefono.ForeColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(42, Byte), Integer))
-        Me.ButtonEditarTelefono.Location = New System.Drawing.Point(877, 277)
-        Me.ButtonEditarTelefono.Margin = New System.Windows.Forms.Padding(2)
-        Me.ButtonEditarTelefono.Name = "ButtonEditarTelefono"
-        Me.ButtonEditarTelefono.Size = New System.Drawing.Size(39, 37)
-        Me.ButtonEditarTelefono.TabIndex = 90
-        Me.ButtonEditarTelefono.UseVisualStyleBackColor = True
-        '
-        'ButtonEditarIMC
-        '
-        Me.ButtonEditarIMC.BackgroundImage = CType(resources.GetObject("ButtonEditarIMC.BackgroundImage"), System.Drawing.Image)
-        Me.ButtonEditarIMC.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ButtonEditarIMC.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.ButtonEditarIMC.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.ButtonEditarIMC.ForeColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(42, Byte), Integer))
-        Me.ButtonEditarIMC.Location = New System.Drawing.Point(877, 219)
-        Me.ButtonEditarIMC.Margin = New System.Windows.Forms.Padding(2)
-        Me.ButtonEditarIMC.Name = "ButtonEditarIMC"
-        Me.ButtonEditarIMC.Size = New System.Drawing.Size(39, 37)
-        Me.ButtonEditarIMC.TabIndex = 89
-        Me.ButtonEditarIMC.UseVisualStyleBackColor = True
-        '
-        'ButtonEditarPeso
-        '
-        Me.ButtonEditarPeso.BackgroundImage = CType(resources.GetObject("ButtonEditarPeso.BackgroundImage"), System.Drawing.Image)
-        Me.ButtonEditarPeso.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ButtonEditarPeso.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.ButtonEditarPeso.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.ButtonEditarPeso.ForeColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(42, Byte), Integer))
-        Me.ButtonEditarPeso.Location = New System.Drawing.Point(877, 159)
-        Me.ButtonEditarPeso.Margin = New System.Windows.Forms.Padding(2)
-        Me.ButtonEditarPeso.Name = "ButtonEditarPeso"
-        Me.ButtonEditarPeso.Size = New System.Drawing.Size(39, 37)
-        Me.ButtonEditarPeso.TabIndex = 88
-        Me.ButtonEditarPeso.UseVisualStyleBackColor = True
-        '
-        'ButtonEditarFechaNacimiento
-        '
-        Me.ButtonEditarFechaNacimiento.BackgroundImage = CType(resources.GetObject("ButtonEditarFechaNacimiento.BackgroundImage"), System.Drawing.Image)
-        Me.ButtonEditarFechaNacimiento.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ButtonEditarFechaNacimiento.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.ButtonEditarFechaNacimiento.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.ButtonEditarFechaNacimiento.ForeColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(42, Byte), Integer))
-        Me.ButtonEditarFechaNacimiento.Location = New System.Drawing.Point(312, 335)
-        Me.ButtonEditarFechaNacimiento.Margin = New System.Windows.Forms.Padding(2)
-        Me.ButtonEditarFechaNacimiento.Name = "ButtonEditarFechaNacimiento"
-        Me.ButtonEditarFechaNacimiento.Size = New System.Drawing.Size(39, 37)
-        Me.ButtonEditarFechaNacimiento.TabIndex = 87
-        Me.ButtonEditarFechaNacimiento.UseVisualStyleBackColor = True
-        '
-        'ButtonEditarAltura
-        '
-        Me.ButtonEditarAltura.BackgroundImage = CType(resources.GetObject("ButtonEditarAltura.BackgroundImage"), System.Drawing.Image)
-        Me.ButtonEditarAltura.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ButtonEditarAltura.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.ButtonEditarAltura.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.ButtonEditarAltura.ForeColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(42, Byte), Integer))
-        Me.ButtonEditarAltura.Location = New System.Drawing.Point(312, 394)
-        Me.ButtonEditarAltura.Margin = New System.Windows.Forms.Padding(2)
-        Me.ButtonEditarAltura.Name = "ButtonEditarAltura"
-        Me.ButtonEditarAltura.Size = New System.Drawing.Size(39, 37)
-        Me.ButtonEditarAltura.TabIndex = 86
-        Me.ButtonEditarAltura.UseVisualStyleBackColor = True
-        '
-        'ButtonEditarNombre
-        '
-        Me.ButtonEditarNombre.BackgroundImage = CType(resources.GetObject("ButtonEditarNombre.BackgroundImage"), System.Drawing.Image)
-        Me.ButtonEditarNombre.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ButtonEditarNombre.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.ButtonEditarNombre.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.ButtonEditarNombre.ForeColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(42, Byte), Integer))
-        Me.ButtonEditarNombre.Location = New System.Drawing.Point(312, 158)
-        Me.ButtonEditarNombre.Margin = New System.Windows.Forms.Padding(2)
-        Me.ButtonEditarNombre.Name = "ButtonEditarNombre"
-        Me.ButtonEditarNombre.Size = New System.Drawing.Size(39, 37)
-        Me.ButtonEditarNombre.TabIndex = 85
-        Me.ButtonEditarNombre.UseVisualStyleBackColor = True
-        '
         'LabelCorreo
         '
         Me.LabelCorreo.AutoSize = True
@@ -372,34 +262,6 @@ Partial Class MenuModificarDatos
         Me.TextBoxContraseña.Size = New System.Drawing.Size(206, 23)
         Me.TextBoxContraseña.TabIndex = 94
         Me.TextBoxContraseña.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        '
-        'ButtonEditarContraseña
-        '
-        Me.ButtonEditarContraseña.BackgroundImage = CType(resources.GetObject("ButtonEditarContraseña.BackgroundImage"), System.Drawing.Image)
-        Me.ButtonEditarContraseña.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ButtonEditarContraseña.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.ButtonEditarContraseña.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.ButtonEditarContraseña.ForeColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(42, Byte), Integer))
-        Me.ButtonEditarContraseña.Location = New System.Drawing.Point(877, 395)
-        Me.ButtonEditarContraseña.Margin = New System.Windows.Forms.Padding(2)
-        Me.ButtonEditarContraseña.Name = "ButtonEditarContraseña"
-        Me.ButtonEditarContraseña.Size = New System.Drawing.Size(39, 37)
-        Me.ButtonEditarContraseña.TabIndex = 95
-        Me.ButtonEditarContraseña.UseVisualStyleBackColor = True
-        '
-        'ButtonMostrarEsconder
-        '
-        Me.ButtonMostrarEsconder.BackColor = System.Drawing.Color.Transparent
-        Me.ButtonMostrarEsconder.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.ButtonMostrarEsconder.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ButtonMostrarEsconder.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.ButtonMostrarEsconder.Location = New System.Drawing.Point(737, 437)
-        Me.ButtonMostrarEsconder.Margin = New System.Windows.Forms.Padding(2)
-        Me.ButtonMostrarEsconder.Name = "ButtonMostrarEsconder"
-        Me.ButtonMostrarEsconder.Size = New System.Drawing.Size(101, 50)
-        Me.ButtonMostrarEsconder.TabIndex = 96
-        Me.ButtonMostrarEsconder.Text = "Mostrar  Esconder"
-        Me.ButtonMostrarEsconder.UseVisualStyleBackColor = False
         '
         'LabelContraseña
         '
@@ -445,34 +307,6 @@ Partial Class MenuModificarDatos
         Me.TextBoxSegundoApellido.TabIndex = 100
         Me.TextBoxSegundoApellido.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'ButtonEditarPrimerApellido
-        '
-        Me.ButtonEditarPrimerApellido.BackgroundImage = CType(resources.GetObject("ButtonEditarPrimerApellido.BackgroundImage"), System.Drawing.Image)
-        Me.ButtonEditarPrimerApellido.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ButtonEditarPrimerApellido.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.ButtonEditarPrimerApellido.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.ButtonEditarPrimerApellido.ForeColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(42, Byte), Integer))
-        Me.ButtonEditarPrimerApellido.Location = New System.Drawing.Point(311, 219)
-        Me.ButtonEditarPrimerApellido.Margin = New System.Windows.Forms.Padding(2)
-        Me.ButtonEditarPrimerApellido.Name = "ButtonEditarPrimerApellido"
-        Me.ButtonEditarPrimerApellido.Size = New System.Drawing.Size(39, 37)
-        Me.ButtonEditarPrimerApellido.TabIndex = 101
-        Me.ButtonEditarPrimerApellido.UseVisualStyleBackColor = True
-        '
-        'ButtonEditarSegundoApellido
-        '
-        Me.ButtonEditarSegundoApellido.BackgroundImage = CType(resources.GetObject("ButtonEditarSegundoApellido.BackgroundImage"), System.Drawing.Image)
-        Me.ButtonEditarSegundoApellido.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ButtonEditarSegundoApellido.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.ButtonEditarSegundoApellido.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.ButtonEditarSegundoApellido.ForeColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(42, Byte), Integer))
-        Me.ButtonEditarSegundoApellido.Location = New System.Drawing.Point(312, 277)
-        Me.ButtonEditarSegundoApellido.Margin = New System.Windows.Forms.Padding(2)
-        Me.ButtonEditarSegundoApellido.Name = "ButtonEditarSegundoApellido"
-        Me.ButtonEditarSegundoApellido.Size = New System.Drawing.Size(39, 37)
-        Me.ButtonEditarSegundoApellido.TabIndex = 102
-        Me.ButtonEditarSegundoApellido.UseVisualStyleBackColor = True
-        '
         'LabelApellido1
         '
         Me.LabelApellido1.AutoSize = True
@@ -497,14 +331,23 @@ Partial Class MenuModificarDatos
         Me.LabelApellido2.TabIndex = 104
         Me.LabelApellido2.Text = "Segundo Apellido"
         '
-        'PictureBox1
+        'PictureBox4
         '
-        Me.PictureBox1.BackgroundImage = CType(resources.GetObject("PictureBox1.BackgroundImage"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(935, 204)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(52, 50)
-        Me.PictureBox1.TabIndex = 105
-        Me.PictureBox1.TabStop = False
+        Me.PictureBox4.Image = Global.ProyectoFinal.My.Resources.Resources.blind
+        Me.PictureBox4.Location = New System.Drawing.Point(626, 398)
+        Me.PictureBox4.Name = "PictureBox4"
+        Me.PictureBox4.Size = New System.Drawing.Size(29, 25)
+        Me.PictureBox4.TabIndex = 108
+        Me.PictureBox4.TabStop = False
+        '
+        'PictureBox3
+        '
+        Me.PictureBox3.Image = Global.ProyectoFinal.My.Resources.Resources.diskette
+        Me.PictureBox3.Location = New System.Drawing.Point(923, 552)
+        Me.PictureBox3.Name = "PictureBox3"
+        Me.PictureBox3.Size = New System.Drawing.Size(67, 66)
+        Me.PictureBox3.TabIndex = 107
+        Me.PictureBox3.TabStop = False
         '
         'PictureBox2
         '
@@ -515,12 +358,163 @@ Partial Class MenuModificarDatos
         Me.PictureBox2.TabIndex = 106
         Me.PictureBox2.TabStop = False
         '
+        'PictureBox1
+        '
+        Me.PictureBox1.Image = Global.ProyectoFinal.My.Resources.Resources.info
+        Me.PictureBox1.Location = New System.Drawing.Point(43, 549)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(69, 69)
+        Me.PictureBox1.TabIndex = 105
+        Me.PictureBox1.TabStop = False
+        '
+        'ButtonEditarSegundoApellido
+        '
+        Me.ButtonEditarSegundoApellido.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.ButtonEditarSegundoApellido.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.ButtonEditarSegundoApellido.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.ButtonEditarSegundoApellido.ForeColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(42, Byte), Integer))
+        Me.ButtonEditarSegundoApellido.Image = Global.ProyectoFinal.My.Resources.Resources.edit__1_1
+        Me.ButtonEditarSegundoApellido.Location = New System.Drawing.Point(311, 269)
+        Me.ButtonEditarSegundoApellido.Margin = New System.Windows.Forms.Padding(2)
+        Me.ButtonEditarSegundoApellido.Name = "ButtonEditarSegundoApellido"
+        Me.ButtonEditarSegundoApellido.Size = New System.Drawing.Size(39, 37)
+        Me.ButtonEditarSegundoApellido.TabIndex = 102
+        Me.ButtonEditarSegundoApellido.UseVisualStyleBackColor = True
+        '
+        'ButtonEditarPrimerApellido
+        '
+        Me.ButtonEditarPrimerApellido.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.ButtonEditarPrimerApellido.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.ButtonEditarPrimerApellido.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.ButtonEditarPrimerApellido.ForeColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(42, Byte), Integer))
+        Me.ButtonEditarPrimerApellido.Image = Global.ProyectoFinal.My.Resources.Resources.edit__1_1
+        Me.ButtonEditarPrimerApellido.Location = New System.Drawing.Point(311, 211)
+        Me.ButtonEditarPrimerApellido.Margin = New System.Windows.Forms.Padding(2)
+        Me.ButtonEditarPrimerApellido.Name = "ButtonEditarPrimerApellido"
+        Me.ButtonEditarPrimerApellido.Size = New System.Drawing.Size(39, 37)
+        Me.ButtonEditarPrimerApellido.TabIndex = 101
+        Me.ButtonEditarPrimerApellido.UseVisualStyleBackColor = True
+        '
+        'ButtonEditarContraseña
+        '
+        Me.ButtonEditarContraseña.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.ButtonEditarContraseña.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.ButtonEditarContraseña.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.ButtonEditarContraseña.ForeColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(42, Byte), Integer))
+        Me.ButtonEditarContraseña.Image = Global.ProyectoFinal.My.Resources.Resources.edit__1_1
+        Me.ButtonEditarContraseña.Location = New System.Drawing.Point(877, 386)
+        Me.ButtonEditarContraseña.Margin = New System.Windows.Forms.Padding(2)
+        Me.ButtonEditarContraseña.Name = "ButtonEditarContraseña"
+        Me.ButtonEditarContraseña.Size = New System.Drawing.Size(39, 37)
+        Me.ButtonEditarContraseña.TabIndex = 95
+        Me.ButtonEditarContraseña.UseVisualStyleBackColor = True
+        '
+        'ButtonEditarCorreo
+        '
+        Me.ButtonEditarCorreo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.ButtonEditarCorreo.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.ButtonEditarCorreo.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.ButtonEditarCorreo.ForeColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(42, Byte), Integer))
+        Me.ButtonEditarCorreo.Image = Global.ProyectoFinal.My.Resources.Resources.edit__1_1
+        Me.ButtonEditarCorreo.Location = New System.Drawing.Point(877, 327)
+        Me.ButtonEditarCorreo.Margin = New System.Windows.Forms.Padding(2)
+        Me.ButtonEditarCorreo.Name = "ButtonEditarCorreo"
+        Me.ButtonEditarCorreo.Size = New System.Drawing.Size(39, 37)
+        Me.ButtonEditarCorreo.TabIndex = 91
+        Me.ButtonEditarCorreo.UseVisualStyleBackColor = True
+        '
+        'ButtonEditarTelefono
+        '
+        Me.ButtonEditarTelefono.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.ButtonEditarTelefono.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.ButtonEditarTelefono.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.ButtonEditarTelefono.ForeColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(42, Byte), Integer))
+        Me.ButtonEditarTelefono.Image = Global.ProyectoFinal.My.Resources.Resources.edit__1_1
+        Me.ButtonEditarTelefono.Location = New System.Drawing.Point(877, 269)
+        Me.ButtonEditarTelefono.Margin = New System.Windows.Forms.Padding(2)
+        Me.ButtonEditarTelefono.Name = "ButtonEditarTelefono"
+        Me.ButtonEditarTelefono.Size = New System.Drawing.Size(39, 37)
+        Me.ButtonEditarTelefono.TabIndex = 90
+        Me.ButtonEditarTelefono.UseVisualStyleBackColor = True
+        '
+        'ButtonEditarIMC
+        '
+        Me.ButtonEditarIMC.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.ButtonEditarIMC.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.ButtonEditarIMC.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.ButtonEditarIMC.ForeColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(42, Byte), Integer))
+        Me.ButtonEditarIMC.Image = Global.ProyectoFinal.My.Resources.Resources.edit__1_1
+        Me.ButtonEditarIMC.Location = New System.Drawing.Point(877, 212)
+        Me.ButtonEditarIMC.Margin = New System.Windows.Forms.Padding(2)
+        Me.ButtonEditarIMC.Name = "ButtonEditarIMC"
+        Me.ButtonEditarIMC.Size = New System.Drawing.Size(39, 36)
+        Me.ButtonEditarIMC.TabIndex = 89
+        Me.ButtonEditarIMC.UseVisualStyleBackColor = True
+        '
+        'ButtonEditarPeso
+        '
+        Me.ButtonEditarPeso.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.ButtonEditarPeso.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.ButtonEditarPeso.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.ButtonEditarPeso.ForeColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(42, Byte), Integer))
+        Me.ButtonEditarPeso.Image = Global.ProyectoFinal.My.Resources.Resources.edit__1_1
+        Me.ButtonEditarPeso.Location = New System.Drawing.Point(877, 152)
+        Me.ButtonEditarPeso.Margin = New System.Windows.Forms.Padding(2)
+        Me.ButtonEditarPeso.Name = "ButtonEditarPeso"
+        Me.ButtonEditarPeso.Size = New System.Drawing.Size(39, 36)
+        Me.ButtonEditarPeso.TabIndex = 88
+        Me.ButtonEditarPeso.UseVisualStyleBackColor = True
+        '
+        'ButtonEditarFechaNacimiento
+        '
+        Me.ButtonEditarFechaNacimiento.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.ButtonEditarFechaNacimiento.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.ButtonEditarFechaNacimiento.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.ButtonEditarFechaNacimiento.ForeColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(42, Byte), Integer))
+        Me.ButtonEditarFechaNacimiento.Image = Global.ProyectoFinal.My.Resources.Resources.edit__1_1
+        Me.ButtonEditarFechaNacimiento.Location = New System.Drawing.Point(312, 327)
+        Me.ButtonEditarFechaNacimiento.Margin = New System.Windows.Forms.Padding(2)
+        Me.ButtonEditarFechaNacimiento.Name = "ButtonEditarFechaNacimiento"
+        Me.ButtonEditarFechaNacimiento.Size = New System.Drawing.Size(39, 37)
+        Me.ButtonEditarFechaNacimiento.TabIndex = 87
+        Me.ButtonEditarFechaNacimiento.UseVisualStyleBackColor = True
+        '
+        'ButtonEditarAltura
+        '
+        Me.ButtonEditarAltura.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.ButtonEditarAltura.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.ButtonEditarAltura.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.ButtonEditarAltura.ForeColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(42, Byte), Integer))
+        Me.ButtonEditarAltura.Image = Global.ProyectoFinal.My.Resources.Resources.edit__1_1
+        Me.ButtonEditarAltura.Location = New System.Drawing.Point(311, 386)
+        Me.ButtonEditarAltura.Margin = New System.Windows.Forms.Padding(2)
+        Me.ButtonEditarAltura.Name = "ButtonEditarAltura"
+        Me.ButtonEditarAltura.Size = New System.Drawing.Size(39, 37)
+        Me.ButtonEditarAltura.TabIndex = 86
+        Me.ButtonEditarAltura.UseVisualStyleBackColor = True
+        '
+        'ButtonEditarNombre
+        '
+        Me.ButtonEditarNombre.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.ButtonEditarNombre.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.ButtonEditarNombre.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.ButtonEditarNombre.ForeColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(42, Byte), Integer))
+        Me.ButtonEditarNombre.Image = Global.ProyectoFinal.My.Resources.Resources.edit__1_1
+        Me.ButtonEditarNombre.Location = New System.Drawing.Point(311, 152)
+        Me.ButtonEditarNombre.Margin = New System.Windows.Forms.Padding(2)
+        Me.ButtonEditarNombre.Name = "ButtonEditarNombre"
+        Me.ButtonEditarNombre.Size = New System.Drawing.Size(39, 37)
+        Me.ButtonEditarNombre.TabIndex = 85
+        Me.ButtonEditarNombre.UseVisualStyleBackColor = True
+        '
         'MenuModificarDatos
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(42, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(1019, 645)
+        Me.Controls.Add(Me.PictureBox4)
+        Me.Controls.Add(Me.PictureBox3)
         Me.Controls.Add(Me.PictureBox2)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.LabelApellido2)
@@ -531,7 +525,6 @@ Partial Class MenuModificarDatos
         Me.Controls.Add(Me.TextBoxPrimerApellido)
         Me.Controls.Add(Me.TextBoxCedula)
         Me.Controls.Add(Me.LabelContraseña)
-        Me.Controls.Add(Me.ButtonMostrarEsconder)
         Me.Controls.Add(Me.ButtonEditarContraseña)
         Me.Controls.Add(Me.TextBoxContraseña)
         Me.Controls.Add(Me.LabelCorreo)
@@ -542,7 +535,6 @@ Partial Class MenuModificarDatos
         Me.Controls.Add(Me.ButtonEditarFechaNacimiento)
         Me.Controls.Add(Me.ButtonEditarAltura)
         Me.Controls.Add(Me.ButtonEditarNombre)
-        Me.Controls.Add(Me.ButtonGuardar)
         Me.Controls.Add(Me.LabelNacimiento)
         Me.Controls.Add(Me.TextBoxCorreo)
         Me.Controls.Add(Me.LabelAltura)
@@ -561,9 +553,11 @@ Partial Class MenuModificarDatos
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "MenuModificarDatos"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "MenuModificarDatos"
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Text = "FIT Tracker"
+        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -578,7 +572,6 @@ Partial Class MenuModificarDatos
     Friend WithEvents ButtonEditarFechaNacimiento As Button
     Friend WithEvents ButtonEditarAltura As Button
     Friend WithEvents ButtonEditarNombre As Button
-    Friend WithEvents ButtonGuardar As Button
     Friend WithEvents LabelNacimiento As Label
     Friend WithEvents TextBoxCorreo As TextBox
     Friend WithEvents LabelAltura As Label
@@ -595,7 +588,6 @@ Partial Class MenuModificarDatos
     Friend WithEvents LabelCorreo As Label
     Friend WithEvents TextBoxContraseña As TextBox
     Friend WithEvents ButtonEditarContraseña As Button
-    Friend WithEvents ButtonMostrarEsconder As Button
     Friend WithEvents LabelContraseña As Label
     Friend WithEvents TextBoxCedula As TextBox
     Friend WithEvents TextBoxPrimerApellido As TextBox
@@ -606,4 +598,6 @@ Partial Class MenuModificarDatos
     Friend WithEvents LabelApellido2 As Label
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents PictureBox2 As PictureBox
+    Friend WithEvents PictureBox3 As PictureBox
+    Friend WithEvents PictureBox4 As PictureBox
 End Class

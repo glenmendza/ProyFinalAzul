@@ -32,7 +32,7 @@ Partial Class MenuRestablecerContraseña
         'TextBoxConsultar
         '
         Me.TextBoxConsultar.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBoxConsultar.Location = New System.Drawing.Point(419, 175)
+        Me.TextBoxConsultar.Location = New System.Drawing.Point(418, 175)
         Me.TextBoxConsultar.Name = "TextBoxConsultar"
         Me.TextBoxConsultar.Size = New System.Drawing.Size(177, 29)
         Me.TextBoxConsultar.TabIndex = 0
@@ -43,7 +43,7 @@ Partial Class MenuRestablecerContraseña
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.White
-        Me.Label1.Location = New System.Drawing.Point(386, 137)
+        Me.Label1.Location = New System.Drawing.Point(377, 137)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(258, 24)
         Me.Label1.TabIndex = 1
@@ -88,7 +88,7 @@ Partial Class MenuRestablecerContraseña
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "MenuRestablecerContraseña"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "MenuRestablecerContraseña"
+        Me.Text = "FIT Tracker"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

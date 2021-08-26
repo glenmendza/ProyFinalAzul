@@ -66,7 +66,8 @@ Public Class MenuAñadirEjercicios
         End If
     End Sub
 
-    Private Function Button8_Click(sender As Object, e As EventArgs) Handles ButtonGuardar.Click
+    Private Function PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
+
         Call ValidarDatos()
 
         Dim sCon As String = "data source=PROYAZUL; initial catalog = Gym; Integrated Security = True"
@@ -592,6 +593,7 @@ Public Class MenuAñadirEjercicios
     Private Sub Calendario_DateChanged(sender As Object, e As DateRangeEventArgs) Handles Calendario.DateChanged
         Label3.Text = Calendario.SelectionStart
     End Sub
+
 
 
 #Enable Warning BC42105 ' La función no devuelve un valor en todas las rutas de código

@@ -87,11 +87,6 @@ Public Class MenuGestionarEditarUsuario
         End If
     End Sub
 
-
-    Public Sub ButtonGuardar_Click(sender As Object, e As EventArgs) Handles ButtonGuardar.Click
-        Call Insertar()
-    End Sub
-
     Public Sub Insertar()
         Dim myConnectionString As String = "data source=PROYAZUL; initial catalog = Gym; Integrated Security = True"
 
@@ -129,7 +124,7 @@ Public Class MenuGestionarEditarUsuario
 
 
     'funcion para eliminar al usuario
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles ButtonEliminar.Click
+    Private Sub EliminarUser()
         Dim resultado As DialogResult = MessageBox.Show("Seguro que desea eliminar a " & TextBoxNombre.Text & " " & TextBoxPrimerApellido.Text & " del sistema?", "Fit Tracker", MessageBoxButtons.YesNoCancel)
         If resultado = DialogResult.Cancel Then
             Return
@@ -163,9 +158,14 @@ Public Class MenuGestionarEditarUsuario
                     TextBoxGenero.Text = " "
                 End Using
             End Using
-
         End If
     End Sub
 
+    Private Sub PictureBox3_Click(sender As Object, e As EventArgs) Handles PictureBox3.Click
+        Call Insertar()
+    End Sub
 
+    Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
+        Call EliminarUser()
+    End Sub
 End Class

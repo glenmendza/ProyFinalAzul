@@ -22,6 +22,7 @@ Partial Class MenuGestionarVerUsuarios
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(MenuGestionarVerUsuarios))
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.ButtonBack = New System.Windows.Forms.Button()
         Me.LabelInfo = New System.Windows.Forms.Label()
@@ -33,7 +34,7 @@ Partial Class MenuGestionarVerUsuarios
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DataGridView1.Location = New System.Drawing.Point(89, 145)
         Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.Size = New System.Drawing.Size(827, 393)
+        Me.DataGridView1.Size = New System.Drawing.Size(836, 393)
         Me.DataGridView1.TabIndex = 0
         '
         'ButtonBack
@@ -68,9 +69,10 @@ Partial Class MenuGestionarVerUsuarios
         Me.Controls.Add(Me.LabelInfo)
         Me.Controls.Add(Me.ButtonBack)
         Me.Controls.Add(Me.DataGridView1)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "MenuGestionarVerUsuarios"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "MenuGestionarVerUsuarios"
+        Me.Text = "FIT Tracker"
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()

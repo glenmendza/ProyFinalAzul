@@ -21,7 +21,6 @@ C:\Users\glenm\Documents\Proyectos Visual Studio\Proyecto Software #1\ProyFinalA
 C:\Users\glenm\Documents\Proyectos Visual Studio\Proyecto Software #1\ProyFinalAzul\ProyectoFinal\obj\Debug\ProyectoFinal.MenuEstadisticas.resources
 C:\Users\glenm\Documents\Proyectos Visual Studio\Proyecto Software #1\ProyFinalAzul\ProyectoFinal\obj\Debug\ProyectoFinal.MenuGestionarUsuarios.resources
 C:\Users\glenm\Documents\Proyectos Visual Studio\Proyecto Software #1\ProyFinalAzul\ProyectoFinal\obj\Debug\ProyectoFinal.MenuModificarDatos.resources
-C:\Users\glenm\Documents\Proyectos Visual Studio\Proyecto Software #1\ProyFinalAzul\ProyectoFinal\obj\Debug\ProyectoFinal.MenuPrincipalUsuario.resources
 C:\Users\glenm\Documents\Proyectos Visual Studio\Proyecto Software #1\ProyFinalAzul\ProyectoFinal\obj\Debug\ProyectoFinal.MenuRestablecerContraseña.resources
 C:\Users\glenm\Documents\Proyectos Visual Studio\Proyecto Software #1\ProyFinalAzul\ProyectoFinal\obj\Debug\ProyectoFinal.Resources.resources
 C:\Users\glenm\Documents\Proyectos Visual Studio\Proyecto Software #1\ProyFinalAzul\ProyectoFinal\obj\Debug\ProyectoFinal.exe
