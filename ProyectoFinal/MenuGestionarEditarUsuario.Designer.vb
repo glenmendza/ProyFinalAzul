@@ -62,20 +62,21 @@ Partial Class MenuGestionarEditarUsuario
         Me.Label1.BackColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(42, Byte), Integer))
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.White
-        Me.Label1.Location = New System.Drawing.Point(411, 27)
+        Me.Label1.Location = New System.Drawing.Point(548, 33)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(221, 37)
+        Me.Label1.Size = New System.Drawing.Size(273, 46)
         Me.Label1.TabIndex = 20
         Me.Label1.Text = "Editar Usuario"
         '
         'TextBoxGenero
         '
         Me.TextBoxGenero.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBoxGenero.Location = New System.Drawing.Point(710, 226)
-        Me.TextBoxGenero.Margin = New System.Windows.Forms.Padding(2)
+        Me.TextBoxGenero.Location = New System.Drawing.Point(947, 278)
+        Me.TextBoxGenero.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.TextBoxGenero.Name = "TextBoxGenero"
         Me.TextBoxGenero.ReadOnly = True
-        Me.TextBoxGenero.Size = New System.Drawing.Size(135, 23)
+        Me.TextBoxGenero.Size = New System.Drawing.Size(179, 27)
         Me.TextBoxGenero.TabIndex = 54
         '
         'Label7
@@ -83,21 +84,20 @@ Partial Class MenuGestionarEditarUsuario
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label7.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label7.Location = New System.Drawing.Point(787, 203)
-        Me.Label7.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label7.Location = New System.Drawing.Point(1049, 250)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(63, 20)
+        Me.Label7.Size = New System.Drawing.Size(77, 25)
         Me.Label7.TabIndex = 53
         Me.Label7.Text = "Género"
         '
         'TextBoxTelefono
         '
         Me.TextBoxTelefono.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBoxTelefono.Location = New System.Drawing.Point(710, 166)
-        Me.TextBoxTelefono.Margin = New System.Windows.Forms.Padding(2)
+        Me.TextBoxTelefono.Location = New System.Drawing.Point(947, 204)
+        Me.TextBoxTelefono.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.TextBoxTelefono.Name = "TextBoxTelefono"
         Me.TextBoxTelefono.ReadOnly = True
-        Me.TextBoxTelefono.Size = New System.Drawing.Size(135, 23)
+        Me.TextBoxTelefono.Size = New System.Drawing.Size(179, 27)
         Me.TextBoxTelefono.TabIndex = 52
         '
         'Label6
@@ -105,21 +105,20 @@ Partial Class MenuGestionarEditarUsuario
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label6.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label6.Location = New System.Drawing.Point(777, 143)
-        Me.Label6.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label6.Location = New System.Drawing.Point(1036, 176)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(71, 20)
+        Me.Label6.Size = New System.Drawing.Size(89, 25)
         Me.Label6.TabIndex = 51
         Me.Label6.Text = "Teléfono"
         '
         'TextBoxCorreo
         '
         Me.TextBoxCorreo.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBoxCorreo.Location = New System.Drawing.Point(123, 356)
-        Me.TextBoxCorreo.Margin = New System.Windows.Forms.Padding(2)
+        Me.TextBoxCorreo.Location = New System.Drawing.Point(164, 438)
+        Me.TextBoxCorreo.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.TextBoxCorreo.Name = "TextBoxCorreo"
         Me.TextBoxCorreo.ReadOnly = True
-        Me.TextBoxCorreo.Size = New System.Drawing.Size(175, 23)
+        Me.TextBoxCorreo.Size = New System.Drawing.Size(232, 27)
         Me.TextBoxCorreo.TabIndex = 50
         '
         'Label5
@@ -127,21 +126,20 @@ Partial Class MenuGestionarEditarUsuario
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label5.Location = New System.Drawing.Point(119, 325)
-        Me.Label5.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label5.Location = New System.Drawing.Point(159, 400)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(140, 20)
+        Me.Label5.Size = New System.Drawing.Size(173, 25)
         Me.Label5.TabIndex = 49
         Me.Label5.Text = "Correo Electronico"
         '
         'TextBoxSegundoApellido
         '
         Me.TextBoxSegundoApellido.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBoxSegundoApellido.Location = New System.Drawing.Point(124, 291)
-        Me.TextBoxSegundoApellido.Margin = New System.Windows.Forms.Padding(2)
+        Me.TextBoxSegundoApellido.Location = New System.Drawing.Point(165, 358)
+        Me.TextBoxSegundoApellido.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.TextBoxSegundoApellido.Name = "TextBoxSegundoApellido"
         Me.TextBoxSegundoApellido.ReadOnly = True
-        Me.TextBoxSegundoApellido.Size = New System.Drawing.Size(175, 23)
+        Me.TextBoxSegundoApellido.Size = New System.Drawing.Size(232, 27)
         Me.TextBoxSegundoApellido.TabIndex = 46
         '
         'Label4
@@ -149,21 +147,20 @@ Partial Class MenuGestionarEditarUsuario
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label4.Location = New System.Drawing.Point(120, 261)
-        Me.Label4.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label4.Location = New System.Drawing.Point(160, 321)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(134, 20)
+        Me.Label4.Size = New System.Drawing.Size(167, 25)
         Me.Label4.TabIndex = 45
         Me.Label4.Text = "Segundo Apellido"
         '
         'TextBoxPrimerApellido
         '
         Me.TextBoxPrimerApellido.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBoxPrimerApellido.Location = New System.Drawing.Point(124, 232)
-        Me.TextBoxPrimerApellido.Margin = New System.Windows.Forms.Padding(2)
+        Me.TextBoxPrimerApellido.Location = New System.Drawing.Point(165, 286)
+        Me.TextBoxPrimerApellido.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.TextBoxPrimerApellido.Name = "TextBoxPrimerApellido"
         Me.TextBoxPrimerApellido.ReadOnly = True
-        Me.TextBoxPrimerApellido.Size = New System.Drawing.Size(175, 23)
+        Me.TextBoxPrimerApellido.Size = New System.Drawing.Size(232, 27)
         Me.TextBoxPrimerApellido.TabIndex = 44
         '
         'Label3
@@ -171,21 +168,20 @@ Partial Class MenuGestionarEditarUsuario
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label3.Location = New System.Drawing.Point(120, 203)
-        Me.Label3.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label3.Location = New System.Drawing.Point(160, 250)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(114, 20)
+        Me.Label3.Size = New System.Drawing.Size(143, 25)
         Me.Label3.TabIndex = 43
         Me.Label3.Text = "Primer Apellido"
         '
         'TextBoxNombre
         '
         Me.TextBoxNombre.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBoxNombre.Location = New System.Drawing.Point(124, 172)
-        Me.TextBoxNombre.Margin = New System.Windows.Forms.Padding(2)
+        Me.TextBoxNombre.Location = New System.Drawing.Point(165, 212)
+        Me.TextBoxNombre.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.TextBoxNombre.Name = "TextBoxNombre"
         Me.TextBoxNombre.ReadOnly = True
-        Me.TextBoxNombre.Size = New System.Drawing.Size(175, 23)
+        Me.TextBoxNombre.Size = New System.Drawing.Size(232, 27)
         Me.TextBoxNombre.TabIndex = 42
         '
         'Label2
@@ -193,10 +189,9 @@ Partial Class MenuGestionarEditarUsuario
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label2.Location = New System.Drawing.Point(120, 143)
-        Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label2.Location = New System.Drawing.Point(160, 176)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(65, 20)
+        Me.Label2.Size = New System.Drawing.Size(81, 25)
         Me.Label2.TabIndex = 41
         Me.Label2.Text = "Nombre"
         '
@@ -206,9 +201,10 @@ Partial Class MenuGestionarEditarUsuario
         Me.ButtonBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.ButtonBack.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ButtonBack.ForeColor = System.Drawing.Color.White
-        Me.ButtonBack.Location = New System.Drawing.Point(12, 12)
+        Me.ButtonBack.Location = New System.Drawing.Point(16, 15)
+        Me.ButtonBack.Margin = New System.Windows.Forms.Padding(4)
         Me.ButtonBack.Name = "ButtonBack"
-        Me.ButtonBack.Size = New System.Drawing.Size(52, 37)
+        Me.ButtonBack.Size = New System.Drawing.Size(69, 46)
         Me.ButtonBack.TabIndex = 68
         Me.ButtonBack.Text = "←"
         Me.ButtonBack.UseVisualStyleBackColor = False
@@ -216,11 +212,11 @@ Partial Class MenuGestionarEditarUsuario
         'TextBoxAltura
         '
         Me.TextBoxAltura.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBoxAltura.Location = New System.Drawing.Point(710, 284)
-        Me.TextBoxAltura.Margin = New System.Windows.Forms.Padding(2)
+        Me.TextBoxAltura.Location = New System.Drawing.Point(947, 350)
+        Me.TextBoxAltura.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.TextBoxAltura.Name = "TextBoxAltura"
         Me.TextBoxAltura.ReadOnly = True
-        Me.TextBoxAltura.Size = New System.Drawing.Size(135, 23)
+        Me.TextBoxAltura.Size = New System.Drawing.Size(179, 27)
         Me.TextBoxAltura.TabIndex = 71
         '
         'Label8
@@ -228,21 +224,20 @@ Partial Class MenuGestionarEditarUsuario
         Me.Label8.AutoSize = True
         Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label8.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label8.Location = New System.Drawing.Point(795, 263)
-        Me.Label8.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label8.Location = New System.Drawing.Point(1060, 324)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(51, 20)
+        Me.Label8.Size = New System.Drawing.Size(63, 25)
         Me.Label8.TabIndex = 70
         Me.Label8.Text = "Altura"
         '
         'TextBoxPeso
         '
         Me.TextBoxPeso.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBoxPeso.Location = New System.Drawing.Point(708, 341)
-        Me.TextBoxPeso.Margin = New System.Windows.Forms.Padding(2)
+        Me.TextBoxPeso.Location = New System.Drawing.Point(944, 420)
+        Me.TextBoxPeso.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.TextBoxPeso.Name = "TextBoxPeso"
         Me.TextBoxPeso.ReadOnly = True
-        Me.TextBoxPeso.Size = New System.Drawing.Size(135, 23)
+        Me.TextBoxPeso.Size = New System.Drawing.Size(179, 27)
         Me.TextBoxPeso.TabIndex = 74
         '
         'Label9
@@ -250,37 +245,40 @@ Partial Class MenuGestionarEditarUsuario
         Me.Label9.AutoSize = True
         Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label9.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label9.Location = New System.Drawing.Point(799, 319)
-        Me.Label9.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label9.Location = New System.Drawing.Point(1065, 393)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(45, 20)
+        Me.Label9.Size = New System.Drawing.Size(57, 25)
         Me.Label9.TabIndex = 73
         Me.Label9.Text = "Peso"
         '
         'TextBoxCedula
         '
         Me.TextBoxCedula.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBoxCedula.Location = New System.Drawing.Point(437, 128)
-        Me.TextBoxCedula.Margin = New System.Windows.Forms.Padding(2)
+        Me.TextBoxCedula.Location = New System.Drawing.Point(600, 167)
+        Me.TextBoxCedula.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.TextBoxCedula.Name = "TextBoxCedula"
-        Me.TextBoxCedula.Size = New System.Drawing.Size(150, 28)
+        Me.TextBoxCedula.ReadOnly = True
+        Me.TextBoxCedula.Size = New System.Drawing.Size(184, 34)
         Me.TextBoxCedula.TabIndex = 76
+        Me.TextBoxCedula.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'PictureBox1
         '
         Me.PictureBox1.Image = Global.ProyectoFinal.My.Resources.Resources.MicrosoftTeams_image__1_
-        Me.PictureBox1.Location = New System.Drawing.Point(30, 552)
+        Me.PictureBox1.Location = New System.Drawing.Point(40, 679)
+        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(4)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(70, 65)
+        Me.PictureBox1.Size = New System.Drawing.Size(93, 80)
         Me.PictureBox1.TabIndex = 80
         Me.PictureBox1.TabStop = False
         '
         'PictureBox3
         '
         Me.PictureBox3.Image = Global.ProyectoFinal.My.Resources.Resources.diskette
-        Me.PictureBox3.Location = New System.Drawing.Point(923, 552)
+        Me.PictureBox3.Location = New System.Drawing.Point(1231, 679)
+        Me.PictureBox3.Margin = New System.Windows.Forms.Padding(4)
         Me.PictureBox3.Name = "PictureBox3"
-        Me.PictureBox3.Size = New System.Drawing.Size(66, 65)
+        Me.PictureBox3.Size = New System.Drawing.Size(88, 80)
         Me.PictureBox3.TabIndex = 79
         Me.PictureBox3.TabStop = False
         '
@@ -289,10 +287,10 @@ Partial Class MenuGestionarEditarUsuario
         Me.ButtonEditarPeso.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ButtonEditarPeso.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.ButtonEditarPeso.Image = CType(resources.GetObject("ButtonEditarPeso.Image"), System.Drawing.Image)
-        Me.ButtonEditarPeso.Location = New System.Drawing.Point(849, 326)
-        Me.ButtonEditarPeso.Margin = New System.Windows.Forms.Padding(2)
+        Me.ButtonEditarPeso.Location = New System.Drawing.Point(1132, 401)
+        Me.ButtonEditarPeso.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.ButtonEditarPeso.Name = "ButtonEditarPeso"
-        Me.ButtonEditarPeso.Size = New System.Drawing.Size(39, 37)
+        Me.ButtonEditarPeso.Size = New System.Drawing.Size(52, 46)
         Me.ButtonEditarPeso.TabIndex = 78
         Me.ButtonEditarPeso.UseVisualStyleBackColor = True
         '
@@ -301,10 +299,10 @@ Partial Class MenuGestionarEditarUsuario
         Me.ButtonEditarAltura.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ButtonEditarAltura.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.ButtonEditarAltura.Image = CType(resources.GetObject("ButtonEditarAltura.Image"), System.Drawing.Image)
-        Me.ButtonEditarAltura.Location = New System.Drawing.Point(849, 270)
-        Me.ButtonEditarAltura.Margin = New System.Windows.Forms.Padding(2)
+        Me.ButtonEditarAltura.Location = New System.Drawing.Point(1132, 332)
+        Me.ButtonEditarAltura.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.ButtonEditarAltura.Name = "ButtonEditarAltura"
-        Me.ButtonEditarAltura.Size = New System.Drawing.Size(39, 37)
+        Me.ButtonEditarAltura.Size = New System.Drawing.Size(52, 46)
         Me.ButtonEditarAltura.TabIndex = 77
         Me.ButtonEditarAltura.UseVisualStyleBackColor = True
         '
@@ -313,10 +311,10 @@ Partial Class MenuGestionarEditarUsuario
         Me.ButtonEditarGenero.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ButtonEditarGenero.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.ButtonEditarGenero.Image = CType(resources.GetObject("ButtonEditarGenero.Image"), System.Drawing.Image)
-        Me.ButtonEditarGenero.Location = New System.Drawing.Point(848, 214)
-        Me.ButtonEditarGenero.Margin = New System.Windows.Forms.Padding(2)
+        Me.ButtonEditarGenero.Location = New System.Drawing.Point(1131, 263)
+        Me.ButtonEditarGenero.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.ButtonEditarGenero.Name = "ButtonEditarGenero"
-        Me.ButtonEditarGenero.Size = New System.Drawing.Size(39, 37)
+        Me.ButtonEditarGenero.Size = New System.Drawing.Size(52, 46)
         Me.ButtonEditarGenero.TabIndex = 66
         Me.ButtonEditarGenero.UseVisualStyleBackColor = True
         '
@@ -325,10 +323,10 @@ Partial Class MenuGestionarEditarUsuario
         Me.ButtonEditarTelefono.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ButtonEditarTelefono.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.ButtonEditarTelefono.Image = CType(resources.GetObject("ButtonEditarTelefono.Image"), System.Drawing.Image)
-        Me.ButtonEditarTelefono.Location = New System.Drawing.Point(849, 151)
-        Me.ButtonEditarTelefono.Margin = New System.Windows.Forms.Padding(2)
+        Me.ButtonEditarTelefono.Location = New System.Drawing.Point(1132, 186)
+        Me.ButtonEditarTelefono.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.ButtonEditarTelefono.Name = "ButtonEditarTelefono"
-        Me.ButtonEditarTelefono.Size = New System.Drawing.Size(39, 37)
+        Me.ButtonEditarTelefono.Size = New System.Drawing.Size(52, 46)
         Me.ButtonEditarTelefono.TabIndex = 65
         Me.ButtonEditarTelefono.UseVisualStyleBackColor = True
         '
@@ -337,10 +335,10 @@ Partial Class MenuGestionarEditarUsuario
         Me.ButtonEditarCorreo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ButtonEditarCorreo.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.ButtonEditarCorreo.Image = CType(resources.GetObject("ButtonEditarCorreo.Image"), System.Drawing.Image)
-        Me.ButtonEditarCorreo.Location = New System.Drawing.Point(302, 341)
-        Me.ButtonEditarCorreo.Margin = New System.Windows.Forms.Padding(2)
+        Me.ButtonEditarCorreo.Location = New System.Drawing.Point(403, 420)
+        Me.ButtonEditarCorreo.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.ButtonEditarCorreo.Name = "ButtonEditarCorreo"
-        Me.ButtonEditarCorreo.Size = New System.Drawing.Size(39, 37)
+        Me.ButtonEditarCorreo.Size = New System.Drawing.Size(52, 46)
         Me.ButtonEditarCorreo.TabIndex = 64
         Me.ButtonEditarCorreo.UseVisualStyleBackColor = True
         '
@@ -349,10 +347,10 @@ Partial Class MenuGestionarEditarUsuario
         Me.ButtonEditarApellido2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ButtonEditarApellido2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.ButtonEditarApellido2.Image = CType(resources.GetObject("ButtonEditarApellido2.Image"), System.Drawing.Image)
-        Me.ButtonEditarApellido2.Location = New System.Drawing.Point(303, 276)
-        Me.ButtonEditarApellido2.Margin = New System.Windows.Forms.Padding(2)
+        Me.ButtonEditarApellido2.Location = New System.Drawing.Point(404, 340)
+        Me.ButtonEditarApellido2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.ButtonEditarApellido2.Name = "ButtonEditarApellido2"
-        Me.ButtonEditarApellido2.Size = New System.Drawing.Size(39, 37)
+        Me.ButtonEditarApellido2.Size = New System.Drawing.Size(52, 46)
         Me.ButtonEditarApellido2.TabIndex = 62
         Me.ButtonEditarApellido2.UseVisualStyleBackColor = True
         '
@@ -361,10 +359,10 @@ Partial Class MenuGestionarEditarUsuario
         Me.ButtonEditarApellido1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ButtonEditarApellido1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.ButtonEditarApellido1.Image = CType(resources.GetObject("ButtonEditarApellido1.Image"), System.Drawing.Image)
-        Me.ButtonEditarApellido1.Location = New System.Drawing.Point(303, 219)
-        Me.ButtonEditarApellido1.Margin = New System.Windows.Forms.Padding(2)
+        Me.ButtonEditarApellido1.Location = New System.Drawing.Point(404, 270)
+        Me.ButtonEditarApellido1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.ButtonEditarApellido1.Name = "ButtonEditarApellido1"
-        Me.ButtonEditarApellido1.Size = New System.Drawing.Size(39, 37)
+        Me.ButtonEditarApellido1.Size = New System.Drawing.Size(52, 46)
         Me.ButtonEditarApellido1.TabIndex = 61
         Me.ButtonEditarApellido1.UseVisualStyleBackColor = True
         '
@@ -373,19 +371,19 @@ Partial Class MenuGestionarEditarUsuario
         Me.ButtonEditarNombre.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ButtonEditarNombre.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.ButtonEditarNombre.Image = CType(resources.GetObject("ButtonEditarNombre.Image"), System.Drawing.Image)
-        Me.ButtonEditarNombre.Location = New System.Drawing.Point(303, 159)
-        Me.ButtonEditarNombre.Margin = New System.Windows.Forms.Padding(2)
+        Me.ButtonEditarNombre.Location = New System.Drawing.Point(404, 196)
+        Me.ButtonEditarNombre.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.ButtonEditarNombre.Name = "ButtonEditarNombre"
-        Me.ButtonEditarNombre.Size = New System.Drawing.Size(39, 37)
+        Me.ButtonEditarNombre.Size = New System.Drawing.Size(52, 46)
         Me.ButtonEditarNombre.TabIndex = 60
         Me.ButtonEditarNombre.UseVisualStyleBackColor = True
         '
         'MenuGestionarEditarUsuario
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(42, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(1019, 645)
+        Me.ClientSize = New System.Drawing.Size(1359, 794)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.PictureBox3)
         Me.Controls.Add(Me.ButtonEditarPeso)
@@ -417,7 +415,7 @@ Partial Class MenuGestionarEditarUsuario
         Me.Controls.Add(Me.Label1)
         Me.ForeColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(42, Byte), Integer))
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
-        Me.Margin = New System.Windows.Forms.Padding(2)
+        Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Name = "MenuGestionarEditarUsuario"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "FIT Tracker"

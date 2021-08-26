@@ -55,11 +55,14 @@ Public Class MenuGestionarAñadirUsuario
             cmd.Parameters.AddWithValue("@Contraseña", TextBoxContraseña.Text)
 
             con.Open()
-            Dim t As Integer = CInt(cmd.ExecuteScalar())
-            MessageBox.Show("Usuario registrado con exito!", "FIT Tracker")
-            con.Close()
-            Return t
-
+            Try
+                Dim t As Integer = CInt(cmd.ExecuteScalar())
+                MessageBox.Show("Usuario registrado con exito!", "FIT Tracker")
+                con.Close()
+                Return t
+            Catch ex As Exception
+                MsgBox("Caracteres incorrectos", MessageBoxIcon.Error, "Fit Tracker")
+            End Try
         End Using
 
 #Disable Warning BC42105 ' La función no devuelve un valor en todas las rutas de código
@@ -102,12 +105,17 @@ Public Class MenuGestionarAñadirUsuario
 
 
     Public Sub CalculoIMC()
-        Dim resultado As Double
-        Dim peso As Double = TextBoxPeso.Text
-        Dim altura As Double = TextBoxAltura.Text
-        resultado = (peso / ((altura / 100) ^ 2))
-        resultado = Format(resultado, "0.00")
-        TextBoxIMC.Text = CStr(resultado)
+        Try
+            Dim resultado As Double
+            Dim peso As Double = TextBoxPeso.Text
+            Dim altura As Double = TextBoxAltura.Text
+            resultado = (peso / ((altura / 100) ^ 2))
+            resultado = Format(resultado, "0.00")
+            TextBoxIMC.Text = CStr(resultado)
+        Catch
+            MsgBox("Rellena la altura y peso", MessageBoxIcon.Information, "Fit Tracker")
+            Exit Sub
+        End Try
     End Sub
 
     Private Sub MenuGestionarAñadirUsuario_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -155,15 +163,15 @@ Public Class MenuGestionarAñadirUsuario
         ElseIf ComboBoxAcceso.Text = "" Then
             MsgBox("Debe ingresar datos de Tipo de usuario", MessageBoxIcon.Information, "FIT Tracker")
             Exit Sub
-        ElseIf TextBoxPeso.Text = "" Then
-            MsgBox("Debe ingresar datos de Peso", MessageBoxIcon.Information, "FIT Tracker")
-            Exit Sub
-        ElseIf TextBoxAltura.Text = "" Then
-            MsgBox("Debe ingresar datos de Altura", MessageBoxIcon.Information, "FIT Tracker")
-            Exit Sub
-        ElseIf TextBoxIMC.Text = "" Then
-            MsgBox("Debe ingresar datos de IMC", MessageBoxIcon.Information, "FIT Tracker")
-            Exit Sub
+            'ElseIf TextBoxPeso.Text = "" Then
+            '    MsgBox("Debe ingresar datos de Peso", MessageBoxIcon.Information, "FIT Tracker")
+            '    Exit Sub
+            'ElseIf TextBoxAltura.Text = "" Then
+            '    MsgBox("Debe ingresar datos de Altura", MessageBoxIcon.Information, "FIT Tracker")
+            '    Exit Sub
+            'ElseIf TextBoxIMC.Text = "" Then
+            '    MsgBox("Debe ingresar datos de IMC", MessageBoxIcon.Information, "FIT Tracker")
+            '    Exit Sub
         ElseIf ComboBoxGenero.Text = "" Then
             MsgBox("Debe ingresar datos de Genero", MessageBoxIcon.Information, "FIT Tracker")
             Exit Sub

@@ -3,10 +3,10 @@ Imports System.Data.SqlClient
 Public Class MenuGestionarEditarUsuario
     Private Sub MenuGestionarEditarUsuario_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Call Cargar()
-
+        TextBoxCedula.Text = cedula2
     End Sub
     Private Sub ButtonBack_Click(sender As Object, e As EventArgs) Handles ButtonBack.Click
-        Me.Hide()
+        Me.Close()
         MenuBuscarUsuario.Show()
 
     End Sub
@@ -88,6 +88,7 @@ Public Class MenuGestionarEditarUsuario
     End Sub
 
     Public Sub Insertar()
+
         Dim myConnectionString As String = "data source=PROYAZUL; initial catalog = Gym; Integrated Security = True"
 
         Dim myConnection As New SqlConnection(myConnectionString)
@@ -101,24 +102,26 @@ Public Class MenuGestionarEditarUsuario
 
         myCommand.CommandText = "UPDATE Usuarios SET "
         myCommand.CommandText += "Nombre = '" & TextBoxNombre.Text & "', "
-            myCommand.CommandText += "PrimerApellido = '" & TextBoxPrimerApellido.Text & "', "
-            myCommand.CommandText += "SegundoApellido = '" & TextBoxSegundoApellido.Text & "', "
-            myCommand.CommandText += "Altura = '" & TextBoxAltura.Text & "', "
-            myCommand.CommandText += "Peso = '" & TextBoxPeso.Text & "', "
-            myCommand.CommandText += "Telefono = '" & TextBoxTelefono.Text & "', "
-            myCommand.CommandText += "Genero = '" & TextBoxGenero.Text & "', "
+        myCommand.CommandText += "PrimerApellido = '" & TextBoxPrimerApellido.Text & "', "
+        myCommand.CommandText += "SegundoApellido = '" & TextBoxSegundoApellido.Text & "', "
+        myCommand.CommandText += "Altura = '" & TextBoxAltura.Text & "', "
+        myCommand.CommandText += "Peso = '" & TextBoxPeso.Text & "', "
+        myCommand.CommandText += "Telefono = '" & TextBoxTelefono.Text & "', "
+        myCommand.CommandText += "Genero = '" & TextBoxGenero.Text & "', "
         myCommand.CommandText += "Correo = '" & TextBoxCorreo.Text & "' "
         myCommand.CommandText += "WHERE Cedula = " & cedula2 & ""
+        Try
+            rows = myCommand.ExecuteNonQuery()
+        Catch ex As Exception
+            MsgBox("Ha ocurrido un error", MessageBoxIcon.Error, "Fit Tracker")
 
-        rows = myCommand.ExecuteNonQuery()
-
-
+        End Try
 
 
         myConnection.Close()
 
 
-        MessageBox.Show("Datos actualizados con exito!", "FIT Tracker")
+        MsgBox("Datos actualizados con exito!", MessageBoxIcon.Information, "FIT Tracker")
         Exit Sub
     End Sub
 
@@ -156,6 +159,7 @@ Public Class MenuGestionarEditarUsuario
                     TextBoxAltura.Text = " "
                     TextBoxPeso.Text = " "
                     TextBoxGenero.Text = " "
+                    TextBoxCedula.Text = " "
                 End Using
             End Using
         End If
@@ -168,4 +172,6 @@ Public Class MenuGestionarEditarUsuario
     Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
         Call EliminarUser()
     End Sub
+
+
 End Class

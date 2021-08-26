@@ -168,10 +168,4 @@ Public Class MenuModificarDatos
             TextBoxContraseña.Visible = True
         End If
     End Sub
-
-    Public Sub formula()
-
-
-
-    End Sub
 End Class
