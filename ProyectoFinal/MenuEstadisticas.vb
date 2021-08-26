@@ -14,12 +14,13 @@ Public Class MenuEstadisticas
         Try
             conn.Open()
             Dim Query As String
-            Query = "SELECT Fecha, Peso FROM dbo.Estadisticas1 Where Cedula =" & cedula
+            Query = "SELECT Fecha, Peso, IMC FROM dbo.Estadisticas1 Where Cedula =" & cedula
             COMMAND = New SqlCommand(Query, conn)
             READER = COMMAND.ExecuteReader
             While READER.Read
 
                 Chart1.Series("Peso").Points.AddXY(READER("Fecha"), READER("Peso"))
+                Chart1.Series("IMC").Points.AddXY(READER("Fecha"), READER("IMC"))
 
             End While
             conn.Close()
@@ -29,6 +30,12 @@ Public Class MenuEstadisticas
         Finally
             conn.Dispose()
         End Try
+
+
+
+
+
+
     End Sub
 
     Private Sub ButtonBack_Click(sender As Object, e As EventArgs) Handles ButtonBack.Click
