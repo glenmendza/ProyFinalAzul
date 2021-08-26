@@ -234,12 +234,12 @@ Partial Class MenuGestionarAñadirUsuario
         '
         Me.ButtonGenerarContra.BackColor = System.Drawing.Color.Transparent
         Me.ButtonGenerarContra.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.ButtonGenerarContra.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ButtonGenerarContra.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ButtonGenerarContra.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.ButtonGenerarContra.Location = New System.Drawing.Point(928, 601)
         Me.ButtonGenerarContra.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.ButtonGenerarContra.Name = "ButtonGenerarContra"
-        Me.ButtonGenerarContra.Size = New System.Drawing.Size(173, 32)
+        Me.ButtonGenerarContra.Size = New System.Drawing.Size(173, 61)
         Me.ButtonGenerarContra.TabIndex = 38
         Me.ButtonGenerarContra.Text = "Generar Contraseña"
         Me.ButtonGenerarContra.UseVisualStyleBackColor = False
@@ -265,7 +265,7 @@ Partial Class MenuGestionarAñadirUsuario
         Me.ButtonBack.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ButtonBack.ForeColor = System.Drawing.Color.White
         Me.ButtonBack.Location = New System.Drawing.Point(16, 15)
-        Me.ButtonBack.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.ButtonBack.Margin = New System.Windows.Forms.Padding(4)
         Me.ButtonBack.Name = "ButtonBack"
         Me.ButtonBack.Size = New System.Drawing.Size(69, 46)
         Me.ButtonBack.TabIndex = 41
@@ -415,12 +415,12 @@ Partial Class MenuGestionarAñadirUsuario
         '
         Me.Button2.BackColor = System.Drawing.Color.Transparent
         Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Button2.Location = New System.Drawing.Point(1155, 561)
+        Me.Button2.Location = New System.Drawing.Point(1150, 554)
         Me.Button2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(79, 28)
+        Me.Button2.Size = New System.Drawing.Size(78, 37)
         Me.Button2.TabIndex = 56
         Me.Button2.Text = "Copiar"
         Me.Button2.UseVisualStyleBackColor = False

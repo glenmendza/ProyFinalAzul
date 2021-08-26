@@ -82,44 +82,454 @@ Public Class MenuAñadirEjercicios
 
             Dim cmd As New SqlCommand(sel, con)
 
-            'Try
-            '    If TextBoxNombre.Text <> "Box Jump" Then
-            '        MsgBox("Error")
-            '        Exit Function
-            '    ElseIf TextBoxNombre.Text <> "Chin up" Then
-            '        MsgBox("Error")
-            '        Exit Function
-            '    End If
-            'Catch ex As Exception
-            '    MsgBox(ex.Message)
-            '    Exit Function
-            'End Try
+            If TextBoxNombre.Text.Trim() = "Box Jump" Then
+                cmd.Parameters.AddWithValue("@Cedula", cedula)
+                cmd.Parameters.AddWithValue("@Fecha", Calendario.SelectionStart)
+                cmd.Parameters.AddWithValue("@NombreEjercicio", TextBoxNombre.Text.Trim())
+                cmd.Parameters.AddWithValue("@Repeticiones", TextBoxRepeticiones.Text)
 
-            Select Case TextBoxNombre.Text
-                Case TextBoxNombre.Text <> "Box Jump"
-                    MsgBox("El ejercicio no esta disponible")
-                    Exit Function
-                Case TextBoxNombre.Text <> "Deadlift"
-                    MsgBox("El ejercicio no esta disponible ")
-                    Exit Function
-                Case Else
-                    'se agrega el ejercicio a la bd
-            End Select
+                con.Open()
+                Try
+                    Dim t As Integer = (cmd.ExecuteScalar())
+                    MsgBox("Has guardado tus ejercicios el día " & Calendario.SelectionStart & "! (DD/MM/YY)", MessageBoxIcon.Information, "Fit Tracker")
+                    con.Close()
+                    Return t
+                Catch ex As Exception
+                    MsgBox("Los datos ingresados no son validos", MessageBoxIcon.Error, "Fit Tracker")
+                End Try
 
-            cmd.Parameters.AddWithValue("@Cedula", cedula)
-            cmd.Parameters.AddWithValue("@Fecha", Calendario.SelectionStart)
-            cmd.Parameters.AddWithValue("@NombreEjercicio", TextBoxNombre.Text)
-            cmd.Parameters.AddWithValue("@Repeticiones", TextBoxRepeticiones.Text)
 
-            con.Open()
-            Try
-                Dim t As Integer = (cmd.ExecuteScalar())
-                MsgBox("Has guardado tus ejercicios el día " + Calendario.SelectionStart + "! (DD/MM/YY)")
-                con.Close()
-                Return t
-            Catch ex As Exception
-                MsgBox(ex.Message)
-            End Try
+            ElseIf TextBoxNombre.Text.Trim() = "Deadlift" Then
+                cmd.Parameters.AddWithValue("@Cedula", cedula)
+                cmd.Parameters.AddWithValue("@Fecha", Calendario.SelectionStart)
+                cmd.Parameters.AddWithValue("@NombreEjercicio", TextBoxNombre.Text.Trim())
+                cmd.Parameters.AddWithValue("@Repeticiones", TextBoxRepeticiones.Text)
+
+                con.Open()
+
+                Try
+                    Dim t As Integer = (cmd.ExecuteScalar())
+                    MsgBox("Has guardado tus ejercicios el día " & Calendario.SelectionStart & "! (DD/MM/YY)", MessageBoxIcon.Information, "Fit Tracker")
+                    con.Close()
+                    Return t
+                Catch ex As Exception
+                    MsgBox("Los datos ingresados no son validos", MessageBoxIcon.Error, "Fit Tracker")
+                End Try
+
+
+            ElseIf TextBoxNombre.Text.Trim() = "Hip Thrust" Then
+                cmd.Parameters.AddWithValue("@Cedula", cedula)
+                cmd.Parameters.AddWithValue("@Fecha", Calendario.SelectionStart)
+                cmd.Parameters.AddWithValue("@NombreEjercicio", TextBoxNombre.Text.Trim())
+                cmd.Parameters.AddWithValue("@Repeticiones", TextBoxRepeticiones.Text)
+
+                con.Open()
+
+                Try
+                    Dim t As Integer = (cmd.ExecuteScalar())
+                    MsgBox("Has guardado tus ejercicios el día " & Calendario.SelectionStart & "! (DD/MM/YY)", MessageBoxIcon.Information, "Fit Tracker")
+                    con.Close()
+                    Return t
+                Catch ex As Exception
+                    MsgBox("Los datos ingresados no son validos", MessageBoxIcon.Error, "Fit Tracker")
+                End Try
+
+            ElseIf TextBoxNombre.Text.Trim() = "Lunge" Then
+                cmd.Parameters.AddWithValue("@Cedula", cedula)
+                cmd.Parameters.AddWithValue("@Fecha", Calendario.SelectionStart)
+                cmd.Parameters.AddWithValue("@NombreEjercicio", TextBoxNombre.Text.Trim())
+                cmd.Parameters.AddWithValue("@Repeticiones", TextBoxRepeticiones.Text)
+
+                con.Open()
+
+                Try
+                    Dim t As Integer = (cmd.ExecuteScalar())
+                    MsgBox("Has guardado tus ejercicios el día " & Calendario.SelectionStart & "! (DD/MM/YY)", MessageBoxIcon.Information, "Fit Tracker")
+                    con.Close()
+                    Return t
+                Catch ex As Exception
+                    MsgBox("Los datos ingresados no son validos", MessageBoxIcon.Error, "Fit Tracker")
+                End Try
+
+            ElseIf TextBoxNombre.Text.Trim() = "Squad" Then
+                cmd.Parameters.AddWithValue("@Cedula", cedula)
+                cmd.Parameters.AddWithValue("@Fecha", Calendario.SelectionStart)
+                cmd.Parameters.AddWithValue("@NombreEjercicio", TextBoxNombre.Text.Trim())
+                cmd.Parameters.AddWithValue("@Repeticiones", TextBoxRepeticiones.Text)
+
+                con.Open()
+
+                Try
+                    Dim t As Integer = (cmd.ExecuteScalar())
+                    MsgBox("Has guardado tus ejercicios el día " & Calendario.SelectionStart & "! (DD/MM/YY)", MessageBoxIcon.Information, "Fit Tracker")
+                    con.Close()
+                    Return t
+                Catch ex As Exception
+                    MsgBox("Los datos ingresados no son validos", MessageBoxIcon.Error, "Fit Tracker")
+                End Try
+
+            ElseIf TextBoxNombre.Text.Trim() = "Chin Up" Then
+                cmd.Parameters.AddWithValue("@Cedula", cedula)
+                cmd.Parameters.AddWithValue("@Fecha", Calendario.SelectionStart)
+                cmd.Parameters.AddWithValue("@NombreEjercicio", TextBoxNombre.Text.Trim())
+                cmd.Parameters.AddWithValue("@Repeticiones", TextBoxRepeticiones.Text)
+
+                con.Open()
+
+                Try
+                    Dim t As Integer = (cmd.ExecuteScalar())
+                    MsgBox("Has guardado tus ejercicios el día " & Calendario.SelectionStart & "! (DD/MM/YY)", MessageBoxIcon.Information, "Fit Tracker")
+                    con.Close()
+                    Return t
+                Catch ex As Exception
+                    MsgBox("Los datos ingresados no son validos", MessageBoxIcon.Error, "Fit Tracker")
+                End Try
+
+            ElseIf TextBoxNombre.Text.Trim() = "Incline Row" Then
+                cmd.Parameters.AddWithValue("@Cedula", cedula)
+                cmd.Parameters.AddWithValue("@Fecha", Calendario.SelectionStart)
+                cmd.Parameters.AddWithValue("@NombreEjercicio", TextBoxNombre.Text.Trim())
+                cmd.Parameters.AddWithValue("@Repeticiones", TextBoxRepeticiones.Text)
+
+                con.Open()
+
+                Try
+                    Dim t As Integer = (cmd.ExecuteScalar())
+                    MsgBox("Has guardado tus ejercicios el día " & Calendario.SelectionStart & "! (DD/MM/YY)", MessageBoxIcon.Information, "Fit Tracker")
+                    con.Close()
+                    Return t
+                Catch ex As Exception
+                    MsgBox("Los datos ingresados no son validos", MessageBoxIcon.Error, "Fit Tracker")
+                End Try
+
+            ElseIf TextBoxNombre.Text.Trim() = "Pull Up" Then
+                cmd.Parameters.AddWithValue("@Cedula", cedula)
+                cmd.Parameters.AddWithValue("@Fecha", Calendario.SelectionStart)
+                cmd.Parameters.AddWithValue("@NombreEjercicio", TextBoxNombre.Text.Trim())
+                cmd.Parameters.AddWithValue("@Repeticiones", TextBoxRepeticiones.Text)
+
+                con.Open()
+
+                Try
+                    Dim t As Integer = (cmd.ExecuteScalar())
+                    MsgBox("Has guardado tus ejercicios el día " & Calendario.SelectionStart & "! (DD/MM/YY)", MessageBoxIcon.Information, "Fit Tracker")
+                    con.Close()
+                    Return t
+                Catch ex As Exception
+                    MsgBox("Los datos ingresados no son validos", MessageBoxIcon.Error, "Fit Tracker")
+                End Try
+
+            ElseIf TextBoxNombre.Text.Trim() = "Seated Row" Then
+                cmd.Parameters.AddWithValue("@Cedula", cedula)
+                cmd.Parameters.AddWithValue("@Fecha", Calendario.SelectionStart)
+                cmd.Parameters.AddWithValue("@NombreEjercicio", TextBoxNombre.Text.Trim())
+                cmd.Parameters.AddWithValue("@Repeticiones", TextBoxRepeticiones.Text)
+
+                con.Open()
+
+                Try
+                    Dim t As Integer = (cmd.ExecuteScalar())
+                    MsgBox("Has guardado tus ejercicios el día " & Calendario.SelectionStart & "! (DD/MM/YY)", MessageBoxIcon.Information, "Fit Tracker")
+                    con.Close()
+                    Return t
+                Catch ex As Exception
+                    MsgBox("Los datos ingresados no son validos", MessageBoxIcon.Error, "Fit Tracker")
+                End Try
+
+            ElseIf TextBoxNombre.Text.Trim() = "Upright Row" Then
+                cmd.Parameters.AddWithValue("@Cedula", cedula)
+                cmd.Parameters.AddWithValue("@Fecha", Calendario.SelectionStart)
+                cmd.Parameters.AddWithValue("@NombreEjercicio", TextBoxNombre.Text.Trim())
+                cmd.Parameters.AddWithValue("@Repeticiones", TextBoxRepeticiones.Text)
+
+                con.Open()
+
+                Try
+                    Dim t As Integer = (cmd.ExecuteScalar())
+                    MsgBox("Has guardado tus ejercicios el día " & Calendario.SelectionStart & "! (DD/MM/YY)", MessageBoxIcon.Information, "Fit Tracker")
+                    con.Close()
+                    Return t
+                Catch ex As Exception
+                    MsgBox("Los datos ingresados no son validos", MessageBoxIcon.Error, "Fit Tracker")
+                End Try
+
+            ElseIf TextBoxNombre.Text.Trim() = "Bench Press" Then
+                cmd.Parameters.AddWithValue("@Cedula", cedula)
+                cmd.Parameters.AddWithValue("@Fecha", Calendario.SelectionStart)
+                cmd.Parameters.AddWithValue("@NombreEjercicio", TextBoxNombre.Text.Trim())
+                cmd.Parameters.AddWithValue("@Repeticiones", TextBoxRepeticiones.Text)
+
+                con.Open()
+
+                Try
+                    Dim t As Integer = (cmd.ExecuteScalar())
+                    MsgBox("Has guardado tus ejercicios el día " & Calendario.SelectionStart & "! (DD/MM/YY)", MessageBoxIcon.Information, "Fit Tracker")
+                    con.Close()
+                    Return t
+                Catch ex As Exception
+                    MsgBox("Los datos ingresados no son validos", MessageBoxIcon.Error, "Fit Tracker")
+                End Try
+
+            ElseIf TextBoxNombre.Text.Trim() = "Chest Press" Then
+                cmd.Parameters.AddWithValue("@Cedula", cedula)
+                cmd.Parameters.AddWithValue("@Fecha", Calendario.SelectionStart)
+                cmd.Parameters.AddWithValue("@NombreEjercicio", TextBoxNombre.Text.Trim())
+                cmd.Parameters.AddWithValue("@Repeticiones", TextBoxRepeticiones.Text)
+
+                con.Open()
+
+                Try
+                    Dim t As Integer = (cmd.ExecuteScalar())
+                    MsgBox("Has guardado tus ejercicios el día " & Calendario.SelectionStart & "! (DD/MM/YY)", MessageBoxIcon.Information, "Fit Tracker")
+                    con.Close()
+                    Return t
+                Catch ex As Exception
+                    MsgBox("Los datos ingresados no son validos", MessageBoxIcon.Error, "Fit Tracker")
+                End Try
+
+            ElseIf TextBoxNombre.Text.Trim() = "Incline Dumbbell" Then
+                cmd.Parameters.AddWithValue("@Cedula", cedula)
+                cmd.Parameters.AddWithValue("@Fecha", Calendario.SelectionStart)
+                cmd.Parameters.AddWithValue("@NombreEjercicio", TextBoxNombre.Text.Trim())
+                cmd.Parameters.AddWithValue("@Repeticiones", TextBoxRepeticiones.Text)
+
+                con.Open()
+
+                Try
+                    Dim t As Integer = (cmd.ExecuteScalar())
+                    MsgBox("Has guardado tus ejercicios el día " & Calendario.SelectionStart & "! (DD/MM/YY)", MessageBoxIcon.Information, "Fit Tracker")
+                    con.Close()
+                    Return t
+                Catch ex As Exception
+                    MsgBox("Los datos ingresados no son validos", MessageBoxIcon.Error, "Fit Tracker")
+                End Try
+
+            ElseIf TextBoxNombre.Text.Trim() = "Pullover" Then
+                cmd.Parameters.AddWithValue("@Cedula", cedula)
+                cmd.Parameters.AddWithValue("@Fecha", Calendario.SelectionStart)
+                cmd.Parameters.AddWithValue("@NombreEjercicio", TextBoxNombre.Text.Trim())
+                cmd.Parameters.AddWithValue("@Repeticiones", TextBoxRepeticiones.Text)
+
+                con.Open()
+
+                Try
+                    Dim t As Integer = (cmd.ExecuteScalar())
+                    MsgBox("Has guardado tus ejercicios el día " & Calendario.SelectionStart & "! (DD/MM/YY)", MessageBoxIcon.Information, "Fit Tracker")
+                    con.Close()
+                    Return t
+                Catch ex As Exception
+                    MsgBox("Los datos ingresados no son validos", MessageBoxIcon.Error, "Fit Tracker")
+                End Try
+
+            ElseIf TextBoxNombre.Text.Trim() = "Push Ups" Then
+                cmd.Parameters.AddWithValue("@Cedula", cedula)
+                cmd.Parameters.AddWithValue("@Fecha", Calendario.SelectionStart)
+                cmd.Parameters.AddWithValue("@NombreEjercicio", TextBoxNombre.Text.Trim())
+                cmd.Parameters.AddWithValue("@Repeticiones", TextBoxRepeticiones.Text)
+
+                con.Open()
+
+                Try
+                    Dim t As Integer = (cmd.ExecuteScalar())
+                    MsgBox("Has guardado tus ejercicios el día " & Calendario.SelectionStart & "! (DD/MM/YY)", MessageBoxIcon.Information, "Fit Tracker")
+                    con.Close()
+                    Return t
+                Catch ex As Exception
+                    MsgBox("Los datos ingresados no son validos", MessageBoxIcon.Error, "Fit Tracker")
+                End Try
+
+            ElseIf TextBoxNombre.Text.Trim() = "Arnold Press" Then
+                cmd.Parameters.AddWithValue("@Cedula", cedula)
+                cmd.Parameters.AddWithValue("@Fecha", Calendario.SelectionStart)
+                cmd.Parameters.AddWithValue("@NombreEjercicio", TextBoxNombre.Text.Trim())
+                cmd.Parameters.AddWithValue("@Repeticiones", TextBoxRepeticiones.Text)
+
+                con.Open()
+
+                Try
+                    Dim t As Integer = (cmd.ExecuteScalar())
+                    MsgBox("Has guardado tus ejercicios el día " & Calendario.SelectionStart & "! (DD/MM/YY)", MessageBoxIcon.Information, "Fit Tracker")
+                    con.Close()
+                    Return t
+                Catch ex As Exception
+                    MsgBox("Los datos ingresados no son validos", MessageBoxIcon.Error, "Fit Tracker")
+                End Try
+
+            ElseIf TextBoxNombre.Text.Trim() = "Lateral Raise" Then
+                cmd.Parameters.AddWithValue("@Cedula", cedula)
+                cmd.Parameters.AddWithValue("@Fecha", Calendario.SelectionStart)
+                cmd.Parameters.AddWithValue("@NombreEjercicio", TextBoxNombre.Text.Trim())
+                cmd.Parameters.AddWithValue("@Repeticiones", TextBoxRepeticiones.Text)
+
+                con.Open()
+
+                Try
+                    Dim t As Integer = (cmd.ExecuteScalar())
+                    MsgBox("Has guardado tus ejercicios el día " & Calendario.SelectionStart & "! (DD/MM/YY)", MessageBoxIcon.Information, "Fit Tracker")
+                    con.Close()
+                    Return t
+                Catch ex As Exception
+                    MsgBox("Los datos ingresados no son validos", MessageBoxIcon.Error, "Fit Tracker")
+                End Try
+
+            ElseIf TextBoxNombre.Text.Trim() = "Push Press" Then
+                cmd.Parameters.AddWithValue("@Cedula", cedula)
+                cmd.Parameters.AddWithValue("@Fecha", Calendario.SelectionStart)
+                cmd.Parameters.AddWithValue("@NombreEjercicio", TextBoxNombre.Text.Trim())
+                cmd.Parameters.AddWithValue("@Repeticiones", TextBoxRepeticiones.Text)
+
+                con.Open()
+
+                Try
+                    Dim t As Integer = (cmd.ExecuteScalar())
+                    MsgBox("Has guardado tus ejercicios el día " & Calendario.SelectionStart & "! (DD/MM/YY)", MessageBoxIcon.Information, "Fit Tracker")
+                    con.Close()
+                    Return t
+                Catch ex As Exception
+                    MsgBox("Los datos ingresados no son validos", MessageBoxIcon.Error, "Fit Tracker")
+                End Try
+
+            ElseIf TextBoxNombre.Text.Trim() = "Reverse Fly" Then
+                cmd.Parameters.AddWithValue("@Cedula", cedula)
+                cmd.Parameters.AddWithValue("@Fecha", Calendario.SelectionStart)
+                cmd.Parameters.AddWithValue("@NombreEjercicio", TextBoxNombre.Text.Trim())
+                cmd.Parameters.AddWithValue("@Repeticiones", TextBoxRepeticiones.Text)
+
+                con.Open()
+
+                Try
+                    Dim t As Integer = (cmd.ExecuteScalar())
+                    MsgBox("Has guardado tus ejercicios el día " & Calendario.SelectionStart & "! (DD/MM/YY)", MessageBoxIcon.Information, "Fit Tracker")
+                    con.Close()
+                    Return t
+                Catch ex As Exception
+                    MsgBox("Los datos ingresados no son validos", MessageBoxIcon.Error, "Fit Tracker")
+                End Try
+
+            ElseIf TextBoxNombre.Text.Trim() = "Reverse Fly" Then
+                cmd.Parameters.AddWithValue("@Cedula", cedula)
+                cmd.Parameters.AddWithValue("@Fecha", Calendario.SelectionStart)
+                cmd.Parameters.AddWithValue("@NombreEjercicio", TextBoxNombre.Text.Trim())
+                cmd.Parameters.AddWithValue("@Repeticiones", TextBoxRepeticiones.Text)
+
+                con.Open()
+
+                Try
+                    Dim t As Integer = (cmd.ExecuteScalar())
+                    MsgBox("Has guardado tus ejercicios el día " & Calendario.SelectionStart & "! (DD/MM/YY)", MessageBoxIcon.Information, "Fit Tracker")
+                    con.Close()
+                    Return t
+                Catch ex As Exception
+                    MsgBox("Los datos ingresados no son validos", MessageBoxIcon.Error, "Fit Tracker")
+                End Try
+
+            ElseIf TextBoxNombre.Text.Trim() = "Shrug" Then
+                cmd.Parameters.AddWithValue("@Cedula", cedula)
+                cmd.Parameters.AddWithValue("@Fecha", Calendario.SelectionStart)
+                cmd.Parameters.AddWithValue("@NombreEjercicio", TextBoxNombre.Text.Trim())
+                cmd.Parameters.AddWithValue("@Repeticiones", TextBoxRepeticiones.Text)
+
+                con.Open()
+
+                Try
+                    Dim t As Integer = (cmd.ExecuteScalar())
+                    MsgBox("Has guardado tus ejercicios el día " & Calendario.SelectionStart & "! (DD/MM/YY)", MessageBoxIcon.Information, "Fit Tracker")
+                    con.Close()
+                    Return t
+                Catch ex As Exception
+                    MsgBox("Los datos ingresados no son validos", MessageBoxIcon.Error, "Fit Tracker")
+                End Try
+
+            ElseIf TextBoxNombre.Text.Trim() = "Concentration Curl" Then
+                cmd.Parameters.AddWithValue("@Cedula", cedula)
+                cmd.Parameters.AddWithValue("@Fecha", Calendario.SelectionStart)
+                cmd.Parameters.AddWithValue("@NombreEjercicio", TextBoxNombre.Text.Trim())
+                cmd.Parameters.AddWithValue("@Repeticiones", TextBoxRepeticiones.Text)
+
+                con.Open()
+
+                Try
+                    Dim t As Integer = (cmd.ExecuteScalar())
+                    MsgBox("Has guardado tus ejercicios el día " & Calendario.SelectionStart & "! (DD/MM/YY)", MessageBoxIcon.Information, "Fit Tracker")
+                    con.Close()
+                    Return t
+                Catch ex As Exception
+                    MsgBox("Los datos ingresados no son validos", MessageBoxIcon.Error, "Fit Tracker")
+                End Try
+
+            ElseIf TextBoxNombre.Text.Trim() = "Dips" Then
+                cmd.Parameters.AddWithValue("@Cedula", cedula)
+                cmd.Parameters.AddWithValue("@Fecha", Calendario.SelectionStart)
+                cmd.Parameters.AddWithValue("@NombreEjercicio", TextBoxNombre.Text.Trim())
+                cmd.Parameters.AddWithValue("@Repeticiones", TextBoxRepeticiones.Text)
+
+                con.Open()
+
+                Try
+                    Dim t As Integer = (cmd.ExecuteScalar())
+                    MsgBox("Has guardado tus ejercicios el día " & Calendario.SelectionStart & "! (DD/MM/YY)", MessageBoxIcon.Information, "Fit Tracker")
+                    con.Close()
+                    Return t
+                Catch ex As Exception
+                    MsgBox("Los datos ingresados no son validos", MessageBoxIcon.Error, "Fit Tracker")
+                End Try
+
+            ElseIf TextBoxNombre.Text.Trim() = "Hammer Curl" Then
+                cmd.Parameters.AddWithValue("@Cedula", cedula)
+                cmd.Parameters.AddWithValue("@Fecha", Calendario.SelectionStart)
+                cmd.Parameters.AddWithValue("@NombreEjercicio", TextBoxNombre.Text.Trim())
+                cmd.Parameters.AddWithValue("@Repeticiones", TextBoxRepeticiones.Text)
+
+                con.Open()
+
+                Try
+                    Dim t As Integer = (cmd.ExecuteScalar())
+                    MsgBox("Has guardado tus ejercicios el día " & Calendario.SelectionStart & "! (DD/MM/YY)", MessageBoxIcon.Information, "Fit Tracker")
+                    con.Close()
+                    Return t
+                Catch ex As Exception
+                    MsgBox("Los datos ingresados no son validos", MessageBoxIcon.Error, "Fit Tracker")
+                End Try
+
+            ElseIf TextBoxNombre.Text.Trim() = "Incline Curl" Then
+                cmd.Parameters.AddWithValue("@Cedula", cedula)
+                cmd.Parameters.AddWithValue("@Fecha", Calendario.SelectionStart)
+                cmd.Parameters.AddWithValue("@NombreEjercicio", TextBoxNombre.Text.Trim())
+                cmd.Parameters.AddWithValue("@Repeticiones", TextBoxRepeticiones.Text)
+
+                con.Open()
+
+                Try
+                    Dim t As Integer = (cmd.ExecuteScalar())
+                    MsgBox("Has guardado tus ejercicios el día " & Calendario.SelectionStart & "! (DD/MM/YY)", MessageBoxIcon.Information, "Fit Tracker")
+                    con.Close()
+                    Return t
+                Catch ex As Exception
+                    MsgBox("Los datos ingresados no son validos", MessageBoxIcon.Error, "Fit Tracker")
+                End Try
+
+            ElseIf TextBoxNombre.Text.Trim() = "Tricep Extension" Then
+                cmd.Parameters.AddWithValue("@Cedula", cedula)
+                cmd.Parameters.AddWithValue("@Fecha", Calendario.SelectionStart)
+                cmd.Parameters.AddWithValue("@NombreEjercicio", TextBoxNombre.Text.Trim())
+                cmd.Parameters.AddWithValue("@Repeticiones", TextBoxRepeticiones.Text)
+
+                con.Open()
+
+                Try
+                    Dim t As Integer = (cmd.ExecuteScalar())
+                    MsgBox("Has guardado tus ejercicios el día " & Calendario.SelectionStart & "! (DD/MM/YY)", MessageBoxIcon.Information, "Fit Tracker")
+                    con.Close()
+                    Return t
+                Catch ex As Exception
+                    MsgBox("Los datos ingresados no son validos", MessageBoxIcon.Error, "Fit Tracker")
+                End Try
+
+            Else
+                MsgBox("Ejercicio no esta disponible")
+            End If
+
+
         End Using
 
 
@@ -129,7 +539,7 @@ Public Class MenuAñadirEjercicios
 
         Dim stringConection As String
         stringConection = "data source=PROYAZUL; initial catalog = Gym; Integrated Security = True”
-        Dim stringSelect As String = "SELECT * FROM dbo.EjerciciosUsuarios WHERE (Cedula = " & cedula & ") And (Fecha = '" & Calendario.SelectionStart & "')"
+        Dim stringSelect As String = "SELECT * FROM EjerciciosUsuarios WHERE (Cedula = " & cedula & ") And (Fecha = '" & Calendario.SelectionStart & "')"
 
         Dim da As SqlDataAdapter
         Dim dt As New DataTable
