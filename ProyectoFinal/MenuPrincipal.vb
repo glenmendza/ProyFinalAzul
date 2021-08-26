@@ -26,27 +26,27 @@ Public Class MenuPrincipal
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs)
-        Me.Hide()
+        Me.Close()
         MenuAñadirEjercicios.Show()
     End Sub
 
     Private Sub ButtonModificarDatos_Click(sender As Object, e As EventArgs) Handles ButtonModificarDatos.Click
-        Me.Hide()
+        Me.Close()
         MenuModificarDatos.Show()
     End Sub
 
     Public Sub ButtonGestionarUsuarios_Click(sender As Object, e As EventArgs) Handles ButtonGestionarUsuarios.Click
-        Me.Hide()
+        Me.Close()
         MenuGestionarUsuarios.Show()
     End Sub
 
     Private Sub ButtonAgenda_Click(sender As Object, e As EventArgs) Handles ButtonAgenda.Click
-        Me.Hide()
+        Me.Close()
         MenuAgenda.Show()
     End Sub
 
     Private Sub ButtonEstadisticas_Click(sender As Object, e As EventArgs) Handles ButtonEstadisticas.Click
-        Me.Hide()
+        Me.Close()
         MenuEstadisticas.Show()
     End Sub
 

@@ -10,7 +10,7 @@ Public Class MenuBuscarUsuario
     End Sub
 
     Private Sub ButtonBack_Click(sender As Object, e As EventArgs) Handles ButtonBack.Click
-        Me.Hide()
+        Me.Close()
         MenuGestionarUsuarios.Show()
     End Sub
     Public Sub BuscarUser()

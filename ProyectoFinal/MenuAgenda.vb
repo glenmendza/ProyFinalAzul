@@ -79,7 +79,7 @@ Public Class MenuAgenda
     End Function
 #Enable Warning BC42105 ' La función no devuelve un valor en todas las rutas de código
     Private Sub Button7_Click(sender As Object, e As EventArgs) Handles ButtonBack.Click
-        Me.Hide()
+        Me.Close()
         MenuPrincipal.Show()
     End Sub
 
@@ -133,6 +133,10 @@ Public Class MenuAgenda
 
             End Using
         End Using
+
+    End Sub
+
+    Private Sub MenuAgenda_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
     End Sub
 

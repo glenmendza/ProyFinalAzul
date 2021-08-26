@@ -33,7 +33,7 @@ Public Class MenuEstadisticas
     End Sub
 
     Private Sub ButtonBack_Click(sender As Object, e As EventArgs) Handles ButtonBack.Click
-        Me.Hide()
+        Me.Close()
         MenuPrincipal.Show()
     End Sub
 End Class

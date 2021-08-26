@@ -41,9 +41,10 @@ Partial Class MenuAgenda
         Me.ButtonBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.ButtonBack.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ButtonBack.ForeColor = System.Drawing.Color.White
-        Me.ButtonBack.Location = New System.Drawing.Point(12, 12)
+        Me.ButtonBack.Location = New System.Drawing.Point(16, 15)
+        Me.ButtonBack.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.ButtonBack.Name = "ButtonBack"
-        Me.ButtonBack.Size = New System.Drawing.Size(52, 37)
+        Me.ButtonBack.Size = New System.Drawing.Size(69, 46)
         Me.ButtonBack.TabIndex = 18
         Me.ButtonBack.Text = "←"
         Me.ButtonBack.UseVisualStyleBackColor = False
@@ -54,9 +55,10 @@ Partial Class MenuAgenda
         Me.Label1.BackColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(42, Byte), Integer))
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.White
-        Me.Label1.Location = New System.Drawing.Point(427, 28)
+        Me.Label1.Location = New System.Drawing.Point(569, 34)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(166, 37)
+        Me.Label1.Size = New System.Drawing.Size(205, 46)
         Me.Label1.TabIndex = 20
         Me.Label1.Text = "Mi agenda"
         Me.Label1.TextAlign = System.Drawing.ContentAlignment.TopCenter
@@ -66,10 +68,10 @@ Partial Class MenuAgenda
         Me.ButtonConsultar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.ButtonConsultar.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ButtonConsultar.ForeColor = System.Drawing.Color.Transparent
-        Me.ButtonConsultar.Location = New System.Drawing.Point(264, 339)
-        Me.ButtonConsultar.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.ButtonConsultar.Location = New System.Drawing.Point(352, 417)
+        Me.ButtonConsultar.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.ButtonConsultar.Name = "ButtonConsultar"
-        Me.ButtonConsultar.Size = New System.Drawing.Size(153, 53)
+        Me.ButtonConsultar.Size = New System.Drawing.Size(204, 65)
         Me.ButtonConsultar.TabIndex = 23
         Me.ButtonConsultar.Text = "Consultar"
         Me.ButtonConsultar.UseVisualStyleBackColor = True
@@ -79,10 +81,10 @@ Partial Class MenuAgenda
         Me.ButtonNota.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.ButtonNota.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ButtonNota.ForeColor = System.Drawing.Color.Transparent
-        Me.ButtonNota.Location = New System.Drawing.Point(601, 339)
-        Me.ButtonNota.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.ButtonNota.Location = New System.Drawing.Point(801, 417)
+        Me.ButtonNota.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.ButtonNota.Name = "ButtonNota"
-        Me.ButtonNota.Size = New System.Drawing.Size(153, 53)
+        Me.ButtonNota.Size = New System.Drawing.Size(204, 65)
         Me.ButtonNota.TabIndex = 24
         Me.ButtonNota.Text = "Agregar nota"
         Me.ButtonNota.UseVisualStyleBackColor = True
@@ -90,8 +92,7 @@ Partial Class MenuAgenda
         'CalendarioAgenda
         '
         Me.CalendarioAgenda.AllowDrop = True
-        Me.CalendarioAgenda.Location = New System.Drawing.Point(391, 103)
-        Me.CalendarioAgenda.Margin = New System.Windows.Forms.Padding(7, 7, 7, 7)
+        Me.CalendarioAgenda.Location = New System.Drawing.Point(521, 127)
         Me.CalendarioAgenda.Name = "CalendarioAgenda"
         Me.CalendarioAgenda.TabIndex = 25
         '
@@ -99,10 +100,9 @@ Partial Class MenuAgenda
         '
         Me.LabelCedula.AutoSize = True
         Me.LabelCedula.ForeColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(42, Byte), Integer))
-        Me.LabelCedula.Location = New System.Drawing.Point(945, 318)
-        Me.LabelCedula.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.LabelCedula.Location = New System.Drawing.Point(1260, 391)
         Me.LabelCedula.Name = "LabelCedula"
-        Me.LabelCedula.Size = New System.Drawing.Size(66, 13)
+        Me.LabelCedula.Size = New System.Drawing.Size(87, 17)
         Me.LabelCedula.TabIndex = 26
         Me.LabelCedula.Text = "LabelCedula"
         '
@@ -112,10 +112,9 @@ Partial Class MenuAgenda
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.Label2.ImageAlign = System.Drawing.ContentAlignment.BottomLeft
-        Me.Label2.Location = New System.Drawing.Point(420, 284)
-        Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label2.Location = New System.Drawing.Point(560, 350)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(189, 24)
+        Me.Label2.Size = New System.Drawing.Size(239, 29)
         Me.Label2.TabIndex = 27
         Me.Label2.Text = "Fecha Seleccionada:"
         Me.Label2.TextAlign = System.Drawing.ContentAlignment.TopCenter
@@ -123,11 +122,11 @@ Partial Class MenuAgenda
         'TextBoxNota
         '
         Me.TextBoxNota.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBoxNota.Location = New System.Drawing.Point(337, 405)
-        Me.TextBoxNota.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.TextBoxNota.Location = New System.Drawing.Point(449, 498)
+        Me.TextBoxNota.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.TextBoxNota.MaxLength = 200
         Me.TextBoxNota.Name = "TextBoxNota"
-        Me.TextBoxNota.Size = New System.Drawing.Size(341, 128)
+        Me.TextBoxNota.Size = New System.Drawing.Size(453, 157)
         Me.TextBoxNota.TabIndex = 28
         Me.TextBoxNota.Text = ""
         Me.TextBoxNota.Visible = False
@@ -137,10 +136,10 @@ Partial Class MenuAgenda
         Me.ButtonGuardarNota.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.ButtonGuardarNota.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ButtonGuardarNota.ForeColor = System.Drawing.Color.Transparent
-        Me.ButtonGuardarNota.Location = New System.Drawing.Point(455, 553)
-        Me.ButtonGuardarNota.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.ButtonGuardarNota.Location = New System.Drawing.Point(607, 681)
+        Me.ButtonGuardarNota.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.ButtonGuardarNota.Name = "ButtonGuardarNota"
-        Me.ButtonGuardarNota.Size = New System.Drawing.Size(104, 38)
+        Me.ButtonGuardarNota.Size = New System.Drawing.Size(139, 47)
         Me.ButtonGuardarNota.TabIndex = 29
         Me.ButtonGuardarNota.Text = "Guardar"
         Me.ButtonGuardarNota.UseVisualStyleBackColor = True
@@ -152,19 +151,18 @@ Partial Class MenuAgenda
         Me.LabelFecha2.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LabelFecha2.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.LabelFecha2.ImageAlign = System.Drawing.ContentAlignment.BottomLeft
-        Me.LabelFecha2.Location = New System.Drawing.Point(469, 339)
-        Me.LabelFecha2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.LabelFecha2.Location = New System.Drawing.Point(625, 417)
         Me.LabelFecha2.Name = "LabelFecha2"
-        Me.LabelFecha2.Size = New System.Drawing.Size(0, 24)
+        Me.LabelFecha2.Size = New System.Drawing.Size(0, 29)
         Me.LabelFecha2.TabIndex = 30
         Me.LabelFecha2.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
         'MenuAgenda
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(42, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(1019, 645)
+        Me.ClientSize = New System.Drawing.Size(1359, 794)
         Me.Controls.Add(Me.LabelFecha2)
         Me.Controls.Add(Me.ButtonGuardarNota)
         Me.Controls.Add(Me.TextBoxNota)
@@ -176,6 +174,7 @@ Partial Class MenuAgenda
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.ButtonBack)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Name = "MenuAgenda"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "FIT Tracker"

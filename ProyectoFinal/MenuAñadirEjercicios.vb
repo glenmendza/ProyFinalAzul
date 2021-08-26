@@ -54,7 +54,7 @@ Public Class MenuAñadirEjercicios
         End If
     End Sub
     Private Sub Button6_Click(sender As Object, e As EventArgs) Handles ButtonBack.Click
-        Me.Hide()
+        Me.Close()
         MenuPrincipal.Show()
     End Sub
 
@@ -152,7 +152,7 @@ Public Class MenuAñadirEjercicios
                     MsgBox("Los datos ingresados no son validos", MessageBoxIcon.Error, "Fit Tracker")
                 End Try
 
-            ElseIf TextBoxNombre.Text.Trim() = "Squad" Then
+            ElseIf TextBoxNombre.Text.Trim() = "Squat" Then
                 cmd.Parameters.AddWithValue("@Cedula", cedula)
                 cmd.Parameters.AddWithValue("@Fecha", Calendario.SelectionStart)
                 cmd.Parameters.AddWithValue("@NombreEjercicio", TextBoxNombre.Text.Trim())
@@ -593,6 +593,10 @@ Public Class MenuAñadirEjercicios
     Private Sub Calendario_DateChanged(sender As Object, e As DateRangeEventArgs) Handles Calendario.DateChanged
         Label3.Text = Calendario.SelectionStart
     End Sub
+
+
+
+
 
 
 

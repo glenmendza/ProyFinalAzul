@@ -53,9 +53,10 @@ Partial Class MenuAñadirEjercicios
         Me.ButtonBrazos.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.ButtonBrazos.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ButtonBrazos.ForeColor = System.Drawing.Color.White
-        Me.ButtonBrazos.Location = New System.Drawing.Point(735, 159)
+        Me.ButtonBrazos.Location = New System.Drawing.Point(980, 196)
+        Me.ButtonBrazos.Margin = New System.Windows.Forms.Padding(4)
         Me.ButtonBrazos.Name = "ButtonBrazos"
-        Me.ButtonBrazos.Size = New System.Drawing.Size(124, 36)
+        Me.ButtonBrazos.Size = New System.Drawing.Size(165, 44)
         Me.ButtonBrazos.TabIndex = 6
         Me.ButtonBrazos.Text = "Brazos"
         Me.ButtonBrazos.UseVisualStyleBackColor = False
@@ -66,9 +67,10 @@ Partial Class MenuAñadirEjercicios
         Me.ButtonPiernas.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.ButtonPiernas.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ButtonPiernas.ForeColor = System.Drawing.Color.White
-        Me.ButtonPiernas.Location = New System.Drawing.Point(126, 159)
+        Me.ButtonPiernas.Location = New System.Drawing.Point(168, 196)
+        Me.ButtonPiernas.Margin = New System.Windows.Forms.Padding(4)
         Me.ButtonPiernas.Name = "ButtonPiernas"
-        Me.ButtonPiernas.Size = New System.Drawing.Size(124, 36)
+        Me.ButtonPiernas.Size = New System.Drawing.Size(165, 44)
         Me.ButtonPiernas.TabIndex = 7
         Me.ButtonPiernas.Text = "Piernas"
         Me.ButtonPiernas.UseVisualStyleBackColor = False
@@ -79,9 +81,10 @@ Partial Class MenuAñadirEjercicios
         Me.ButtonEspalda.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.ButtonEspalda.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ButtonEspalda.ForeColor = System.Drawing.Color.White
-        Me.ButtonEspalda.Location = New System.Drawing.Point(284, 159)
+        Me.ButtonEspalda.Location = New System.Drawing.Point(379, 196)
+        Me.ButtonEspalda.Margin = New System.Windows.Forms.Padding(4)
         Me.ButtonEspalda.Name = "ButtonEspalda"
-        Me.ButtonEspalda.Size = New System.Drawing.Size(124, 36)
+        Me.ButtonEspalda.Size = New System.Drawing.Size(165, 44)
         Me.ButtonEspalda.TabIndex = 8
         Me.ButtonEspalda.Text = "Espalda"
         Me.ButtonEspalda.UseVisualStyleBackColor = False
@@ -92,9 +95,10 @@ Partial Class MenuAñadirEjercicios
         Me.ButtonPecho.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.ButtonPecho.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ButtonPecho.ForeColor = System.Drawing.Color.White
-        Me.ButtonPecho.Location = New System.Drawing.Point(436, 159)
+        Me.ButtonPecho.Location = New System.Drawing.Point(581, 196)
+        Me.ButtonPecho.Margin = New System.Windows.Forms.Padding(4)
         Me.ButtonPecho.Name = "ButtonPecho"
-        Me.ButtonPecho.Size = New System.Drawing.Size(124, 36)
+        Me.ButtonPecho.Size = New System.Drawing.Size(165, 44)
         Me.ButtonPecho.TabIndex = 9
         Me.ButtonPecho.Text = "Pecho"
         Me.ButtonPecho.UseVisualStyleBackColor = False
@@ -105,9 +109,10 @@ Partial Class MenuAñadirEjercicios
         Me.ButtonHombros.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.ButtonHombros.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ButtonHombros.ForeColor = System.Drawing.Color.White
-        Me.ButtonHombros.Location = New System.Drawing.Point(588, 159)
+        Me.ButtonHombros.Location = New System.Drawing.Point(784, 196)
+        Me.ButtonHombros.Margin = New System.Windows.Forms.Padding(4)
         Me.ButtonHombros.Name = "ButtonHombros"
-        Me.ButtonHombros.Size = New System.Drawing.Size(124, 36)
+        Me.ButtonHombros.Size = New System.Drawing.Size(165, 44)
         Me.ButtonHombros.TabIndex = 10
         Me.ButtonHombros.Text = "Hombros"
         Me.ButtonHombros.UseVisualStyleBackColor = False
@@ -118,9 +123,10 @@ Partial Class MenuAñadirEjercicios
         Me.ButtonBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.ButtonBack.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ButtonBack.ForeColor = System.Drawing.Color.White
-        Me.ButtonBack.Location = New System.Drawing.Point(12, 12)
+        Me.ButtonBack.Location = New System.Drawing.Point(16, 15)
+        Me.ButtonBack.Margin = New System.Windows.Forms.Padding(4)
         Me.ButtonBack.Name = "ButtonBack"
-        Me.ButtonBack.Size = New System.Drawing.Size(52, 37)
+        Me.ButtonBack.Size = New System.Drawing.Size(69, 46)
         Me.ButtonBack.TabIndex = 17
         Me.ButtonBack.Text = "←"
         Me.ButtonBack.UseVisualStyleBackColor = False
@@ -131,9 +137,10 @@ Partial Class MenuAñadirEjercicios
         Me.Label1.BackColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(42, Byte), Integer))
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.White
-        Me.Label1.Location = New System.Drawing.Point(353, 41)
+        Me.Label1.Location = New System.Drawing.Point(471, 50)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(311, 37)
+        Me.Label1.Size = New System.Drawing.Size(389, 46)
         Me.Label1.TabIndex = 20
         Me.Label1.Text = "Añadir mis ejercicios"
         '
@@ -141,8 +148,7 @@ Partial Class MenuAñadirEjercicios
         '
         Me.Calendario.BackColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(42, Byte), Integer))
         Me.Calendario.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Calendario.Location = New System.Drawing.Point(611, 361)
-        Me.Calendario.Margin = New System.Windows.Forms.Padding(7)
+        Me.Calendario.Location = New System.Drawing.Point(815, 444)
         Me.Calendario.Name = "Calendario"
         Me.Calendario.TabIndex = 23
         '
@@ -151,9 +157,10 @@ Partial Class MenuAñadirEjercicios
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.White
-        Me.Label2.Location = New System.Drawing.Point(122, 449)
+        Me.Label2.Location = New System.Drawing.Point(163, 553)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(155, 20)
+        Me.Label2.Size = New System.Drawing.Size(193, 25)
         Me.Label2.TabIndex = 32
         Me.Label2.Text = "Fecha seleccionada:"
         '
@@ -162,9 +169,10 @@ Partial Class MenuAñadirEjercicios
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.White
-        Me.Label3.Location = New System.Drawing.Point(304, 449)
+        Me.Label3.Location = New System.Drawing.Point(405, 553)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(0, 20)
+        Me.Label3.Size = New System.Drawing.Size(0, 25)
         Me.Label3.TabIndex = 33
         '
         'RichTextBoxPiernas
@@ -173,11 +181,12 @@ Partial Class MenuAñadirEjercicios
         Me.RichTextBoxPiernas.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.RichTextBoxPiernas.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.RichTextBoxPiernas.ForeColor = System.Drawing.Color.White
-        Me.RichTextBoxPiernas.Location = New System.Drawing.Point(126, 212)
+        Me.RichTextBoxPiernas.Location = New System.Drawing.Point(168, 261)
+        Me.RichTextBoxPiernas.Margin = New System.Windows.Forms.Padding(4)
         Me.RichTextBoxPiernas.Name = "RichTextBoxPiernas"
-        Me.RichTextBoxPiernas.Size = New System.Drawing.Size(124, 136)
+        Me.RichTextBoxPiernas.Size = New System.Drawing.Size(165, 167)
         Me.RichTextBoxPiernas.TabIndex = 34
-        Me.RichTextBoxPiernas.Text = "♦ Box Jump" & Global.Microsoft.VisualBasic.ChrW(10) & "♦ Deadlift" & Global.Microsoft.VisualBasic.ChrW(10) & "♦ Hip Thrust" & Global.Microsoft.VisualBasic.ChrW(10) & "♦ Lunge" & Global.Microsoft.VisualBasic.ChrW(10) & "♦ Squad"
+        Me.RichTextBoxPiernas.Text = "♦ Box Jump" & Global.Microsoft.VisualBasic.ChrW(10) & "♦ Deadlift" & Global.Microsoft.VisualBasic.ChrW(10) & "♦ Hip Thrust" & Global.Microsoft.VisualBasic.ChrW(10) & "♦ Lunge" & Global.Microsoft.VisualBasic.ChrW(10) & "♦ Squat"
         '
         'RichTextBoxEspalda
         '
@@ -185,9 +194,10 @@ Partial Class MenuAñadirEjercicios
         Me.RichTextBoxEspalda.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.RichTextBoxEspalda.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.RichTextBoxEspalda.ForeColor = System.Drawing.Color.White
-        Me.RichTextBoxEspalda.Location = New System.Drawing.Point(284, 212)
+        Me.RichTextBoxEspalda.Location = New System.Drawing.Point(379, 261)
+        Me.RichTextBoxEspalda.Margin = New System.Windows.Forms.Padding(4)
         Me.RichTextBoxEspalda.Name = "RichTextBoxEspalda"
-        Me.RichTextBoxEspalda.Size = New System.Drawing.Size(124, 136)
+        Me.RichTextBoxEspalda.Size = New System.Drawing.Size(165, 167)
         Me.RichTextBoxEspalda.TabIndex = 35
         Me.RichTextBoxEspalda.Text = "♦ Chin Up" & Global.Microsoft.VisualBasic.ChrW(10) & "♦ Incline Row" & Global.Microsoft.VisualBasic.ChrW(10) & "♦ Pull Up" & Global.Microsoft.VisualBasic.ChrW(10) & "♦ Seated Row" & Global.Microsoft.VisualBasic.ChrW(10) & "♦ Upright Row"
         '
@@ -197,11 +207,12 @@ Partial Class MenuAñadirEjercicios
         Me.RichTextBoxPecho.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.RichTextBoxPecho.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.RichTextBoxPecho.ForeColor = System.Drawing.Color.White
-        Me.RichTextBoxPecho.Location = New System.Drawing.Point(436, 212)
+        Me.RichTextBoxPecho.Location = New System.Drawing.Point(581, 261)
+        Me.RichTextBoxPecho.Margin = New System.Windows.Forms.Padding(4)
         Me.RichTextBoxPecho.Name = "RichTextBoxPecho"
-        Me.RichTextBoxPecho.Size = New System.Drawing.Size(124, 136)
+        Me.RichTextBoxPecho.Size = New System.Drawing.Size(165, 167)
         Me.RichTextBoxPecho.TabIndex = 36
-        Me.RichTextBoxPecho.Text = "♦ Bench Press" & Global.Microsoft.VisualBasic.ChrW(10) & "♦ Chest Press" & Global.Microsoft.VisualBasic.ChrW(10) & "♦ Incline Dumbbel" & Global.Microsoft.VisualBasic.ChrW(10) & "♦ Pullover" & Global.Microsoft.VisualBasic.ChrW(10) & "♦ Push Ups"
+        Me.RichTextBoxPecho.Text = "♦ Bench Press" & Global.Microsoft.VisualBasic.ChrW(10) & "♦ Chest Press" & Global.Microsoft.VisualBasic.ChrW(10) & "♦ Incline Dumbbell" & Global.Microsoft.VisualBasic.ChrW(10) & "♦ Pullover" & Global.Microsoft.VisualBasic.ChrW(10) & "♦ Push Ups"
         '
         'RichTextBoxHombros
         '
@@ -209,9 +220,10 @@ Partial Class MenuAñadirEjercicios
         Me.RichTextBoxHombros.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.RichTextBoxHombros.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.RichTextBoxHombros.ForeColor = System.Drawing.Color.White
-        Me.RichTextBoxHombros.Location = New System.Drawing.Point(588, 212)
+        Me.RichTextBoxHombros.Location = New System.Drawing.Point(784, 261)
+        Me.RichTextBoxHombros.Margin = New System.Windows.Forms.Padding(4)
         Me.RichTextBoxHombros.Name = "RichTextBoxHombros"
-        Me.RichTextBoxHombros.Size = New System.Drawing.Size(124, 136)
+        Me.RichTextBoxHombros.Size = New System.Drawing.Size(165, 167)
         Me.RichTextBoxHombros.TabIndex = 37
         Me.RichTextBoxHombros.Text = "♦ Arnold Press" & Global.Microsoft.VisualBasic.ChrW(10) & "♦ Lateral Raise" & Global.Microsoft.VisualBasic.ChrW(10) & "♦ Push Press" & Global.Microsoft.VisualBasic.ChrW(10) & "♦ Reverse Fly" & Global.Microsoft.VisualBasic.ChrW(10) & "♦ Shrug"
         '
@@ -221,26 +233,29 @@ Partial Class MenuAñadirEjercicios
         Me.RichTextBoxBrazos.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.RichTextBoxBrazos.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.RichTextBoxBrazos.ForeColor = System.Drawing.Color.White
-        Me.RichTextBoxBrazos.Location = New System.Drawing.Point(735, 212)
+        Me.RichTextBoxBrazos.Location = New System.Drawing.Point(980, 261)
+        Me.RichTextBoxBrazos.Margin = New System.Windows.Forms.Padding(4)
         Me.RichTextBoxBrazos.Name = "RichTextBoxBrazos"
-        Me.RichTextBoxBrazos.Size = New System.Drawing.Size(124, 136)
+        Me.RichTextBoxBrazos.Size = New System.Drawing.Size(165, 167)
         Me.RichTextBoxBrazos.TabIndex = 38
         Me.RichTextBoxBrazos.Text = "♦ Concentration Curl" & Global.Microsoft.VisualBasic.ChrW(10) & "♦ Dips" & Global.Microsoft.VisualBasic.ChrW(10) & "♦ Hammer Curl" & Global.Microsoft.VisualBasic.ChrW(10) & "♦ Incline Curl" & Global.Microsoft.VisualBasic.ChrW(10) & "♦ Tricep Extension"
         '
         'TextBoxNombre
         '
         Me.TextBoxNombre.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBoxNombre.Location = New System.Drawing.Point(308, 361)
+        Me.TextBoxNombre.Location = New System.Drawing.Point(411, 444)
+        Me.TextBoxNombre.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBoxNombre.Name = "TextBoxNombre"
-        Me.TextBoxNombre.Size = New System.Drawing.Size(199, 26)
+        Me.TextBoxNombre.Size = New System.Drawing.Size(264, 30)
         Me.TextBoxNombre.TabIndex = 39
         '
         'TextBoxRepeticiones
         '
         Me.TextBoxRepeticiones.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBoxRepeticiones.Location = New System.Drawing.Point(308, 408)
+        Me.TextBoxRepeticiones.Location = New System.Drawing.Point(411, 502)
+        Me.TextBoxRepeticiones.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBoxRepeticiones.Name = "TextBoxRepeticiones"
-        Me.TextBoxRepeticiones.Size = New System.Drawing.Size(199, 26)
+        Me.TextBoxRepeticiones.Size = New System.Drawing.Size(264, 30)
         Me.TextBoxRepeticiones.TabIndex = 40
         '
         'Label4
@@ -248,9 +263,10 @@ Partial Class MenuAñadirEjercicios
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.Color.White
-        Me.Label4.Location = New System.Drawing.Point(132, 367)
+        Me.Label4.Location = New System.Drawing.Point(176, 452)
+        Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(152, 20)
+        Me.Label4.Size = New System.Drawing.Size(190, 25)
         Me.Label4.TabIndex = 41
         Me.Label4.Text = "Nombre de ejercicio:"
         '
@@ -259,9 +275,10 @@ Partial Class MenuAñadirEjercicios
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.ForeColor = System.Drawing.Color.White
-        Me.Label5.Location = New System.Drawing.Point(178, 411)
+        Me.Label5.Location = New System.Drawing.Point(237, 506)
+        Me.Label5.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(106, 20)
+        Me.Label5.Size = New System.Drawing.Size(130, 25)
         Me.Label5.TabIndex = 42
         Me.Label5.Text = "Repeticiones:"
         '
@@ -271,27 +288,29 @@ Partial Class MenuAñadirEjercicios
         Me.Label6.BackColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(42, Byte), Integer))
         Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label6.ForeColor = System.Drawing.Color.White
-        Me.Label6.Location = New System.Drawing.Point(404, 107)
+        Me.Label6.Location = New System.Drawing.Point(539, 132)
+        Me.Label6.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(198, 24)
+        Me.Label6.Size = New System.Drawing.Size(256, 29)
         Me.Label6.TabIndex = 43
         Me.Label6.Text = "Ejercicios disponibles:"
         '
         'PictureBox1
         '
         Me.PictureBox1.Image = Global.ProyectoFinal.My.Resources.Resources.diskette
-        Me.PictureBox1.Location = New System.Drawing.Point(923, 552)
+        Me.PictureBox1.Location = New System.Drawing.Point(1231, 679)
+        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(4)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(66, 67)
+        Me.PictureBox1.Size = New System.Drawing.Size(88, 82)
         Me.PictureBox1.TabIndex = 44
         Me.PictureBox1.TabStop = False
         '
         'MenuAñadirEjercicios
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(42, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(1019, 645)
+        Me.ClientSize = New System.Drawing.Size(1359, 794)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.Label5)
@@ -314,6 +333,7 @@ Partial Class MenuAñadirEjercicios
         Me.Controls.Add(Me.ButtonPiernas)
         Me.Controls.Add(Me.ButtonBrazos)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "MenuAñadirEjercicios"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "FIT Tracker"
