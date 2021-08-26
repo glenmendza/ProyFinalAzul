@@ -4,7 +4,7 @@ Imports System.Text
 
 Public Class MenuGestionarAñadirUsuario
     Private Sub ButtonBack_Click(sender As Object, e As EventArgs) Handles ButtonBack.Click
-        Me.Hide()
+        Me.Close()
         MenuGestionarUsuarios.Show()
     End Sub
 
@@ -123,9 +123,6 @@ Public Class MenuGestionarAñadirUsuario
         ComboBoxAcceso.DropDownStyle = ComboBoxStyle.DropDownList
     End Sub
 
-    Private Sub ButtonIMC_Click(sender As Object, e As EventArgs) 
-
-    End Sub
 
     Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
         If TextBoxContraseña.Text = "" Then
@@ -184,6 +181,39 @@ Public Class MenuGestionarAñadirUsuario
         End If
 
         Call Insertar()
+        Call InsertadoEnStats()
         Call LimpiarCampos()
     End Sub
+    Private Function InsertadoEnStats()
+        Dim sCon As String = "data source=PROYAZUL; initial catalog = Gym; Integrated Security = True"
+        Dim sel As String
+        Dim NombreTabla As String = "Estadisticas1"
+
+        sel = "INSERT INTO " & NombreTabla &
+            " (Cedula, Fecha, Peso, IMC) " &
+            " VALUES " &
+            " (@Cedula, @Fecha, @Peso, @IMC)"
+
+        Using con As New SqlConnection(sCon)
+
+            Dim cmd As New SqlCommand(sel, con)
+
+            cmd.Parameters.AddWithValue("@Cedula", TextBoxCedula.Text)
+            cmd.Parameters.AddWithValue("Fecha", Cal1.SelectionStart)
+            cmd.Parameters.AddWithValue("@Peso", TextBoxPeso.Text)
+            cmd.Parameters.AddWithValue("@IMC", TextBoxIMC.Text)
+
+            con.Open()
+            Try
+                Dim t As Integer = CInt(cmd.ExecuteScalar())
+                'MessageBox.Show("Usuario registrado con exito!", "FIT Tracker")
+                con.Close()
+                Return t
+            Catch ex As Exception
+                MsgBox("Ha ocurrido un error", MessageBoxIcon.Error, "FIT Tracker")
+            End Try
+        End Using
+#Disable Warning BC42105 ' La función no devuelve un valor en todas las rutas de código
+    End Function
+#Enable Warning BC42105 ' La función no devuelve un valor en todas las rutas de código
 End Class

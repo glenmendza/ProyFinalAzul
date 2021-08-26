@@ -60,6 +60,7 @@ Partial Class MenuModificarDatos
         Me.ButtonEditarFechaNacimiento = New System.Windows.Forms.Button()
         Me.ButtonEditarAltura = New System.Windows.Forms.Button()
         Me.ButtonEditarNombre = New System.Windows.Forms.Button()
+        Me.Cal1 = New System.Windows.Forms.MonthCalendar()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -507,12 +508,20 @@ Partial Class MenuModificarDatos
         Me.ButtonEditarNombre.TabIndex = 85
         Me.ButtonEditarNombre.UseVisualStyleBackColor = True
         '
+        'Cal1
+        '
+        Me.Cal1.Location = New System.Drawing.Point(372, 446)
+        Me.Cal1.Name = "Cal1"
+        Me.Cal1.TabIndex = 109
+        Me.Cal1.Visible = False
+        '
         'MenuModificarDatos
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(42, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(1019, 645)
+        Me.Controls.Add(Me.Cal1)
         Me.Controls.Add(Me.PictureBox4)
         Me.Controls.Add(Me.PictureBox3)
         Me.Controls.Add(Me.PictureBox2)
@@ -600,4 +609,5 @@ Partial Class MenuModificarDatos
     Friend WithEvents PictureBox2 As PictureBox
     Friend WithEvents PictureBox3 As PictureBox
     Friend WithEvents PictureBox4 As PictureBox
+    Friend WithEvents Cal1 As MonthCalendar
 End Class

@@ -58,6 +58,7 @@ Partial Class MenuGestionarAñadirUsuario
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
+        Me.Cal1 = New System.Windows.Forms.MonthCalendar()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -69,10 +70,9 @@ Partial Class MenuGestionarAñadirUsuario
         Me.Label1.BackColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(42, Byte), Integer))
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.White
-        Me.Label1.Location = New System.Drawing.Point(535, 36)
-        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label1.Location = New System.Drawing.Point(401, 29)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(284, 46)
+        Me.Label1.Size = New System.Drawing.Size(231, 37)
         Me.Label1.TabIndex = 21
         Me.Label1.Text = "Añadir Usuario"
         '
@@ -81,29 +81,30 @@ Partial Class MenuGestionarAñadirUsuario
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label2.Location = New System.Drawing.Point(227, 164)
+        Me.Label2.Location = New System.Drawing.Point(170, 133)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(81, 25)
+        Me.Label2.Size = New System.Drawing.Size(65, 20)
         Me.Label2.TabIndex = 22
         Me.Label2.Text = "Nombre"
         '
         'TextBoxNombre
         '
         Me.TextBoxNombre.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBoxNombre.Location = New System.Drawing.Point(225, 191)
-        Me.TextBoxNombre.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.TextBoxNombre.Location = New System.Drawing.Point(169, 155)
+        Me.TextBoxNombre.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.TextBoxNombre.Name = "TextBoxNombre"
-        Me.TextBoxNombre.Size = New System.Drawing.Size(273, 27)
+        Me.TextBoxNombre.Size = New System.Drawing.Size(206, 23)
         Me.TextBoxNombre.TabIndex = 23
         Me.TextBoxNombre.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'TextBoxApellido1
         '
         Me.TextBoxApellido1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBoxApellido1.Location = New System.Drawing.Point(225, 265)
-        Me.TextBoxApellido1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.TextBoxApellido1.Location = New System.Drawing.Point(169, 215)
+        Me.TextBoxApellido1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.TextBoxApellido1.Name = "TextBoxApellido1"
-        Me.TextBoxApellido1.Size = New System.Drawing.Size(273, 27)
+        Me.TextBoxApellido1.Size = New System.Drawing.Size(206, 23)
         Me.TextBoxApellido1.TabIndex = 25
         Me.TextBoxApellido1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
@@ -112,19 +113,20 @@ Partial Class MenuGestionarAñadirUsuario
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label3.Location = New System.Drawing.Point(227, 238)
+        Me.Label3.Location = New System.Drawing.Point(170, 193)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(143, 25)
+        Me.Label3.Size = New System.Drawing.Size(114, 20)
         Me.Label3.TabIndex = 24
         Me.Label3.Text = "Primer Apellido"
         '
         'TextBoxApellido2
         '
         Me.TextBoxApellido2.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBoxApellido2.Location = New System.Drawing.Point(225, 338)
-        Me.TextBoxApellido2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.TextBoxApellido2.Location = New System.Drawing.Point(169, 275)
+        Me.TextBoxApellido2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.TextBoxApellido2.Name = "TextBoxApellido2"
-        Me.TextBoxApellido2.Size = New System.Drawing.Size(273, 27)
+        Me.TextBoxApellido2.Size = New System.Drawing.Size(206, 23)
         Me.TextBoxApellido2.TabIndex = 27
         Me.TextBoxApellido2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
@@ -133,19 +135,20 @@ Partial Class MenuGestionarAñadirUsuario
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label4.Location = New System.Drawing.Point(227, 311)
+        Me.Label4.Location = New System.Drawing.Point(170, 253)
+        Me.Label4.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(167, 25)
+        Me.Label4.Size = New System.Drawing.Size(134, 20)
         Me.Label4.TabIndex = 26
         Me.Label4.Text = "Segundo Apellido"
         '
         'TextBoxCedula
         '
         Me.TextBoxCedula.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBoxCedula.Location = New System.Drawing.Point(225, 412)
-        Me.TextBoxCedula.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.TextBoxCedula.Location = New System.Drawing.Point(169, 335)
+        Me.TextBoxCedula.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.TextBoxCedula.Name = "TextBoxCedula"
-        Me.TextBoxCedula.Size = New System.Drawing.Size(273, 27)
+        Me.TextBoxCedula.Size = New System.Drawing.Size(206, 23)
         Me.TextBoxCedula.TabIndex = 29
         Me.TextBoxCedula.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
@@ -154,19 +157,20 @@ Partial Class MenuGestionarAñadirUsuario
         Me.LabelCédula.AutoSize = True
         Me.LabelCédula.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LabelCédula.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.LabelCédula.Location = New System.Drawing.Point(227, 385)
+        Me.LabelCédula.Location = New System.Drawing.Point(170, 313)
+        Me.LabelCédula.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.LabelCédula.Name = "LabelCédula"
-        Me.LabelCédula.Size = New System.Drawing.Size(75, 25)
+        Me.LabelCédula.Size = New System.Drawing.Size(59, 20)
         Me.LabelCédula.TabIndex = 28
         Me.LabelCédula.Text = "Cédula"
         '
         'TextBoxCorreo
         '
         Me.TextBoxCorreo.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBoxCorreo.Location = New System.Drawing.Point(225, 486)
-        Me.TextBoxCorreo.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.TextBoxCorreo.Location = New System.Drawing.Point(169, 395)
+        Me.TextBoxCorreo.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.TextBoxCorreo.Name = "TextBoxCorreo"
-        Me.TextBoxCorreo.Size = New System.Drawing.Size(273, 27)
+        Me.TextBoxCorreo.Size = New System.Drawing.Size(206, 23)
         Me.TextBoxCorreo.TabIndex = 31
         Me.TextBoxCorreo.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
@@ -175,19 +179,20 @@ Partial Class MenuGestionarAñadirUsuario
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label5.Location = New System.Drawing.Point(227, 459)
+        Me.Label5.Location = New System.Drawing.Point(170, 373)
+        Me.Label5.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(173, 25)
+        Me.Label5.Size = New System.Drawing.Size(140, 20)
         Me.Label5.TabIndex = 30
         Me.Label5.Text = "Correo Electronico"
         '
         'TextBoxTelefono
         '
         Me.TextBoxTelefono.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBoxTelefono.Location = New System.Drawing.Point(225, 560)
-        Me.TextBoxTelefono.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.TextBoxTelefono.Location = New System.Drawing.Point(169, 455)
+        Me.TextBoxTelefono.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.TextBoxTelefono.Name = "TextBoxTelefono"
-        Me.TextBoxTelefono.Size = New System.Drawing.Size(273, 27)
+        Me.TextBoxTelefono.Size = New System.Drawing.Size(206, 23)
         Me.TextBoxTelefono.TabIndex = 33
         Me.TextBoxTelefono.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
@@ -196,9 +201,10 @@ Partial Class MenuGestionarAñadirUsuario
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label6.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label6.Location = New System.Drawing.Point(227, 533)
+        Me.Label6.Location = New System.Drawing.Point(170, 433)
+        Me.Label6.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(89, 25)
+        Me.Label6.Size = New System.Drawing.Size(71, 20)
         Me.Label6.TabIndex = 32
         Me.Label6.Text = "Teléfono"
         '
@@ -207,19 +213,20 @@ Partial Class MenuGestionarAñadirUsuario
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label7.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label7.Location = New System.Drawing.Point(1051, 385)
+        Me.Label7.Location = New System.Drawing.Point(788, 313)
+        Me.Label7.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(77, 25)
+        Me.Label7.Size = New System.Drawing.Size(63, 20)
         Me.Label7.TabIndex = 34
         Me.Label7.Text = "Género"
         '
         'TextBoxNacimiento
         '
         Me.TextBoxNacimiento.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBoxNacimiento.Location = New System.Drawing.Point(867, 486)
-        Me.TextBoxNacimiento.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.TextBoxNacimiento.Location = New System.Drawing.Point(650, 395)
+        Me.TextBoxNacimiento.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.TextBoxNacimiento.Name = "TextBoxNacimiento"
-        Me.TextBoxNacimiento.Size = New System.Drawing.Size(276, 27)
+        Me.TextBoxNacimiento.Size = New System.Drawing.Size(208, 23)
         Me.TextBoxNacimiento.TabIndex = 37
         Me.TextBoxNacimiento.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
@@ -228,9 +235,10 @@ Partial Class MenuGestionarAñadirUsuario
         Me.Label8.AutoSize = True
         Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label8.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label8.Location = New System.Drawing.Point(923, 459)
+        Me.Label8.Location = New System.Drawing.Point(692, 373)
+        Me.Label8.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(196, 25)
+        Me.Label8.Size = New System.Drawing.Size(159, 20)
         Me.Label8.TabIndex = 36
         Me.Label8.Text = "Fecha de Nacimiento"
         '
@@ -240,10 +248,10 @@ Partial Class MenuGestionarAñadirUsuario
         Me.ButtonGenerarContra.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.ButtonGenerarContra.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ButtonGenerarContra.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.ButtonGenerarContra.Location = New System.Drawing.Point(928, 601)
-        Me.ButtonGenerarContra.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.ButtonGenerarContra.Location = New System.Drawing.Point(696, 488)
+        Me.ButtonGenerarContra.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.ButtonGenerarContra.Name = "ButtonGenerarContra"
-        Me.ButtonGenerarContra.Size = New System.Drawing.Size(173, 62)
+        Me.ButtonGenerarContra.Size = New System.Drawing.Size(130, 50)
         Me.ButtonGenerarContra.TabIndex = 38
         Me.ButtonGenerarContra.Text = "Generar Contraseña"
         Me.ButtonGenerarContra.UseVisualStyleBackColor = False
@@ -254,10 +262,9 @@ Partial Class MenuGestionarAñadirUsuario
         Me.ButtonBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.ButtonBack.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ButtonBack.ForeColor = System.Drawing.Color.White
-        Me.ButtonBack.Location = New System.Drawing.Point(16, 15)
-        Me.ButtonBack.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.ButtonBack.Location = New System.Drawing.Point(12, 12)
         Me.ButtonBack.Name = "ButtonBack"
-        Me.ButtonBack.Size = New System.Drawing.Size(69, 46)
+        Me.ButtonBack.Size = New System.Drawing.Size(52, 37)
         Me.ButtonBack.TabIndex = 41
         Me.ButtonBack.Text = "←"
         Me.ButtonBack.UseVisualStyleBackColor = False
@@ -267,10 +274,10 @@ Partial Class MenuGestionarAñadirUsuario
         Me.ComboBoxAcceso.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ComboBoxAcceso.FormattingEnabled = True
         Me.ComboBoxAcceso.Items.AddRange(New Object() {"Cliente", "Admin"})
-        Me.ComboBoxAcceso.Location = New System.Drawing.Point(225, 634)
-        Me.ComboBoxAcceso.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.ComboBoxAcceso.Location = New System.Drawing.Point(169, 515)
+        Me.ComboBoxAcceso.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.ComboBoxAcceso.Name = "ComboBoxAcceso"
-        Me.ComboBoxAcceso.Size = New System.Drawing.Size(275, 28)
+        Me.ComboBoxAcceso.Size = New System.Drawing.Size(207, 25)
         Me.ComboBoxAcceso.TabIndex = 43
         '
         'Label10
@@ -278,20 +285,21 @@ Partial Class MenuGestionarAñadirUsuario
         Me.Label10.AutoSize = True
         Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label10.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label10.Location = New System.Drawing.Point(227, 604)
+        Me.Label10.Location = New System.Drawing.Point(170, 491)
+        Me.Label10.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(261, 25)
+        Me.Label10.Size = New System.Drawing.Size(211, 20)
         Me.Label10.TabIndex = 44
         Me.Label10.Text = "Seleccione el tipo de usuario"
         '
         'TextBoxIMC
         '
         Me.TextBoxIMC.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBoxIMC.Location = New System.Drawing.Point(867, 338)
-        Me.TextBoxIMC.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.TextBoxIMC.Location = New System.Drawing.Point(650, 275)
+        Me.TextBoxIMC.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.TextBoxIMC.Name = "TextBoxIMC"
         Me.TextBoxIMC.ReadOnly = True
-        Me.TextBoxIMC.Size = New System.Drawing.Size(275, 27)
+        Me.TextBoxIMC.Size = New System.Drawing.Size(207, 23)
         Me.TextBoxIMC.TabIndex = 45
         Me.TextBoxIMC.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
@@ -300,19 +308,20 @@ Partial Class MenuGestionarAñadirUsuario
         Me.Label9.AutoSize = True
         Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label9.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label9.Location = New System.Drawing.Point(1084, 311)
+        Me.Label9.Location = New System.Drawing.Point(813, 253)
+        Me.Label9.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(49, 25)
+        Me.Label9.Size = New System.Drawing.Size(38, 20)
         Me.Label9.TabIndex = 46
         Me.Label9.Text = "IMC"
         '
         'TextBoxAltura
         '
         Me.TextBoxAltura.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBoxAltura.Location = New System.Drawing.Point(868, 265)
-        Me.TextBoxAltura.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.TextBoxAltura.Location = New System.Drawing.Point(651, 215)
+        Me.TextBoxAltura.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.TextBoxAltura.Name = "TextBoxAltura"
-        Me.TextBoxAltura.Size = New System.Drawing.Size(276, 27)
+        Me.TextBoxAltura.Size = New System.Drawing.Size(208, 23)
         Me.TextBoxAltura.TabIndex = 47
         Me.TextBoxAltura.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
@@ -321,19 +330,20 @@ Partial Class MenuGestionarAñadirUsuario
         Me.Label11.AutoSize = True
         Me.Label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label11.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label11.Location = New System.Drawing.Point(1067, 238)
+        Me.Label11.Location = New System.Drawing.Point(800, 193)
+        Me.Label11.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(63, 25)
+        Me.Label11.Size = New System.Drawing.Size(51, 20)
         Me.Label11.TabIndex = 48
         Me.Label11.Text = "Altura"
         '
         'TextBoxPeso
         '
         Me.TextBoxPeso.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBoxPeso.Location = New System.Drawing.Point(867, 191)
-        Me.TextBoxPeso.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.TextBoxPeso.Location = New System.Drawing.Point(650, 155)
+        Me.TextBoxPeso.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.TextBoxPeso.Name = "TextBoxPeso"
-        Me.TextBoxPeso.Size = New System.Drawing.Size(276, 27)
+        Me.TextBoxPeso.Size = New System.Drawing.Size(208, 23)
         Me.TextBoxPeso.TabIndex = 49
         Me.TextBoxPeso.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
@@ -342,19 +352,20 @@ Partial Class MenuGestionarAñadirUsuario
         Me.Label12.AutoSize = True
         Me.Label12.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label12.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label12.Location = New System.Drawing.Point(1075, 164)
+        Me.Label12.Location = New System.Drawing.Point(806, 133)
+        Me.Label12.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(57, 25)
+        Me.Label12.Size = New System.Drawing.Size(45, 20)
         Me.Label12.TabIndex = 50
         Me.Label12.Text = "Peso"
         '
         'TextBoxContraseña
         '
         Me.TextBoxContraseña.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBoxContraseña.Location = New System.Drawing.Point(869, 560)
-        Me.TextBoxContraseña.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.TextBoxContraseña.Location = New System.Drawing.Point(652, 455)
+        Me.TextBoxContraseña.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.TextBoxContraseña.Name = "TextBoxContraseña"
-        Me.TextBoxContraseña.Size = New System.Drawing.Size(275, 27)
+        Me.TextBoxContraseña.Size = New System.Drawing.Size(207, 23)
         Me.TextBoxContraseña.TabIndex = 51
         Me.TextBoxContraseña.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
@@ -363,9 +374,10 @@ Partial Class MenuGestionarAñadirUsuario
         Me.Label13.AutoSize = True
         Me.Label13.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label13.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label13.Location = New System.Drawing.Point(1012, 533)
+        Me.Label13.Location = New System.Drawing.Point(759, 433)
+        Me.Label13.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(114, 25)
+        Me.Label13.Size = New System.Drawing.Size(92, 20)
         Me.Label13.TabIndex = 52
         Me.Label13.Text = "Contraseña"
         '
@@ -374,10 +386,10 @@ Partial Class MenuGestionarAñadirUsuario
         Me.ComboBoxGenero.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ComboBoxGenero.FormattingEnabled = True
         Me.ComboBoxGenero.Items.AddRange(New Object() {"M", "F", "I"})
-        Me.ComboBoxGenero.Location = New System.Drawing.Point(869, 412)
-        Me.ComboBoxGenero.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.ComboBoxGenero.Location = New System.Drawing.Point(652, 335)
+        Me.ComboBoxGenero.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.ComboBoxGenero.Name = "ComboBoxGenero"
-        Me.ComboBoxGenero.Size = New System.Drawing.Size(275, 28)
+        Me.ComboBoxGenero.Size = New System.Drawing.Size(207, 25)
         Me.ComboBoxGenero.TabIndex = 53
         '
         'Label14
@@ -385,9 +397,10 @@ Partial Class MenuGestionarAñadirUsuario
         Me.Label14.AutoSize = True
         Me.Label14.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label14.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label14.Location = New System.Drawing.Point(1149, 194)
+        Me.Label14.Location = New System.Drawing.Point(862, 158)
+        Me.Label14.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label14.Name = "Label14"
-        Me.Label14.Size = New System.Drawing.Size(37, 25)
+        Me.Label14.Size = New System.Drawing.Size(28, 20)
         Me.Label14.TabIndex = 54
         Me.Label14.Text = "Kg"
         '
@@ -396,9 +409,10 @@ Partial Class MenuGestionarAñadirUsuario
         Me.Label15.AutoSize = True
         Me.Label15.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label15.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label15.Location = New System.Drawing.Point(1151, 266)
+        Me.Label15.Location = New System.Drawing.Point(863, 216)
+        Me.Label15.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label15.Name = "Label15"
-        Me.Label15.Size = New System.Drawing.Size(38, 25)
+        Me.Label15.Size = New System.Drawing.Size(30, 20)
         Me.Label15.TabIndex = 55
         Me.Label15.Text = "cm"
         '
@@ -407,48 +421,54 @@ Partial Class MenuGestionarAñadirUsuario
         Me.Label16.AutoSize = True
         Me.Label16.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label16.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label16.Location = New System.Drawing.Point(1151, 340)
+        Me.Label16.Location = New System.Drawing.Point(863, 276)
+        Me.Label16.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label16.Name = "Label16"
-        Me.Label16.Size = New System.Drawing.Size(66, 25)
+        Me.Label16.Size = New System.Drawing.Size(50, 20)
         Me.Label16.TabIndex = 58
         Me.Label16.Text = "Kg/m²"
         '
         'PictureBox2
         '
         Me.PictureBox2.Image = Global.ProyectoFinal.My.Resources.Resources.fitness__2_
-        Me.PictureBox2.Location = New System.Drawing.Point(595, 299)
-        Me.PictureBox2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox2.Location = New System.Drawing.Point(446, 243)
         Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(172, 161)
+        Me.PictureBox2.Size = New System.Drawing.Size(129, 131)
         Me.PictureBox2.TabIndex = 60
         Me.PictureBox2.TabStop = False
         '
         'PictureBox1
         '
         Me.PictureBox1.Image = Global.ProyectoFinal.My.Resources.Resources.clipboard__1_
-        Me.PictureBox1.Location = New System.Drawing.Point(1163, 551)
-        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox1.Location = New System.Drawing.Point(872, 448)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(43, 43)
+        Me.PictureBox1.Size = New System.Drawing.Size(32, 35)
         Me.PictureBox1.TabIndex = 59
         Me.PictureBox1.TabStop = False
         '
         'PictureBox3
         '
         Me.PictureBox3.Image = Global.ProyectoFinal.My.Resources.Resources.diskette
-        Me.PictureBox3.Location = New System.Drawing.Point(1231, 679)
-        Me.PictureBox3.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox3.Location = New System.Drawing.Point(923, 552)
         Me.PictureBox3.Name = "PictureBox3"
-        Me.PictureBox3.Size = New System.Drawing.Size(88, 80)
+        Me.PictureBox3.Size = New System.Drawing.Size(66, 65)
         Me.PictureBox3.TabIndex = 61
         Me.PictureBox3.TabStop = False
         '
+        'Cal1
+        '
+        Me.Cal1.Location = New System.Drawing.Point(393, 448)
+        Me.Cal1.Name = "Cal1"
+        Me.Cal1.TabIndex = 110
+        Me.Cal1.Visible = False
+        '
         'MenuGestionarAñadirUsuario
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(42, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(1359, 794)
+        Me.ClientSize = New System.Drawing.Size(1019, 645)
+        Me.Controls.Add(Me.Cal1)
         Me.Controls.Add(Me.PictureBox3)
         Me.Controls.Add(Me.PictureBox2)
         Me.Controls.Add(Me.PictureBox1)
@@ -485,7 +505,7 @@ Partial Class MenuGestionarAñadirUsuario
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
-        Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Name = "MenuGestionarAñadirUsuario"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "FIT Tracker"
@@ -532,4 +552,5 @@ Partial Class MenuGestionarAñadirUsuario
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents PictureBox2 As PictureBox
     Friend WithEvents PictureBox3 As PictureBox
+    Friend WithEvents Cal1 As MonthCalendar
 End Class

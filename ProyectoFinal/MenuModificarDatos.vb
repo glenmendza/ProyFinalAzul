@@ -113,12 +113,12 @@ Public Class MenuModificarDatos
 
         Dim myCommand As SqlCommand = myConnection.CreateCommand()
 
-        Dim resultado As Double
-        Dim resultado2 As String
-        Dim peso As Double = TextBoxPeso.Text
-        Dim altura As Double = TextBoxAltura.Text
-        resultado = (peso / ((altura / 100) ^ 2))
-        resultado2 = Format(resultado, "0.00")
+        'Dim resultado As Double
+        'Dim resultado2 As String
+        'Dim peso As Double = TextBoxPeso.Text
+        'Dim altura As Double = TextBoxAltura.Text
+        'resultado = (peso / ((altura / 100) ^ 2))
+        'resultado2 = Format(resultado, "0.00")
 
         Try
             myConnection.Open()
@@ -130,7 +130,7 @@ Public Class MenuModificarDatos
             myCommand.CommandText += "FechaNacimiento = '" & TextBoxNacimiento.Text & "', "
             myCommand.CommandText += "Altura = '" & TextBoxAltura.Text & "', "
             myCommand.CommandText += "Peso = '" & TextBoxPeso.Text & "', "
-            myCommand.CommandText += "IMC = '" & resultado2 & "', "
+            myCommand.CommandText += "IMC = '" & TextBoxIMC.Text & "', "
             myCommand.CommandText += "Telefono = '" & TextBoxTelefono.Text & "', "
             myCommand.CommandText += "Correo = '" & TextBoxCorreo.Text & "', "
             myCommand.CommandText += "Contraseña = '" & TextBoxContraseña.Text & "' "
@@ -157,9 +157,56 @@ Public Class MenuModificarDatos
         End If
     End Sub
 
-    Private Sub PictureBox3_Click(sender As Object, e As EventArgs) Handles PictureBox3.Click
-        Call Insert()
+    Private Sub Calculo()
+        Try
+            Dim resultado As Double
+            Dim peso As Double = TextBoxPeso.Text
+            Dim altura As Double = TextBoxAltura.Text
+            resultado = (peso / ((altura / 100) ^ 2))
+            TextBoxIMC.Text = CStr(Format(resultado, "0.00"))
+        Catch
+            MsgBox("Error 404")
+        End Try
     End Sub
+
+    Private Sub PictureBox3_Click(sender As Object, e As EventArgs) Handles PictureBox3.Click
+        Call Calculo()
+        Call Insert()
+        Call InsertadoEnStats()
+    End Sub
+
+    Private Function InsertadoEnStats()
+        Dim sCon As String = "data source=PROYAZUL; initial catalog = Gym; Integrated Security = True"
+        Dim sel As String
+        Dim NombreTabla As String = "Estadisticas1"
+
+        sel = "INSERT INTO " & NombreTabla &
+            " (Cedula, Fecha, Peso, IMC) " &
+            " VALUES " &
+            " (@Cedula, @Fecha, @Peso, @IMC)"
+
+        Using con As New SqlConnection(sCon)
+
+            Dim cmd As New SqlCommand(sel, con)
+
+            cmd.Parameters.AddWithValue("@Cedula", TextBoxCedula.Text)
+            cmd.Parameters.AddWithValue("Fecha", Cal1.SelectionStart)
+            cmd.Parameters.AddWithValue("@Peso", TextBoxPeso.Text)
+            cmd.Parameters.AddWithValue("@IMC", TextBoxIMC.Text)
+
+            con.Open()
+            Try
+                Dim t As Integer = CInt(cmd.ExecuteScalar())
+                'MessageBox.Show("Usuario registrado con exito!", "FIT Tracker")
+                con.Close()
+                Return t
+            Catch ex As Exception
+                MsgBox("Ha ocurrido un error", MessageBoxIcon.Error, "FIT Tracker")
+            End Try
+        End Using
+#Disable Warning BC42105 ' La función no devuelve un valor en todas las rutas de código
+    End Function
+#Enable Warning BC42105 ' La función no devuelve un valor en todas las rutas de código
 
     Private Sub PictureBox4_Click(sender As Object, e As EventArgs) Handles PictureBox4.Click
         If TextBoxContraseña.Visible = True Then
